@@ -8,7 +8,3 @@ pos = [0.5, 0.2, 0.3]; % Example target position in meters (X, Y, Z)
 
 % Call the armvone function with q0 and pos
 vone = armvone(q0, pos);
-
-% Display the result
-disp('Calculated Joint Positions for target end-effector position:');
-disp(vone);
