@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.coder" plugin-version="R2024a">
-  <configuration file="C:\Users\dagaa\OneDrive\Desktop\ARM exports\ARMYPR6\urdf\armvone.prj" location="C:\Users\dagaa\OneDrive\Desktop\ARM exports\ARMYPR6\urdf" name="armvone" target="target.unifiedcoder" target-name="MATLAB Coder">
+  <configuration build-checksum="2840756821" file="/home/pritesh0/ayush/baahubali/armvone.prj" location="/home/pritesh0/ayush/baahubali" name="armvone" target="target.unifiedcoder" target-name="MATLAB Coder">
     <profile key="profile.mex">
       <param.BuiltInstrumentedMex>false</param.BuiltInstrumentedMex>
       <param.RanInstrumentedMex>false</param.RanInstrumentedMex>
@@ -42,7 +42,7 @@
       <param.CppStyleConst>true</param.CppStyleConst>
       <param.EnableDebugging>false</param.EnableDebugging>
       <param.Verbosity>option.Verbosity.Info</param.Verbosity>
-      <param.ReportPotentialDifferences>true</param.ReportPotentialDifferences>
+      <param.ReportPotentialDifferences>false</param.ReportPotentialDifferences>
       <param.GenerateReport>true</param.GenerateReport>
       <param.HighlightImplicitExpansionIssues>true</param.HighlightImplicitExpansionIssues>
       <param.HighlightLoopControlIssues>true</param.HighlightLoopControlIssues>
@@ -51,7 +51,7 @@
       <param.DefaultTestFile />
       <param.MergeInstrumentationResults>false</param.MergeInstrumentationResults>
       <param.VerificationMode>option.VerificationMode.None</param.VerificationMode>
-      <param.VerificationStatus>option.VerificationStatus.FailedBuild</param.VerificationStatus>
+      <param.VerificationStatus>option.VerificationStatus.Passed</param.VerificationStatus>
       <param.EnableMexProfiling>false</param.EnableMexProfiling>
       <var.BuiltWithMexProfiling>false</var.BuiltWithMexProfiling>
       <param.CustomSourceCode />
@@ -260,9 +260,9 @@
       <param.ReservedNameArray />
       <param.CppStyleConst>true</param.CppStyleConst>
       <param.RuntimeChecks>false</param.RuntimeChecks>
-      <param.Verbose />
+      <param.Verbose>false</param.Verbose>
       <param.Verbosity>option.Verbosity.Info</param.Verbosity>
-      <param.ReportPotentialDifferences>true</param.ReportPotentialDifferences>
+      <param.ReportPotentialDifferences>false</param.ReportPotentialDifferences>
       <param.GenerateReport>true</param.GenerateReport>
       <param.GenerateCodeMetricsReport>false</param.GenerateCodeMetricsReport>
       <param.GenerateCodeReplacementReport>false</param.GenerateCodeReplacementReport>
@@ -295,10 +295,10 @@
       <param.PostCodeGenCommand />
       <param.TargetLangStandard>Auto</param.TargetLangStandard>
       <param.CodeReplacementLibrary>None</param.CodeReplacementLibrary>
-      <param.DeprecatedCRLFlag />
+      <param.DeprecatedCRLFlag>false</param.DeprecatedCRLFlag>
       <param.SameHardware>true</param.SameHardware>
-      <param.Toolchain>Automatically locate an installed toolchain</param.Toolchain>
-      <param.BuildConfiguration>Faster Runs</param.BuildConfiguration>
+      <param.Toolchain>GNU gcc/g++ | CMake/Ninja (64-bit Linux)</param.Toolchain>
+      <param.BuildConfiguration>Release</param.BuildConfiguration>
       <param.CustomToolchainOptions />
       <var.ToolchainSettingsVisible>true</var.ToolchainSettingsVisible>
       <var.ToolchainSupportsBuildConfigurations>true</var.ToolchainSupportsBuildConfigurations>
@@ -307,12 +307,12 @@
       <param.target.ActiveTarget />
       <param.HardwareVendor.Production>Generic</param.HardwareVendor.Production>
       <param.HardwareType.Production>MATLAB Host Computer</param.HardwareType.Production>
-      <param.HWDeviceType.Production />
+      <param.HWDeviceType.Production>Generic-&gt;MATLAB Host Computer</param.HWDeviceType.Production>
       <var.instance.enabled.Production>true</var.instance.enabled.Production>
       <param.HardwareSizeChar.Production>8</param.HardwareSizeChar.Production>
       <param.HardwareSizeShort.Production>16</param.HardwareSizeShort.Production>
       <param.HardwareSizeInt.Production>32</param.HardwareSizeInt.Production>
-      <param.HardwareSizeLong.Production>32</param.HardwareSizeLong.Production>
+      <param.HardwareSizeLong.Production>64</param.HardwareSizeLong.Production>
       <param.HardwareSizeLongLong.Production>64</param.HardwareSizeLongLong.Production>
       <param.HardwareSizeFloat.Production>32</param.HardwareSizeFloat.Production>
       <param.HardwareSizeDouble.Production>64</param.HardwareSizeDouble.Production>
@@ -328,12 +328,12 @@
       <param.HardwareDivisionRounding.Production>option.HardwareDivisionRounding.Zero</param.HardwareDivisionRounding.Production>
       <param.HardwareVendor.Target>Generic</param.HardwareVendor.Target>
       <param.HardwareType.Target>MATLAB Host Computer</param.HardwareType.Target>
-      <param.HWDeviceType.Target />
+      <param.HWDeviceType.Target>Generic-&gt;MATLAB Host Computer</param.HWDeviceType.Target>
       <var.instance.enabled.Target>false</var.instance.enabled.Target>
       <param.HardwareSizeChar.Target>8</param.HardwareSizeChar.Target>
       <param.HardwareSizeShort.Target>16</param.HardwareSizeShort.Target>
       <param.HardwareSizeInt.Target>32</param.HardwareSizeInt.Target>
-      <param.HardwareSizeLong.Target>32</param.HardwareSizeLong.Target>
+      <param.HardwareSizeLong.Target>64</param.HardwareSizeLong.Target>
       <param.HardwareSizeLongLong.Target>64</param.HardwareSizeLongLong.Target>
       <param.HardwareSizeFloat.Target>32</param.HardwareSizeFloat.Target>
       <param.HardwareSizeDouble.Target>64</param.HardwareSizeDouble.Target>
@@ -352,7 +352,7 @@
       <param.IndentStyle>option.IndentStyle.K&amp;R</param.IndentStyle>
       <param.IndentSize>2</param.IndentSize>
       <param.ColumnLimit>80</param.ColumnLimit>
-      <param.grt.GenCodeOnly>true</param.grt.GenCodeOnly>
+      <param.grt.GenCodeOnly>false</param.grt.GenCodeOnly>
       <param.ConstantFoldingTimeout>40000</param.ConstantFoldingTimeout>
       <param.CompileTimeRecursionLimit>50</param.CompileTimeRecursionLimit>
       <param.EnableRuntimeRecursion>true</param.EnableRuntimeRecursion>
@@ -394,14 +394,14 @@
       <param.EnableGitSupport>false</param.EnableGitSupport>
       <param.EnableAutoCommit>true</param.EnableAutoCommit>
       <param.RepositoryStyle>option.RepositoryStyle.Auto</param.RepositoryStyle>
-      <param.psCustomPrjState />
+      <param.psCustomPrjState>false</param.psCustomPrjState>
       <param.psCustomProjectFile />
-      <param.psCheckConfValue />
-      <param.psUniqueOutPutState />
-      <param.psOpenResultsState />
-      <param.psProductModeValue />
-      <param.psQuickConfValue />
-      <param.psOutputFolder />
+      <param.psCheckConfValue>option.psCheckConfValue.onWarnCheckConfDlg</param.psCheckConfValue>
+      <param.psUniqueOutPutState>true</param.psUniqueOutPutState>
+      <param.psOpenResultsState>true</param.psOpenResultsState>
+      <param.psProductModeValue>option.psProductModeValue.codeProver</param.psProductModeValue>
+      <param.psQuickConfValue>option.psQuickConfValue.proj</param.psQuickConfValue>
+      <param.psOutputFolder>results_$codegenName$</param.psOutputFolder>
       <unset>
         <param.WorkingFolder />
         <param.SpecifiedWorkingFolder />
@@ -518,7 +518,6 @@
         <param.CodeReplacementLibrary />
         <param.DeprecatedCRLFlag />
         <param.SameHardware />
-        <param.Toolchain />
         <param.BuildConfiguration />
         <param.CustomToolchainOptions />
         <var.ToolchainSettingsVisible />
@@ -532,7 +531,6 @@
         <param.HardwareSizeChar.Production />
         <param.HardwareSizeShort.Production />
         <param.HardwareSizeInt.Production />
-        <param.HardwareSizeLong.Production />
         <param.HardwareSizeLongLong.Production />
         <param.HardwareSizeFloat.Production />
         <param.HardwareSizeDouble.Production />
@@ -546,7 +544,6 @@
         <param.HardwareSizeChar.Target />
         <param.HardwareSizeShort.Target />
         <param.HardwareSizeInt.Target />
-        <param.HardwareSizeLong.Target />
         <param.HardwareSizeLongLong.Target />
         <param.HardwareSizeFloat.Target />
         <param.HardwareSizeDouble.Target />
@@ -558,6 +555,7 @@
         <param.IndentStyle />
         <param.IndentSize />
         <param.ColumnLimit />
+        <param.grt.GenCodeOnly />
         <param.ConstantFoldingTimeout />
         <param.CompileTimeRecursionLimit />
         <param.EnableRuntimeRecursion />
@@ -610,11 +608,13 @@
       </unset>
     </profile>
     <param.objective>option.objective.c</param.objective>
-    <param.WorkflowStep>verifyCompatibility</param.WorkflowStep>
-    <param.TestSnippets />
+    <param.WorkflowStep>workflowSummary</param.WorkflowStep>
+    <param.TestSnippets>
+      <item>text</item>
+    </param.TestSnippets>
     <param.ExternalFcnMajority>column</param.ExternalFcnMajority>
     <param.UseGlobals>option.UseGlobals.No</param.UseGlobals>
-    <param.outputfile>${PROJECT_ROOT}\codegen\lib\armvone\armvone.lib</param.outputfile>
+    <param.outputfile>${PROJECT_ROOT}/codegen/dll/armvone/armvone.so</param.outputfile>
     <param.version>R2012a</param.version>
     <param.HasECoderFeatures>true</param.HasECoderFeatures>
     <param.HasGpuCoder>false</param.HasGpuCoder>
@@ -629,7 +629,7 @@
     <param.AutoInferUnboundedSizeThreshold>2048</param.AutoInferUnboundedSizeThreshold>
     <param.EnableFixedPointStep>false</param.EnableFixedPointStep>
     <param.EnableScreener>true</param.EnableScreener>
-    <param.AnnotationChecksum />
+    <param.AnnotationChecksum>3629769005</param.AnnotationChecksum>
     <var.LegacyTarget />
     <var.MirrorOnOpen>false</var.MirrorOnOpen>
     <param.FixedPointEnabled>false</param.FixedPointEnabled>
@@ -637,15 +637,16 @@
     <var.DismissScreener>false</var.DismissScreener>
     <param.unifiedParamStorage />
     <param.hdlParamStorage />
-    <var.gc.lastOutputRoot />
-    <var.gc.lastOutputType />
-    <var.gc.preBuildChecksum />
-    <var.cfi.lastOutputRoot>codegen\mex\armvone</var.cfi.lastOutputRoot>
-    <var.cfi.preBuildChecksum>460127138</var.cfi.preBuildChecksum>
+    <var.gc.lastOutputRoot>codegen/dll/armvone</var.gc.lastOutputRoot>
+    <var.gc.lastOutputType>SHARED_LIBRARY</var.gc.lastOutputType>
+    <var.gc.preBuildChecksum>2610689940</var.gc.preBuildChecksum>
+    <var.cfi.lastOutputRoot>codegen/mex/armvone</var.cfi.lastOutputRoot>
+    <var.cfi.preBuildChecksum>2459682217</var.cfi.preBuildChecksum>
+    <var.lastCfiTestSnippet>text</var.lastCfiTestSnippet>
     <var.outdatedOnRestore>false</var.outdatedOnRestore>
-    <var.lastUserSourceChecksum />
-    <var.sourceSetState>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;sourceModel&gt;&lt;primarySourceFiles&gt;&lt;file&gt;C:\Users\dagaa\OneDrive\Desktop\ARM exports\ARMYPR6\urdf\armvone.m&lt;/file&gt;&lt;/primarySourceFiles&gt;&lt;fixedPointSourceFiles/&gt;&lt;fixedPointSourceRegistered&gt;false&lt;/fixedPointSourceRegistered&gt;&lt;fixedPointSourceSelected&gt;false&lt;/fixedPointSourceSelected&gt;&lt;/sourceModel&gt;</var.sourceSetState>
-    <param.forceMexBuild>true</param.forceMexBuild>
+    <var.lastUserSourceChecksum>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;checksum&gt;&lt;includedFiles&gt;&lt;file&gt;/home/pritesh0/ayush/baahubali/armvone.m&lt;/file&gt;&lt;/includedFiles&gt;&lt;value&gt;4180621369&lt;/value&gt;&lt;/checksum&gt;</var.lastUserSourceChecksum>
+    <var.sourceSetState>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;sourceModel&gt;&lt;primarySourceFiles&gt;&lt;file&gt;/home/pritesh0/ayush/baahubali/armvone.m&lt;/file&gt;&lt;/primarySourceFiles&gt;&lt;fixedPointSourceFiles/&gt;&lt;fixedPointSourceRegistered&gt;false&lt;/fixedPointSourceRegistered&gt;&lt;fixedPointSourceSelected&gt;false&lt;/fixedPointSourceSelected&gt;&lt;/sourceModel&gt;</var.sourceSetState>
+    <param.forceMexBuild>false</param.forceMexBuild>
     <param.NoDefaultJIT>false</param.NoDefaultJIT>
     <param.configImportActive>false</param.configImportActive>
     <var.isGpuCoder>false</var.isGpuCoder>
@@ -660,8 +661,8 @@
     <param.NumCompileJobs>1</param.NumCompileJobs>
     <param.mex.outputfile>armvone_mex</param.mex.outputfile>
     <param.grt.outputfile>armvone</param.grt.outputfile>
-    <param.artifact>option.target.artifact.lib</param.artifact>
-    <param.outputfile>${PROJECT_ROOT}\codegen\lib\armvone\armvone.lib</param.outputfile>
+    <param.artifact>option.target.artifact.dll</param.artifact>
+    <param.outputfile>${PROJECT_ROOT}/codegen/dll/armvone/armvone.so</param.outputfile>
     <param.CppNamespace />
     <param.CppPreserveNamespaces>true</param.CppPreserveNamespaces>
     <param.CppNamespaceForMathworksCode>coder</param.CppNamespaceForMathworksCode>
@@ -676,7 +677,7 @@
     <param.gpu.StackLimitPerThread>1024</param.gpu.StackLimitPerThread>
     <param.gpu.MaximumBlocksPerKernel>0</param.gpu.MaximumBlocksPerKernel>
     <param.gpu.Benchmarking>false</param.gpu.Benchmarking>
-    <param.gpu.SafeBuild>true</param.gpu.SafeBuild>
+    <param.gpu.SafeBuild>false</param.gpu.SafeBuild>
     <param.gpu.KernelNamePrefix />
     <param.gpu.CompilerFlags />
     <param.gpu.EnableCUBLAS>false</param.gpu.EnableCUBLAS>
@@ -689,7 +690,7 @@
     <param.deeplearning.EnableDeepLearning>false</param.deeplearning.EnableDeepLearning>
     <param.deeplearning.DeepLearningCustomCallback />
     <param.deeplearning.TargetLib>option.deeplearning.targetlibrary.none</param.deeplearning.TargetLib>
-    <var.cfiTargetLibSuppression>true</var.cfiTargetLibSuppression>
+    <var.cfiTargetLibSuppression>false</var.cfiTargetLibSuppression>
     <var.hasMatlabDeepLearningSupportPackage>false</var.hasMatlabDeepLearningSupportPackage>
     <var.hasGpuDeepLearningSupportPackage>false</var.hasGpuDeepLearningSupportPackage>
     <param.tensorrt.DataType>option.tensorrt.datatype.fp32</param.tensorrt.DataType>
@@ -756,7 +757,6 @@
     <param.FixedPointUseDesignRanges>false</param.FixedPointUseDesignRanges>
     <unset>
       <param.objective />
-      <param.TestSnippets />
       <param.ExternalFcnMajority />
       <param.UseGlobals />
       <param.outputfile />
@@ -774,7 +774,6 @@
       <param.AutoInferUnboundedSizeThreshold />
       <param.EnableFixedPointStep />
       <param.EnableScreener />
-      <param.AnnotationChecksum />
       <var.LegacyTarget />
       <var.MirrorOnOpen />
       <param.FixedPointEnabled />
@@ -782,11 +781,8 @@
       <var.DismissScreener />
       <param.unifiedParamStorage />
       <param.hdlParamStorage />
-      <var.gc.lastOutputRoot />
-      <var.gc.lastOutputType />
-      <var.gc.preBuildChecksum />
       <var.outdatedOnRestore />
-      <var.lastUserSourceChecksum />
+      <param.forceMexBuild />
       <param.NoDefaultJIT />
       <param.configImportActive />
       <var.isGpuCoder />
@@ -827,6 +823,7 @@
       <param.deeplearning.EnableDeepLearning />
       <param.deeplearning.DeepLearningCustomCallback />
       <param.deeplearning.TargetLib />
+      <var.cfiTargetLibSuppression />
       <param.tensorrt.DataType />
       <param.tensorrt.DataPath />
       <param.tensorrt.NumCalibrationBatches />
@@ -890,13 +887,15 @@
       <param.FixedPointUseDesignRanges />
     </unset>
     <fileset.entrypoints>
-      <file custom-data-expanded="false" value="${PROJECT_ROOT}\armvone.m">
-        <Marker>1733393643715</Marker>
+      <file custom-data-expanded="false" value="${PROJECT_ROOT}/armvone.m">
+        <Marker>1733396466970</Marker>
       </file>
     </fileset.entrypoints>
-    <fileset.testbench />
+    <fileset.testbench>
+      <file>${PROJECT_ROOT}/text.m</file>
+    </fileset.testbench>
     <fileset.inputtypes>
-      <file custom-data-expanded="false" value="${PROJECT_ROOT}\armvone.m">
+      <file custom-data-expanded="false" value="${PROJECT_ROOT}/armvone.m">
         <Inputs fileName="armvone.m" functionName="armvone">
           <Input Name="q0" typeId="0" />
           <Input Name="pos" typeId="1" />
@@ -924,11 +923,11 @@
       </file>
     </fileset.inputtypes>
     <build-deliverables>
-      <file location="${PROJECT_ROOT}\codegen\lib\armvone" name="armvone.lib" optional="false">C:\Users\dagaa\OneDrive\Desktop\ARM exports\ARMYPR6\urdf\codegen\lib\armvone\armvone.lib</file>
+      <file location="${PROJECT_ROOT}/codegen/dll/armvone" name="armvone.so" optional="false">/home/pritesh0/ayush/baahubali/codegen/dll/armvone/armvone.so</file>
     </build-deliverables>
     <workflow />
     <matlab>
-      <root>C:\Program Files\MATLAB\R2024b</root>
+      <root>/home/pritesh0/matlab24</root>
       <toolboxes>
         <toolbox name="matlabcoder" />
         <toolbox name="embeddedcoder" />
@@ -963,18 +962,18 @@
       </toolbox>
     </matlab>
     <platform>
-      <unix>false</unix>
+      <unix>true</unix>
       <mac>false</mac>
-      <windows>true</windows>
+      <windows>false</windows>
       <win2k>false</win2k>
       <winxp>false</winxp>
       <vista>false</vista>
-      <linux>false</linux>
+      <linux>true</linux>
       <solaris>false</solaris>
-      <osver>10.0</osver>
+      <osver>6.9.3-76060903-generic</osver>
       <os32>false</os32>
       <os64>true</os64>
-      <arch>win64</arch>
+      <arch>glnxa64</arch>
       <matlab>true</matlab>
     </platform>
   </configuration>
