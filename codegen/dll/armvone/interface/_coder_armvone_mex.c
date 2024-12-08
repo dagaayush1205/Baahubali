@@ -2,24 +2,18 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: _coder_armvone_mex.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * _coder_armvone_mex.c
+ *
+ * Code generation for function 'armvone'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "_coder_armvone_mex.h"
 #include "_coder_armvone_api.h"
 
 /* Function Definitions */
-/*
- * Arguments    : int32_T nlhs
- *                mxArray *plhs[]
- *                int32_T nrhs
- *                const mxArray *prhs[]
- * Return Type  : void
- */
 void mexFunction(int32_T nlhs, mxArray *plhs[], int32_T nrhs,
                  const mxArray *prhs[])
 {
@@ -29,10 +23,6 @@ void mexFunction(int32_T nlhs, mxArray *plhs[], int32_T nrhs,
   armvone_terminate();
 }
 
-/*
- * Arguments    : void
- * Return Type  : emlrtCTX
- */
 emlrtCTX mexFunctionCreateRootTLS(void)
 {
   emlrtCreateRootTLSR2022a(&emlrtRootTLSGlobal, &emlrtContextGlobal, NULL, 1,
@@ -40,13 +30,6 @@ emlrtCTX mexFunctionCreateRootTLS(void)
   return emlrtRootTLSGlobal;
 }
 
-/*
- * Arguments    : int32_T nlhs
- *                mxArray *plhs[1]
- *                int32_T nrhs
- *                const mxArray *prhs[2]
- * Return Type  : void
- */
 void unsafe_armvone_mexFunction(int32_T nlhs, mxArray *plhs[1], int32_T nrhs,
                                 const mxArray *prhs[2])
 {
@@ -75,8 +58,4 @@ void unsafe_armvone_mexFunction(int32_T nlhs, mxArray *plhs[1], int32_T nrhs,
   emlrtReturnArrays(1, &plhs[0], &outputs);
 }
 
-/*
- * File trailer for _coder_armvone_mex.c
- *
- * [EOF]
- */
+/* End of code generation (_coder_armvone_mex.c) */

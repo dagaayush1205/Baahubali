@@ -2,23 +2,20 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: tic.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * tic.c
+ *
+ * Code generation for function 'tic'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "tic.h"
 #include "armvone_data.h"
 #include "rt_nonfinite.h"
 #include "coder_posix_time.h"
 
 /* Function Definitions */
-/*
- * Arguments    : double *tstart_tv_nsec
- * Return Type  : double
- */
 double tic(double *tstart_tv_nsec)
 {
   coderTimespec b_timespec;
@@ -33,8 +30,4 @@ double tic(double *tstart_tv_nsec)
   return tstart_tv_sec;
 }
 
-/*
- * File trailer for tic.c
- *
- * [EOF]
- */
+/* End of code generation (tic.c) */

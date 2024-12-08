@@ -13,17 +13,7 @@
 #include "_coder_armvone_api.h"
 #include "armvone.h"
 #include "armvone_data.h"
-#include "armvone_emxutil.h"
-#include "armvone_types.h"
 #include "rt_nonfinite.h"
-
-/* Variable Definitions */
-static emlrtRTEInfo ji_emlrtRTEI = {
-    1,                    /* lineNo */
-    1,                    /* colNo */
-    "_coder_armvone_api", /* fName */
-    ""                    /* pName */
-};
 
 /* Function Declarations */
 static real_T (*c_emlrt_marshallIn(const emlrtStack *sp, const mxArray *nullptr,
@@ -35,8 +25,8 @@ static real_T (*d_emlrt_marshallIn(const emlrtStack *sp, const mxArray *u,
 static real_T (*e_emlrt_marshallIn(const emlrtStack *sp, const mxArray *nullptr,
                                    const char_T *identifier))[3];
 
-static const mxArray *emlrt_marshallOut(const emlrtStack *sp,
-                                        const emxArray_struct0_T *u);
+static const mxArray *emlrt_marshallOut(real_T u_data[],
+                                        const int32_T u_size[2]);
 
 static real_T (*f_emlrt_marshallIn(const emlrtStack *sp, const mxArray *u,
                                    const emlrtMsgIdentifier *parentId))[3];
@@ -83,49 +73,18 @@ static real_T (*e_emlrt_marshallIn(const emlrtStack *sp, const mxArray *nullptr,
   return y;
 }
 
-static const mxArray *emlrt_marshallOut(const emlrtStack *sp,
-                                        const emxArray_struct0_T *u)
+static const mxArray *emlrt_marshallOut(real_T u_data[],
+                                        const int32_T u_size[2])
 {
-  static const char_T *sv[2] = {"JointName", "JointPosition"};
-  const mxArray *b_y;
-  const mxArray *c_y;
+  static const int32_T b_iv[2] = {0, 0};
   const mxArray *m;
   const mxArray *y;
-  const struct0_T *u_data;
-  real_T *pData;
-  int32_T b_iv[2];
-  int32_T b_j1;
-  int32_T i;
-  u_data = u->data;
   y = NULL;
-  b_iv[0] = 1;
-  b_iv[1] = u->size[1];
-  emlrtAssign(&y,
-              emlrtCreateStructArray(2, &b_iv[0], 2, (const char_T **)&sv[0]));
-  emlrtCreateField(y, "JointName");
-  emlrtCreateField(y, "JointPosition");
-  i = 0;
-  for (b_j1 = 0; b_j1 < u->size[1U]; b_j1++) {
-    int32_T b_i;
-    b_y = NULL;
-    b_iv[0] = 1;
-    b_i = u_data[b_j1].JointName.size[1];
-    b_iv[1] = b_i;
-    m = emlrtCreateCharArray(2, &b_iv[0]);
-    emlrtInitCharArrayR2013a((emlrtConstCTX)sp, b_i, m,
-                             &u_data[b_j1].JointName.data[0]);
-    emlrtAssign(&b_y, m);
-    emlrtSetFieldR2017b(y, i, "JointName", b_y, 0);
-    c_y = NULL;
-    b_iv[0] = 1;
-    b_iv[1] = 1;
-    m = emlrtCreateNumericArray(2, &b_iv[0], mxDOUBLE_CLASS, mxREAL);
-    pData = emlrtMxGetPr(m);
-    pData[0] = u_data[b_j1].JointPosition.data[0];
-    emlrtAssign(&c_y, m);
-    emlrtSetFieldR2017b(y, i, "JointPosition", c_y, 1);
-    i++;
-  }
+  m = emlrtCreateNumericArray(2, (const void *)&b_iv[0], mxDOUBLE_CLASS,
+                              mxREAL);
+  emlrtMxSetData((mxArray *)m, &u_data[0]);
+  emlrtSetDimensions((mxArray *)m, &u_size[0], 2);
+  emlrtAssign(&y, m);
   return y;
 }
 
@@ -173,21 +132,19 @@ void armvone_api(const mxArray *const prhs[2], const mxArray **plhs)
       NULL, /* tls */
       NULL  /* prev */
   };
-  emxArray_struct0_T *vone;
   real_T(*q0)[6];
+  real_T(*vone_data)[6];
   real_T(*pos)[3];
+  int32_T vone_size[2];
   st.tls = emlrtRootTLSGlobal;
-  emlrtHeapReferenceStackEnterFcnR2012b(&st);
+  vone_data = (real_T(*)[6])mxMalloc(sizeof(real_T[6]));
   /* Marshall function inputs */
   q0 = c_emlrt_marshallIn(&st, emlrtAlias(prhs[0]), "q0");
   pos = e_emlrt_marshallIn(&st, emlrtAlias(prhs[1]), "pos");
   /* Invoke the target function */
-  emxInit_struct0_T(&st, &vone, &ji_emlrtRTEI);
-  armvone(&st, *q0, *pos, vone);
+  armvone(&st, *q0, *pos, *vone_data, vone_size);
   /* Marshall function outputs */
-  *plhs = emlrt_marshallOut(&st, vone);
-  emxFree_struct0_T(&st, &vone);
-  emlrtHeapReferenceStackLeaveFcnR2012b(&st);
+  *plhs = emlrt_marshallOut(*vone_data, vone_size);
 }
 
 /* End of code generation (_coder_armvone_api.c) */

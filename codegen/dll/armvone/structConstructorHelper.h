@@ -2,16 +2,17 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: structConstructorHelper.h
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * structConstructorHelper.h
+ *
+ * Code generation for function 'structConstructorHelper'
+ *
  */
 
 #ifndef STRUCTCONSTRUCTORHELPER_H
 #define STRUCTCONSTRUCTORHELPER_H
 
-/* Include Files */
+/* Include files */
 #include "armvone_internal_types.h"
 #include "rtwtypes.h"
 #include <stddef.h>
@@ -28,15 +29,11 @@ void structConstructorHelper(const char varargin_2_f1[14],
                              const char varargin_2_f4[10],
                              const char varargin_2_f5[8],
                              const char varargin_2_f6[10],
-                             const double varargin_4[6], struct_T s[6]);
+                             const double varargin_4[6], b_struct_T s[6]);
 
 #ifdef __cplusplus
 }
 #endif
 
 #endif
-/*
- * File trailer for structConstructorHelper.h
- *
- * [EOF]
- */
+/* End of code generation (structConstructorHelper.h) */

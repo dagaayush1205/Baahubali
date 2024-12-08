@@ -2,16 +2,17 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: xzlascl.h
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * xzlascl.h
+ *
+ * Code generation for function 'xzlascl'
+ *
  */
 
 #ifndef XZLASCL_H
 #define XZLASCL_H
 
-/* Include Files */
+/* Include files */
 #include "armvone_types.h"
 #include "rtwtypes.h"
 #include <stddef.h>
@@ -36,8 +37,4 @@ void xzlascl(double cfrom, double cto, double A[9]);
 #endif
 
 #endif
-/*
- * File trailer for xzlascl.h
- *
- * [EOF]
- */
+/* End of code generation (xzlascl.h) */

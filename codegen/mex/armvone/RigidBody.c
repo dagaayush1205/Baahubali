@@ -22,27 +22,27 @@
 static emlrtRSInfo hb_emlrtRSI = {
     153,                   /* lineNo */
     "RigidBody/RigidBody", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBody.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBody.m" /* pathName */
 };
 
 static emlrtRSInfo ib_emlrtRSI = {
     158,                   /* lineNo */
     "RigidBody/RigidBody", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBody.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBody.m" /* pathName */
 };
 
-static emlrtBCInfo f_emlrtBCI = {
+static emlrtBCInfo l_emlrtBCI = {
     -1,                    /* iFirst */
     -1,                    /* iLast */
     158,                   /* lineNo */
     56,                    /* colNo */
     "",                    /* aName */
     "RigidBody/RigidBody", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBody.m", /* pName */
-    0                        /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBody.m", /* pName */
+    0                               /* checkKind */
 };
 
 /* Function Definitions */
@@ -151,7 +151,7 @@ RigidBody_RigidBody(const emlrtStack *sp, c_robotics_manip_internal_Rigid *obj,
       emlrtIntegerCheckR2012b(s.Length, &c_emlrtDCI, &c_st);
     }
     if (((int32_T)s.Length < 1) || ((int32_T)s.Length > 200)) {
-      emlrtDynamicBoundsCheckR2012b((int32_T)s.Length, 1, 200, &c_emlrtBCI,
+      emlrtDynamicBoundsCheckR2012b((int32_T)s.Length, 1, 200, &i_emlrtBCI,
                                     &c_st);
     }
     i = (int32_T)s.Length;
@@ -331,7 +331,7 @@ RigidBody_RigidBody(const emlrtStack *sp, c_robotics_manip_internal_Rigid *obj,
       emlrtIntegerCheckR2012b(s.Length, &c_emlrtDCI, &c_st);
     }
     if (((int32_T)s.Length < 1) || ((int32_T)s.Length > 200)) {
-      emlrtDynamicBoundsCheckR2012b((int32_T)s.Length, 1, 200, &c_emlrtBCI,
+      emlrtDynamicBoundsCheckR2012b((int32_T)s.Length, 1, 200, &i_emlrtBCI,
                                     &c_st);
     }
     i = (int32_T)s.Length;
@@ -363,7 +363,7 @@ RigidBody_RigidBody(const emlrtStack *sp, c_robotics_manip_internal_Rigid *obj,
         emlrtIntegerCheckR2012b(d, &emlrtDCI, &st);
       }
       if (((int32_T)d < 1) || ((int32_T)d > 7)) {
-        emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 7, &emlrtBCI, &st);
+        emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 7, &g_emlrtBCI, &st);
       }
       ibmat = (int32_T)d;
     }
@@ -385,7 +385,7 @@ RigidBody_RigidBody(const emlrtStack *sp, c_robotics_manip_internal_Rigid *obj,
         emlrtIntegerCheckR2012b(d, &b_emlrtDCI, &st);
       }
       if (((int32_T)d < 1) || ((int32_T)d > 7)) {
-        emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 7, &b_emlrtBCI, &st);
+        emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 7, &h_emlrtBCI, &st);
       }
       i = (int32_T)d;
     }
@@ -597,7 +597,7 @@ c_robotics_manip_internal_Rigid *b_RigidBody_RigidBody(
       emlrtIntegerCheckR2012b(s.Length, &c_emlrtDCI, &c_st);
     }
     if (((int32_T)s.Length < 1) || ((int32_T)s.Length > 200)) {
-      emlrtDynamicBoundsCheckR2012b((int32_T)s.Length, 1, 200, &c_emlrtBCI,
+      emlrtDynamicBoundsCheckR2012b((int32_T)s.Length, 1, 200, &i_emlrtBCI,
                                     &c_st);
     }
     i = (int32_T)s.Length;
@@ -777,7 +777,7 @@ c_robotics_manip_internal_Rigid *b_RigidBody_RigidBody(
       emlrtIntegerCheckR2012b(s.Length, &c_emlrtDCI, &c_st);
     }
     if (((int32_T)s.Length < 1) || ((int32_T)s.Length > 200)) {
-      emlrtDynamicBoundsCheckR2012b((int32_T)s.Length, 1, 200, &c_emlrtBCI,
+      emlrtDynamicBoundsCheckR2012b((int32_T)s.Length, 1, 200, &i_emlrtBCI,
                                     &c_st);
     }
     i = (int32_T)s.Length;
@@ -809,7 +809,7 @@ c_robotics_manip_internal_Rigid *b_RigidBody_RigidBody(
         emlrtIntegerCheckR2012b(d, &emlrtDCI, &st);
       }
       if (((int32_T)d < 1) || ((int32_T)d > 7)) {
-        emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 7, &emlrtBCI, &st);
+        emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 7, &g_emlrtBCI, &st);
       }
       ibmat = (int32_T)d;
     }
@@ -831,7 +831,7 @@ c_robotics_manip_internal_Rigid *b_RigidBody_RigidBody(
         emlrtIntegerCheckR2012b(d, &b_emlrtDCI, &st);
       }
       if (((int32_T)d < 1) || ((int32_T)d > 7)) {
-        emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 7, &b_emlrtBCI, &st);
+        emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 7, &h_emlrtBCI, &st);
       }
       i = (int32_T)d;
     }
@@ -864,7 +864,7 @@ c_robotics_manip_internal_Rigid *b_RigidBody_RigidBody(
   c_rigidBodyJoint_get_MotionSubs(&st, b_obj->JointInternal, msubspace_data,
                                   iv1);
   if (iv1[1] < 1) {
-    emlrtDynamicBoundsCheckR2012b(1, 1, iv1[1], &f_emlrtBCI, (emlrtConstCTX)sp);
+    emlrtDynamicBoundsCheckR2012b(1, 1, iv1[1], &l_emlrtBCI, (emlrtConstCTX)sp);
   }
   for (i = 0; i < 6; i++) {
     msubspace_data[i] = iv5[i];
@@ -1046,7 +1046,7 @@ c_robotics_manip_internal_Rigid *c_RigidBody_RigidBody(
       emlrtIntegerCheckR2012b(s.Length, &c_emlrtDCI, &c_st);
     }
     if (((int32_T)s.Length < 1) || ((int32_T)s.Length > 200)) {
-      emlrtDynamicBoundsCheckR2012b((int32_T)s.Length, 1, 200, &c_emlrtBCI,
+      emlrtDynamicBoundsCheckR2012b((int32_T)s.Length, 1, 200, &i_emlrtBCI,
                                     &c_st);
     }
     i = (int32_T)s.Length;
@@ -1226,7 +1226,7 @@ c_robotics_manip_internal_Rigid *c_RigidBody_RigidBody(
       emlrtIntegerCheckR2012b(s.Length, &c_emlrtDCI, &c_st);
     }
     if (((int32_T)s.Length < 1) || ((int32_T)s.Length > 200)) {
-      emlrtDynamicBoundsCheckR2012b((int32_T)s.Length, 1, 200, &c_emlrtBCI,
+      emlrtDynamicBoundsCheckR2012b((int32_T)s.Length, 1, 200, &i_emlrtBCI,
                                     &c_st);
     }
     i = (int32_T)s.Length;
@@ -1258,7 +1258,7 @@ c_robotics_manip_internal_Rigid *c_RigidBody_RigidBody(
         emlrtIntegerCheckR2012b(d, &emlrtDCI, &st);
       }
       if (((int32_T)d < 1) || ((int32_T)d > 7)) {
-        emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 7, &emlrtBCI, &st);
+        emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 7, &g_emlrtBCI, &st);
       }
       ibmat = (int32_T)d;
     }
@@ -1280,7 +1280,7 @@ c_robotics_manip_internal_Rigid *c_RigidBody_RigidBody(
         emlrtIntegerCheckR2012b(d, &b_emlrtDCI, &st);
       }
       if (((int32_T)d < 1) || ((int32_T)d > 7)) {
-        emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 7, &b_emlrtBCI, &st);
+        emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 7, &h_emlrtBCI, &st);
       }
       i = (int32_T)d;
     }
@@ -1313,7 +1313,7 @@ c_robotics_manip_internal_Rigid *c_RigidBody_RigidBody(
   c_rigidBodyJoint_get_MotionSubs(&st, b_obj->JointInternal, msubspace_data,
                                   iv1);
   if (iv1[1] < 1) {
-    emlrtDynamicBoundsCheckR2012b(1, 1, iv1[1], &f_emlrtBCI, (emlrtConstCTX)sp);
+    emlrtDynamicBoundsCheckR2012b(1, 1, iv1[1], &l_emlrtBCI, (emlrtConstCTX)sp);
   }
   for (i = 0; i < 6; i++) {
     msubspace_data[i] = iv5[i];
@@ -1495,7 +1495,7 @@ c_robotics_manip_internal_Rigid *d_RigidBody_RigidBody(
       emlrtIntegerCheckR2012b(s.Length, &c_emlrtDCI, &c_st);
     }
     if (((int32_T)s.Length < 1) || ((int32_T)s.Length > 200)) {
-      emlrtDynamicBoundsCheckR2012b((int32_T)s.Length, 1, 200, &c_emlrtBCI,
+      emlrtDynamicBoundsCheckR2012b((int32_T)s.Length, 1, 200, &i_emlrtBCI,
                                     &c_st);
     }
     i = (int32_T)s.Length;
@@ -1675,7 +1675,7 @@ c_robotics_manip_internal_Rigid *d_RigidBody_RigidBody(
       emlrtIntegerCheckR2012b(s.Length, &c_emlrtDCI, &c_st);
     }
     if (((int32_T)s.Length < 1) || ((int32_T)s.Length > 200)) {
-      emlrtDynamicBoundsCheckR2012b((int32_T)s.Length, 1, 200, &c_emlrtBCI,
+      emlrtDynamicBoundsCheckR2012b((int32_T)s.Length, 1, 200, &i_emlrtBCI,
                                     &c_st);
     }
     i = (int32_T)s.Length;
@@ -1707,7 +1707,7 @@ c_robotics_manip_internal_Rigid *d_RigidBody_RigidBody(
         emlrtIntegerCheckR2012b(d, &emlrtDCI, &st);
       }
       if (((int32_T)d < 1) || ((int32_T)d > 7)) {
-        emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 7, &emlrtBCI, &st);
+        emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 7, &g_emlrtBCI, &st);
       }
       ibmat = (int32_T)d;
     }
@@ -1729,7 +1729,7 @@ c_robotics_manip_internal_Rigid *d_RigidBody_RigidBody(
         emlrtIntegerCheckR2012b(d, &b_emlrtDCI, &st);
       }
       if (((int32_T)d < 1) || ((int32_T)d > 7)) {
-        emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 7, &b_emlrtBCI, &st);
+        emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 7, &h_emlrtBCI, &st);
       }
       i = (int32_T)d;
     }
@@ -1762,7 +1762,7 @@ c_robotics_manip_internal_Rigid *d_RigidBody_RigidBody(
   c_rigidBodyJoint_get_MotionSubs(&st, b_obj->JointInternal, msubspace_data,
                                   iv1);
   if (iv1[1] < 1) {
-    emlrtDynamicBoundsCheckR2012b(1, 1, iv1[1], &f_emlrtBCI, (emlrtConstCTX)sp);
+    emlrtDynamicBoundsCheckR2012b(1, 1, iv1[1], &l_emlrtBCI, (emlrtConstCTX)sp);
   }
   for (i = 0; i < 6; i++) {
     msubspace_data[i] = iv5[i];
@@ -1943,7 +1943,7 @@ c_robotics_manip_internal_Rigid *e_RigidBody_RigidBody(
       emlrtIntegerCheckR2012b(s.Length, &c_emlrtDCI, &c_st);
     }
     if (((int32_T)s.Length < 1) || ((int32_T)s.Length > 200)) {
-      emlrtDynamicBoundsCheckR2012b((int32_T)s.Length, 1, 200, &c_emlrtBCI,
+      emlrtDynamicBoundsCheckR2012b((int32_T)s.Length, 1, 200, &i_emlrtBCI,
                                     &c_st);
     }
     i = (int32_T)s.Length;
@@ -2123,7 +2123,7 @@ c_robotics_manip_internal_Rigid *e_RigidBody_RigidBody(
       emlrtIntegerCheckR2012b(s.Length, &c_emlrtDCI, &c_st);
     }
     if (((int32_T)s.Length < 1) || ((int32_T)s.Length > 200)) {
-      emlrtDynamicBoundsCheckR2012b((int32_T)s.Length, 1, 200, &c_emlrtBCI,
+      emlrtDynamicBoundsCheckR2012b((int32_T)s.Length, 1, 200, &i_emlrtBCI,
                                     &c_st);
     }
     i = (int32_T)s.Length;
@@ -2155,7 +2155,7 @@ c_robotics_manip_internal_Rigid *e_RigidBody_RigidBody(
         emlrtIntegerCheckR2012b(d, &emlrtDCI, &st);
       }
       if (((int32_T)d < 1) || ((int32_T)d > 7)) {
-        emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 7, &emlrtBCI, &st);
+        emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 7, &g_emlrtBCI, &st);
       }
       ibmat = (int32_T)d;
     }
@@ -2177,7 +2177,7 @@ c_robotics_manip_internal_Rigid *e_RigidBody_RigidBody(
         emlrtIntegerCheckR2012b(d, &b_emlrtDCI, &st);
       }
       if (((int32_T)d < 1) || ((int32_T)d > 7)) {
-        emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 7, &b_emlrtBCI, &st);
+        emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 7, &h_emlrtBCI, &st);
       }
       i = (int32_T)d;
     }
@@ -2210,7 +2210,7 @@ c_robotics_manip_internal_Rigid *e_RigidBody_RigidBody(
   c_rigidBodyJoint_get_MotionSubs(&st, b_obj->JointInternal, msubspace_data,
                                   iv1);
   if (iv1[1] < 1) {
-    emlrtDynamicBoundsCheckR2012b(1, 1, iv1[1], &f_emlrtBCI, (emlrtConstCTX)sp);
+    emlrtDynamicBoundsCheckR2012b(1, 1, iv1[1], &l_emlrtBCI, (emlrtConstCTX)sp);
   }
   for (i = 0; i < 6; i++) {
     msubspace_data[i] = iv5[i];
@@ -2392,7 +2392,7 @@ c_robotics_manip_internal_Rigid *f_RigidBody_RigidBody(
       emlrtIntegerCheckR2012b(s.Length, &c_emlrtDCI, &c_st);
     }
     if (((int32_T)s.Length < 1) || ((int32_T)s.Length > 200)) {
-      emlrtDynamicBoundsCheckR2012b((int32_T)s.Length, 1, 200, &c_emlrtBCI,
+      emlrtDynamicBoundsCheckR2012b((int32_T)s.Length, 1, 200, &i_emlrtBCI,
                                     &c_st);
     }
     i = (int32_T)s.Length;
@@ -2572,7 +2572,7 @@ c_robotics_manip_internal_Rigid *f_RigidBody_RigidBody(
       emlrtIntegerCheckR2012b(s.Length, &c_emlrtDCI, &c_st);
     }
     if (((int32_T)s.Length < 1) || ((int32_T)s.Length > 200)) {
-      emlrtDynamicBoundsCheckR2012b((int32_T)s.Length, 1, 200, &c_emlrtBCI,
+      emlrtDynamicBoundsCheckR2012b((int32_T)s.Length, 1, 200, &i_emlrtBCI,
                                     &c_st);
     }
     i = (int32_T)s.Length;
@@ -2604,7 +2604,7 @@ c_robotics_manip_internal_Rigid *f_RigidBody_RigidBody(
         emlrtIntegerCheckR2012b(d, &emlrtDCI, &st);
       }
       if (((int32_T)d < 1) || ((int32_T)d > 7)) {
-        emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 7, &emlrtBCI, &st);
+        emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 7, &g_emlrtBCI, &st);
       }
       ibmat = (int32_T)d;
     }
@@ -2626,7 +2626,7 @@ c_robotics_manip_internal_Rigid *f_RigidBody_RigidBody(
         emlrtIntegerCheckR2012b(d, &b_emlrtDCI, &st);
       }
       if (((int32_T)d < 1) || ((int32_T)d > 7)) {
-        emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 7, &b_emlrtBCI, &st);
+        emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 7, &h_emlrtBCI, &st);
       }
       i = (int32_T)d;
     }
@@ -2659,7 +2659,7 @@ c_robotics_manip_internal_Rigid *f_RigidBody_RigidBody(
   c_rigidBodyJoint_get_MotionSubs(&st, b_obj->JointInternal, msubspace_data,
                                   iv1);
   if (iv1[1] < 1) {
-    emlrtDynamicBoundsCheckR2012b(1, 1, iv1[1], &f_emlrtBCI, (emlrtConstCTX)sp);
+    emlrtDynamicBoundsCheckR2012b(1, 1, iv1[1], &l_emlrtBCI, (emlrtConstCTX)sp);
   }
   for (i = 0; i < 6; i++) {
     msubspace_data[i] = dv3[i];
@@ -2841,7 +2841,7 @@ c_robotics_manip_internal_Rigid *g_RigidBody_RigidBody(
       emlrtIntegerCheckR2012b(s.Length, &c_emlrtDCI, &c_st);
     }
     if (((int32_T)s.Length < 1) || ((int32_T)s.Length > 200)) {
-      emlrtDynamicBoundsCheckR2012b((int32_T)s.Length, 1, 200, &c_emlrtBCI,
+      emlrtDynamicBoundsCheckR2012b((int32_T)s.Length, 1, 200, &i_emlrtBCI,
                                     &c_st);
     }
     i = (int32_T)s.Length;
@@ -3021,7 +3021,7 @@ c_robotics_manip_internal_Rigid *g_RigidBody_RigidBody(
       emlrtIntegerCheckR2012b(s.Length, &c_emlrtDCI, &c_st);
     }
     if (((int32_T)s.Length < 1) || ((int32_T)s.Length > 200)) {
-      emlrtDynamicBoundsCheckR2012b((int32_T)s.Length, 1, 200, &c_emlrtBCI,
+      emlrtDynamicBoundsCheckR2012b((int32_T)s.Length, 1, 200, &i_emlrtBCI,
                                     &c_st);
     }
     i = (int32_T)s.Length;
@@ -3053,7 +3053,7 @@ c_robotics_manip_internal_Rigid *g_RigidBody_RigidBody(
         emlrtIntegerCheckR2012b(d, &emlrtDCI, &st);
       }
       if (((int32_T)d < 1) || ((int32_T)d > 7)) {
-        emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 7, &emlrtBCI, &st);
+        emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 7, &g_emlrtBCI, &st);
       }
       ibmat = (int32_T)d;
     }
@@ -3075,7 +3075,7 @@ c_robotics_manip_internal_Rigid *g_RigidBody_RigidBody(
         emlrtIntegerCheckR2012b(d, &b_emlrtDCI, &st);
       }
       if (((int32_T)d < 1) || ((int32_T)d > 7)) {
-        emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 7, &b_emlrtBCI, &st);
+        emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 7, &h_emlrtBCI, &st);
       }
       i = (int32_T)d;
     }
@@ -3108,7 +3108,7 @@ c_robotics_manip_internal_Rigid *g_RigidBody_RigidBody(
   c_rigidBodyJoint_get_MotionSubs(&st, b_obj->JointInternal, msubspace_data,
                                   iv1);
   if (iv1[1] < 1) {
-    emlrtDynamicBoundsCheckR2012b(1, 1, iv1[1], &f_emlrtBCI, (emlrtConstCTX)sp);
+    emlrtDynamicBoundsCheckR2012b(1, 1, iv1[1], &l_emlrtBCI, (emlrtConstCTX)sp);
   }
   for (i = 0; i < 6; i++) {
     msubspace_data[i] = dv3[i];

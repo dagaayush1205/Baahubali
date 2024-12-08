@@ -2,16 +2,17 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: mldivide.h
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * mldivide.h
+ *
+ * Code generation for function 'mldivide'
+ *
  */
 
 #ifndef MLDIVIDE_H
 #define MLDIVIDE_H
 
-/* Include Files */
+/* Include files */
 #include "armvone_types.h"
 #include "rtwtypes.h"
 #include <stddef.h>
@@ -30,8 +31,4 @@ void mldivide(const emxArray_real_T *A, const emxArray_real_T *B,
 #endif
 
 #endif
-/*
- * File trailer for mldivide.h
- *
- * [EOF]
- */
+/* End of code generation (mldivide.h) */

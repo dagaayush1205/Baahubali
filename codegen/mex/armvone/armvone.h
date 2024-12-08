@@ -12,7 +12,6 @@
 #pragma once
 
 /* Include files */
-#include "armvone_types.h"
 #include "rtwtypes.h"
 #include "covrt.h"
 #include "emlrt.h"
@@ -24,6 +23,6 @@
 
 /* Function Declarations */
 void armvone(const emlrtStack *sp, const real_T q0[6], const real_T pos[3],
-             emxArray_struct0_T *vone);
+             real_T vone_data[], int32_T vone_size[2]);
 
 /* End of code generation (armvone.h) */

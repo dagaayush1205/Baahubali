@@ -93,23 +93,24 @@ void emxEnsureCapacity_real_T(const emlrtStack *sp, emxArray_real_T *emxArray,
                               int32_T oldNumel,
                               const emlrtRTEInfo *srcLocation);
 
-void emxEnsureCapacity_struct0_T(const emlrtStack *sp,
-                                 emxArray_struct0_T *emxArray, int32_T oldNumel,
-                                 const emlrtRTEInfo *srcLocation);
-
 void emxEnsureCapacity_struct_T(const emlrtStack *sp,
-                                b_emxArray_struct_T *emxArray, int32_T oldNumel,
+                                c_emxArray_struct_T *emxArray, int32_T oldNumel,
                                 const emlrtRTEInfo *srcLocation);
 
 void emxEnsureCapacity_struct_T1(const emlrtStack *sp,
+                                 b_emxArray_struct_T *emxArray,
+                                 int32_T oldNumel,
+                                 const emlrtRTEInfo *srcLocation);
+
+void emxEnsureCapacity_struct_T2(const emlrtStack *sp,
                                  emxArray_struct_T *emxArray, int32_T oldNumel,
                                  const emlrtRTEInfo *srcLocation);
 
-void emxExpand_struct0_T(emxArray_struct0_T *emxArray, int32_T fromIndex,
-                         int32_T toIndex);
-
-void emxExpand_struct_T(emxArray_struct_T *emxArray, int32_T fromIndex,
+void emxExpand_struct_T(b_emxArray_struct_T *emxArray, int32_T fromIndex,
                         int32_T toIndex);
+
+void emxExpand_struct_T1(emxArray_struct_T *emxArray, int32_T fromIndex,
+                         int32_T toIndex);
 
 void emxFreeStruct_inverseKinematics(const emlrtStack *sp,
                                      inverseKinematics *pStruct);
@@ -124,11 +125,11 @@ void emxFree_ptrdiff_t(const emlrtStack *sp, emxArray_ptrdiff_t **pEmxArray);
 
 void emxFree_real_T(const emlrtStack *sp, emxArray_real_T **pEmxArray);
 
-void emxFree_struct0_T(const emlrtStack *sp, emxArray_struct0_T **pEmxArray);
-
 void emxFree_struct_T(const emlrtStack *sp, emxArray_struct_T **pEmxArray);
 
 void emxFree_struct_T1(const emlrtStack *sp, b_emxArray_struct_T **pEmxArray);
+
+void emxFree_struct_T2(const emlrtStack *sp, c_emxArray_struct_T **pEmxArray);
 
 void emxInitStruct_inverseKinematics(const emlrtStack *sp,
                                      inverseKinematics *pStruct,
@@ -137,9 +138,9 @@ void emxInitStruct_inverseKinematics(const emlrtStack *sp,
 void emxInitStruct_rigidBodyTree(const emlrtStack *sp, rigidBodyTree *pStruct,
                                  const emlrtRTEInfo *srcLocation);
 
-void emxInitStruct_struct0_T(struct0_T *pStruct);
+void emxInitStruct_struct_T(c_struct_T *pStruct);
 
-void emxInitStruct_struct_T(b_struct_T *pStruct);
+void emxInitStruct_struct_T1(struct_T *pStruct);
 
 void emxInit_boolean_T(const emlrtStack *sp, emxArray_boolean_T **pEmxArray,
                        const emlrtRTEInfo *srcLocation);
@@ -153,13 +154,13 @@ void emxInit_ptrdiff_t(const emlrtStack *sp, emxArray_ptrdiff_t **pEmxArray,
 void emxInit_real_T(const emlrtStack *sp, emxArray_real_T **pEmxArray,
                     int32_T numDimensions, const emlrtRTEInfo *srcLocation);
 
-void emxInit_struct0_T(const emlrtStack *sp, emxArray_struct0_T **pEmxArray,
-                       const emlrtRTEInfo *srcLocation);
-
 void emxInit_struct_T(const emlrtStack *sp, emxArray_struct_T **pEmxArray,
                       const emlrtRTEInfo *srcLocation);
 
 void emxInit_struct_T1(const emlrtStack *sp, b_emxArray_struct_T **pEmxArray,
+                       const emlrtRTEInfo *srcLocation);
+
+void emxInit_struct_T2(const emlrtStack *sp, c_emxArray_struct_T **pEmxArray,
                        const emlrtRTEInfo *srcLocation);
 
 void f_emxFreeStruct_robotics_manip_(const emlrtStack *sp,

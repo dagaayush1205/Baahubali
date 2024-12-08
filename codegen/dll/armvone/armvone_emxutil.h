@@ -2,16 +2,17 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: armvone_emxutil.h
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * armvone_emxutil.h
+ *
+ * Code generation for function 'armvone_emxutil'
+ *
  */
 
 #ifndef ARMVONE_EMXUTIL_H
 #define ARMVONE_EMXUTIL_H
 
-/* Include Files */
+/* Include files */
 #include "armvone_types.h"
 #include "rtwtypes.h"
 #include <stddef.h>
@@ -77,20 +78,20 @@ extern void emxEnsureCapacity_int8_T(emxArray_int8_T *emxArray, int oldNumel);
 
 extern void emxEnsureCapacity_real_T(emxArray_real_T *emxArray, int oldNumel);
 
-extern void emxEnsureCapacity_struct0_T(emxArray_struct0_T *emxArray,
-                                        int oldNumel);
-
-extern void emxEnsureCapacity_struct_T(b_emxArray_struct_T *emxArray,
+extern void emxEnsureCapacity_struct_T(c_emxArray_struct_T *emxArray,
                                        int oldNumel);
 
-extern void emxEnsureCapacity_struct_T1(emxArray_struct_T *emxArray,
+extern void emxEnsureCapacity_struct_T1(b_emxArray_struct_T *emxArray,
                                         int oldNumel);
 
-extern void emxExpand_struct0_T(emxArray_struct0_T *emxArray, int fromIndex,
-                                int toIndex);
+extern void emxEnsureCapacity_struct_T2(emxArray_struct_T *emxArray,
+                                        int oldNumel);
 
-extern void emxExpand_struct_T(emxArray_struct_T *emxArray, int fromIndex,
+extern void emxExpand_struct_T(b_emxArray_struct_T *emxArray, int fromIndex,
                                int toIndex);
+
+extern void emxExpand_struct_T1(emxArray_struct_T *emxArray, int fromIndex,
+                                int toIndex);
 
 extern void emxFreeStruct_inverseKinematics(inverseKinematics *pStruct);
 
@@ -104,19 +105,19 @@ extern void emxFree_int8_T(emxArray_int8_T **pEmxArray);
 
 extern void emxFree_real_T(emxArray_real_T **pEmxArray);
 
-extern void emxFree_struct0_T(emxArray_struct0_T **pEmxArray);
-
 extern void emxFree_struct_T(emxArray_struct_T **pEmxArray);
 
 extern void emxFree_struct_T1(b_emxArray_struct_T **pEmxArray);
+
+extern void emxFree_struct_T2(c_emxArray_struct_T **pEmxArray);
 
 extern void emxInitStruct_inverseKinematics(inverseKinematics *pStruct);
 
 extern void emxInitStruct_rigidBodyTree(rigidBodyTree *pStruct);
 
-extern void emxInitStruct_struct0_T(struct0_T *pStruct);
+extern void emxInitStruct_struct_T(c_struct_T *pStruct);
 
-extern void emxInitStruct_struct_T(b_struct_T *pStruct);
+extern void emxInitStruct_struct_T1(struct_T *pStruct);
 
 extern void emxInit_boolean_T(emxArray_boolean_T **pEmxArray);
 
@@ -126,12 +127,11 @@ extern void emxInit_int8_T(emxArray_int8_T **pEmxArray);
 
 extern void emxInit_real_T(emxArray_real_T **pEmxArray, int numDimensions);
 
-extern void emxInit_struct0_T(emxArray_struct0_T **pEmxArray,
-                              int numDimensions);
-
 extern void emxInit_struct_T(emxArray_struct_T **pEmxArray);
 
 extern void emxInit_struct_T1(b_emxArray_struct_T **pEmxArray);
+
+extern void emxInit_struct_T2(c_emxArray_struct_T **pEmxArray);
 
 extern void
 f_emxFreeStruct_robotics_manip_(e_robotics_manip_internal_Rigid *pStruct);
@@ -144,8 +144,4 @@ f_emxInitStruct_robotics_manip_(e_robotics_manip_internal_Rigid *pStruct);
 #endif
 
 #endif
-/*
- * File trailer for armvone_emxutil.h
- *
- * [EOF]
- */
+/* End of code generation (armvone_emxutil.h) */

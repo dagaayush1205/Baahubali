@@ -2,13 +2,14 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: IKHelpers.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * IKHelpers.c
+ *
+ * Code generation for function 'IKHelpers'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "IKHelpers.h"
 #include "RigidBodyTree.h"
 #include "armvone_emxutil.h"
@@ -26,14 +27,6 @@
 #include <string.h>
 
 /* Function Definitions */
-/*
- * Arguments    : const emxArray_real_T *x
- *                c_robotics_manip_internal_IKExt *args
- *                double W[36]
- *                emxArray_real_T *Jac
- *                c_robotics_manip_internal_IKExt **b_args
- * Return Type  : double
- */
 double IKHelpers_computeCost(const emxArray_real_T *x,
                              c_robotics_manip_internal_IKExt *args,
                              double W[36], emxArray_real_T *Jac,
@@ -290,10 +283,6 @@ double IKHelpers_computeCost(const emxArray_real_T *x,
   return (*b_args)->CostTemp;
 }
 
-/*
- * Arguments    : const c_robotics_manip_internal_IKExt *args
- * Return Type  : double
- */
 double IKHelpers_evaluateSolution(const c_robotics_manip_internal_IKExt *args)
 {
   double en;
@@ -323,11 +312,6 @@ double IKHelpers_evaluateSolution(const c_robotics_manip_internal_IKExt *args)
   return scale * sqrt(en);
 }
 
-/*
- * Arguments    : c_robotics_manip_internal_IKExt *args
- *                double rc_data[]
- * Return Type  : int
- */
 int IKHelpers_randomConfig(c_robotics_manip_internal_IKExt *args,
                            double rc_data[])
 {
@@ -852,8 +836,4 @@ int IKHelpers_randomConfig(c_robotics_manip_internal_IKExt *args,
   return rc_size;
 }
 
-/*
- * File trailer for IKHelpers.c
- *
- * [EOF]
- */
+/* End of code generation (IKHelpers.c) */

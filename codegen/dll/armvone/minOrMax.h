@@ -2,16 +2,17 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: minOrMax.h
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * minOrMax.h
+ *
+ * Code generation for function 'minOrMax'
+ *
  */
 
 #ifndef MINORMAX_H
 #define MINORMAX_H
 
-/* Include Files */
+/* Include files */
 #include "armvone_types.h"
 #include "rtwtypes.h"
 #include <stddef.h>
@@ -34,8 +35,4 @@ double minimum(const emxArray_real_T *x, int *idx);
 #endif
 
 #endif
-/*
- * File trailer for minOrMax.h
- *
- * [EOF]
- */
+/* End of code generation (minOrMax.h) */

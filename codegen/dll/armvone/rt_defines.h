@@ -2,16 +2,17 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: rt_defines.h
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * rt_defines.h
+ *
+ * Code generation for function 'armvone'
+ *
  */
 
 #ifndef RT_DEFINES_H
 #define RT_DEFINES_H
 
-/* Include Files */
+/* Include files */
 
 #ifdef __cplusplus
 extern "C" {
@@ -30,8 +31,4 @@ extern "C" {
 }
 #endif
 #endif
-/*
- * File trailer for rt_defines.h
- *
- * [EOF]
- */
+/* End of code generation (rt_defines.h) */

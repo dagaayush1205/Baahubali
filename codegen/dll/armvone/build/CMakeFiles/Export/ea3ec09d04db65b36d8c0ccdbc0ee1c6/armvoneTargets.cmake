@@ -62,7 +62,7 @@ add_library(armvone::armvone SHARED IMPORTED)
 set_target_properties(armvone::armvone PROPERTIES
   INTERFACE_COMPILE_FEATURES "c_std_99"
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/codegen/dll/armvone;${_IMPORT_PREFIX}"
-  INTERFACE_LINK_LIBRARIES "\$<\$<BOOL:/usr/lib/x86_64-linux-gnu/libm.so>:m>"
+  INTERFACE_LINK_LIBRARIES "\$<\$<BOOL:/usr/lib64/libm.so>:m>"
 )
 
 if(CMAKE_VERSION VERSION_LESS 2.8.12)

@@ -2,23 +2,20 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: handle.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * handle.c
+ *
+ * Code generation for function 'handle'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "handle.h"
 #include "armvone_types.h"
 #include "rt_nonfinite.h"
 #include "collisioncodegen_api.hpp"
 
 /* Function Definitions */
-/*
- * Arguments    : d_robotics_manip_internal_Colli *obj
- * Return Type  : void
- */
 void b_handle_matlabCodegenDestructo(d_robotics_manip_internal_Colli *obj)
 {
   c_robotics_manip_internal_Colli b_obj;
@@ -37,10 +34,6 @@ void b_handle_matlabCodegenDestructo(d_robotics_manip_internal_Colli *obj)
   }
 }
 
-/*
- * Arguments    : inverseKinematics *obj
- * Return Type  : void
- */
 void handle_matlabCodegenDestructor(inverseKinematics *obj)
 {
   if (!obj->matlabCodegenIsDeleted) {
@@ -51,8 +44,4 @@ void handle_matlabCodegenDestructor(inverseKinematics *obj)
   }
 }
 
-/*
- * File trailer for handle.c
- *
- * [EOF]
- */
+/* End of code generation (handle.c) */

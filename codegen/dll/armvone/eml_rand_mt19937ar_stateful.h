@@ -2,16 +2,17 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: eml_rand_mt19937ar_stateful.h
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * eml_rand_mt19937ar_stateful.h
+ *
+ * Code generation for function 'eml_rand_mt19937ar_stateful'
+ *
  */
 
 #ifndef EML_RAND_MT19937AR_STATEFUL_H
 #define EML_RAND_MT19937AR_STATEFUL_H
 
-/* Include Files */
+/* Include files */
 #include "rtwtypes.h"
 #include <stddef.h>
 #include <stdlib.h>
@@ -28,8 +29,4 @@ void c_eml_rand_mt19937ar_stateful_i(void);
 #endif
 
 #endif
-/*
- * File trailer for eml_rand_mt19937ar_stateful.h
- *
- * [EOF]
- */
+/* End of code generation (eml_rand_mt19937ar_stateful.h) */

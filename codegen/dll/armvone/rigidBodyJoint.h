@@ -2,16 +2,17 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: rigidBodyJoint.h
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * rigidBodyJoint.h
+ *
+ * Code generation for function 'rigidBodyJoint'
+ *
  */
 
 #ifndef RIGIDBODYJOINT_H
 #define RIGIDBODYJOINT_H
 
-/* Include Files */
+/* Include files */
 #include "armvone_types.h"
 #include "rtwtypes.h"
 #include <stddef.h>
@@ -55,8 +56,4 @@ rigidBodyJoint *rigidBodyJoint_rigidBodyJoint(rigidBodyJoint *obj,
 #endif
 
 #endif
-/*
- * File trailer for rigidBodyJoint.h
- *
- * [EOF]
- */
+/* End of code generation (rigidBodyJoint.h) */

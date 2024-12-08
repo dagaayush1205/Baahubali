@@ -2,16 +2,17 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: strcmp.h
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * strcmp.h
+ *
+ * Code generation for function 'strcmp'
+ *
  */
 
 #ifndef STRCMP_H
 #define STRCMP_H
 
-/* Include Files */
+/* Include files */
 #include "rtwtypes.h"
 #include <stddef.h>
 #include <stdlib.h>
@@ -29,8 +30,4 @@ boolean_T b_strcmp(const char a_data[], const int a_size[2],
 #endif
 
 #endif
-/*
- * File trailer for strcmp.h
- *
- * [EOF]
- */
+/* End of code generation (strcmp.h) */

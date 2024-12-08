@@ -19,43 +19,49 @@
 #include "rt_nonfinite.h"
 
 /* Variable Definitions */
-static emlrtRSInfo lh_emlrtRSI = {
-    138,                                                          /* lineNo */
-    "eml_find",                                                   /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/elmat/find.m" /* pathName */
-};
-
 static emlrtRSInfo mh_emlrtRSI = {
-    376,                                                          /* lineNo */
-    "find_first_indices",                                         /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/elmat/find.m" /* pathName */
+    138,        /* lineNo */
+    "eml_find", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/elmat/find.m" /* pathName
+                                                                           */
 };
 
 static emlrtRSInfo nh_emlrtRSI = {
-    396,                                                          /* lineNo */
-    "find_first_indices",                                         /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/elmat/find.m" /* pathName */
+    376,                  /* lineNo */
+    "find_first_indices", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/elmat/find.m" /* pathName
+                                                                           */
+};
+
+static emlrtRSInfo oh_emlrtRSI = {
+    396,                  /* lineNo */
+    "find_first_indices", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/elmat/find.m" /* pathName
+                                                                           */
 };
 
 static emlrtRTEInfo ab_emlrtRTEI = {
-    386,                                                          /* lineNo */
-    1,                                                            /* colNo */
-    "find_first_indices",                                         /* fName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/elmat/find.m" /* pName */
-};
-
-static emlrtRTEInfo id_emlrtRTEI = {
-    363,                                                          /* lineNo */
-    24,                                                           /* colNo */
-    "find",                                                       /* fName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/elmat/find.m" /* pName */
+    386,                  /* lineNo */
+    1,                    /* colNo */
+    "find_first_indices", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/elmat/find.m" /* pName
+                                                                           */
 };
 
 static emlrtRTEInfo jd_emlrtRTEI = {
-    138,                                                          /* lineNo */
-    9,                                                            /* colNo */
-    "find",                                                       /* fName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/elmat/find.m" /* pName */
+    363,    /* lineNo */
+    24,     /* colNo */
+    "find", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/elmat/find.m" /* pName
+                                                                           */
+};
+
+static emlrtRTEInfo kd_emlrtRTEI = {
+    138,    /* lineNo */
+    9,      /* colNo */
+    "find", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/elmat/find.m" /* pName
+                                                                           */
 };
 
 /* Function Definitions */
@@ -75,7 +81,7 @@ void binary_expand_op_4(const emlrtStack *sp, emxArray_int32_T *in1,
   st.tls = sp->tls;
   in3_data = in3->data;
   emlrtHeapReferenceStackEnterFcnR2012b((emlrtConstCTX)sp);
-  emxInit_boolean_T(sp, &b_in3, &yf_emlrtRTEI);
+  emxInit_boolean_T(sp, &b_in3, &ag_emlrtRTEI);
   if (in4->ConstraintBound->size[0] == 1) {
     loop_ub = in3->size[0];
   } else {
@@ -83,7 +89,7 @@ void binary_expand_op_4(const emlrtStack *sp, emxArray_int32_T *in1,
   }
   i = b_in3->size[0];
   b_in3->size[0] = loop_ub;
-  emxEnsureCapacity_boolean_T(sp, b_in3, i, &yf_emlrtRTEI);
+  emxEnsureCapacity_boolean_T(sp, b_in3, i, &ag_emlrtRTEI);
   b_in3_data = b_in3->data;
   stride_0_0 = (in3->size[0] != 1);
   stride_1_0 = (in4->ConstraintBound->size[0] != 1);
@@ -118,13 +124,13 @@ void eml_find(const emlrtStack *sp, const emxArray_boolean_T *x,
   c_st.tls = b_st.tls;
   x_data = x->data;
   nx_tmp = x->size[0];
-  st.site = &lh_emlrtRSI;
+  st.site = &mh_emlrtRSI;
   idx = 0;
   b_i = i->size[0];
   i->size[0] = x->size[0];
-  emxEnsureCapacity_int32_T(&st, i, b_i, &id_emlrtRTEI);
+  emxEnsureCapacity_int32_T(&st, i, b_i, &jd_emlrtRTEI);
   i_data = i->data;
-  b_st.site = &mh_emlrtRSI;
+  b_st.site = &nh_emlrtRSI;
   if (x->size[0] > 2147483646) {
     c_st.site = &rb_emlrtRSI;
     check_forloop_overflow_error(&c_st);
@@ -162,11 +168,11 @@ void eml_find(const emlrtStack *sp, const emxArray_boolean_T *x,
     }
     b_iv[0] = 1;
     b_iv[1] = b_i;
-    b_st.site = &nh_emlrtRSI;
+    b_st.site = &oh_emlrtRSI;
     indexShapeCheck(&b_st, i->size[0], b_iv);
     ii = i->size[0];
     i->size[0] = b_i;
-    emxEnsureCapacity_int32_T(&st, i, ii, &jd_emlrtRTEI);
+    emxEnsureCapacity_int32_T(&st, i, ii, &kd_emlrtRTEI);
   }
 }
 

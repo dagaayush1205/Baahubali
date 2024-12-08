@@ -17,21 +17,18 @@
 #include "mwmathutil.h"
 
 /* Variable Definitions */
-static emlrtRSInfo
-    km_emlrtRSI =
-        {
-            23,      /* lineNo */
-            "xnrm2", /* fcnName */
-            "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+blas/"
-            "xnrm2.m" /* pathName */
+static emlrtRSInfo lm_emlrtRSI = {
+    23,      /* lineNo */
+    "xnrm2", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+blas/"
+    "xnrm2.m" /* pathName */
 };
 
-static emlrtRSInfo lm_emlrtRSI =
-    {
-        38,      /* lineNo */
-        "xnrm2", /* fcnName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+refblas/"
-        "xnrm2.m" /* pathName */
+static emlrtRSInfo mm_emlrtRSI = {
+    38,      /* lineNo */
+    "xnrm2", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+refblas/"
+    "xnrm2.m" /* pathName */
 };
 
 /* Function Definitions */
@@ -70,7 +67,7 @@ real_T xnrm2(const emlrtStack *sp, int32_T n, const real_T x[9], int32_T ix0)
   int32_T kend;
   st.prev = sp;
   st.tls = sp->tls;
-  st.site = &km_emlrtRSI;
+  st.site = &lm_emlrtRSI;
   b_st.prev = &st;
   b_st.tls = st.tls;
   c_st.prev = &b_st;
@@ -78,7 +75,7 @@ real_T xnrm2(const emlrtStack *sp, int32_T n, const real_T x[9], int32_T ix0)
   y = 0.0;
   scale = 3.3121686421112381E-170;
   kend = (ix0 + n) - 1;
-  b_st.site = &lm_emlrtRSI;
+  b_st.site = &mm_emlrtRSI;
   if ((ix0 <= kend) && (kend > 2147483646)) {
     c_st.site = &rb_emlrtRSI;
     check_forloop_overflow_error(&c_st);

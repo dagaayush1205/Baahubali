@@ -18,50 +18,50 @@
 #include "collisioncodegen_api.hpp"
 
 /* Variable Definitions */
-static emlrtRSInfo et_emlrtRSI = {
+static emlrtRSInfo ft_emlrtRSI = {
     22,                                            /* lineNo */
     "matlabCodegenHandle/matlabCodegenDestructor", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/"
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/"
     "matlabCodegenHandle.m" /* pathName */
 };
 
-static emlrtRSInfo ft_emlrtRSI = {
+static emlrtRSInfo gt_emlrtRSI = {
     296,                   /* lineNo */
     "CollisionSet/delete", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/CollisionSet.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/CollisionSet.m" /* pathName */
 };
 
 static emlrtRTEInfo xb_emlrtRTEI = {
     295,                   /* lineNo */
     25,                    /* colNo */
     "CollisionSet/delete", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/CollisionSet.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/CollisionSet.m" /* pName */
 };
 
-static emlrtBCInfo te_emlrtBCI = {
+static emlrtBCInfo af_emlrtBCI = {
     -1,                    /* iFirst */
     -1,                    /* iLast */
     296,                   /* lineNo */
     79,                    /* colNo */
     "",                    /* aName */
     "CollisionSet/delete", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/CollisionSet.m", /* pName */
-    0                           /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/CollisionSet.m", /* pName */
+    0                                  /* checkKind */
 };
 
-static emlrtBCInfo ue_emlrtBCI = {
+static emlrtBCInfo bf_emlrtBCI = {
     -1,                    /* iFirst */
     -1,                    /* iLast */
     296,                   /* lineNo */
     45,                    /* colNo */
     "",                    /* aName */
     "CollisionSet/delete", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/CollisionSet.m", /* pName */
-    0                           /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/CollisionSet.m", /* pName */
+    0                                  /* checkKind */
 };
 
 /* Function Definitions */
@@ -129,23 +129,23 @@ void h_handle_matlabCodegenDestructo(const emlrtStack *sp,
     real_T d;
     int32_T i;
     obj->matlabCodegenIsDeleted = true;
-    st.site = &et_emlrtRSI;
+    st.site = &ft_emlrtRSI;
     d = obj->Size;
     i = (int32_T)d;
     emlrtForLoopVectorCheckR2021a(1.0, 1.0, d, mxDOUBLE_CLASS, (int32_T)d,
                                   &xb_emlrtRTEI, &st);
     for (b_i = 0; b_i < i; b_i++) {
       int32_T i1;
-      b_st.site = &ft_emlrtRSI;
+      b_st.site = &gt_emlrtRSI;
       i1 = obj->CollisionGeometries->size[1] - 1;
       if (b_i > i1) {
-        emlrtDynamicBoundsCheckR2012b(b_i, 0, i1, &te_emlrtBCI, &b_st);
+        emlrtDynamicBoundsCheckR2012b(b_i, 0, i1, &af_emlrtBCI, &b_st);
       }
       b_obj = obj->CollisionGeometries->data[b_i];
       collisioncodegen_destructGeometry(&b_obj.CollisionPrimitive);
       i1 = obj->CollisionGeometries->size[1] - 1;
       if (b_i > i1) {
-        emlrtDynamicBoundsCheckR2012b(b_i, 0, i1, &ue_emlrtBCI, &st);
+        emlrtDynamicBoundsCheckR2012b(b_i, 0, i1, &bf_emlrtBCI, &st);
       }
       obj->CollisionGeometries->data[b_i] = b_obj;
     }

@@ -2,13 +2,14 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: xzsvdc.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * xzsvdc.c
+ *
+ * Code generation for function 'xzsvdc'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "xzsvdc.h"
 #include "armvone_emxutil.h"
 #include "armvone_types.h"
@@ -22,11 +23,6 @@
 #include <math.h>
 
 /* Function Definitions */
-/*
- * Arguments    : emxArray_real_T *A
- *                emxArray_real_T *S
- * Return Type  : void
- */
 void xzsvdc(emxArray_real_T *A, emxArray_real_T *S)
 {
   emxArray_real_T *e;
@@ -453,8 +449,4 @@ void xzsvdc(emxArray_real_T *A, emxArray_real_T *S)
   }
 }
 
-/*
- * File trailer for xzsvdc.c
- *
- * [EOF]
- */
+/* End of code generation (xzsvdc.c) */

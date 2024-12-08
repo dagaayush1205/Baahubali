@@ -2,25 +2,18 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: xdotc.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * xdotc.c
+ *
+ * Code generation for function 'xdotc'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "xdotc.h"
 #include "rt_nonfinite.h"
 
 /* Function Definitions */
-/*
- * Arguments    : int n
- *                const double x[9]
- *                int ix0
- *                const double y[9]
- *                int iy0
- * Return Type  : double
- */
 double xdotc(int n, const double x[9], int ix0, const double y[9], int iy0)
 {
   double d;
@@ -34,8 +27,4 @@ double xdotc(int n, const double x[9], int ix0, const double y[9], int iy0)
   return d;
 }
 
-/*
- * File trailer for xdotc.c
- *
- * [EOF]
- */
+/* End of code generation (xdotc.c) */

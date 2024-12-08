@@ -2,16 +2,17 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: CharacterVector.h
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * CharacterVector.h
+ *
+ * Code generation for function 'CharacterVector'
+ *
  */
 
 #ifndef CHARACTERVECTOR_H
 #define CHARACTERVECTOR_H
 
-/* Include Files */
+/* Include files */
 #include "armvone_types.h"
 #include "rtwtypes.h"
 #include <stddef.h>
@@ -30,8 +31,4 @@ void CharacterVector_setVector(c_robotics_manip_internal_Chara *obj,
 #endif
 
 #endif
-/*
- * File trailer for CharacterVector.h
- *
- * [EOF]
- */
+/* End of code generation (CharacterVector.h) */

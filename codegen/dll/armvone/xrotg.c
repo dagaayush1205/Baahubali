@@ -2,24 +2,19 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: xrotg.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * xrotg.c
+ *
+ * Code generation for function 'xrotg'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "xrotg.h"
 #include "rt_nonfinite.h"
 #include <math.h>
 
 /* Function Definitions */
-/*
- * Arguments    : double *a
- *                double *b
- *                double *s
- * Return Type  : double
- */
 double xrotg(double *a, double *b, double *s)
 {
   double absa;
@@ -61,8 +56,4 @@ double xrotg(double *a, double *b, double *s)
   return c;
 }
 
-/*
- * File trailer for xrotg.c
- *
- * [EOF]
- */
+/* End of code generation (xrotg.c) */

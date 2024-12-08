@@ -2,16 +2,17 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: SystemCore.h
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * SystemCore.h
+ *
+ * Code generation for function 'SystemCore'
+ *
  */
 
 #ifndef SYSTEMCORE_H
 #define SYSTEMCORE_H
 
-/* Include Files */
+/* Include files */
 #include "armvone_internal_types.h"
 #include "armvone_types.h"
 #include "rtwtypes.h"
@@ -24,16 +25,12 @@ extern "C" {
 
 /* Function Declarations */
 void SystemCore_step(inverseKinematics *obj, const double varargin_2[16],
-                     const struct_T varargin_4[6],
-                     emxArray_struct0_T *varargout_1);
+                     const b_struct_T varargin_4[6],
+                     emxArray_struct_T *varargout_1);
 
 #ifdef __cplusplus
 }
 #endif
 
 #endif
-/*
- * File trailer for SystemCore.h
- *
- * [EOF]
- */
+/* End of code generation (SystemCore.h) */

@@ -2,22 +2,19 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: any.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * any.c
+ *
+ * Code generation for function 'any'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "any.h"
 #include "armvone_types.h"
 #include "rt_nonfinite.h"
 
 /* Function Definitions */
-/*
- * Arguments    : const emxArray_boolean_T *x
- * Return Type  : boolean_T
- */
 boolean_T any(const emxArray_boolean_T *x)
 {
   int ix;
@@ -39,8 +36,4 @@ boolean_T any(const emxArray_boolean_T *x)
   return y;
 }
 
-/*
- * File trailer for any.c
- *
- * [EOF]
- */
+/* End of code generation (any.c) */

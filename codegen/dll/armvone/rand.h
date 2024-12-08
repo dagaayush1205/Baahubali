@@ -2,16 +2,17 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: rand.h
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * rand.h
+ *
+ * Code generation for function 'rand'
+ *
  */
 
 #ifndef RAND_H
 #define RAND_H
 
-/* Include Files */
+/* Include files */
 #include "rtwtypes.h"
 #include <stddef.h>
 #include <stdlib.h>
@@ -32,8 +33,4 @@ int d_rand(double varargin_1, double r_data[]);
 #endif
 
 #endif
-/*
- * File trailer for rand.h
- *
- * [EOF]
- */
+/* End of code generation (rand.h) */

@@ -2,23 +2,20 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: rand.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * rand.c
+ *
+ * Code generation for function 'rand'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "rand.h"
 #include "armvone_data.h"
 #include "eml_rand_mt19937ar.h"
 #include "rt_nonfinite.h"
 
 /* Function Definitions */
-/*
- * Arguments    : double r[5]
- * Return Type  : void
- */
 void b_rand(double r[5])
 {
   int k;
@@ -76,10 +73,6 @@ void b_rand(double r[5])
   }
 }
 
-/*
- * Arguments    : double r[3]
- * Return Type  : void
- */
 void c_rand(double r[3])
 {
   int k;
@@ -137,11 +130,6 @@ void c_rand(double r[3])
   }
 }
 
-/*
- * Arguments    : double varargin_1
- *                double r_data[]
- * Return Type  : int
- */
 int d_rand(double varargin_1, double r_data[])
 {
   int i;
@@ -204,8 +192,4 @@ int d_rand(double varargin_1, double r_data[])
   return r_size;
 }
 
-/*
- * File trailer for rand.c
- *
- * [EOF]
- */
+/* End of code generation (rand.c) */

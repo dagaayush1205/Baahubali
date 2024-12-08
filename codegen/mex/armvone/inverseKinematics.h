@@ -28,11 +28,9 @@ inverseKinematics *c_inverseKinematics_inverseKine(const emlrtStack *sp,
                                                    inverseKinematics *obj,
                                                    b_rigidBodyTree *varargin_2);
 
-real_T inverseKinematics_stepImpl(
-    const emlrtStack *sp, inverseKinematics *obj, const real_T tform[16],
-    const struct_T initialGuess[6], emxArray_struct0_T *QSol,
-    char_T solutionInfo_Status_data[], int32_T solutionInfo_Status_size[2],
-    real_T *solutionInfo_NumRandomRestarts, real_T *solutionInfo_PoseErrorNorm,
-    real_T *solutionInfo_ExitFlag);
+void inverseKinematics_stepImpl(const emlrtStack *sp, inverseKinematics *obj,
+                                const real_T tform[16],
+                                const b_struct_T initialGuess[6],
+                                emxArray_struct_T *QSol);
 
 /* End of code generation (inverseKinematics.h) */

@@ -2,10 +2,11 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: rt_nonfinite.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * rt_nonfinite.c
+ *
+ * Code generation for function 'armvone'
+ *
  */
 
 /*
@@ -13,7 +14,7 @@
  *      MATLAB for code generation function to initialize non-finites,
  *      (Inf, NaN and -Inf).
  */
-/* Include Files */
+/* Include files */
 #include "rt_nonfinite.h"
 #include <math.h>
 
@@ -72,8 +73,4 @@ boolean_T rtIsNaNF(real32_T value)
   return (isnan((real_T)value) != 0U);
 }
 
-/*
- * File trailer for rt_nonfinite.c
- *
- * [EOF]
- */
+/* End of code generation (rt_nonfinite.c) */

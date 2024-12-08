@@ -2,16 +2,17 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: armvone_types.h
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * armvone_types.h
+ *
+ * Code generation for function 'armvone'
+ *
  */
 
 #ifndef ARMVONE_TYPES_H
 #define ARMVONE_TYPES_H
 
-/* Include Files */
+/* Include files */
 #include "rtwtypes.h"
 #include "coder_posix_time.h"
 
@@ -58,49 +59,6 @@ typedef struct {
 } c_robotics_manip_internal_Colli;
 #endif /* d_typedef_c_robotics_manip_inte */
 
-#ifndef struct_emxArray_char_T_1x200
-#define struct_emxArray_char_T_1x200
-struct emxArray_char_T_1x200 {
-  char data[200];
-  int size[2];
-};
-#endif /* struct_emxArray_char_T_1x200 */
-#ifndef typedef_emxArray_char_T_1x200
-#define typedef_emxArray_char_T_1x200
-typedef struct emxArray_char_T_1x200 emxArray_char_T_1x200;
-#endif /* typedef_emxArray_char_T_1x200 */
-
-#ifndef struct_emxArray_real_T_1x1
-#define struct_emxArray_real_T_1x1
-struct emxArray_real_T_1x1 {
-  double data[1];
-  int size[2];
-};
-#endif /* struct_emxArray_real_T_1x1 */
-#ifndef typedef_emxArray_real_T_1x1
-#define typedef_emxArray_real_T_1x1
-typedef struct emxArray_real_T_1x1 emxArray_real_T_1x1;
-#endif /* typedef_emxArray_real_T_1x1 */
-
-#ifndef typedef_struct0_T
-#define typedef_struct0_T
-typedef struct {
-  emxArray_char_T_1x200 JointName;
-  emxArray_real_T_1x1 JointPosition;
-} struct0_T;
-#endif /* typedef_struct0_T */
-
-#ifndef typedef_emxArray_struct0_T
-#define typedef_emxArray_struct0_T
-typedef struct {
-  struct0_T *data;
-  int *size;
-  int allocatedSize;
-  int numDimensions;
-  boolean_T canFreeData;
-} emxArray_struct0_T;
-#endif /* typedef_emxArray_struct0_T */
-
 #ifndef c_typedef_c_emxArray_robotics_m
 #define c_typedef_c_emxArray_robotics_m
 typedef struct {
@@ -126,6 +84,49 @@ struct emxArray_real_T {
 #define typedef_emxArray_real_T
 typedef struct emxArray_real_T emxArray_real_T;
 #endif /* typedef_emxArray_real_T */
+
+#ifndef struct_emxArray_char_T_1x200
+#define struct_emxArray_char_T_1x200
+struct emxArray_char_T_1x200 {
+  char data[200];
+  int size[2];
+};
+#endif /* struct_emxArray_char_T_1x200 */
+#ifndef typedef_emxArray_char_T_1x200
+#define typedef_emxArray_char_T_1x200
+typedef struct emxArray_char_T_1x200 emxArray_char_T_1x200;
+#endif /* typedef_emxArray_char_T_1x200 */
+
+#ifndef struct_emxArray_real_T_1x1
+#define struct_emxArray_real_T_1x1
+struct emxArray_real_T_1x1 {
+  double data[1];
+  int size[2];
+};
+#endif /* struct_emxArray_real_T_1x1 */
+#ifndef typedef_emxArray_real_T_1x1
+#define typedef_emxArray_real_T_1x1
+typedef struct emxArray_real_T_1x1 emxArray_real_T_1x1;
+#endif /* typedef_emxArray_real_T_1x1 */
+
+#ifndef typedef_struct_T
+#define typedef_struct_T
+typedef struct {
+  emxArray_char_T_1x200 JointName;
+  emxArray_real_T_1x1 JointPosition;
+} struct_T;
+#endif /* typedef_struct_T */
+
+#ifndef typedef_emxArray_struct_T
+#define typedef_emxArray_struct_T
+typedef struct {
+  struct_T *data;
+  int *size;
+  int allocatedSize;
+  int numDimensions;
+  boolean_T canFreeData;
+} emxArray_struct_T;
+#endif /* typedef_emxArray_struct_T */
 
 #ifndef struct_emxArray_int8_T
 #define struct_emxArray_int8_T
@@ -169,24 +170,24 @@ struct emxArray_real_T_1x7 {
 typedef struct emxArray_real_T_1x7 emxArray_real_T_1x7;
 #endif /* typedef_emxArray_real_T_1x7 */
 
-#ifndef typedef_b_struct_T
-#define typedef_b_struct_T
+#ifndef typedef_c_struct_T
+#define typedef_c_struct_T
 typedef struct {
   emxArray_char_T_1x200 JointName;
   emxArray_real_T_1x7 JointPosition;
-} b_struct_T;
-#endif /* typedef_b_struct_T */
+} c_struct_T;
+#endif /* typedef_c_struct_T */
 
-#ifndef typedef_emxArray_struct_T
-#define typedef_emxArray_struct_T
+#ifndef typedef_b_emxArray_struct_T
+#define typedef_b_emxArray_struct_T
 typedef struct {
-  b_struct_T *data;
+  c_struct_T *data;
   int *size;
   int allocatedSize;
   int numDimensions;
   boolean_T canFreeData;
-} emxArray_struct_T;
-#endif /* typedef_emxArray_struct_T */
+} b_emxArray_struct_T;
+#endif /* typedef_b_emxArray_struct_T */
 
 #ifndef struct_emxArray_boolean_T
 #define struct_emxArray_boolean_T
@@ -333,27 +334,23 @@ typedef struct {
 } inverseKinematics;
 #endif /* typedef_inverseKinematics */
 
-#ifndef typedef_c_struct_T
-#define typedef_c_struct_T
+#ifndef typedef_d_struct_T
+#define typedef_d_struct_T
 typedef struct {
   double JointPosition;
-} c_struct_T;
-#endif /* typedef_c_struct_T */
+} d_struct_T;
+#endif /* typedef_d_struct_T */
 
-#ifndef typedef_b_emxArray_struct_T
-#define typedef_b_emxArray_struct_T
+#ifndef typedef_c_emxArray_struct_T
+#define typedef_c_emxArray_struct_T
 typedef struct {
-  c_struct_T *data;
+  d_struct_T *data;
   int *size;
   int allocatedSize;
   int numDimensions;
   boolean_T canFreeData;
-} b_emxArray_struct_T;
-#endif /* typedef_b_emxArray_struct_T */
+} c_emxArray_struct_T;
+#endif /* typedef_c_emxArray_struct_T */
 
 #endif
-/*
- * File trailer for armvone_types.h
- *
- * [EOF]
- */
+/* End of code generation (armvone_types.h) */

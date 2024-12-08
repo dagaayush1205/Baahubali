@@ -31,7 +31,7 @@ void normalizeRows(const emlrtStack *sp, const real_T matrix[3],
   _mm_storeu_pd(&y[0], _mm_mul_pd(r, r));
   y[2] = matrix[2] * matrix[2];
   x = sumColumnB(y);
-  st.site = &ok_emlrtRSI;
+  st.site = &pk_emlrtRSI;
   if (x < 0.0) {
     emlrtErrorWithMessageIdR2018a(
         &st, &hb_emlrtRTEI, "Coder:toolbox:ElFunDomainError",

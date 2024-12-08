@@ -25,57 +25,132 @@
 
 /* Variable Definitions */
 static emlrtRSInfo emlrtRSI = {
-    10,                                        /* lineNo */
-    "armvone",                                 /* fcnName */
-    "/home/pritesh0/ayush/baahubali/armvone.m" /* pathName */
+    11,                                    /* lineNo */
+    "armvone",                             /* fcnName */
+    "/home/ayush/misc/baahubali/armvone.m" /* pathName */
 };
 
 static emlrtRSInfo b_emlrtRSI = {
-    19,                                        /* lineNo */
-    "armvone",                                 /* fcnName */
-    "/home/pritesh0/ayush/baahubali/armvone.m" /* pathName */
+    21,                                    /* lineNo */
+    "armvone",                             /* fcnName */
+    "/home/ayush/misc/baahubali/armvone.m" /* pathName */
 };
 
 static emlrtRSInfo c_emlrtRSI = {
-    25,                                        /* lineNo */
-    "armvone",                                 /* fcnName */
-    "/home/pritesh0/ayush/baahubali/armvone.m" /* pathName */
+    26,                                    /* lineNo */
+    "armvone",                             /* fcnName */
+    "/home/ayush/misc/baahubali/armvone.m" /* pathName */
 };
 
 static emlrtRSInfo d_emlrtRSI = {
-    3,                                         /* lineNo */
-    "armvone",                                 /* fcnName */
-    "/home/pritesh0/ayush/baahubali/armvone.m" /* pathName */
+    3,                                     /* lineNo */
+    "armvone",                             /* fcnName */
+    "/home/ayush/misc/baahubali/armvone.m" /* pathName */
+};
+
+static emlrtBCInfo emlrtBCI = {
+    -1,                                     /* iFirst */
+    -1,                                     /* iLast */
+    25,                                     /* lineNo */
+    17,                                     /* colNo */
+    "new",                                  /* aName */
+    "armvone",                              /* fName */
+    "/home/ayush/misc/baahubali/armvone.m", /* pName */
+    0                                       /* checkKind */
+};
+
+static emlrtBCInfo b_emlrtBCI = {
+    -1,                                     /* iFirst */
+    -1,                                     /* iLast */
+    25,                                     /* lineNo */
+    38,                                     /* colNo */
+    "new",                                  /* aName */
+    "armvone",                              /* fName */
+    "/home/ayush/misc/baahubali/armvone.m", /* pName */
+    0                                       /* checkKind */
+};
+
+static emlrtBCInfo c_emlrtBCI = {
+    -1,                                     /* iFirst */
+    -1,                                     /* iLast */
+    25,                                     /* lineNo */
+    59,                                     /* colNo */
+    "new",                                  /* aName */
+    "armvone",                              /* fName */
+    "/home/ayush/misc/baahubali/armvone.m", /* pName */
+    0                                       /* checkKind */
+};
+
+static emlrtBCInfo d_emlrtBCI = {
+    -1,                                     /* iFirst */
+    -1,                                     /* iLast */
+    25,                                     /* lineNo */
+    80,                                     /* colNo */
+    "new",                                  /* aName */
+    "armvone",                              /* fName */
+    "/home/ayush/misc/baahubali/armvone.m", /* pName */
+    0                                       /* checkKind */
+};
+
+static emlrtBCInfo e_emlrtBCI = {
+    -1,                                     /* iFirst */
+    -1,                                     /* iLast */
+    25,                                     /* lineNo */
+    101,                                    /* colNo */
+    "new",                                  /* aName */
+    "armvone",                              /* fName */
+    "/home/ayush/misc/baahubali/armvone.m", /* pName */
+    0                                       /* checkKind */
+};
+
+static emlrtBCInfo f_emlrtBCI = {
+    -1,                                     /* iFirst */
+    -1,                                     /* iLast */
+    25,                                     /* lineNo */
+    122,                                    /* colNo */
+    "new",                                  /* aName */
+    "armvone",                              /* fName */
+    "/home/ayush/misc/baahubali/armvone.m", /* pName */
+    0                                       /* checkKind */
 };
 
 static emlrtRTEInfo ac_emlrtRTEI = {
-    1,                                         /* lineNo */
-    17,                                        /* colNo */
-    "armvone",                                 /* fName */
-    "/home/pritesh0/ayush/baahubali/armvone.m" /* pName */
+    1,                                     /* lineNo */
+    17,                                    /* colNo */
+    "armvone",                             /* fName */
+    "/home/ayush/misc/baahubali/armvone.m" /* pName */
 };
 
 static emlrtRTEInfo bc_emlrtRTEI = {
-    10,                                        /* lineNo */
-    5,                                         /* colNo */
-    "armvone",                                 /* fName */
-    "/home/pritesh0/ayush/baahubali/armvone.m" /* pName */
+    11,                                    /* lineNo */
+    5,                                     /* colNo */
+    "armvone",                             /* fName */
+    "/home/ayush/misc/baahubali/armvone.m" /* pName */
+};
+
+static emlrtRTEInfo cc_emlrtRTEI = {
+    21,                                    /* lineNo */
+    5,                                     /* colNo */
+    "armvone",                             /* fName */
+    "/home/ayush/misc/baahubali/armvone.m" /* pName */
 };
 
 /* Function Definitions */
 void armvone(const emlrtStack *sp, const real_T q0[6], const real_T pos[3],
-             emxArray_struct0_T *vone)
+             real_T vone_data[], int32_T vone_size[2])
 {
   static const char_T t4_f5[8] = {'y', 'a', 'w', 'j', 'o', 'i', 'n', 't'};
   static const char_T t4_f2[6] = {'j', 'o', 'i', 'n', 't', '1'};
   static const char_T t4_f3[6] = {'j', 'o', 'i', 'n', 't', '2'};
   b_rigidBodyTree arm;
   b_rigidBodyTree *r;
+  b_struct_T rv[6];
   d_robotics_manip_internal_Rigid lobj_2;
   emlrtStack b_st;
   emlrtStack st;
+  emxArray_struct_T *new;
   inverseKinematics ik;
-  struct_T rv[6];
+  struct_T *new_data;
   real_T C[6];
   int32_T i;
   st.prev = sp;
@@ -85,6 +160,7 @@ void armvone(const emlrtStack *sp, const real_T q0[6], const real_T pos[3],
   emlrtHeapReferenceStackEnterFcnR2012b((emlrtConstCTX)sp);
   c_emxInitStruct_robotics_manip_(sp, &lobj_2, &ac_emlrtRTEI);
   emxInitStruct_inverseKinematics(sp, &ik, &bc_emlrtRTEI);
+  emxInit_struct_T(sp, &new, &cc_emlrtRTEI);
   for (i = 0; i < 13; i++) {
     emlrtPushHeapReferenceStackR2021a((emlrtCTX)sp, true, &lobj_2._pobj0[i],
                                       (void *)&h_handle_matlabCodegenDestructo,
@@ -203,11 +279,12 @@ void armvone(const emlrtStack *sp, const real_T q0[6], const real_T pos[3],
   r = &arm;
   st.site = &d_emlrtRSI;
   importrobot(&st, &lobj_2, &r);
-  /*  Define the initial joint configuration (use names from your URDF) */
+  /*  Define the initial joint configuration as an array */
   for (i = 0; i < 6; i++) {
     C[i] = q0[i];
   }
   real_T dv[16];
+  /* qInitial = q0; % q0 is already an array of joint positions */
   /*  Create the IK solver */
   st.site = &emlrtRSI;
   c_inverseKinematics_inverseKine(&st, &ik, &arm);
@@ -215,15 +292,47 @@ void armvone(const emlrtStack *sp, const real_T q0[6], const real_T pos[3],
   /*  Define the weights for the IK solution */
   /*  Adjust as necessary for your DOF */
   /*  Solve the inverse kinematics */
+  /* [newConfig, ~] = ik(endEffector, trvec2tform(pos), weights, qInitial); */
   st.site = &b_emlrtRSI;
   structConstructorHelper(cv, t4_f2, t4_f3, cv1, t4_f5, cv2, C, rv);
   trvec2tform(pos, dv);
   b_st.site = &xb_emlrtRSI;
-  SystemCore_step(&b_st, &ik, dv, rv, vone);
-  /*  Extract the new joint positions */
-  /* vone = struct(... */
-  /*     'JointName', {'turntablejoint', 'joint1', 'joint2', 'pitchJoint',
-   * 'yawjoint', 'roll joint'},'JointPosition', newConfig.JointPosition); */
+  SystemCore_step(&b_st, &ik, dv, rv, new);
+  new_data = new->data;
+  /*  Extract the new joint positions and return as an array */
+  /* vone = [newConfig.JointPosition]; */
+  if (new->size[1] < 1) {
+    emlrtDynamicBoundsCheckR2012b(1, 1, new->size[1], &emlrtBCI,
+                                  (emlrtConstCTX)sp);
+  }
+  if (new->size[1] < 2) {
+    emlrtDynamicBoundsCheckR2012b(2, 1, new->size[1], &b_emlrtBCI,
+                                  (emlrtConstCTX)sp);
+  }
+  if (new->size[1] < 3) {
+    emlrtDynamicBoundsCheckR2012b(3, 1, new->size[1], &c_emlrtBCI,
+                                  (emlrtConstCTX)sp);
+  }
+  if (new->size[1] < 4) {
+    emlrtDynamicBoundsCheckR2012b(4, 1, new->size[1], &d_emlrtBCI,
+                                  (emlrtConstCTX)sp);
+  }
+  if (new->size[1] < 5) {
+    emlrtDynamicBoundsCheckR2012b(5, 1, new->size[1], &e_emlrtBCI,
+                                  (emlrtConstCTX)sp);
+  }
+  if (new->size[1] < 6) {
+    emlrtDynamicBoundsCheckR2012b(6, 1, new->size[1], &f_emlrtBCI,
+                                  (emlrtConstCTX)sp);
+  }
+  vone_size[0] = 1;
+  vone_size[1] = 6;
+  vone_data[0] = new_data[0].JointPosition.data[0];
+  vone_data[1] = new_data[1].JointPosition.data[0];
+  vone_data[2] = new_data[2].JointPosition.data[0];
+  vone_data[3] = new_data[3].JointPosition.data[0];
+  vone_data[4] = new_data[4].JointPosition.data[0];
+  vone_data[5] = new_data[5].JointPosition.data[0];
   st.site = &c_emlrtRSI;
   f_handle_matlabCodegenDestructo(&st, &ik._pobj5);
   st.site = &c_emlrtRSI;
@@ -280,6 +389,7 @@ void armvone(const emlrtStack *sp, const real_T q0[6], const real_T pos[3],
     st.site = &c_emlrtRSI;
     h_handle_matlabCodegenDestructo(&st, &lobj_2._pobj0[i]);
   }
+  emxFree_struct_T(sp, &new);
   emxFreeStruct_inverseKinematics(sp, &ik);
   d_emxFreeStruct_robotics_manip_(sp, &lobj_2);
   emlrtHeapReferenceStackLeaveFcnR2012b((emlrtConstCTX)sp);

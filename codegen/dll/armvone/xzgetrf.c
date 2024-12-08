@@ -2,13 +2,14 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: xzgetrf.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * xzgetrf.c
+ *
+ * Code generation for function 'xzgetrf'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "xzgetrf.h"
 #include "armvone_emxutil.h"
 #include "armvone_types.h"
@@ -16,14 +17,6 @@
 #include <math.h>
 
 /* Function Definitions */
-/*
- * Arguments    : int m
- *                int n
- *                emxArray_real_T *A
- *                int lda
- *                emxArray_int32_T *ipiv
- * Return Type  : int
- */
 int xzgetrf(int m, int n, emxArray_real_T *A, int lda, emxArray_int32_T *ipiv)
 {
   double *A_data;
@@ -134,8 +127,4 @@ int xzgetrf(int m, int n, emxArray_real_T *A, int lda, emxArray_int32_T *ipiv)
   return info;
 }
 
-/*
- * File trailer for xzgetrf.c
- *
- * [EOF]
- */
+/* End of code generation (xzgetrf.c) */

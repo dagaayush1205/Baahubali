@@ -2,13 +2,14 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: armvone_emxutil.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * armvone_emxutil.c
+ *
+ * Code generation for function 'armvone_emxutil'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "armvone_emxutil.h"
 #include "armvone_types.h"
 #include "rt_nonfinite.h"
@@ -16,11 +17,6 @@
 #include <string.h>
 
 /* Function Definitions */
-/*
- * Arguments    : c_emxArray_robotics_manip_inter *emxArray
- *                int oldNumel
- * Return Type  : void
- */
 void c_emxEnsureCapacity_robotics_ma(c_emxArray_robotics_manip_inter *emxArray,
                                      int oldNumel)
 {
@@ -60,10 +56,6 @@ void c_emxEnsureCapacity_robotics_ma(c_emxArray_robotics_manip_inter *emxArray,
   }
 }
 
-/*
- * Arguments    : d_robotics_manip_internal_Colli pMatrix[13]
- * Return Type  : void
- */
 void c_emxFreeMatrix_robotics_manip_(
     d_robotics_manip_internal_Colli pMatrix[13])
 {
@@ -73,10 +65,6 @@ void c_emxFreeMatrix_robotics_manip_(
   }
 }
 
-/*
- * Arguments    : c_robotics_core_internal_Damped *pStruct
- * Return Type  : void
- */
 void c_emxFreeStruct_robotics_core_i(c_robotics_core_internal_Damped *pStruct)
 {
   emxFree_real_T(&pStruct->ConstraintMatrix);
@@ -84,19 +72,11 @@ void c_emxFreeStruct_robotics_core_i(c_robotics_core_internal_Damped *pStruct)
   emxFree_real_T(&pStruct->SeedInternal);
 }
 
-/*
- * Arguments    : d_robotics_manip_internal_Colli *pStruct
- * Return Type  : void
- */
 void c_emxFreeStruct_robotics_manip_(d_robotics_manip_internal_Colli *pStruct)
 {
   c_emxFree_robotics_manip_intern(&pStruct->CollisionGeometries);
 }
 
-/*
- * Arguments    : c_emxArray_robotics_manip_inter **pEmxArray
- * Return Type  : void
- */
 void c_emxFree_robotics_manip_intern(
     c_emxArray_robotics_manip_inter **pEmxArray)
 {
@@ -111,10 +91,6 @@ void c_emxFree_robotics_manip_intern(
   }
 }
 
-/*
- * Arguments    : d_robotics_manip_internal_Colli pMatrix[13]
- * Return Type  : void
- */
 void c_emxInitMatrix_robotics_manip_(
     d_robotics_manip_internal_Colli pMatrix[13])
 {
@@ -124,10 +100,6 @@ void c_emxInitMatrix_robotics_manip_(
   }
 }
 
-/*
- * Arguments    : c_robotics_core_internal_Damped *pStruct
- * Return Type  : void
- */
 void c_emxInitStruct_robotics_core_i(c_robotics_core_internal_Damped *pStruct)
 {
   emxInit_real_T(&pStruct->ConstraintMatrix, 2);
@@ -135,19 +107,11 @@ void c_emxInitStruct_robotics_core_i(c_robotics_core_internal_Damped *pStruct)
   emxInit_real_T(&pStruct->SeedInternal, 1);
 }
 
-/*
- * Arguments    : d_robotics_manip_internal_Rigid *pStruct
- * Return Type  : void
- */
 void c_emxInitStruct_robotics_manip_(d_robotics_manip_internal_Rigid *pStruct)
 {
   c_emxInitMatrix_robotics_manip_(pStruct->_pobj0);
 }
 
-/*
- * Arguments    : c_emxArray_robotics_manip_inter **pEmxArray
- * Return Type  : void
- */
 void c_emxInit_robotics_manip_intern(
     c_emxArray_robotics_manip_inter **pEmxArray)
 {
@@ -166,10 +130,6 @@ void c_emxInit_robotics_manip_intern(
   }
 }
 
-/*
- * Arguments    : d_robotics_manip_internal_Colli pMatrix[7]
- * Return Type  : void
- */
 void d_emxFreeMatrix_robotics_manip_(d_robotics_manip_internal_Colli pMatrix[7])
 {
   int i;
@@ -178,19 +138,11 @@ void d_emxFreeMatrix_robotics_manip_(d_robotics_manip_internal_Colli pMatrix[7])
   }
 }
 
-/*
- * Arguments    : d_robotics_manip_internal_Rigid *pStruct
- * Return Type  : void
- */
 void d_emxFreeStruct_robotics_manip_(d_robotics_manip_internal_Rigid *pStruct)
 {
   c_emxFreeMatrix_robotics_manip_(pStruct->_pobj0);
 }
 
-/*
- * Arguments    : d_robotics_manip_internal_Colli pMatrix[7]
- * Return Type  : void
- */
 void d_emxInitMatrix_robotics_manip_(d_robotics_manip_internal_Colli pMatrix[7])
 {
   int i;
@@ -199,40 +151,23 @@ void d_emxInitMatrix_robotics_manip_(d_robotics_manip_internal_Colli pMatrix[7])
   }
 }
 
-/*
- * Arguments    : d_robotics_manip_internal_Colli *pStruct
- * Return Type  : void
- */
 void d_emxInitStruct_robotics_manip_(d_robotics_manip_internal_Colli *pStruct)
 {
   c_emxInit_robotics_manip_intern(&pStruct->CollisionGeometries);
 }
 
-/*
- * Arguments    : c_robotics_manip_internal_IKExt *pStruct
- * Return Type  : void
- */
 void e_emxFreeStruct_robotics_manip_(c_robotics_manip_internal_IKExt *pStruct)
 {
   emxFree_real_T(&pStruct->ErrTemp);
   emxFree_real_T(&pStruct->GradTemp);
 }
 
-/*
- * Arguments    : c_robotics_manip_internal_IKExt *pStruct
- * Return Type  : void
- */
 void e_emxInitStruct_robotics_manip_(c_robotics_manip_internal_IKExt *pStruct)
 {
   emxInit_real_T(&pStruct->ErrTemp, 1);
   emxInit_real_T(&pStruct->GradTemp, 1);
 }
 
-/*
- * Arguments    : emxArray_boolean_T *emxArray
- *                int oldNumel
- * Return Type  : void
- */
 void emxEnsureCapacity_boolean_T(emxArray_boolean_T *emxArray, int oldNumel)
 {
   int i;
@@ -271,11 +206,6 @@ void emxEnsureCapacity_boolean_T(emxArray_boolean_T *emxArray, int oldNumel)
   }
 }
 
-/*
- * Arguments    : emxArray_int32_T *emxArray
- *                int oldNumel
- * Return Type  : void
- */
 void emxEnsureCapacity_int32_T(emxArray_int32_T *emxArray, int oldNumel)
 {
   int i;
@@ -313,11 +243,6 @@ void emxEnsureCapacity_int32_T(emxArray_int32_T *emxArray, int oldNumel)
   }
 }
 
-/*
- * Arguments    : emxArray_int8_T *emxArray
- *                int oldNumel
- * Return Type  : void
- */
 void emxEnsureCapacity_int8_T(emxArray_int8_T *emxArray, int oldNumel)
 {
   int i;
@@ -356,11 +281,6 @@ void emxEnsureCapacity_int8_T(emxArray_int8_T *emxArray, int oldNumel)
   }
 }
 
-/*
- * Arguments    : emxArray_real_T *emxArray
- *                int oldNumel
- * Return Type  : void
- */
 void emxEnsureCapacity_real_T(emxArray_real_T *emxArray, int oldNumel)
 {
   int i;
@@ -398,12 +318,7 @@ void emxEnsureCapacity_real_T(emxArray_real_T *emxArray, int oldNumel)
   }
 }
 
-/*
- * Arguments    : emxArray_struct0_T *emxArray
- *                int oldNumel
- * Return Type  : void
- */
-void emxEnsureCapacity_struct0_T(emxArray_struct0_T *emxArray, int oldNumel)
+void emxEnsureCapacity_struct_T(c_emxArray_struct_T *emxArray, int oldNumel)
 {
   int i;
   int newNumel;
@@ -427,29 +342,21 @@ void emxEnsureCapacity_struct0_T(emxArray_struct0_T *emxArray, int oldNumel)
         i *= 2;
       }
     }
-    newData = malloc((unsigned int)i * sizeof(struct0_T));
+    newData = malloc((unsigned int)i * sizeof(d_struct_T));
     if (emxArray->data != NULL) {
       memcpy(newData, emxArray->data,
-             sizeof(struct0_T) * (unsigned int)oldNumel);
+             sizeof(d_struct_T) * (unsigned int)oldNumel);
       if (emxArray->canFreeData) {
         free(emxArray->data);
       }
     }
-    emxArray->data = (struct0_T *)newData;
+    emxArray->data = (d_struct_T *)newData;
     emxArray->allocatedSize = i;
     emxArray->canFreeData = true;
   }
-  if (oldNumel > newNumel) {
-    emxExpand_struct0_T(emxArray, oldNumel, newNumel);
-  }
 }
 
-/*
- * Arguments    : b_emxArray_struct_T *emxArray
- *                int oldNumel
- * Return Type  : void
- */
-void emxEnsureCapacity_struct_T(b_emxArray_struct_T *emxArray, int oldNumel)
+void emxEnsureCapacity_struct_T1(b_emxArray_struct_T *emxArray, int oldNumel)
 {
   int i;
   int newNumel;
@@ -485,14 +392,12 @@ void emxEnsureCapacity_struct_T(b_emxArray_struct_T *emxArray, int oldNumel)
     emxArray->allocatedSize = i;
     emxArray->canFreeData = true;
   }
+  if (oldNumel > newNumel) {
+    emxExpand_struct_T(emxArray, oldNumel, newNumel);
+  }
 }
 
-/*
- * Arguments    : emxArray_struct_T *emxArray
- *                int oldNumel
- * Return Type  : void
- */
-void emxEnsureCapacity_struct_T1(emxArray_struct_T *emxArray, int oldNumel)
+void emxEnsureCapacity_struct_T2(emxArray_struct_T *emxArray, int oldNumel)
 {
   int i;
   int newNumel;
@@ -516,45 +421,25 @@ void emxEnsureCapacity_struct_T1(emxArray_struct_T *emxArray, int oldNumel)
         i *= 2;
       }
     }
-    newData = malloc((unsigned int)i * sizeof(b_struct_T));
+    newData = malloc((unsigned int)i * sizeof(struct_T));
     if (emxArray->data != NULL) {
       memcpy(newData, emxArray->data,
-             sizeof(b_struct_T) * (unsigned int)oldNumel);
+             sizeof(struct_T) * (unsigned int)oldNumel);
       if (emxArray->canFreeData) {
         free(emxArray->data);
       }
     }
-    emxArray->data = (b_struct_T *)newData;
+    emxArray->data = (struct_T *)newData;
     emxArray->allocatedSize = i;
     emxArray->canFreeData = true;
   }
   if (oldNumel > newNumel) {
-    emxExpand_struct_T(emxArray, oldNumel, newNumel);
+    emxExpand_struct_T1(emxArray, oldNumel, newNumel);
   }
 }
 
-/*
- * Arguments    : emxArray_struct0_T *emxArray
- *                int fromIndex
- *                int toIndex
- * Return Type  : void
- */
-void emxExpand_struct0_T(emxArray_struct0_T *emxArray, int fromIndex,
-                         int toIndex)
-{
-  int i;
-  for (i = fromIndex; i < toIndex; i++) {
-    emxInitStruct_struct0_T(&emxArray->data[i]);
-  }
-}
-
-/*
- * Arguments    : emxArray_struct_T *emxArray
- *                int fromIndex
- *                int toIndex
- * Return Type  : void
- */
-void emxExpand_struct_T(emxArray_struct_T *emxArray, int fromIndex, int toIndex)
+void emxExpand_struct_T(b_emxArray_struct_T *emxArray, int fromIndex,
+                        int toIndex)
 {
   int i;
   for (i = fromIndex; i < toIndex; i++) {
@@ -562,10 +447,15 @@ void emxExpand_struct_T(emxArray_struct_T *emxArray, int fromIndex, int toIndex)
   }
 }
 
-/*
- * Arguments    : inverseKinematics *pStruct
- * Return Type  : void
- */
+void emxExpand_struct_T1(emxArray_struct_T *emxArray, int fromIndex,
+                         int toIndex)
+{
+  int i;
+  for (i = fromIndex; i < toIndex; i++) {
+    emxInitStruct_struct_T1(&emxArray->data[i]);
+  }
+}
+
 void emxFreeStruct_inverseKinematics(inverseKinematics *pStruct)
 {
   emxFree_real_T(&pStruct->Limits);
@@ -576,20 +466,12 @@ void emxFreeStruct_inverseKinematics(inverseKinematics *pStruct)
   c_emxFreeStruct_robotics_core_i(&pStruct->_pobj6);
 }
 
-/*
- * Arguments    : rigidBodyTree *pStruct
- * Return Type  : void
- */
 void emxFreeStruct_rigidBodyTree(rigidBodyTree *pStruct)
 {
   c_emxFreeStruct_robotics_manip_(&pStruct->_pobj0);
   f_emxFreeStruct_robotics_manip_(&pStruct->_pobj1);
 }
 
-/*
- * Arguments    : emxArray_boolean_T **pEmxArray
- * Return Type  : void
- */
 void emxFree_boolean_T(emxArray_boolean_T **pEmxArray)
 {
   if (*pEmxArray != (emxArray_boolean_T *)NULL) {
@@ -603,10 +485,6 @@ void emxFree_boolean_T(emxArray_boolean_T **pEmxArray)
   }
 }
 
-/*
- * Arguments    : emxArray_int32_T **pEmxArray
- * Return Type  : void
- */
 void emxFree_int32_T(emxArray_int32_T **pEmxArray)
 {
   if (*pEmxArray != (emxArray_int32_T *)NULL) {
@@ -619,10 +497,6 @@ void emxFree_int32_T(emxArray_int32_T **pEmxArray)
   }
 }
 
-/*
- * Arguments    : emxArray_int8_T **pEmxArray
- * Return Type  : void
- */
 void emxFree_int8_T(emxArray_int8_T **pEmxArray)
 {
   if (*pEmxArray != (emxArray_int8_T *)NULL) {
@@ -636,10 +510,6 @@ void emxFree_int8_T(emxArray_int8_T **pEmxArray)
   }
 }
 
-/*
- * Arguments    : emxArray_real_T **pEmxArray
- * Return Type  : void
- */
 void emxFree_real_T(emxArray_real_T **pEmxArray)
 {
   if (*pEmxArray != (emxArray_real_T *)NULL) {
@@ -652,32 +522,10 @@ void emxFree_real_T(emxArray_real_T **pEmxArray)
   }
 }
 
-/*
- * Arguments    : emxArray_struct0_T **pEmxArray
- * Return Type  : void
- */
-void emxFree_struct0_T(emxArray_struct0_T **pEmxArray)
-{
-  if (*pEmxArray != (emxArray_struct0_T *)NULL) {
-    if (((*pEmxArray)->data != (struct0_T *)NULL) &&
-        (*pEmxArray)->canFreeData) {
-      free((*pEmxArray)->data);
-    }
-    free((*pEmxArray)->size);
-    free(*pEmxArray);
-    *pEmxArray = (emxArray_struct0_T *)NULL;
-  }
-}
-
-/*
- * Arguments    : emxArray_struct_T **pEmxArray
- * Return Type  : void
- */
 void emxFree_struct_T(emxArray_struct_T **pEmxArray)
 {
   if (*pEmxArray != (emxArray_struct_T *)NULL) {
-    if (((*pEmxArray)->data != (b_struct_T *)NULL) &&
-        (*pEmxArray)->canFreeData) {
+    if (((*pEmxArray)->data != (struct_T *)NULL) && (*pEmxArray)->canFreeData) {
       free((*pEmxArray)->data);
     }
     free((*pEmxArray)->size);
@@ -686,10 +534,6 @@ void emxFree_struct_T(emxArray_struct_T **pEmxArray)
   }
 }
 
-/*
- * Arguments    : b_emxArray_struct_T **pEmxArray
- * Return Type  : void
- */
 void emxFree_struct_T1(b_emxArray_struct_T **pEmxArray)
 {
   if (*pEmxArray != (b_emxArray_struct_T *)NULL) {
@@ -703,10 +547,19 @@ void emxFree_struct_T1(b_emxArray_struct_T **pEmxArray)
   }
 }
 
-/*
- * Arguments    : inverseKinematics *pStruct
- * Return Type  : void
- */
+void emxFree_struct_T2(c_emxArray_struct_T **pEmxArray)
+{
+  if (*pEmxArray != (c_emxArray_struct_T *)NULL) {
+    if (((*pEmxArray)->data != (d_struct_T *)NULL) &&
+        (*pEmxArray)->canFreeData) {
+      free((*pEmxArray)->data);
+    }
+    free((*pEmxArray)->size);
+    free(*pEmxArray);
+    *pEmxArray = (c_emxArray_struct_T *)NULL;
+  }
+}
+
 void emxInitStruct_inverseKinematics(inverseKinematics *pStruct)
 {
   emxInit_real_T(&pStruct->Limits, 2);
@@ -717,21 +570,13 @@ void emxInitStruct_inverseKinematics(inverseKinematics *pStruct)
   c_emxInitStruct_robotics_core_i(&pStruct->_pobj6);
 }
 
-/*
- * Arguments    : rigidBodyTree *pStruct
- * Return Type  : void
- */
 void emxInitStruct_rigidBodyTree(rigidBodyTree *pStruct)
 {
   d_emxInitStruct_robotics_manip_(&pStruct->_pobj0);
   f_emxInitStruct_robotics_manip_(&pStruct->_pobj1);
 }
 
-/*
- * Arguments    : struct0_T *pStruct
- * Return Type  : void
- */
-void emxInitStruct_struct0_T(struct0_T *pStruct)
+void emxInitStruct_struct_T(c_struct_T *pStruct)
 {
   pStruct->JointName.size[0] = 0;
   pStruct->JointName.size[1] = 0;
@@ -739,11 +584,7 @@ void emxInitStruct_struct0_T(struct0_T *pStruct)
   pStruct->JointPosition.size[1] = 0;
 }
 
-/*
- * Arguments    : b_struct_T *pStruct
- * Return Type  : void
- */
-void emxInitStruct_struct_T(b_struct_T *pStruct)
+void emxInitStruct_struct_T1(struct_T *pStruct)
 {
   pStruct->JointName.size[0] = 0;
   pStruct->JointName.size[1] = 0;
@@ -751,10 +592,6 @@ void emxInitStruct_struct_T(b_struct_T *pStruct)
   pStruct->JointPosition.size[1] = 0;
 }
 
-/*
- * Arguments    : emxArray_boolean_T **pEmxArray
- * Return Type  : void
- */
 void emxInit_boolean_T(emxArray_boolean_T **pEmxArray)
 {
   emxArray_boolean_T *emxArray;
@@ -768,11 +605,6 @@ void emxInit_boolean_T(emxArray_boolean_T **pEmxArray)
   emxArray->size[0] = 0;
 }
 
-/*
- * Arguments    : emxArray_int32_T **pEmxArray
- *                int numDimensions
- * Return Type  : void
- */
 void emxInit_int32_T(emxArray_int32_T **pEmxArray, int numDimensions)
 {
   emxArray_int32_T *emxArray;
@@ -789,10 +621,6 @@ void emxInit_int32_T(emxArray_int32_T **pEmxArray, int numDimensions)
   }
 }
 
-/*
- * Arguments    : emxArray_int8_T **pEmxArray
- * Return Type  : void
- */
 void emxInit_int8_T(emxArray_int8_T **pEmxArray)
 {
   emxArray_int8_T *emxArray;
@@ -809,11 +637,6 @@ void emxInit_int8_T(emxArray_int8_T **pEmxArray)
   }
 }
 
-/*
- * Arguments    : emxArray_real_T **pEmxArray
- *                int numDimensions
- * Return Type  : void
- */
 void emxInit_real_T(emxArray_real_T **pEmxArray, int numDimensions)
 {
   emxArray_real_T *emxArray;
@@ -830,38 +653,13 @@ void emxInit_real_T(emxArray_real_T **pEmxArray, int numDimensions)
   }
 }
 
-/*
- * Arguments    : emxArray_struct0_T **pEmxArray
- *                int numDimensions
- * Return Type  : void
- */
-void emxInit_struct0_T(emxArray_struct0_T **pEmxArray, int numDimensions)
-{
-  emxArray_struct0_T *emxArray;
-  int i;
-  *pEmxArray = (emxArray_struct0_T *)malloc(sizeof(emxArray_struct0_T));
-  emxArray = *pEmxArray;
-  emxArray->data = (struct0_T *)NULL;
-  emxArray->numDimensions = numDimensions;
-  emxArray->size = (int *)malloc(sizeof(int) * (unsigned int)numDimensions);
-  emxArray->allocatedSize = 0;
-  emxArray->canFreeData = true;
-  for (i = 0; i < numDimensions; i++) {
-    emxArray->size[i] = 0;
-  }
-}
-
-/*
- * Arguments    : emxArray_struct_T **pEmxArray
- * Return Type  : void
- */
 void emxInit_struct_T(emxArray_struct_T **pEmxArray)
 {
   emxArray_struct_T *emxArray;
   int i;
   *pEmxArray = (emxArray_struct_T *)malloc(sizeof(emxArray_struct_T));
   emxArray = *pEmxArray;
-  emxArray->data = (b_struct_T *)NULL;
+  emxArray->data = (struct_T *)NULL;
   emxArray->numDimensions = 2;
   emxArray->size = (int *)malloc(sizeof(int) * 2U);
   emxArray->allocatedSize = 0;
@@ -871,10 +669,6 @@ void emxInit_struct_T(emxArray_struct_T **pEmxArray)
   }
 }
 
-/*
- * Arguments    : b_emxArray_struct_T **pEmxArray
- * Return Type  : void
- */
 void emxInit_struct_T1(b_emxArray_struct_T **pEmxArray)
 {
   b_emxArray_struct_T *emxArray;
@@ -891,26 +685,30 @@ void emxInit_struct_T1(b_emxArray_struct_T **pEmxArray)
   }
 }
 
-/*
- * Arguments    : e_robotics_manip_internal_Rigid *pStruct
- * Return Type  : void
- */
+void emxInit_struct_T2(c_emxArray_struct_T **pEmxArray)
+{
+  c_emxArray_struct_T *emxArray;
+  int i;
+  *pEmxArray = (c_emxArray_struct_T *)malloc(sizeof(c_emxArray_struct_T));
+  emxArray = *pEmxArray;
+  emxArray->data = (d_struct_T *)NULL;
+  emxArray->numDimensions = 2;
+  emxArray->size = (int *)malloc(sizeof(int) * 2U);
+  emxArray->allocatedSize = 0;
+  emxArray->canFreeData = true;
+  for (i = 0; i < 2; i++) {
+    emxArray->size[i] = 0;
+  }
+}
+
 void f_emxFreeStruct_robotics_manip_(e_robotics_manip_internal_Rigid *pStruct)
 {
   d_emxFreeMatrix_robotics_manip_(pStruct->_pobj1);
 }
 
-/*
- * Arguments    : e_robotics_manip_internal_Rigid *pStruct
- * Return Type  : void
- */
 void f_emxInitStruct_robotics_manip_(e_robotics_manip_internal_Rigid *pStruct)
 {
   d_emxInitMatrix_robotics_manip_(pStruct->_pobj1);
 }
 
-/*
- * File trailer for armvone_emxutil.c
- *
- * [EOF]
- */
+/* End of code generation (armvone_emxutil.c) */

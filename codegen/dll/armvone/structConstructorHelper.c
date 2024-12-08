@@ -2,36 +2,26 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: structConstructorHelper.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * structConstructorHelper.c
+ *
+ * Code generation for function 'structConstructorHelper'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "structConstructorHelper.h"
 #include "armvone_internal_types.h"
 #include "rt_nonfinite.h"
 
 /* Function Definitions */
-/*
- * Arguments    : const char varargin_2_f1[14]
- *                const char varargin_2_f2[6]
- *                const char varargin_2_f3[6]
- *                const char varargin_2_f4[10]
- *                const char varargin_2_f5[8]
- *                const char varargin_2_f6[10]
- *                const double varargin_4[6]
- *                struct_T s[6]
- * Return Type  : void
- */
 void structConstructorHelper(const char varargin_2_f1[14],
                              const char varargin_2_f2[6],
                              const char varargin_2_f3[6],
                              const char varargin_2_f4[10],
                              const char varargin_2_f5[8],
                              const char varargin_2_f6[10],
-                             const double varargin_4[6], struct_T s[6])
+                             const double varargin_4[6], b_struct_T s[6])
 {
   int j;
   s[0].JointName.size[0] = 1;
@@ -67,8 +57,4 @@ void structConstructorHelper(const char varargin_2_f1[14],
   }
 }
 
-/*
- * File trailer for structConstructorHelper.c
- *
- * [EOF]
- */
+/* End of code generation (structConstructorHelper.c) */

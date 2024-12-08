@@ -2,24 +2,25 @@ function vone = armvone(q0, pos)
     % Import the robot
     arm = importrobot('ARMYPR6.urdf', mesh='meshes');
     
-    % Define the initial joint configuration (use names from your URDF)
+    % Define the initial joint configuration as an array
     qInitial = struct(...
-        'JointName', {'turntablejoint', 'joint1', 'joint2', 'pitchJoint', 'yawjoint', 'roll joint'},'JointPosition', num2cell(q0));
+                'JointName', {'turntablejoint', 'joint1', 'joint2', 'pitchJoint', 'yawjoint', 'roll joint'},'JointPosition', num2cell(q0));
+    %qInitial = q0; % q0 is already an array of joint positions
     
     % Create the IK solver
     ik = inverseKinematics('RigidBodyTree', arm);
     
     % Define the end-effector name (use the name from your URDF)
-    endEffector = 'roll'; 
+    endEffector = 'pitch'; 
     
     % Define the weights for the IK solution
-    weights = [0, 0, 0, 1, 1, 1]; % Adjust as necessary for your DOF
+    weights = [0, 0, 0, 1, 1, 0]; % Adjust as necessary for your DOF
     
     % Solve the inverse kinematics
-    [newConfig, ~] = ik(endEffector, trvec2tform(pos), weights, qInitial);
-    
-    % Extract the new joint positions
-    vone = newConfig;
-    %vone = struct(...
-    %    'JointName', {'turntablejoint', 'joint1', 'joint2', 'pitchJoint', 'yawjoint', 'roll joint'},'JointPosition', newConfig.JointPosition);
+    %[newConfig, ~] = ik(endEffector, trvec2tform(pos), weights, qInitial);
+    new = ik(endEffector,trvec2tform(pos), weights, qInitial);
+
+    % Extract the new joint positions and return as an array
+    %vone = [newConfig.JointPosition];
+    vone = [new(1).JointPosition new(2).JointPosition new(3).JointPosition new(4).JointPosition new(5).JointPosition new(6).JointPosition];
 end

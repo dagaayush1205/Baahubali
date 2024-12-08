@@ -2,13 +2,14 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: armvone.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * armvone.c
+ *
+ * Code generation for function 'armvone'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "armvone.h"
 #include "SystemCore.h"
 #include "armvone_data.h"
@@ -24,25 +25,20 @@
 #include "trvec2tform.h"
 
 /* Function Definitions */
-/*
- * Import the robot
- *
- * Arguments    : const double q0[6]
- *                const double pos[3]
- *                emxArray_struct0_T *vone
- * Return Type  : void
- */
-void armvone(const double q0[6], const double pos[3], emxArray_struct0_T *vone)
+void armvone(const double q0[6], const double pos[3], double vone_data[],
+             int vone_size[2])
 {
   static const char t2_f5[8] = {'y', 'a', 'w', 'j', 'o', 'i', 'n', 't'};
   static const char t2_f2[6] = {'j', 'o', 'i', 'n', 't', '1'};
   static const char t2_f3[6] = {'j', 'o', 'i', 'n', 't', '2'};
   b_rigidBodyTree arm;
   b_rigidBodyTree *r;
+  b_struct_T rv[6];
   c_robotics_manip_internal_Rigid *obj;
   d_robotics_manip_internal_Rigid lobj_2;
+  emxArray_struct_T *new;
   inverseKinematics ik;
-  struct_T rv[6];
+  struct_T *new_data;
   double C[6];
   int i;
   if (!isInitialized_armvone) {
@@ -86,26 +82,39 @@ void armvone(const double q0[6], const double pos[3], emxArray_struct0_T *vone)
   ik._pobj6.matlabCodegenIsDeleted = true;
   ik.matlabCodegenIsDeleted = true;
   ik._pobj5.matlabCodegenIsDeleted = true;
+  /*  Import the robot */
   r = &arm;
   importrobot(&lobj_2, &r);
-  /*  Define the initial joint configuration (use names from your URDF) */
+  /*  Define the initial joint configuration as an array */
   for (i = 0; i < 6; i++) {
     C[i] = q0[i];
   }
   double dv[16];
+  /* qInitial = q0; % q0 is already an array of joint positions */
   /*  Create the IK solver */
   c_inverseKinematics_inverseKine(&ik, &arm);
   /*  Define the end-effector name (use the name from your URDF) */
   /*  Define the weights for the IK solution */
   /*  Adjust as necessary for your DOF */
   /*  Solve the inverse kinematics */
+  /* [newConfig, ~] = ik(endEffector, trvec2tform(pos), weights, qInitial); */
   structConstructorHelper(cv, t2_f2, t2_f3, cv1, t2_f5, cv2, C, rv);
+  emxInit_struct_T(&new);
   trvec2tform(pos, dv);
-  SystemCore_step(&ik, dv, rv, vone);
-  /*  Extract the new joint positions */
-  /* vone = struct(... */
-  /*     'JointName', {'turntablejoint', 'joint1', 'joint2', 'pitchJoint',
-   * 'yawjoint', 'roll joint'},'JointPosition', newConfig.JointPosition); */
+  SystemCore_step(&ik, dv, rv, new);
+  new_data = new->data;
+  /*  Extract the new joint positions and return as an array */
+  /* vone = [newConfig.JointPosition]; */
+  printf("hello");
+  vone_size[0] = 1;
+  vone_size[1] = 6;
+  vone_data[0] = new_data[0].JointPosition.data[0];
+  vone_data[1] = new_data[1].JointPosition.data[0];
+  vone_data[2] = new_data[2].JointPosition.data[0];
+  vone_data[3] = new_data[3].JointPosition.data[0];
+  vone_data[4] = new_data[4].JointPosition.data[0];
+  vone_data[5] = new_data[5].JointPosition.data[0];
+  emxFree_struct_T(&new);
   if (!ik._pobj5.matlabCodegenIsDeleted) {
     ik._pobj5.matlabCodegenIsDeleted = true;
   }
@@ -178,8 +187,4 @@ void armvone(const double q0[6], const double pos[3], emxArray_struct0_T *vone)
   d_emxFreeStruct_robotics_manip_(&lobj_2);
 }
 
-/*
- * File trailer for armvone.c
- *
- * [EOF]
- */
+/* End of code generation (armvone.c) */

@@ -25,203 +25,210 @@
 #include <stddef.h>
 
 /* Variable Definitions */
-static emlrtRSInfo gp_emlrtRSI =
-    {
-        27,       /* lineNo */
-        "xgetrf", /* fcnName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+lapack/"
-        "xgetrf.m" /* pathName */
+static emlrtRSInfo hp_emlrtRSI = {
+    27,       /* lineNo */
+    "xgetrf", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+lapack/"
+    "xgetrf.m" /* pathName */
 };
 
-static emlrtRSInfo hp_emlrtRSI =
-    {
-        91,             /* lineNo */
-        "ceval_xgetrf", /* fcnName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+lapack/"
-        "xgetrf.m" /* pathName */
+static emlrtRSInfo ip_emlrtRSI = {
+    91,             /* lineNo */
+    "ceval_xgetrf", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+lapack/"
+    "xgetrf.m" /* pathName */
 };
 
-static emlrtRSInfo ip_emlrtRSI =
-    {
-        58,             /* lineNo */
-        "ceval_xgetrf", /* fcnName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+lapack/"
-        "xgetrf.m" /* pathName */
-};
-
-static emlrtRSInfo kp_emlrtRSI = {
-    82,                                                          /* lineNo */
-    "colon",                                                     /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/ops/colon.m" /* pathName */
+static emlrtRSInfo jp_emlrtRSI = {
+    58,             /* lineNo */
+    "ceval_xgetrf", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+lapack/"
+    "xgetrf.m" /* pathName */
 };
 
 static emlrtRSInfo lp_emlrtRSI = {
-    148,                                                         /* lineNo */
-    "eml_integer_colon_dispatcher",                              /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/ops/colon.m" /* pathName */
+    82,      /* lineNo */
+    "colon", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/ops/colon.m" /* pathName
+                                                                          */
 };
 
 static emlrtRSInfo mp_emlrtRSI = {
-    171,                                                         /* lineNo */
-    "eml_signed_integer_colon",                                  /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/ops/colon.m" /* pathName */
+    148,                            /* lineNo */
+    "eml_integer_colon_dispatcher", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/ops/colon.m" /* pathName
+                                                                          */
 };
 
 static emlrtRSInfo np_emlrtRSI = {
-    176,                                                         /* lineNo */
-    "eml_signed_integer_colon",                                  /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/ops/colon.m" /* pathName */
+    171,                        /* lineNo */
+    "eml_signed_integer_colon", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/ops/colon.m" /* pathName
+                                                                          */
 };
 
-static emlrtRSInfo
-    qp_emlrtRSI =
-        {
-            67,      /* lineNo */
-            "xtrsm", /* fcnName */
-            "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+blas/"
-            "xtrsm.m" /* pathName */
+static emlrtRSInfo op_emlrtRSI = {
+    176,                        /* lineNo */
+    "eml_signed_integer_colon", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/ops/colon.m" /* pathName
+                                                                          */
 };
 
-static emlrtRSInfo
-    rp_emlrtRSI =
-        {
-            81,           /* lineNo */
-            "xtrsm_blas", /* fcnName */
-            "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+blas/"
-            "xtrsm.m" /* pathName */
+static emlrtRSInfo rp_emlrtRSI = {
+    67,      /* lineNo */
+    "xtrsm", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+blas/"
+    "xtrsm.m" /* pathName */
 };
 
-static emlrtRSInfo mq_emlrtRSI = {
-    21,                                                           /* lineNo */
-    "inv",                                                        /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/inv.m" /* pathName */
+static emlrtRSInfo sp_emlrtRSI = {
+    81,           /* lineNo */
+    "xtrsm_blas", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+blas/"
+    "xtrsm.m" /* pathName */
 };
 
 static emlrtRSInfo nq_emlrtRSI = {
-    22,                                                           /* lineNo */
-    "inv",                                                        /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/inv.m" /* pathName */
+    21,    /* lineNo */
+    "inv", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/inv.m" /* pathName
+                                                                           */
 };
 
 static emlrtRSInfo oq_emlrtRSI = {
-    173,                                                          /* lineNo */
-    "invNxN",                                                     /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/inv.m" /* pathName */
+    22,    /* lineNo */
+    "inv", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/inv.m" /* pathName
+                                                                           */
 };
 
 static emlrtRSInfo pq_emlrtRSI = {
-    174,                                                          /* lineNo */
-    "invNxN",                                                     /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/inv.m" /* pathName */
+    173,      /* lineNo */
+    "invNxN", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/inv.m" /* pathName
+                                                                           */
 };
 
 static emlrtRSInfo qq_emlrtRSI = {
-    177,                                                          /* lineNo */
-    "invNxN",                                                     /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/inv.m" /* pathName */
+    174,      /* lineNo */
+    "invNxN", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/inv.m" /* pathName
+                                                                           */
 };
 
 static emlrtRSInfo rq_emlrtRSI = {
-    180,                                                          /* lineNo */
-    "invNxN",                                                     /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/inv.m" /* pathName */
+    177,      /* lineNo */
+    "invNxN", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/inv.m" /* pathName
+                                                                           */
 };
 
 static emlrtRSInfo sq_emlrtRSI = {
-    183,                                                          /* lineNo */
-    "invNxN",                                                     /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/inv.m" /* pathName */
+    180,      /* lineNo */
+    "invNxN", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/inv.m" /* pathName
+                                                                           */
 };
 
 static emlrtRSInfo tq_emlrtRSI = {
-    190,                                                          /* lineNo */
-    "invNxN",                                                     /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/inv.m" /* pathName */
+    183,      /* lineNo */
+    "invNxN", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/inv.m" /* pathName
+                                                                           */
 };
 
 static emlrtRSInfo uq_emlrtRSI = {
+    190,      /* lineNo */
+    "invNxN", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/inv.m" /* pathName
+                                                                           */
+};
+
+static emlrtRSInfo vq_emlrtRSI = {
     14,              /* lineNo */
     "eml_ipiv2perm", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/private/"
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/private/"
     "eml_ipiv2perm.m" /* pathName */
 };
 
 static emlrtRTEInfo qb_emlrtRTEI = {
-    14,                                                           /* lineNo */
-    15,                                                           /* colNo */
-    "inv",                                                        /* fName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/inv.m" /* pName */
-};
-
-static emlrtRTEInfo hh_emlrtRTEI = {
-    19,                                                           /* lineNo */
-    5,                                                            /* colNo */
-    "inv",                                                        /* fName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/inv.m" /* pName */
+    14,    /* lineNo */
+    15,    /* colNo */
+    "inv", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/inv.m" /* pName
+                                                                           */
 };
 
 static emlrtRTEInfo ih_emlrtRTEI = {
-    21,                                                           /* lineNo */
-    5,                                                            /* colNo */
-    "inv",                                                        /* fName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/inv.m" /* pName */
+    19,    /* lineNo */
+    5,     /* colNo */
+    "inv", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/inv.m" /* pName
+                                                                           */
 };
 
-static emlrtRTEInfo jh_emlrtRTEI =
-    {
-        1,        /* lineNo */
-        37,       /* colNo */
-        "xgetrf", /* fName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+lapack/"
-        "xgetrf.m" /* pName */
+static emlrtRTEInfo jh_emlrtRTEI = {
+    21,    /* lineNo */
+    5,     /* colNo */
+    "inv", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/inv.m" /* pName
+                                                                           */
 };
 
-static emlrtRTEInfo kh_emlrtRTEI =
-    {
-        58,       /* lineNo */
-        29,       /* colNo */
-        "xgetrf", /* fName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+lapack/"
-        "xgetrf.m" /* pName */
+static emlrtRTEInfo kh_emlrtRTEI = {
+    1,        /* lineNo */
+    37,       /* colNo */
+    "xgetrf", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+lapack/"
+    "xgetrf.m" /* pName */
 };
 
-static emlrtRTEInfo lh_emlrtRTEI =
-    {
-        89,       /* lineNo */
-        27,       /* colNo */
-        "xgetrf", /* fName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+lapack/"
-        "xgetrf.m" /* pName */
+static emlrtRTEInfo lh_emlrtRTEI = {
+    58,       /* lineNo */
+    29,       /* colNo */
+    "xgetrf", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+lapack/"
+    "xgetrf.m" /* pName */
 };
 
 static emlrtRTEInfo mh_emlrtRTEI = {
-    172,                                                         /* lineNo */
-    20,                                                          /* colNo */
-    "colon",                                                     /* fName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/ops/colon.m" /* pName */
+    89,       /* lineNo */
+    27,       /* colNo */
+    "xgetrf", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+lapack/"
+    "xgetrf.m" /* pName */
 };
 
 static emlrtRTEInfo nh_emlrtRTEI = {
-    174,                                                          /* lineNo */
-    1,                                                            /* colNo */
-    "inv",                                                        /* fName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/inv.m" /* pName */
+    172,     /* lineNo */
+    20,      /* colNo */
+    "colon", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/ops/colon.m" /* pName
+                                                                          */
 };
 
 static emlrtRTEInfo oh_emlrtRTEI = {
-    1,                                                            /* lineNo */
-    14,                                                           /* colNo */
-    "inv",                                                        /* fName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/inv.m" /* pName */
+    174,   /* lineNo */
+    1,     /* colNo */
+    "inv", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/inv.m" /* pName
+                                                                           */
 };
 
-static emlrtRTEInfo ph_emlrtRTEI =
-    {
-        58,       /* lineNo */
-        5,        /* colNo */
-        "xgetrf", /* fName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+lapack/"
-        "xgetrf.m" /* pName */
+static emlrtRTEInfo ph_emlrtRTEI = {
+    1,     /* lineNo */
+    14,    /* colNo */
+    "inv", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/inv.m" /* pName
+                                                                           */
+};
+
+static emlrtRTEInfo qh_emlrtRTEI = {
+    58,       /* lineNo */
+    5,        /* colNo */
+    "xgetrf", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+lapack/"
+    "xgetrf.m" /* pName */
 };
 
 /* Function Definitions */
@@ -290,7 +297,7 @@ void inv(const emlrtStack *sp, const emxArray_real_T *x, emxArray_real_T *y)
     i = y->size[0] * y->size[1];
     y->size[0] = x->size[0];
     y->size[1] = x->size[1];
-    emxEnsureCapacity_real_T(sp, y, i, &hh_emlrtRTEI);
+    emxEnsureCapacity_real_T(sp, y, i, &ih_emlrtRTEI);
     y_data = y->data;
     yk = x->size[0] * x->size[1];
     for (i = 0; i < yk; i++) {
@@ -301,46 +308,46 @@ void inv(const emlrtStack *sp, const emxArray_real_T *x, emxArray_real_T *y)
     real_T rc;
     int32_T n_tmp;
     int32_T yk;
-    st.site = &mq_emlrtRSI;
+    st.site = &nq_emlrtRSI;
     n_tmp = x->size[0];
     i = y->size[0] * y->size[1];
     y->size[0] = x->size[0];
     y->size[1] = x->size[1];
-    emxEnsureCapacity_real_T(&st, y, i, &ih_emlrtRTEI);
+    emxEnsureCapacity_real_T(&st, y, i, &jh_emlrtRTEI);
     y_data = y->data;
     yk = x->size[0] * x->size[1];
     for (i = 0; i < yk; i++) {
       y_data[i] = 0.0;
     }
-    b_st.site = &oq_emlrtRSI;
-    emxInit_real_T(&b_st, &b_x, 2, &oh_emlrtRTEI);
+    b_st.site = &pq_emlrtRSI;
+    emxInit_real_T(&b_st, &b_x, 2, &ph_emlrtRTEI);
     i = b_x->size[0] * b_x->size[1];
     b_x->size[0] = x->size[0];
     b_x->size[1] = x->size[1];
-    emxEnsureCapacity_real_T(&b_st, b_x, i, &jh_emlrtRTEI);
+    emxEnsureCapacity_real_T(&b_st, b_x, i, &kh_emlrtRTEI);
     b_x_data = b_x->data;
     for (i = 0; i < yk; i++) {
       b_x_data[i] = x_data[i];
     }
-    c_st.site = &gp_emlrtRSI;
-    d_st.site = &ip_emlrtRSI;
-    e_st.site = &fp_emlrtRSI;
-    emxInit_ptrdiff_t(&c_st, &ipiv_t, &ph_emlrtRTEI);
+    c_st.site = &hp_emlrtRSI;
+    d_st.site = &jp_emlrtRSI;
+    e_st.site = &gp_emlrtRSI;
+    emxInit_ptrdiff_t(&c_st, &ipiv_t, &qh_emlrtRTEI);
     i = ipiv_t->size[0];
     ipiv_t->size[0] = muIntScalarMin_sint32(n_tmp, n_tmp);
-    emxEnsureCapacity_ptrdiff_t(&c_st, ipiv_t, i, &kh_emlrtRTEI);
+    emxEnsureCapacity_ptrdiff_t(&c_st, ipiv_t, i, &lh_emlrtRTEI);
     ipiv_t_data = ipiv_t->data;
     info_t = LAPACKE_dgetrf_work(102, (ptrdiff_t)x->size[0],
                                  (ptrdiff_t)x->size[0], &b_x_data[0],
                                  (ptrdiff_t)x->size[0], &ipiv_t_data[0]);
-    emxInit_int32_T(&c_st, &ipiv, 2, &oh_emlrtRTEI);
+    emxInit_int32_T(&c_st, &ipiv, 2, &ph_emlrtRTEI);
     i = ipiv->size[0] * ipiv->size[1];
     ipiv->size[0] = 1;
     j = ipiv_t->size[0];
     ipiv->size[1] = ipiv_t->size[0];
-    emxEnsureCapacity_int32_T(&c_st, ipiv, i, &lh_emlrtRTEI);
+    emxEnsureCapacity_int32_T(&c_st, ipiv, i, &mh_emlrtRTEI);
     ipiv_data = ipiv->data;
-    d_st.site = &hp_emlrtRSI;
+    d_st.site = &ip_emlrtRSI;
     if ((int32_T)info_t < 0) {
       if ((int32_T)info_t == -1010) {
         emlrtErrorWithMessageIdR2018a(&d_st, &ob_emlrtRTEI, "MATLAB:nomem",
@@ -356,21 +363,21 @@ void inv(const emlrtStack *sp, const emxArray_real_T *x, emxArray_real_T *y)
       ipiv_data[k] = (int32_T)ipiv_t_data[k];
     }
     emxFree_ptrdiff_t(&c_st, &ipiv_t);
-    b_st.site = &pq_emlrtRSI;
-    c_st.site = &uq_emlrtRSI;
-    d_st.site = &jp_emlrtRSI;
-    e_st.site = &kp_emlrtRSI;
-    f_st.site = &lp_emlrtRSI;
-    g_st.site = &mp_emlrtRSI;
-    emxInit_int32_T(&f_st, &p, 2, &nh_emlrtRTEI);
+    b_st.site = &qq_emlrtRSI;
+    c_st.site = &vq_emlrtRSI;
+    d_st.site = &kp_emlrtRSI;
+    e_st.site = &lp_emlrtRSI;
+    f_st.site = &mp_emlrtRSI;
+    g_st.site = &np_emlrtRSI;
+    emxInit_int32_T(&f_st, &p, 2, &oh_emlrtRTEI);
     i = p->size[0] * p->size[1];
     p->size[0] = 1;
     p->size[1] = x->size[0];
-    emxEnsureCapacity_int32_T(&f_st, p, i, &mh_emlrtRTEI);
+    emxEnsureCapacity_int32_T(&f_st, p, i, &nh_emlrtRTEI);
     p_data = p->data;
     p_data[0] = 1;
     yk = 1;
-    g_st.site = &np_emlrtRSI;
+    g_st.site = &op_emlrtRSI;
     if (x->size[0] > 2147483646) {
       h_st.site = &rb_emlrtRSI;
       check_forloop_overflow_error(&h_st);
@@ -388,11 +395,11 @@ void inv(const emlrtStack *sp, const emxArray_real_T *x, emxArray_real_T *y)
       }
     }
     emxFree_int32_T(&b_st, &ipiv);
-    b_st.site = &qq_emlrtRSI;
+    b_st.site = &rq_emlrtRSI;
     for (k = 0; k < n_tmp; k++) {
       i = p_data[k];
       y_data[k + y->size[0] * (i - 1)] = 1.0;
-      b_st.site = &rq_emlrtRSI;
+      b_st.site = &sq_emlrtRSI;
       if ((k + 1 <= n_tmp) && (n_tmp > 2147483646)) {
         c_st.site = &rb_emlrtRSI;
         check_forloop_overflow_error(&c_st);
@@ -400,7 +407,7 @@ void inv(const emlrtStack *sp, const emxArray_real_T *x, emxArray_real_T *y)
       for (j = k + 1; j <= n_tmp; j++) {
         if (y_data[(j + y->size[0] * (i - 1)) - 1] != 0.0) {
           yk = j + 1;
-          b_st.site = &sq_emlrtRSI;
+          b_st.site = &tq_emlrtRSI;
           for (b_i = yk; b_i <= n_tmp; b_i++) {
             y_data[(b_i + y->size[0] * (i - 1)) - 1] -=
                 y_data[(j + y->size[0] * (i - 1)) - 1] *
@@ -410,9 +417,9 @@ void inv(const emlrtStack *sp, const emxArray_real_T *x, emxArray_real_T *y)
       }
     }
     emxFree_int32_T(&st, &p);
-    b_st.site = &tq_emlrtRSI;
-    c_st.site = &qp_emlrtRSI;
-    d_st.site = &rp_emlrtRSI;
+    b_st.site = &uq_emlrtRSI;
+    c_st.site = &rp_emlrtRSI;
+    d_st.site = &sp_emlrtRSI;
     n1x = 1.0;
     DIAGA1 = 'N';
     TRANSA1 = 'N';
@@ -425,16 +432,16 @@ void inv(const emlrtStack *sp, const emxArray_real_T *x, emxArray_real_T *y)
     dtrsm(&SIDE1, &UPLO1, &TRANSA1, &DIAGA1, &info_t, &n_t, &n1x, &b_x_data[0],
           &lda_t, &y_data[0], &ldb_t);
     emxFree_real_T(&d_st, &b_x);
-    st.site = &nq_emlrtRSI;
+    st.site = &oq_emlrtRSI;
     n1x = d_norm(x);
     n1xinv = d_norm(y);
     rc = 1.0 / (n1x * n1xinv);
     if ((n1x == 0.0) || (n1xinv == 0.0) || (rc == 0.0)) {
-      b_st.site = &og_emlrtRSI;
+      b_st.site = &pg_emlrtRSI;
       b_warning(&b_st);
     } else if (muDoubleScalarIsNaN(rc) || (rc < 2.2204460492503131E-16)) {
       char_T str[14];
-      b_st.site = &pg_emlrtRSI;
+      b_st.site = &qg_emlrtRSI;
       b_y = NULL;
       m = emlrtCreateCharArray(2, &b_iv[0]);
       emlrtInitCharArrayR2013a(&b_st, 6, m, &rfmt[0]);
@@ -442,10 +449,10 @@ void inv(const emlrtStack *sp, const emxArray_real_T *x, emxArray_real_T *y)
       c_y = NULL;
       m = emlrtCreateDoubleScalar(rc);
       emlrtAssign(&c_y, m);
-      c_st.site = &it_emlrtRSI;
+      c_st.site = &jt_emlrtRSI;
       emlrt_marshallIn(&c_st, b_sprintf(&c_st, b_y, c_y, &c_emlrtMCI),
                        "<output of sprintf>", str);
-      b_st.site = &pg_emlrtRSI;
+      b_st.site = &qg_emlrtRSI;
       c_warning(&b_st, str);
     }
   }

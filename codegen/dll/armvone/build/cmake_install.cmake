@@ -1,8 +1,8 @@
-# Install script for directory: /home/pritesh0/ayush/baahubali/codegen/dll/armvone
+# Install script for directory: /home/ayush/misc/baahubali/codegen/dll/armvone
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/pritesh0/ayush/baahubali")
+  set(CMAKE_INSTALL_PREFIX "/home/ayush/misc/baahubali")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,7 +29,7 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "1")
+  set(CMAKE_INSTALL_SO_NO_EXE "0")
 endif()
 
 # Is this installation the result of a crosscompile?
@@ -38,21 +38,21 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/codegen/dll/armvone" TYPE SHARED_LIBRARY FILES "/home/pritesh0/ayush/baahubali/codegen/dll/armvone/build/armvone.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/codegen/dll/armvone" TYPE SHARED_LIBRARY FILES "/home/ayush/misc/baahubali/codegen/dll/armvone/build/armvone.so")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/codegen/dll/armvone/export" TYPE FILE FILES "/home/pritesh0/ayush/baahubali/codegen/dll/armvone/build/armvone.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/codegen/dll/armvone/export" TYPE FILE FILES "/home/ayush/misc/baahubali/codegen/dll/armvone/build/armvone.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/codegen/dll/armvone/export/armvoneTargets.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/codegen/dll/armvone/export/armvoneTargets.cmake"
-         "/home/pritesh0/ayush/baahubali/codegen/dll/armvone/build/CMakeFiles/Export/ea3ec09d04db65b36d8c0ccdbc0ee1c6/armvoneTargets.cmake")
+         "/home/ayush/misc/baahubali/codegen/dll/armvone/build/CMakeFiles/Export/ea3ec09d04db65b36d8c0ccdbc0ee1c6/armvoneTargets.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/codegen/dll/armvone/export/armvoneTargets-*.cmake")
       if(_cmake_old_config_files)
@@ -65,9 +65,9 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/codegen/dll/armvone/export" TYPE FILE FILES "/home/pritesh0/ayush/baahubali/codegen/dll/armvone/build/CMakeFiles/Export/ea3ec09d04db65b36d8c0ccdbc0ee1c6/armvoneTargets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/codegen/dll/armvone/export" TYPE FILE FILES "/home/ayush/misc/baahubali/codegen/dll/armvone/build/CMakeFiles/Export/ea3ec09d04db65b36d8c0ccdbc0ee1c6/armvoneTargets.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/codegen/dll/armvone/export" TYPE FILE FILES "/home/pritesh0/ayush/baahubali/codegen/dll/armvone/build/CMakeFiles/Export/ea3ec09d04db65b36d8c0ccdbc0ee1c6/armvoneTargets-release.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/codegen/dll/armvone/export" TYPE FILE FILES "/home/ayush/misc/baahubali/codegen/dll/armvone/build/CMakeFiles/Export/ea3ec09d04db65b36d8c0ccdbc0ee1c6/armvoneTargets-release.cmake")
   endif()
 endif()
 
@@ -79,5 +79,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/pritesh0/ayush/baahubali/codegen/dll/armvone/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ayush/misc/baahubali/codegen/dll/armvone/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

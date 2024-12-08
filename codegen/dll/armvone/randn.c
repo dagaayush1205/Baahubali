@@ -2,23 +2,20 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: randn.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * randn.c
+ *
+ * Code generation for function 'randn'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "randn.h"
 #include "armvone_data.h"
 #include "eml_rand_mt19937ar.h"
 #include "rt_nonfinite.h"
 
 /* Function Definitions */
-/*
- * Arguments    : double r[3]
- * Return Type  : void
- */
 void b_randn(double r[3])
 {
   r[0] = b_eml_rand_mt19937ar(state);
@@ -26,11 +23,6 @@ void b_randn(double r[3])
   r[2] = b_eml_rand_mt19937ar(state);
 }
 
-/*
- * Arguments    : const double varargin_1[2]
- *                double r_data[]
- * Return Type  : int
- */
 int c_randn(const double varargin_1[2], double r_data[])
 {
   int i;
@@ -44,10 +36,6 @@ int c_randn(const double varargin_1[2], double r_data[])
   return r_size;
 }
 
-/*
- * Arguments    : double r[4]
- * Return Type  : void
- */
 void randn(double r[4])
 {
   r[0] = b_eml_rand_mt19937ar(state);
@@ -56,8 +44,4 @@ void randn(double r[4])
   r[3] = b_eml_rand_mt19937ar(state);
 }
 
-/*
- * File trailer for randn.c
- *
- * [EOF]
- */
+/* End of code generation (randn.c) */

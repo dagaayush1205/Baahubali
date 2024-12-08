@@ -2,13 +2,14 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: importrobot.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * importrobot.c
+ *
+ * Code generation for function 'importrobot'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "importrobot.h"
 #include "CollisionSet.h"
 #include "RigidBody.h"
@@ -21,11 +22,6 @@
 #include <string.h>
 
 /* Function Definitions */
-/*
- * Arguments    : d_robotics_manip_internal_Rigid *iobj_0
- *                b_rigidBodyTree **iobj_1
- * Return Type  : void
- */
 void importrobot(d_robotics_manip_internal_Rigid *iobj_0,
                  b_rigidBodyTree **iobj_1)
 {
@@ -467,8 +463,4 @@ void importrobot(d_robotics_manip_internal_Rigid *iobj_0,
   (*iobj_1)->matlabCodegenIsDeleted = false;
 }
 
-/*
- * File trailer for importrobot.c
- *
- * [EOF]
- */
+/* End of code generation (importrobot.c) */

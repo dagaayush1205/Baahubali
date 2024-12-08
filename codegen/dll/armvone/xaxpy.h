@@ -2,16 +2,17 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: xaxpy.h
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * xaxpy.h
+ *
+ * Code generation for function 'xaxpy'
+ *
  */
 
 #ifndef XAXPY_H
 #define XAXPY_H
 
-/* Include Files */
+/* Include files */
 #include "armvone_types.h"
 #include "rtwtypes.h"
 #include <stddef.h>
@@ -38,8 +39,4 @@ void xaxpy(int n, double a, int ix0, double y[9], int iy0);
 #endif
 
 #endif
-/*
- * File trailer for xaxpy.h
- *
- * [EOF]
- */
+/* End of code generation (xaxpy.h) */

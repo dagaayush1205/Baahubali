@@ -2,13 +2,14 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: inverseKinematics.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * inverseKinematics.c
+ *
+ * Code generation for function 'inverseKinematics'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "inverseKinematics.h"
 #include "CollisionSet.h"
 #include "DampedBFGSwGradientProjection.h"
@@ -28,20 +29,15 @@
 #include <string.h>
 
 /* Function Declarations */
-static void b_cast(const emxArray_struct_T *r2, emxArray_struct0_T *r3);
+static void b_cast(const b_emxArray_struct_T *r2, emxArray_struct_T *r3);
 
-static void cast(const b_emxArray_struct_T *r2, emxArray_struct_T *r3);
+static void cast(const c_emxArray_struct_T *r2, b_emxArray_struct_T *r3);
 
 /* Function Definitions */
-/*
- * Arguments    : const emxArray_struct_T *r2
- *                emxArray_struct0_T *r3
- * Return Type  : void
- */
-static void b_cast(const emxArray_struct_T *r2, emxArray_struct0_T *r3)
+static void b_cast(const b_emxArray_struct_T *r2, emxArray_struct_T *r3)
 {
-  const b_struct_T *r;
-  struct0_T *r1;
+  const c_struct_T *r;
+  struct_T *r1;
   int i;
   int i1;
   int i2;
@@ -50,7 +46,7 @@ static void b_cast(const emxArray_struct_T *r2, emxArray_struct0_T *r3)
   r3->size[0] = 1;
   i1 = r2->size[1];
   r3->size[1] = r2->size[1];
-  emxEnsureCapacity_struct0_T(r3, i);
+  emxEnsureCapacity_struct_T2(r3, i);
   r1 = r3->data;
   for (i = 0; i < i1; i++) {
     int loop_ub;
@@ -67,15 +63,10 @@ static void b_cast(const emxArray_struct_T *r2, emxArray_struct0_T *r3)
   }
 }
 
-/*
- * Arguments    : const b_emxArray_struct_T *r2
- *                emxArray_struct_T *r3
- * Return Type  : void
- */
-static void cast(const b_emxArray_struct_T *r2, emxArray_struct_T *r3)
+static void cast(const c_emxArray_struct_T *r2, b_emxArray_struct_T *r3)
 {
-  b_struct_T *r1;
-  const c_struct_T *r;
+  c_struct_T *r1;
+  const d_struct_T *r;
   int i;
   int i1;
   r = r2->data;
@@ -94,11 +85,6 @@ static void cast(const b_emxArray_struct_T *r2, emxArray_struct_T *r3)
   }
 }
 
-/*
- * Arguments    : inverseKinematics *obj
- *                b_rigidBodyTree *varargin_2
- * Return Type  : inverseKinematics *
- */
 inverseKinematics *c_inverseKinematics_inverseKine(inverseKinematics *obj,
                                                    b_rigidBodyTree *varargin_2)
 {
@@ -366,35 +352,25 @@ inverseKinematics *c_inverseKinematics_inverseKine(inverseKinematics *obj,
   return b_obj;
 }
 
-/*
- * Arguments    : inverseKinematics *obj
- *                const struct_T initialGuess[6]
- *                emxArray_struct0_T *QSol
- *                char solutionInfo_Status_data[]
- *                int solutionInfo_Status_size[2]
- *                double *solutionInfo_NumRandomRestarts
- *                double *solutionInfo_PoseErrorNorm
- *                double *solutionInfo_ExitFlag
- * Return Type  : double
- */
 double inverseKinematics_solve(
-    inverseKinematics *obj, const struct_T initialGuess[6],
-    emxArray_struct0_T *QSol, char solutionInfo_Status_data[],
+    inverseKinematics *obj, const b_struct_T initialGuess[6],
+    emxArray_struct_T *QSol, char solutionInfo_Status_data[],
     int solutionInfo_Status_size[2], double *solutionInfo_NumRandomRestarts,
     double *solutionInfo_PoseErrorNorm, double *solutionInfo_ExitFlag)
 {
-  static const c_struct_T r5 = {
+  static const d_struct_T r5 = {
       0.0 /* JointPosition */
   };
   static const char b_cv[14] = {'b', 'e', 's', 't', ' ', 'a', 'v',
                                 'a', 'i', 'l', 'a', 'b', 'l', 'e'};
   static const char b_cv1[7] = {'s', 'u', 'c', 'c', 'e', 's', 's'};
   static const char b_cv2[5] = {'f', 'i', 'x', 'e', 'd'};
-  b_emxArray_struct_T *r3;
-  b_struct_T *Q_data;
+  b_emxArray_struct_T *Q;
+  c_emxArray_struct_T *r3;
   c_robotics_core_internal_Damped *b_obj;
   c_robotics_manip_internal_Rigid *body;
-  c_struct_T *r4;
+  c_struct_T *Q_data;
+  d_struct_T *r4;
   e_robotics_manip_internal_Rigid *c_obj;
   emxArray_int32_T *r;
   emxArray_int32_T *r2;
@@ -404,7 +380,6 @@ double inverseKinematics_solve(
   emxArray_real_T *positionMap;
   emxArray_real_T *xSolPrev;
   emxArray_real_T *y;
-  emxArray_struct_T *Q;
   rigidBodyJoint *d_obj;
   double newseed_data[42];
   double err;
@@ -714,7 +689,7 @@ double inverseKinematics_solve(
   emxFree_real_T(&positionIndices);
   c_obj = obj->RigidBodyTreeInternal;
   err = c_obj->NumNonFixedBodies;
-  emxInit_struct_T1(&r3);
+  emxInit_struct_T2(&r3);
   k = r3->size[0] * r3->size[1];
   r3->size[0] = 1;
   nm1d2 = (int)err;
@@ -724,10 +699,10 @@ double inverseKinematics_solve(
   for (k = 0; k < nm1d2; k++) {
     r4[k] = r5;
   }
-  emxInit_struct_T(&Q);
+  emxInit_struct_T1(&Q);
   cast(r3, Q);
   Q_data = Q->data;
-  emxFree_struct_T1(&r3);
+  emxFree_struct_T2(&r3);
   i = 1U;
   err = c_obj->NumBodies;
   k = (int)err;
@@ -801,13 +776,9 @@ double inverseKinematics_solve(
   }
   emxFree_real_T(&iniGuessVec);
   b_cast(Q, QSol);
-  emxFree_struct_T(&Q);
+  emxFree_struct_T1(&Q);
   *solutionInfo_ExitFlag = (int)exitFlagPrev;
   return solutionInfo_Iterations;
 }
 
-/*
- * File trailer for inverseKinematics.c
- *
- * [EOF]
- */
+/* End of code generation (inverseKinematics.c) */

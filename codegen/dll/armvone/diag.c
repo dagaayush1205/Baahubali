@@ -2,24 +2,20 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: diag.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * diag.c
+ *
+ * Code generation for function 'diag'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "diag.h"
 #include "armvone_emxutil.h"
 #include "armvone_types.h"
 #include "rt_nonfinite.h"
 
 /* Function Definitions */
-/*
- * Arguments    : const emxArray_real_T *v
- *                emxArray_real_T *d
- * Return Type  : void
- */
 void diag(const emxArray_real_T *v, emxArray_real_T *d)
 {
   const double *v_data;
@@ -52,8 +48,4 @@ void diag(const emxArray_real_T *v, emxArray_real_T *d)
   }
 }
 
-/*
- * File trailer for diag.c
- *
- * [EOF]
- */
+/* End of code generation (diag.c) */

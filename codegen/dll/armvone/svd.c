@@ -2,13 +2,14 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: svd.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * svd.c
+ *
+ * Code generation for function 'svd'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "svd.h"
 #include "rt_nonfinite.h"
 #include "xaxpy.h"
@@ -23,13 +24,6 @@
 #include <math.h>
 
 /* Function Definitions */
-/*
- * Arguments    : const double A[9]
- *                double U[9]
- *                double s[3]
- *                double V[9]
- * Return Type  : void
- */
 void svd(const double A[9], double U[9], double s[3], double V[9])
 {
   __m128d r;
@@ -443,8 +437,4 @@ void svd(const double A[9], double U[9], double s[3], double V[9])
   }
 }
 
-/*
- * File trailer for svd.c
- *
- * [EOF]
- */
+/* End of code generation (svd.c) */

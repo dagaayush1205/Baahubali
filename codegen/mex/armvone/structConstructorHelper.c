@@ -22,7 +22,7 @@ void structConstructorHelper(const char_T varargin_2_f1[14],
                              const char_T varargin_2_f4[10],
                              const char_T varargin_2_f5[8],
                              const char_T varargin_2_f6[10],
-                             const real_T varargin_4[6], struct_T s[6])
+                             const real_T varargin_4[6], b_struct_T s[6])
 {
   int32_T j;
   s[0].JointName.size[0] = 1;

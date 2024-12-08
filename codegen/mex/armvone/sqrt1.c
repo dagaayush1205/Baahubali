@@ -19,16 +19,17 @@
 #include <emmintrin.h>
 
 /* Variable Definitions */
-static emlrtRSInfo vq_emlrtRSI = {
-    16,                                                           /* lineNo */
-    "sqrt",                                                       /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/elfun/sqrt.m" /* pathName */
+static emlrtRSInfo wq_emlrtRSI = {
+    16,     /* lineNo */
+    "sqrt", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/elfun/sqrt.m" /* pathName
+                                                                           */
 };
 
-static emlrtRSInfo wq_emlrtRSI = {
+static emlrtRSInfo xq_emlrtRSI = {
     38,                           /* lineNo */
     "applyScalarFunctionInPlace", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/"
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/"
     "applyScalarFunctionInPlace.m" /* pathName */
 };
 
@@ -63,8 +64,8 @@ void c_sqrt(const emlrtStack *sp, emxArray_real_T *x)
         sp, &hb_emlrtRTEI, "Coder:toolbox:ElFunDomainError",
         "Coder:toolbox:ElFunDomainError", 3, 4, 4, "sqrt");
   }
-  st.site = &vq_emlrtRSI;
-  b_st.site = &wq_emlrtRSI;
+  st.site = &wq_emlrtRSI;
+  b_st.site = &xq_emlrtRSI;
   if (x->size[0] > 2147483646) {
     c_st.site = &rb_emlrtRSI;
     check_forloop_overflow_error(&c_st);

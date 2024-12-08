@@ -2,13 +2,14 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: CollisionSet.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * CollisionSet.c
+ *
+ * Code generation for function 'CollisionSet'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "CollisionSet.h"
 #include "armvone_data.h"
 #include "armvone_emxutil.h"
@@ -16,11 +17,6 @@
 #include "rt_nonfinite.h"
 
 /* Function Definitions */
-/*
- * Arguments    : d_robotics_manip_internal_Colli *obj
- *                double maxElements
- * Return Type  : d_robotics_manip_internal_Colli *
- */
 d_robotics_manip_internal_Colli *
 CollisionSet_CollisionSet(d_robotics_manip_internal_Colli *obj,
                           double maxElements)
@@ -59,8 +55,4 @@ CollisionSet_CollisionSet(d_robotics_manip_internal_Colli *obj,
   return b_obj;
 }
 
-/*
- * File trailer for CollisionSet.c
- *
- * [EOF]
- */
+/* End of code generation (CollisionSet.c) */

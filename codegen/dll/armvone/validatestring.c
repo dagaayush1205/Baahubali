@@ -2,26 +2,20 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: validatestring.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * validatestring.c
+ *
+ * Code generation for function 'validatestring'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "validatestring.h"
 #include "armvone_data.h"
 #include "rt_nonfinite.h"
 #include <string.h>
 
 /* Function Definitions */
-/*
- * Arguments    : const char str_data[]
- *                const int str_size[2]
- *                char out_data[]
- *                int out_size[2]
- * Return Type  : void
- */
 void validatestring(const char str_data[], const int str_size[2],
                     char out_data[], int out_size[2])
 {
@@ -258,8 +252,4 @@ void validatestring(const char str_data[], const int str_size[2],
   }
 }
 
-/*
- * File trailer for validatestring.c
- *
- * [EOF]
- */
+/* End of code generation (validatestring.c) */

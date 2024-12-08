@@ -2,10 +2,11 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: rtGetInf.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * rtGetInf.c
+ *
+ * Code generation for function 'armvone'
+ *
  */
 
 /*
@@ -13,7 +14,7 @@
  *       MATLAB for code generation function to initialize non-finite, Inf and
  * MinusInf
  */
-/* Include Files */
+/* Include files */
 #include "rtGetInf.h"
 #include "rt_nonfinite.h"
 
@@ -57,8 +58,4 @@ real32_T rtGetMinusInfF(void)
   return rtMinusInfF;
 }
 
-/*
- * File trailer for rtGetInf.c
- *
- * [EOF]
- */
+/* End of code generation (rtGetInf.c) */

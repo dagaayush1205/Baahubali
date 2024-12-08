@@ -2,25 +2,18 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: xrot.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * xrot.c
+ *
+ * Code generation for function 'xrot'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "xrot.h"
 #include "rt_nonfinite.h"
 
 /* Function Definitions */
-/*
- * Arguments    : double x[9]
- *                int ix0
- *                int iy0
- *                double c
- *                double s
- * Return Type  : void
- */
 void xrot(double x[9], int ix0, int iy0, double c, double s)
 {
   double temp;
@@ -38,8 +31,4 @@ void xrot(double x[9], int ix0, int iy0, double c, double s)
   x[ix0 + 1] = c * temp_tmp + s * temp;
 }
 
-/*
- * File trailer for xrot.c
- *
- * [EOF]
- */
+/* End of code generation (xrot.c) */

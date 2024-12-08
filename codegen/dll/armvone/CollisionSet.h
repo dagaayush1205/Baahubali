@@ -2,16 +2,17 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: CollisionSet.h
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * CollisionSet.h
+ *
+ * Code generation for function 'CollisionSet'
+ *
  */
 
 #ifndef COLLISIONSET_H
 #define COLLISIONSET_H
 
-/* Include Files */
+/* Include files */
 #include "armvone_types.h"
 #include "rtwtypes.h"
 #include <stddef.h>
@@ -31,8 +32,4 @@ CollisionSet_CollisionSet(d_robotics_manip_internal_Colli *obj,
 #endif
 
 #endif
-/*
- * File trailer for CollisionSet.h
- *
- * [EOF]
- */
+/* End of code generation (CollisionSet.h) */

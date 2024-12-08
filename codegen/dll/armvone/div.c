@@ -2,25 +2,20 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: div.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * div.c
+ *
+ * Code generation for function 'div'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "div.h"
 #include "armvone_emxutil.h"
 #include "armvone_types.h"
 #include "rt_nonfinite.h"
 
 /* Function Definitions */
-/*
- * Arguments    : emxArray_real_T *in1
- *                const emxArray_real_T *in2
- *                const emxArray_real_T *in3
- * Return Type  : void
- */
 void binary_expand_op_9(emxArray_real_T *in1, const emxArray_real_T *in2,
                         const emxArray_real_T *in3)
 {
@@ -68,8 +63,4 @@ void binary_expand_op_9(emxArray_real_T *in1, const emxArray_real_T *in2,
   emxFree_real_T(&b_in1);
 }
 
-/*
- * File trailer for div.c
- *
- * [EOF]
- */
+/* End of code generation (div.c) */

@@ -2,16 +2,17 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: IKHelpers.h
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * IKHelpers.h
+ *
+ * Code generation for function 'IKHelpers'
+ *
  */
 
 #ifndef IKHELPERS_H
 #define IKHELPERS_H
 
-/* Include Files */
+/* Include files */
 #include "armvone_types.h"
 #include "rtwtypes.h"
 #include <stddef.h>
@@ -37,8 +38,4 @@ int IKHelpers_randomConfig(c_robotics_manip_internal_IKExt *args,
 #endif
 
 #endif
-/*
- * File trailer for IKHelpers.h
- *
- * [EOF]
- */
+/* End of code generation (IKHelpers.h) */

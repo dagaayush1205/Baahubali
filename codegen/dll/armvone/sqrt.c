@@ -2,23 +2,20 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: sqrt.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * sqrt.c
+ *
+ * Code generation for function 'sqrt'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "sqrt.h"
 #include "rt_nonfinite.h"
 #include "rt_nonfinite.h"
 #include <math.h>
 
 /* Function Definitions */
-/*
- * Arguments    : creal_T *x
- * Return Type  : void
- */
 void b_sqrt(creal_T *x)
 {
   double absxd2;
@@ -111,8 +108,4 @@ void b_sqrt(creal_T *x)
   x->im = absxd2;
 }
 
-/*
- * File trailer for sqrt.c
- *
- * [EOF]
- */
+/* End of code generation (sqrt.c) */

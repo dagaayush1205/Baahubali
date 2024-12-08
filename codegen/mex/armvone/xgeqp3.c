@@ -22,112 +22,99 @@
 #include <stddef.h>
 
 /* Variable Definitions */
-static emlrtRSInfo eo_emlrtRSI =
-    {
-        63,       /* lineNo */
-        "xgeqp3", /* fcnName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+lapack/"
-        "xgeqp3.m" /* pathName */
+static emlrtRSInfo fo_emlrtRSI = {
+    63,       /* lineNo */
+    "xgeqp3", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+lapack/"
+    "xgeqp3.m" /* pathName */
 };
 
-static emlrtRSInfo fo_emlrtRSI =
-    {
-        98,             /* lineNo */
-        "ceval_xgeqp3", /* fcnName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+lapack/"
-        "xgeqp3.m" /* pathName */
+static emlrtRSInfo go_emlrtRSI = {
+    98,             /* lineNo */
+    "ceval_xgeqp3", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+lapack/"
+    "xgeqp3.m" /* pathName */
 };
 
-static emlrtRSInfo go_emlrtRSI =
-    {
-        138,            /* lineNo */
-        "ceval_xgeqp3", /* fcnName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+lapack/"
-        "xgeqp3.m" /* pathName */
+static emlrtRSInfo ho_emlrtRSI = {
+    138,            /* lineNo */
+    "ceval_xgeqp3", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+lapack/"
+    "xgeqp3.m" /* pathName */
 };
 
-static emlrtRSInfo ho_emlrtRSI =
-    {
-        141,            /* lineNo */
-        "ceval_xgeqp3", /* fcnName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+lapack/"
-        "xgeqp3.m" /* pathName */
+static emlrtRSInfo io_emlrtRSI = {
+    141,            /* lineNo */
+    "ceval_xgeqp3", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+lapack/"
+    "xgeqp3.m" /* pathName */
 };
 
-static emlrtRSInfo io_emlrtRSI =
-    {
-        143,            /* lineNo */
-        "ceval_xgeqp3", /* fcnName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+lapack/"
-        "xgeqp3.m" /* pathName */
+static emlrtRSInfo jo_emlrtRSI = {
+    143,            /* lineNo */
+    "ceval_xgeqp3", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+lapack/"
+    "xgeqp3.m" /* pathName */
 };
 
-static emlrtRSInfo jo_emlrtRSI =
-    {
-        148,            /* lineNo */
-        "ceval_xgeqp3", /* fcnName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+lapack/"
-        "xgeqp3.m" /* pathName */
+static emlrtRSInfo ko_emlrtRSI = {
+    148,            /* lineNo */
+    "ceval_xgeqp3", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+lapack/"
+    "xgeqp3.m" /* pathName */
 };
 
-static emlrtRSInfo ko_emlrtRSI =
-    {
-        151,            /* lineNo */
-        "ceval_xgeqp3", /* fcnName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+lapack/"
-        "xgeqp3.m" /* pathName */
+static emlrtRSInfo lo_emlrtRSI = {
+    151,            /* lineNo */
+    "ceval_xgeqp3", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+lapack/"
+    "xgeqp3.m" /* pathName */
 };
 
-static emlrtRSInfo lo_emlrtRSI =
-    {
-        154,            /* lineNo */
-        "ceval_xgeqp3", /* fcnName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+lapack/"
-        "xgeqp3.m" /* pathName */
+static emlrtRSInfo mo_emlrtRSI = {
+    154,            /* lineNo */
+    "ceval_xgeqp3", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+lapack/"
+    "xgeqp3.m" /* pathName */
 };
 
-static emlrtRSInfo mo_emlrtRSI =
-    {
-        158,            /* lineNo */
-        "ceval_xgeqp3", /* fcnName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+lapack/"
-        "xgeqp3.m" /* pathName */
+static emlrtRSInfo no_emlrtRSI = {
+    158,            /* lineNo */
+    "ceval_xgeqp3", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+lapack/"
+    "xgeqp3.m" /* pathName */
 };
 
-static emlrtRTEInfo ki_emlrtRTEI =
-    {
-        61,       /* lineNo */
-        9,        /* colNo */
-        "xgeqp3", /* fName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+lapack/"
-        "xgeqp3.m" /* pName */
+static emlrtRTEInfo ki_emlrtRTEI = {
+    61,       /* lineNo */
+    9,        /* colNo */
+    "xgeqp3", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+lapack/"
+    "xgeqp3.m" /* pName */
 };
 
-static emlrtRTEInfo li_emlrtRTEI =
-    {
-        92,       /* lineNo */
-        22,       /* colNo */
-        "xgeqp3", /* fName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+lapack/"
-        "xgeqp3.m" /* pName */
+static emlrtRTEInfo li_emlrtRTEI = {
+    92,       /* lineNo */
+    22,       /* colNo */
+    "xgeqp3", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+lapack/"
+    "xgeqp3.m" /* pName */
 };
 
-static emlrtRTEInfo mi_emlrtRTEI =
-    {
-        105,      /* lineNo */
-        1,        /* colNo */
-        "xgeqp3", /* fName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+lapack/"
-        "xgeqp3.m" /* pName */
+static emlrtRTEInfo mi_emlrtRTEI = {
+    105,      /* lineNo */
+    1,        /* colNo */
+    "xgeqp3", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+lapack/"
+    "xgeqp3.m" /* pName */
 };
 
-static emlrtRTEInfo ni_emlrtRTEI =
-    {
-        97,       /* lineNo */
-        5,        /* colNo */
-        "xgeqp3", /* fName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+lapack/"
-        "xgeqp3.m" /* pName */
+static emlrtRTEInfo ni_emlrtRTEI = {
+    97,       /* lineNo */
+    5,        /* colNo */
+    "xgeqp3", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+lapack/"
+    "xgeqp3.m" /* pName */
 };
 
 /* Function Definitions */
@@ -170,7 +157,7 @@ void xgeqp3(const emlrtStack *sp, emxArray_real_T *A, emxArray_real_T *tau,
   for (i = 0; i < loop_ub; i++) {
     jpvt_data[i] = 0;
   }
-  st.site = &eo_emlrtRSI;
+  st.site = &fo_emlrtRSI;
   minmana = muIntScalarMin_sint32(minmn, loop_ub);
   i = tau->size[0];
   tau->size[0] = minmana;
@@ -186,7 +173,7 @@ void xgeqp3(const emlrtStack *sp, emxArray_real_T *A, emxArray_real_T *tau,
     for (i = 0; i < minmana; i++) {
       tau_data[i] = 0.0;
     }
-    b_st.site = &fo_emlrtRSI;
+    b_st.site = &go_emlrtRSI;
     if (A->size[1] > 2147483646) {
       c_st.site = &rb_emlrtRSI;
       check_forloop_overflow_error(&c_st);
@@ -217,7 +204,7 @@ void xgeqp3(const emlrtStack *sp, emxArray_real_T *A, emxArray_real_T *tau,
     info_t = LAPACKE_dgeqp3(102, (ptrdiff_t)A->size[0], (ptrdiff_t)A->size[1],
                             &A_data[0], (ptrdiff_t)A->size[0], &jpvt_t_data[0],
                             &tau_data[0]);
-    b_st.site = &go_emlrtRSI;
+    b_st.site = &ho_emlrtRSI;
     if ((int32_T)info_t != 0) {
       p = true;
       if ((int32_T)info_t != -4) {
@@ -235,13 +222,13 @@ void xgeqp3(const emlrtStack *sp, emxArray_real_T *A, emxArray_real_T *tau,
       p = false;
     }
     if (p) {
-      b_st.site = &ho_emlrtRSI;
+      b_st.site = &io_emlrtRSI;
       if (A->size[1] > 2147483646) {
         c_st.site = &rb_emlrtRSI;
         check_forloop_overflow_error(&c_st);
       }
       for (loop_ub = 0; loop_ub <= na; loop_ub++) {
-        b_st.site = &io_emlrtRSI;
+        b_st.site = &jo_emlrtRSI;
         if (minmn > 2147483646) {
           c_st.site = &rb_emlrtRSI;
           check_forloop_overflow_error(&c_st);
@@ -252,7 +239,7 @@ void xgeqp3(const emlrtStack *sp, emxArray_real_T *A, emxArray_real_T *tau,
       }
       i = na + 1;
       minmn = muIntScalarMin_sint32(minmn, i);
-      b_st.site = &jo_emlrtRSI;
+      b_st.site = &ko_emlrtRSI;
       if (minmn > 2147483646) {
         c_st.site = &rb_emlrtRSI;
         check_forloop_overflow_error(&c_st);
@@ -261,7 +248,7 @@ void xgeqp3(const emlrtStack *sp, emxArray_real_T *A, emxArray_real_T *tau,
         tau_data[i] = rtNaN;
       }
       loop_ub = minmn + 1;
-      b_st.site = &ko_emlrtRSI;
+      b_st.site = &lo_emlrtRSI;
       if ((minmn + 1 <= minmana) && (minmana > 2147483646)) {
         c_st.site = &rb_emlrtRSI;
         check_forloop_overflow_error(&c_st);
@@ -269,7 +256,7 @@ void xgeqp3(const emlrtStack *sp, emxArray_real_T *A, emxArray_real_T *tau,
       for (i = loop_ub; i <= minmana; i++) {
         tau_data[i - 1] = 0.0;
       }
-      b_st.site = &lo_emlrtRSI;
+      b_st.site = &mo_emlrtRSI;
       if (A->size[1] > 2147483646) {
         c_st.site = &rb_emlrtRSI;
         check_forloop_overflow_error(&c_st);
@@ -288,7 +275,7 @@ void xgeqp3(const emlrtStack *sp, emxArray_real_T *A, emxArray_real_T *tau,
         jpvt_data[i] = i + 1;
       }
     } else {
-      b_st.site = &mo_emlrtRSI;
+      b_st.site = &no_emlrtRSI;
       if (A->size[1] > 2147483646) {
         c_st.site = &rb_emlrtRSI;
         check_forloop_overflow_error(&c_st);

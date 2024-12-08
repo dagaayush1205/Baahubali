@@ -2,16 +2,17 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: validatestring.h
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * validatestring.h
+ *
+ * Code generation for function 'validatestring'
+ *
  */
 
 #ifndef VALIDATESTRING_H
 #define VALIDATESTRING_H
 
-/* Include Files */
+/* Include files */
 #include "rtwtypes.h"
 #include <stddef.h>
 #include <stdlib.h>
@@ -29,8 +30,4 @@ void validatestring(const char str_data[], const int str_size[2],
 #endif
 
 #endif
-/*
- * File trailer for validatestring.h
- *
- * [EOF]
- */
+/* End of code generation (validatestring.h) */

@@ -2,16 +2,17 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: armvone_data.h
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * armvone_data.h
+ *
+ * Code generation for function 'armvone_data'
+ *
  */
 
 #ifndef ARMVONE_DATA_H
 #define ARMVONE_DATA_H
 
-/* Include Files */
+/* Include files */
 #include "armvone_internal_types.h"
 #include "rtwtypes.h"
 #include <stddef.h>
@@ -35,8 +36,4 @@ extern const char cv9[10];
 extern boolean_T isInitialized_armvone;
 
 #endif
-/*
- * File trailer for armvone_data.h
- *
- * [EOF]
- */
+/* End of code generation (armvone_data.h) */

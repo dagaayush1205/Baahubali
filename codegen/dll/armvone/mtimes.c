@@ -2,13 +2,14 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: mtimes.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * mtimes.c
+ *
+ * Code generation for function 'mtimes'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "mtimes.h"
 #include "armvone_emxutil.h"
 #include "armvone_types.h"
@@ -16,12 +17,6 @@
 #include <emmintrin.h>
 
 /* Function Definitions */
-/*
- * Arguments    : const emxArray_real_T *A
- *                const emxArray_real_T *B
- *                emxArray_real_T *C
- * Return Type  : void
- */
 void b_mtimes(const emxArray_real_T *A, const emxArray_real_T *B,
               emxArray_real_T *C)
 {
@@ -64,12 +59,6 @@ void b_mtimes(const emxArray_real_T *A, const emxArray_real_T *B,
   }
 }
 
-/*
- * Arguments    : const emxArray_real_T *A
- *                const emxArray_real_T *B
- *                emxArray_real_T *C
- * Return Type  : void
- */
 void c_mtimes(const emxArray_real_T *A, const emxArray_real_T *B,
               emxArray_real_T *C)
 {
@@ -111,12 +100,6 @@ void c_mtimes(const emxArray_real_T *A, const emxArray_real_T *B,
   }
 }
 
-/*
- * Arguments    : const emxArray_real_T *A
- *                const emxArray_real_T *B
- *                emxArray_real_T *C
- * Return Type  : void
- */
 void d_mtimes(const emxArray_real_T *A, const emxArray_real_T *B,
               emxArray_real_T *C)
 {
@@ -172,12 +155,6 @@ void d_mtimes(const emxArray_real_T *A, const emxArray_real_T *B,
   }
 }
 
-/*
- * Arguments    : const emxArray_real_T *A
- *                const emxArray_real_T *B
- *                emxArray_real_T *C
- * Return Type  : void
- */
 void mtimes(const emxArray_real_T *A, const emxArray_real_T *B,
             emxArray_real_T *C)
 {
@@ -235,8 +212,4 @@ void mtimes(const emxArray_real_T *A, const emxArray_real_T *B,
   }
 }
 
-/*
- * File trailer for mtimes.c
- *
- * [EOF]
- */
+/* End of code generation (mtimes.c) */

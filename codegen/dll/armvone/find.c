@@ -2,25 +2,20 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: find.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * find.c
+ *
+ * Code generation for function 'find'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "find.h"
 #include "armvone_emxutil.h"
 #include "armvone_types.h"
 #include "rt_nonfinite.h"
 
 /* Function Definitions */
-/*
- * Arguments    : emxArray_int32_T *in1
- *                const emxArray_real_T *in2
- *                const c_robotics_core_internal_Damped *in3
- * Return Type  : void
- */
 void binary_expand_op_11(emxArray_int32_T *in1, const emxArray_real_T *in2,
                          const c_robotics_core_internal_Damped *in3)
 {
@@ -52,11 +47,6 @@ void binary_expand_op_11(emxArray_int32_T *in1, const emxArray_real_T *in2,
   emxFree_boolean_T(&b_in2);
 }
 
-/*
- * Arguments    : const emxArray_boolean_T *x
- *                emxArray_int32_T *i
- * Return Type  : void
- */
 void eml_find(const emxArray_boolean_T *x, emxArray_int32_T *i)
 {
   int idx;
@@ -102,8 +92,4 @@ void eml_find(const emxArray_boolean_T *x, emxArray_int32_T *i)
   }
 }
 
-/*
- * File trailer for find.c
- *
- * [EOF]
- */
+/* End of code generation (find.c) */

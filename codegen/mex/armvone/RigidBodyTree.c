@@ -37,582 +37,584 @@
 static emlrtRSInfo vc_emlrtRSI = {
     165,                           /* lineNo */
     "RigidBodyTree/RigidBodyTree", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo wc_emlrtRSI = {
     160,                           /* lineNo */
     "RigidBodyTree/RigidBodyTree", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo xc_emlrtRSI = {
     167,                           /* lineNo */
     "RigidBodyTree/RigidBodyTree", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo yc_emlrtRSI = {
     47,                                                /* lineNo */
     "FastVisualizationHelper/FastVisualizationHelper", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/FastVisualizationHelper.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/FastVisualizationHelper.m" /* pathName */
 };
 
 static emlrtRSInfo ad_emlrtRSI = {
     1399,                           /* lineNo */
     "RigidBodyTree/clearAllBodies", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo bd_emlrtRSI = {
     1380,                           /* lineNo */
     "RigidBodyTree/clearAllBodies", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo id_emlrtRSI = {
     1425,                                /* lineNo */
     "RigidBodyTree/findBodyIndexByName", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo td_emlrtRSI = {
     230,                     /* lineNo */
     "RigidBodyTree/addBody", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo ud_emlrtRSI = {
     234,                     /* lineNo */
     "RigidBodyTree/addBody", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo vd_emlrtRSI = {
     238,                     /* lineNo */
     "RigidBodyTree/addBody", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo wd_emlrtRSI = {
     241,                     /* lineNo */
     "RigidBodyTree/addBody", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo xd_emlrtRSI = {
     243,                     /* lineNo */
     "RigidBodyTree/addBody", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo yd_emlrtRSI = {
     283,                     /* lineNo */
     "RigidBodyTree/addBody", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo ae_emlrtRSI = {
     285,                     /* lineNo */
     "RigidBodyTree/addBody", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo be_emlrtRSI = {
     286,                     /* lineNo */
     "RigidBodyTree/addBody", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo ce_emlrtRSI = {
     293,                     /* lineNo */
     "RigidBodyTree/addBody", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo de_emlrtRSI = {
     294,                     /* lineNo */
     "RigidBodyTree/addBody", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo ee_emlrtRSI = {
     254,                     /* lineNo */
     "RigidBodyTree/addBody", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo je_emlrtRSI = {
     1448,                                     /* lineNo */
     "RigidBodyTree/findBodyIndexByJointName", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo ke_emlrtRSI = {
     1452,                                     /* lineNo */
     "RigidBodyTree/findBodyIndexByJointName", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo le_emlrtRSI = {
     199,              /* lineNo */
     "RigidBody/copy", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBody.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBody.m" /* pathName */
 };
 
 static emlrtRSInfo me_emlrtRSI = {
     200,              /* lineNo */
     "RigidBody/copy", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBody.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBody.m" /* pathName */
 };
 
 static emlrtRSInfo ne_emlrtRSI = {
     210,              /* lineNo */
     "RigidBody/copy", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBody.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBody.m" /* pathName */
 };
 
 static emlrtRSInfo oe_emlrtRSI = {
     96,                    /* lineNo */
     "RigidBody/RigidBody", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBody.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBody.m" /* pathName */
 };
 
 static emlrtRSInfo pe_emlrtRSI = {
     99,                    /* lineNo */
     "RigidBody/RigidBody", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBody.m" /* pathName */
-};
-
-static emlrtRSInfo cg_emlrtRSI = {
-    2333,                                    /* lineNo */
-    "RigidBodyTree/get.JointPositionLimits", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBody.m" /* pathName */
 };
 
 static emlrtRSInfo dg_emlrtRSI = {
-    2335,                                    /* lineNo */
+    2333,                                    /* lineNo */
     "RigidBodyTree/get.JointPositionLimits", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
-static emlrtRSInfo vg_emlrtRSI = {
-    1696,                                            /* lineNo */
-    "RigidBodyTree/validateConfigurationWithLimits", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+static emlrtRSInfo eg_emlrtRSI = {
+    2335,                                    /* lineNo */
+    "RigidBodyTree/get.JointPositionLimits", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo wg_emlrtRSI = {
-    1698,                                            /* lineNo */
+    1696,                                            /* lineNo */
     "RigidBodyTree/validateConfigurationWithLimits", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo xg_emlrtRSI = {
-    1701,                                            /* lineNo */
+    1698,                                            /* lineNo */
     "RigidBodyTree/validateConfigurationWithLimits", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo yg_emlrtRSI = {
-    1707,                                            /* lineNo */
+    1701,                                            /* lineNo */
     "RigidBodyTree/validateConfigurationWithLimits", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo ah_emlrtRSI = {
-    1710,                                            /* lineNo */
+    1707,                                            /* lineNo */
     "RigidBodyTree/validateConfigurationWithLimits", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo bh_emlrtRSI = {
-    1712,                                            /* lineNo */
+    1710,                                            /* lineNo */
     "RigidBodyTree/validateConfigurationWithLimits", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo ch_emlrtRSI = {
-    1637,                                  /* lineNo */
-    "RigidBodyTree/validateConfiguration", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    1712,                                            /* lineNo */
+    "RigidBodyTree/validateConfigurationWithLimits", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo dh_emlrtRSI = {
-    1646,                                  /* lineNo */
+    1637,                                  /* lineNo */
     "RigidBodyTree/validateConfiguration", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo eh_emlrtRSI = {
-    1647,                                  /* lineNo */
+    1646,                                  /* lineNo */
     "RigidBodyTree/validateConfiguration", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo fh_emlrtRSI = {
-    1651,                                  /* lineNo */
+    1647,                                  /* lineNo */
     "RigidBodyTree/validateConfiguration", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo gh_emlrtRSI = {
-    1658,                                  /* lineNo */
+    1651,                                  /* lineNo */
     "RigidBodyTree/validateConfiguration", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo hh_emlrtRSI = {
-    1662,                                  /* lineNo */
+    1658,                                  /* lineNo */
     "RigidBodyTree/validateConfiguration", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
-static emlrtRSInfo vj_emlrtRSI = {
-    1897,                                        /* lineNo */
-    "RigidBodyTree/efficientFKAndJacobianForIK", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+static emlrtRSInfo ih_emlrtRSI = {
+    1662,                                  /* lineNo */
+    "RigidBodyTree/validateConfiguration", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo wj_emlrtRSI = {
-    1929,                                        /* lineNo */
+    1897,                                        /* lineNo */
     "RigidBodyTree/efficientFKAndJacobianForIK", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo xj_emlrtRSI = {
-    1930,                                        /* lineNo */
+    1929,                                        /* lineNo */
     "RigidBodyTree/efficientFKAndJacobianForIK", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo yj_emlrtRSI = {
-    1933,                                        /* lineNo */
+    1930,                                        /* lineNo */
     "RigidBodyTree/efficientFKAndJacobianForIK", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo ak_emlrtRSI = {
-    1956,                                        /* lineNo */
+    1933,                                        /* lineNo */
     "RigidBodyTree/efficientFKAndJacobianForIK", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo bk_emlrtRSI = {
-    1955,                                        /* lineNo */
+    1956,                                        /* lineNo */
     "RigidBodyTree/efficientFKAndJacobianForIK", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo ck_emlrtRSI = {
-    1967,                                        /* lineNo */
+    1955,                                        /* lineNo */
     "RigidBodyTree/efficientFKAndJacobianForIK", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo dk_emlrtRSI = {
-    2007,                                  /* lineNo */
-    "RigidBodyTree/kinematicPathInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    1967,                                        /* lineNo */
+    "RigidBodyTree/efficientFKAndJacobianForIK", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo ek_emlrtRSI = {
-    2008,                                  /* lineNo */
+    2007,                                  /* lineNo */
     "RigidBodyTree/kinematicPathInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
-static emlrtRSInfo vs_emlrtRSI = {
-    765,                                          /* lineNo */
-    "RigidBodyTree/bodyIndicesToPositionIndices", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+static emlrtRSInfo fk_emlrtRSI = {
+    2008,                                  /* lineNo */
+    "RigidBodyTree/kinematicPathInternal", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo ws_emlrtRSI = {
-    125,                                                         /* lineNo */
-    "colon",                                                     /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/ops/colon.m" /* pathName */
+    765,                                          /* lineNo */
+    "RigidBodyTree/bodyIndicesToPositionIndices", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo xs_emlrtRSI = {
-    319,                                                         /* lineNo */
-    "eml_float_colon",                                           /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/ops/colon.m" /* pathName */
+    125,     /* lineNo */
+    "colon", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/ops/colon.m" /* pathName
+                                                                          */
+};
+
+static emlrtRSInfo ys_emlrtRSI = {
+    319,               /* lineNo */
+    "eml_float_colon", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/ops/colon.m" /* pathName
+                                                                          */
 };
 
 static emlrtDCInfo i_emlrtDCI = {
     264,                     /* lineNo */
     24,                      /* colNo */
     "RigidBodyTree/addBody", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    1                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    1                                   /* checkKind */
 };
 
 static emlrtDCInfo j_emlrtDCI = {
     273,                     /* lineNo */
     36,                      /* colNo */
     "RigidBodyTree/addBody", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    1                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    1                                   /* checkKind */
 };
 
-static emlrtBCInfo l_emlrtBCI = {
+static emlrtBCInfo r_emlrtBCI = {
     1,                       /* iFirst */
     6,                       /* iLast */
     273,                     /* lineNo */
     36,                      /* colNo */
     "",                      /* aName */
     "RigidBodyTree/addBody", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    3                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    3                                   /* checkKind */
 };
 
 static emlrtDCInfo k_emlrtDCI = {
     285,                     /* lineNo */
     36,                      /* colNo */
     "RigidBodyTree/addBody", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    1                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    1                                   /* checkKind */
 };
 
-static emlrtBCInfo m_emlrtBCI = {
+static emlrtBCInfo s_emlrtBCI = {
     1,                       /* iFirst */
     6,                       /* iLast */
     285,                     /* lineNo */
     36,                      /* colNo */
     "",                      /* aName */
     "RigidBodyTree/addBody", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    3                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    3                                   /* checkKind */
 };
 
 static emlrtDCInfo l_emlrtDCI = {
     286,                     /* lineNo */
     36,                      /* colNo */
     "RigidBodyTree/addBody", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    1                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    1                                   /* checkKind */
 };
 
-static emlrtBCInfo n_emlrtBCI = {
+static emlrtBCInfo t_emlrtBCI = {
     1,                       /* iFirst */
     6,                       /* iLast */
     286,                     /* lineNo */
     36,                      /* colNo */
     "",                      /* aName */
     "RigidBodyTree/addBody", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    3                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    3                                   /* checkKind */
 };
 
 static emlrtDCInfo m_emlrtDCI = {
     288,                     /* lineNo */
     36,                      /* colNo */
     "RigidBodyTree/addBody", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    1                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    1                                   /* checkKind */
 };
 
-static emlrtBCInfo o_emlrtBCI = {
+static emlrtBCInfo u_emlrtBCI = {
     1,                       /* iFirst */
     6,                       /* iLast */
     288,                     /* lineNo */
     36,                      /* colNo */
     "",                      /* aName */
     "RigidBodyTree/addBody", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    3                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    3                                   /* checkKind */
 };
 
 static emlrtDCInfo n_emlrtDCI = {
     289,                     /* lineNo */
     36,                      /* colNo */
     "RigidBodyTree/addBody", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    1                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    1                                   /* checkKind */
 };
 
-static emlrtBCInfo p_emlrtBCI = {
+static emlrtBCInfo v_emlrtBCI = {
     1,                       /* iFirst */
     6,                       /* iLast */
     289,                     /* lineNo */
     36,                      /* colNo */
     "",                      /* aName */
     "RigidBodyTree/addBody", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    3                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    3                                   /* checkKind */
 };
 
-static emlrtBCInfo q_emlrtBCI = {
+static emlrtBCInfo w_emlrtBCI = {
     0,                       /* iFirst */
     5,                       /* iLast */
     264,                     /* lineNo */
     24,                      /* colNo */
     "",                      /* aName */
     "RigidBodyTree/addBody", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    3                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    3                                   /* checkKind */
 };
 
-static emlrtBCInfo r_emlrtBCI = {
+static emlrtBCInfo x_emlrtBCI = {
     0,                       /* iFirst */
     5,                       /* iLast */
     269,                     /* lineNo */
     37,                      /* colNo */
     "",                      /* aName */
     "RigidBodyTree/addBody", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
 static emlrtRTEInfo i_emlrtRTEI = {
     1451,                                     /* lineNo */
     21,                                       /* colNo */
     "RigidBodyTree/findBodyIndexByJointName", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
 };
 
-static emlrtBCInfo s_emlrtBCI = {
+static emlrtBCInfo y_emlrtBCI = {
     0,                                        /* iFirst */
     5,                                        /* iLast */
     1452,                                     /* lineNo */
     38,                                       /* colNo */
     "",                                       /* aName */
     "RigidBodyTree/findBodyIndexByJointName", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
 static emlrtDCInfo fb_emlrtDCI = {
     2329,                                    /* lineNo */
     28,                                      /* colNo */
     "RigidBodyTree/get.JointPositionLimits", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    4                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    4                                   /* checkKind */
 };
 
 static emlrtDCInfo gb_emlrtDCI = {
     2329,                                    /* lineNo */
     28,                                      /* colNo */
     "RigidBodyTree/get.JointPositionLimits", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    1                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    1                                   /* checkKind */
 };
 
 static emlrtRTEInfo q_emlrtRTEI = {
     2331,                                    /* lineNo */
     21,                                      /* colNo */
     "RigidBodyTree/get.JointPositionLimits", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
 };
 
 static emlrtDCInfo hb_emlrtDCI = {
     2335,                                    /* lineNo */
     28,                                      /* colNo */
     "RigidBodyTree/get.JointPositionLimits", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    1                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    1                                   /* checkKind */
 };
 
-static emlrtBCInfo ib_emlrtBCI = {
+static emlrtBCInfo ob_emlrtBCI = {
     -1,                                      /* iFirst */
     -1,                                      /* iLast */
     2335,                                    /* lineNo */
     28,                                      /* colNo */
     "",                                      /* aName */
     "RigidBodyTree/get.JointPositionLimits", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
 static emlrtDCInfo ib_emlrtDCI = {
     2335,                                    /* lineNo */
     30,                                      /* colNo */
     "RigidBodyTree/get.JointPositionLimits", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    1                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    1                                   /* checkKind */
 };
 
-static emlrtBCInfo jb_emlrtBCI = {
+static emlrtBCInfo pb_emlrtBCI = {
     -1,                                      /* iFirst */
     -1,                                      /* iLast */
     2335,                                    /* lineNo */
     30,                                      /* colNo */
     "",                                      /* aName */
     "RigidBodyTree/get.JointPositionLimits", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
 static emlrtECInfo j_emlrtECI = {
@@ -620,20 +622,20 @@ static emlrtECInfo j_emlrtECI = {
     2335,                                    /* lineNo */
     21,                                      /* colNo */
     "RigidBodyTree/get.JointPositionLimits", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
 };
 
-static emlrtBCInfo kb_emlrtBCI = {
+static emlrtBCInfo qb_emlrtBCI = {
     0,                                       /* iFirst */
     5,                                       /* iLast */
     2332,                                    /* lineNo */
     35,                                      /* colNo */
     "",                                      /* aName */
     "RigidBodyTree/get.JointPositionLimits", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
 static emlrtECInfo o_emlrtECI = {
@@ -641,8 +643,8 @@ static emlrtECInfo o_emlrtECI = {
     1699,                                            /* lineNo */
     20,                                              /* colNo */
     "RigidBodyTree/validateConfigurationWithLimits", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
 };
 
 static emlrtECInfo p_emlrtECI = {
@@ -650,8 +652,8 @@ static emlrtECInfo p_emlrtECI = {
     1700,                                            /* lineNo */
     20,                                              /* colNo */
     "RigidBodyTree/validateConfigurationWithLimits", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
 };
 
 static emlrtECInfo q_emlrtECI = {
@@ -659,8 +661,8 @@ static emlrtECInfo q_emlrtECI = {
     1708,                                            /* lineNo */
     21,                                              /* colNo */
     "RigidBodyTree/validateConfigurationWithLimits", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
 };
 
 static emlrtECInfo r_emlrtECI = {
@@ -668,77 +670,77 @@ static emlrtECInfo r_emlrtECI = {
     1711,                                            /* lineNo */
     21,                                              /* colNo */
     "RigidBodyTree/validateConfigurationWithLimits", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
 };
 
 static emlrtRTEInfo v_emlrtRTEI = {
     1644,                                  /* lineNo */
     25,                                    /* colNo */
     "RigidBodyTree/validateConfiguration", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
 };
 
-static emlrtBCInfo cc_emlrtBCI = {
+static emlrtBCInfo ic_emlrtBCI = {
     1,                                     /* iFirst */
     6,                                     /* iLast */
     1661,                                  /* lineNo */
     32,                                    /* colNo */
     "",                                    /* aName */
     "RigidBodyTree/validateConfiguration", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
 static emlrtDCInfo wb_emlrtDCI = {
     1666,                                  /* lineNo */
     30,                                    /* colNo */
     "RigidBodyTree/validateConfiguration", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    1                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    1                                   /* checkKind */
 };
 
-static emlrtBCInfo dc_emlrtBCI = {
+static emlrtBCInfo jc_emlrtBCI = {
     -1,                                    /* iFirst */
     -1,                                    /* iLast */
     1666,                                  /* lineNo */
     30,                                    /* colNo */
     "",                                    /* aName */
     "RigidBodyTree/validateConfiguration", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
 static emlrtDCInfo xb_emlrtDCI = {
     1666,                                  /* lineNo */
     37,                                    /* colNo */
     "RigidBodyTree/validateConfiguration", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    1                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    1                                   /* checkKind */
 };
 
-static emlrtBCInfo ec_emlrtBCI = {
+static emlrtBCInfo kc_emlrtBCI = {
     -1,                                    /* iFirst */
     -1,                                    /* iLast */
     1666,                                  /* lineNo */
     37,                                    /* colNo */
     "",                                    /* aName */
     "RigidBodyTree/validateConfiguration", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
 static emlrtRTEInfo w_emlrtRTEI = {
     10,              /* lineNo */
     23,              /* colNo */
     "validatenumel", /* fName */
-    "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+valattr/"
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+valattr/"
     "validatenumel.m" /* pName */
 };
 
@@ -746,7 +748,7 @@ static emlrtRTEInfo x_emlrtRTEI = {
     18,              /* lineNo */
     23,              /* colNo */
     "validatenumel", /* fName */
-    "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+valattr/"
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+valattr/"
     "validatenumel.m" /* pName */
 };
 
@@ -754,222 +756,222 @@ static emlrtDCInfo yb_emlrtDCI = {
     1696,                                            /* lineNo */
     13,                                              /* colNo */
     "RigidBodyTree/validateConfigurationWithLimits", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    1                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    1                                   /* checkKind */
 };
 
 static emlrtDCInfo ac_emlrtDCI = {
     1696,                                            /* lineNo */
     13,                                              /* colNo */
     "RigidBodyTree/validateConfigurationWithLimits", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    4                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    4                                   /* checkKind */
 };
 
-static emlrtBCInfo fc_emlrtBCI = {
+static emlrtBCInfo lc_emlrtBCI = {
     0,                                     /* iFirst */
     5,                                     /* iLast */
     1645,                                  /* lineNo */
     39,                                    /* colNo */
     "",                                    /* aName */
     "RigidBodyTree/validateConfiguration", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
-static emlrtBCInfo gc_emlrtBCI = {
+static emlrtBCInfo mc_emlrtBCI = {
     -1,                                              /* iFirst */
     -1,                                              /* iLast */
     1708,                                            /* lineNo */
     26,                                              /* colNo */
     "",                                              /* aName */
     "RigidBodyTree/validateConfigurationWithLimits", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
-static emlrtBCInfo hc_emlrtBCI = {
+static emlrtBCInfo nc_emlrtBCI = {
     -1,                                              /* iFirst */
     -1,                                              /* iLast */
     1708,                                            /* lineNo */
     63,                                              /* colNo */
     "",                                              /* aName */
     "RigidBodyTree/validateConfigurationWithLimits", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
-static emlrtBCInfo ic_emlrtBCI = {
+static emlrtBCInfo oc_emlrtBCI = {
     -1,                                              /* iFirst */
     -1,                                              /* iLast */
     1711,                                            /* lineNo */
     26,                                              /* colNo */
     "",                                              /* aName */
     "RigidBodyTree/validateConfigurationWithLimits", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
-static emlrtBCInfo jc_emlrtBCI = {
+static emlrtBCInfo pc_emlrtBCI = {
     -1,                                              /* iFirst */
     -1,                                              /* iLast */
     1711,                                            /* lineNo */
     63,                                              /* colNo */
     "",                                              /* aName */
     "RigidBodyTree/validateConfigurationWithLimits", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
 static emlrtDCInfo bc_emlrtDCI = {
     1900,                                        /* lineNo */
     32,                                          /* colNo */
     "RigidBodyTree/efficientFKAndJacobianForIK", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    4                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    4                                   /* checkKind */
 };
 
 static emlrtDCInfo cc_emlrtDCI = {
     1900,                                        /* lineNo */
     32,                                          /* colNo */
     "RigidBodyTree/efficientFKAndJacobianForIK", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    1                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    1                                   /* checkKind */
 };
 
 static emlrtDCInfo dc_emlrtDCI = {
     1932,                                        /* lineNo */
     51,                                          /* colNo */
     "RigidBodyTree/efficientFKAndJacobianForIK", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    1                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    1                                   /* checkKind */
 };
 
-static emlrtBCInfo bd_emlrtBCI = {
+static emlrtBCInfo hd_emlrtBCI = {
     1,                                           /* iFirst */
     6,                                           /* iLast */
     1932,                                        /* lineNo */
     51,                                          /* colNo */
     "",                                          /* aName */
     "RigidBodyTree/efficientFKAndJacobianForIK", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
 static emlrtDCInfo ec_emlrtDCI = {
     1933,                                        /* lineNo */
     64,                                          /* colNo */
     "RigidBodyTree/efficientFKAndJacobianForIK", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    1                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    1                                   /* checkKind */
 };
 
-static emlrtBCInfo cd_emlrtBCI = {
+static emlrtBCInfo id_emlrtBCI = {
     -1,                                          /* iFirst */
     -1,                                          /* iLast */
     1933,                                        /* lineNo */
     64,                                          /* colNo */
     "",                                          /* aName */
     "RigidBodyTree/efficientFKAndJacobianForIK", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
 static emlrtDCInfo fc_emlrtDCI = {
     1933,                                        /* lineNo */
     72,                                          /* colNo */
     "RigidBodyTree/efficientFKAndJacobianForIK", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    1                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    1                                   /* checkKind */
 };
 
-static emlrtBCInfo dd_emlrtBCI = {
+static emlrtBCInfo jd_emlrtBCI = {
     -1,                                          /* iFirst */
     -1,                                          /* iLast */
     1933,                                        /* lineNo */
     72,                                          /* colNo */
     "",                                          /* aName */
     "RigidBodyTree/efficientFKAndJacobianForIK", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
 static emlrtDCInfo gc_emlrtDCI = {
     1935,                                        /* lineNo */
     55,                                          /* colNo */
     "RigidBodyTree/efficientFKAndJacobianForIK", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    1                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    1                                   /* checkKind */
 };
 
-static emlrtBCInfo ed_emlrtBCI = {
+static emlrtBCInfo kd_emlrtBCI = {
     1,                                           /* iFirst */
     6,                                           /* iLast */
     1935,                                        /* lineNo */
     55,                                          /* colNo */
     "",                                          /* aName */
     "RigidBodyTree/efficientFKAndJacobianForIK", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
 static emlrtDCInfo hc_emlrtDCI = {
     1957,                                        /* lineNo */
     35,                                          /* colNo */
     "RigidBodyTree/efficientFKAndJacobianForIK", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    1                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    1                                   /* checkKind */
 };
 
-static emlrtBCInfo fd_emlrtBCI = {
+static emlrtBCInfo ld_emlrtBCI = {
     -1,                                          /* iFirst */
     -1,                                          /* iLast */
     1957,                                        /* lineNo */
     35,                                          /* colNo */
     "",                                          /* aName */
     "RigidBodyTree/efficientFKAndJacobianForIK", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
 static emlrtDCInfo ic_emlrtDCI = {
     1957,                                        /* lineNo */
     43,                                          /* colNo */
     "RigidBodyTree/efficientFKAndJacobianForIK", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    1                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    1                                   /* checkKind */
 };
 
-static emlrtBCInfo gd_emlrtBCI = {
+static emlrtBCInfo md_emlrtBCI = {
     -1,                                          /* iFirst */
     -1,                                          /* iLast */
     1957,                                        /* lineNo */
     43,                                          /* colNo */
     "",                                          /* aName */
     "RigidBodyTree/efficientFKAndJacobianForIK", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
 static emlrtECInfo ob_emlrtECI = {
@@ -977,332 +979,331 @@ static emlrtECInfo ob_emlrtECI = {
     1957,                                        /* lineNo */
     29,                                          /* colNo */
     "RigidBodyTree/efficientFKAndJacobianForIK", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
 };
 
-static emlrtBCInfo hd_emlrtBCI = {
+static emlrtBCInfo nd_emlrtBCI = {
     0,                                           /* iFirst */
     5,                                           /* iLast */
     1890,                                        /* lineNo */
     40,                                          /* colNo */
     "",                                          /* aName */
     "RigidBodyTree/efficientFKAndJacobianForIK", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
 static emlrtDCInfo jc_emlrtDCI = {
     1890,                                        /* lineNo */
     40,                                          /* colNo */
     "RigidBodyTree/efficientFKAndJacobianForIK", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    1                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    1                                   /* checkKind */
 };
 
-static emlrtBCInfo id_emlrtBCI = {
+static emlrtBCInfo od_emlrtBCI = {
     -1,                                          /* iFirst */
     -1,                                          /* iLast */
     1902,                                        /* lineNo */
     45,                                          /* colNo */
     "",                                          /* aName */
     "RigidBodyTree/efficientFKAndJacobianForIK", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
-static emlrtBCInfo jd_emlrtBCI = {
+static emlrtBCInfo pd_emlrtBCI = {
     -1,                                          /* iFirst */
     -1,                                          /* iLast */
     1907,                                        /* lineNo */
     45,                                          /* colNo */
     "",                                          /* aName */
     "RigidBodyTree/efficientFKAndJacobianForIK", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
-static emlrtBCInfo kd_emlrtBCI = {
+static emlrtBCInfo qd_emlrtBCI = {
     0,                                           /* iFirst */
     5,                                           /* iLast */
     1903,                                        /* lineNo */
     50,                                          /* colNo */
     "",                                          /* aName */
     "RigidBodyTree/efficientFKAndJacobianForIK", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
 static emlrtDCInfo kc_emlrtDCI = {
     1903,                                        /* lineNo */
     50,                                          /* colNo */
     "RigidBodyTree/efficientFKAndJacobianForIK", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    1                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    1                                   /* checkKind */
 };
 
-static emlrtBCInfo ld_emlrtBCI = {
+static emlrtBCInfo rd_emlrtBCI = {
     -1,                                          /* iFirst */
     -1,                                          /* iLast */
     1903,                                        /* lineNo */
     71,                                          /* colNo */
     "",                                          /* aName */
     "RigidBodyTree/efficientFKAndJacobianForIK", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
-static emlrtBCInfo md_emlrtBCI = {
+static emlrtBCInfo sd_emlrtBCI = {
     0,                                           /* iFirst */
     5,                                           /* iLast */
     1908,                                        /* lineNo */
     47,                                          /* colNo */
     "",                                          /* aName */
     "RigidBodyTree/efficientFKAndJacobianForIK", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
 static emlrtDCInfo lc_emlrtDCI = {
     1908,                                        /* lineNo */
     47,                                          /* colNo */
     "RigidBodyTree/efficientFKAndJacobianForIK", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    1                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    1                                   /* checkKind */
 };
 
-static emlrtBCInfo nd_emlrtBCI = {
+static emlrtBCInfo td_emlrtBCI = {
     -1,                                          /* iFirst */
     -1,                                          /* iLast */
     1908,                                        /* lineNo */
     68,                                          /* colNo */
     "",                                          /* aName */
     "RigidBodyTree/efficientFKAndJacobianForIK", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
-static emlrtBCInfo
-    od_emlrtBCI =
-        {
-            1,                               /* iFirst */
-            1,                               /* iLast */
-            451,                             /* lineNo */
-            55,                              /* colNo */
-            "",                              /* aName */
-            "rigidBodyJoint/jointTransform", /* fName */
-            "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/"
-            "rigidBodyJoint.m", /* pName */
-            0                   /* checkKind */
+static emlrtBCInfo ud_emlrtBCI = {
+    1,                               /* iFirst */
+    1,                               /* iLast */
+    451,                             /* lineNo */
+    55,                              /* colNo */
+    "",                              /* aName */
+    "rigidBodyJoint/jointTransform", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/"
+    "rigidBodyJoint.m", /* pName */
+    0                   /* checkKind */
 };
 
-static emlrtBCInfo pd_emlrtBCI = {
+static emlrtBCInfo vd_emlrtBCI = {
     -1,                                    /* iFirst */
     -1,                                    /* iLast */
     2018,                                  /* lineNo */
     43,                                    /* colNo */
     "",                                    /* aName */
     "RigidBodyTree/kinematicPathInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
-static emlrtBCInfo qd_emlrtBCI = {
+static emlrtBCInfo wd_emlrtBCI = {
     -1,                                    /* iFirst */
     -1,                                    /* iLast */
     2020,                                  /* lineNo */
     41,                                    /* colNo */
     "",                                    /* aName */
     "RigidBodyTree/kinematicPathInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
-static emlrtBCInfo rd_emlrtBCI = {
+static emlrtBCInfo xd_emlrtBCI = {
     -1,                                    /* iFirst */
     -1,                                    /* iLast */
     2012,                                  /* lineNo */
     37,                                    /* colNo */
     "",                                    /* aName */
     "RigidBodyTree/kinematicPathInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
-static emlrtBCInfo sd_emlrtBCI = {
+static emlrtBCInfo yd_emlrtBCI = {
     -1,                                    /* iFirst */
     -1,                                    /* iLast */
     2012,                                  /* lineNo */
     64,                                    /* colNo */
     "",                                    /* aName */
     "RigidBodyTree/kinematicPathInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
-static emlrtBCInfo td_emlrtBCI = {
+static emlrtBCInfo ae_emlrtBCI = {
     -1,                                    /* iFirst */
     -1,                                    /* iLast */
     2017,                                  /* lineNo */
     52,                                    /* colNo */
     "",                                    /* aName */
     "RigidBodyTree/kinematicPathInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
-static emlrtBCInfo ud_emlrtBCI = {
+static emlrtBCInfo be_emlrtBCI = {
     -1,                              /* iFirst */
     -1,                              /* iLast */
     2041,                            /* lineNo */
     33,                              /* colNo */
     "",                              /* aName */
     "RigidBodyTree/ancestorIndices", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
-static emlrtBCInfo vd_emlrtBCI = {
+static emlrtBCInfo ce_emlrtBCI = {
     -1,                              /* iFirst */
     -1,                              /* iLast */
     2041,                            /* lineNo */
     31,                              /* colNo */
     "",                              /* aName */
     "RigidBodyTree/ancestorIndices", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
-static emlrtBCInfo wd_emlrtBCI = {
+static emlrtBCInfo de_emlrtBCI = {
     -1,                              /* iFirst */
     -1,                              /* iLast */
     2031,                            /* lineNo */
     21,                              /* colNo */
     "",                              /* aName */
     "RigidBodyTree/ancestorIndices", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
 static emlrtDCInfo mc_emlrtDCI = {
     2029,                            /* lineNo */
     31,                              /* colNo */
     "RigidBodyTree/ancestorIndices", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    1                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    1                                   /* checkKind */
 };
 
 static emlrtDCInfo nc_emlrtDCI = {
     2029,                            /* lineNo */
     31,                              /* colNo */
     "RigidBodyTree/ancestorIndices", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    4                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    4                                   /* checkKind */
 };
 
-static emlrtBCInfo xd_emlrtBCI = {
+static emlrtBCInfo ee_emlrtBCI = {
     0,                               /* iFirst */
     5,                               /* iLast */
     2033,                            /* lineNo */
     35,                              /* colNo */
     "",                              /* aName */
     "RigidBodyTree/ancestorIndices", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
 static emlrtDCInfo oc_emlrtDCI = {
     2033,                            /* lineNo */
     35,                              /* colNo */
     "RigidBodyTree/ancestorIndices", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    1                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    1                                   /* checkKind */
 };
 
-static emlrtBCInfo yd_emlrtBCI = {
+static emlrtBCInfo fe_emlrtBCI = {
     -1,                              /* iFirst */
     -1,                              /* iLast */
     2038,                            /* lineNo */
     25,                              /* colNo */
     "",                              /* aName */
     "RigidBodyTree/ancestorIndices", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
-static emlrtBCInfo ae_emlrtBCI = {
+static emlrtBCInfo ge_emlrtBCI = {
     -1,                              /* iFirst */
     -1,                              /* iLast */
     2034,                            /* lineNo */
     25,                              /* colNo */
     "",                              /* aName */
     "RigidBodyTree/ancestorIndices", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
 static emlrtRTEInfo wb_emlrtRTEI = {
-    419,                                                         /* lineNo */
-    15,                                                          /* colNo */
-    "assert_pmaxsize",                                           /* fName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/ops/colon.m" /* pName */
+    419,               /* lineNo */
+    15,                /* colNo */
+    "assert_pmaxsize", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/ops/colon.m" /* pName
+                                                                          */
 };
 
-static emlrtBCInfo me_emlrtBCI = {
+static emlrtBCInfo se_emlrtBCI = {
     -1,                                           /* iFirst */
     -1,                                           /* iLast */
     769,                                          /* lineNo */
     39,                                           /* colNo */
     "",                                           /* aName */
     "RigidBodyTree/bodyIndicesToPositionIndices", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
 static emlrtDCInfo sc_emlrtDCI = {
     769,                                          /* lineNo */
     39,                                           /* colNo */
     "RigidBodyTree/bodyIndicesToPositionIndices", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    1                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    1                                   /* checkKind */
 };
 
-static emlrtBCInfo ne_emlrtBCI = {
+static emlrtBCInfo te_emlrtBCI = {
     -1,                                           /* iFirst */
     -1,                                           /* iLast */
     769,                                          /* lineNo */
     37,                                           /* colNo */
     "",                                           /* aName */
     "RigidBodyTree/bodyIndicesToPositionIndices", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
 static emlrtECInfo wb_emlrtECI = {
@@ -1310,353 +1311,353 @@ static emlrtECInfo wb_emlrtECI = {
     765,                                          /* lineNo */
     21,                                           /* colNo */
     "RigidBodyTree/bodyIndicesToPositionIndices", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
 };
 
-static emlrtBCInfo oe_emlrtBCI = {
+static emlrtBCInfo ue_emlrtBCI = {
     -1,                                           /* iFirst */
     -1,                                           /* iLast */
     762,                                          /* lineNo */
     33,                                           /* colNo */
     "",                                           /* aName */
     "RigidBodyTree/bodyIndicesToPositionIndices", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
 static emlrtDCInfo tc_emlrtDCI = {
     758,                                          /* lineNo */
     34,                                           /* colNo */
     "RigidBodyTree/bodyIndicesToPositionIndices", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    1                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    1                                   /* checkKind */
 };
 
 static emlrtDCInfo uc_emlrtDCI = {
     758,                                          /* lineNo */
     34,                                           /* colNo */
     "RigidBodyTree/bodyIndicesToPositionIndices", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    4                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    4                                   /* checkKind */
 };
 
-static emlrtBCInfo pe_emlrtBCI = {
+static emlrtBCInfo ve_emlrtBCI = {
     1,                                            /* iFirst */
     6,                                            /* iLast */
     757,                                          /* lineNo */
     46,                                           /* colNo */
     "",                                           /* aName */
     "RigidBodyTree/bodyIndicesToPositionIndices", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
 static emlrtDCInfo vc_emlrtDCI = {
     757,                                          /* lineNo */
     46,                                           /* colNo */
     "RigidBodyTree/bodyIndicesToPositionIndices", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    1                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    1                                   /* checkKind */
 };
 
-static emlrtBCInfo qe_emlrtBCI = {
+static emlrtBCInfo we_emlrtBCI = {
     -1,                                           /* iFirst */
     -1,                                           /* iLast */
     757,                                          /* lineNo */
     58,                                           /* colNo */
     "",                                           /* aName */
     "RigidBodyTree/bodyIndicesToPositionIndices", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
 static emlrtDCInfo wc_emlrtDCI = {
     765,                                          /* lineNo */
     32,                                           /* colNo */
     "RigidBodyTree/bodyIndicesToPositionIndices", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    1                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    1                                   /* checkKind */
 };
 
-static emlrtBCInfo re_emlrtBCI = {
+static emlrtBCInfo xe_emlrtBCI = {
     -1,                                           /* iFirst */
     -1,                                           /* iLast */
     765,                                          /* lineNo */
     32,                                           /* colNo */
     "",                                           /* aName */
     "RigidBodyTree/bodyIndicesToPositionIndices", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m", /* pName */
-    0                            /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m", /* pName */
+    0                                   /* checkKind */
 };
 
-static emlrtRTEInfo mc_emlrtRTEI = {
+static emlrtRTEInfo nc_emlrtRTEI = {
     2329,            /* lineNo */
     13,              /* colNo */
     "RigidBodyTree", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
-};
-
-static emlrtRTEInfo yc_emlrtRTEI = {
-    1696,            /* lineNo */
-    13,              /* colNo */
-    "RigidBodyTree", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
 };
 
 static emlrtRTEInfo ad_emlrtRTEI = {
-    1699,            /* lineNo */
+    1696,            /* lineNo */
     13,              /* colNo */
     "RigidBodyTree", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
 };
 
 static emlrtRTEInfo bd_emlrtRTEI = {
-    1700,            /* lineNo */
+    1699,            /* lineNo */
     13,              /* colNo */
     "RigidBodyTree", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
 };
 
 static emlrtRTEInfo cd_emlrtRTEI = {
-    1707,            /* lineNo */
-    21,              /* colNo */
+    1700,            /* lineNo */
+    13,              /* colNo */
     "RigidBodyTree", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
 };
 
 static emlrtRTEInfo dd_emlrtRTEI = {
-    1708,            /* lineNo */
-    26,              /* colNo */
+    1707,            /* lineNo */
+    21,              /* colNo */
     "RigidBodyTree", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
 };
 
 static emlrtRTEInfo ed_emlrtRTEI = {
-    1710,            /* lineNo */
-    21,              /* colNo */
+    1708,            /* lineNo */
+    26,              /* colNo */
     "RigidBodyTree", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
 };
 
 static emlrtRTEInfo fd_emlrtRTEI = {
-    1711,            /* lineNo */
-    26,              /* colNo */
+    1710,            /* lineNo */
+    21,              /* colNo */
     "RigidBodyTree", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
 };
 
 static emlrtRTEInfo gd_emlrtRTEI = {
+    1711,            /* lineNo */
+    26,              /* colNo */
+    "RigidBodyTree", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
+};
+
+static emlrtRTEInfo hd_emlrtRTEI = {
     1698,            /* lineNo */
     13,              /* colNo */
     "RigidBodyTree", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
 };
 
-static emlrtRTEInfo nf_emlrtRTEI = {
+static emlrtRTEInfo of_emlrtRTEI = {
     1900,            /* lineNo */
     17,              /* colNo */
     "RigidBodyTree", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
-};
-
-static emlrtRTEInfo of_emlrtRTEI =
-    {
-        178,      /* lineNo */
-        65,       /* colNo */
-        "mtimes", /* fName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+blas/"
-        "mtimes.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
 };
 
 static emlrtRTEInfo pf_emlrtRTEI = {
-    1933,            /* lineNo */
-    60,              /* colNo */
-    "RigidBodyTree", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
+    178,      /* lineNo */
+    65,       /* colNo */
+    "mtimes", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+blas/"
+    "mtimes.m" /* pName */
 };
 
 static emlrtRTEInfo qf_emlrtRTEI = {
+    1933,            /* lineNo */
+    60,              /* colNo */
+    "RigidBodyTree", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
+};
+
+static emlrtRTEInfo rf_emlrtRTEI = {
     1897,            /* lineNo */
     17,              /* colNo */
     "RigidBodyTree", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
-};
-
-static emlrtRTEInfo rf_emlrtRTEI =
-    {
-        178,      /* lineNo */
-        13,       /* colNo */
-        "mtimes", /* fName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+blas/"
-        "mtimes.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
 };
 
 static emlrtRTEInfo sf_emlrtRTEI = {
-    2018,            /* lineNo */
-    13,              /* colNo */
-    "RigidBodyTree", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
+    178,      /* lineNo */
+    13,       /* colNo */
+    "mtimes", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+blas/"
+    "mtimes.m" /* pName */
 };
 
 static emlrtRTEInfo tf_emlrtRTEI = {
-    2007,            /* lineNo */
+    2018,            /* lineNo */
     13,              /* colNo */
     "RigidBodyTree", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
 };
 
 static emlrtRTEInfo uf_emlrtRTEI = {
-    2008,            /* lineNo */
+    2007,            /* lineNo */
     13,              /* colNo */
     "RigidBodyTree", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
 };
 
 static emlrtRTEInfo vf_emlrtRTEI = {
-    2029,            /* lineNo */
+    2008,            /* lineNo */
     13,              /* colNo */
     "RigidBodyTree", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
 };
 
 static emlrtRTEInfo wf_emlrtRTEI = {
+    2029,            /* lineNo */
+    13,              /* colNo */
+    "RigidBodyTree", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
+};
+
+static emlrtRTEInfo xf_emlrtRTEI = {
     2041,            /* lineNo */
     13,              /* colNo */
     "RigidBodyTree", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
-};
-
-static emlrtRTEInfo vh_emlrtRTEI = {
-    746,             /* lineNo */
-    31,              /* colNo */
-    "RigidBodyTree", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
 };
 
 static emlrtRTEInfo wh_emlrtRTEI = {
-    757,             /* lineNo */
-    13,              /* colNo */
+    746,             /* lineNo */
+    31,              /* colNo */
     "RigidBodyTree", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
 };
 
 static emlrtRTEInfo xh_emlrtRTEI = {
-    758,             /* lineNo */
+    757,             /* lineNo */
     13,              /* colNo */
     "RigidBodyTree", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
 };
 
 static emlrtRTEInfo yh_emlrtRTEI = {
-    769,             /* lineNo */
+    758,             /* lineNo */
     13,              /* colNo */
     "RigidBodyTree", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
 };
 
 static emlrtRTEInfo ai_emlrtRTEI = {
-    28,                                                          /* lineNo */
-    9,                                                           /* colNo */
-    "colon",                                                     /* fName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/ops/colon.m" /* pName */
+    769,             /* lineNo */
+    13,              /* colNo */
+    "RigidBodyTree", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
 };
 
 static emlrtRTEInfo bi_emlrtRTEI = {
-    765,             /* lineNo */
-    32,              /* colNo */
-    "RigidBodyTree", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
+    28,      /* lineNo */
+    9,       /* colNo */
+    "colon", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/ops/colon.m" /* pName
+                                                                          */
 };
 
 static emlrtRTEInfo ci_emlrtRTEI = {
     765,             /* lineNo */
-    63,              /* colNo */
+    32,              /* colNo */
     "RigidBodyTree", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
 };
 
 static emlrtRTEInfo di_emlrtRTEI = {
-    320,                                                         /* lineNo */
-    20,                                                          /* colNo */
-    "colon",                                                     /* fName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/ops/colon.m" /* pName */
+    765,             /* lineNo */
+    63,              /* colNo */
+    "RigidBodyTree", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
 };
 
 static emlrtRTEInfo ei_emlrtRTEI = {
-    765,             /* lineNo */
-    21,              /* colNo */
-    "RigidBodyTree", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
+    320,     /* lineNo */
+    20,      /* colNo */
+    "colon", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/ops/colon.m" /* pName
+                                                                          */
 };
 
 static emlrtRTEInfo fi_emlrtRTEI = {
-    757,             /* lineNo */
-    58,              /* colNo */
+    765,             /* lineNo */
+    21,              /* colNo */
     "RigidBodyTree", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
 };
 
 static emlrtRTEInfo gi_emlrtRTEI = {
+    757,             /* lineNo */
+    58,              /* colNo */
+    "RigidBodyTree", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
+};
+
+static emlrtRTEInfo hi_emlrtRTEI = {
     765,             /* lineNo */
     44,              /* colNo */
     "RigidBodyTree", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pName */
-};
-
-static emlrtRSInfo mt_emlrtRSI = {
-    2018,                                  /* lineNo */
-    "RigidBodyTree/kinematicPathInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pName */
 };
 
 static emlrtRSInfo nt_emlrtRSI = {
-    1699,                                            /* lineNo */
-    "RigidBodyTree/validateConfigurationWithLimits", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    2018,                                  /* lineNo */
+    "RigidBodyTree/kinematicPathInternal", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo ot_emlrtRSI = {
+    1699,                                            /* lineNo */
+    "RigidBodyTree/validateConfigurationWithLimits", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
+};
+
+static emlrtRSInfo pt_emlrtRSI = {
     1700,                                            /* lineNo */
     "RigidBodyTree/validateConfigurationWithLimits", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 /* Function Declarations */
@@ -1705,14 +1706,14 @@ static void RigidBodyTree_ancestorIndices(const emlrtStack *sp,
   indices->size[0] = 1;
   loop_ub_tmp = (int32_T)d;
   indices->size[1] = (int32_T)d;
-  emxEnsureCapacity_real_T(sp, indices, i, &vf_emlrtRTEI);
+  emxEnsureCapacity_real_T(sp, indices, i, &wf_emlrtRTEI);
   indices_data = indices->data;
   for (i = 0; i < loop_ub_tmp; i++) {
     indices_data[i] = 0.0;
   }
   b_i = 2U;
   if ((int32_T)d < 1) {
-    emlrtDynamicBoundsCheckR2012b(1, 1, (int32_T)d, &wd_emlrtBCI,
+    emlrtDynamicBoundsCheckR2012b(1, 1, (int32_T)d, &de_emlrtBCI,
                                   (emlrtConstCTX)sp);
   }
   indices_data[0] = body->Index;
@@ -1723,12 +1724,12 @@ static void RigidBodyTree_ancestorIndices(const emlrtStack *sp,
     }
     i = (int32_T)body->ParentIndex - 1;
     if ((i < 0) || (i > 5)) {
-      emlrtDynamicBoundsCheckR2012b(i, 0, 5, &xd_emlrtBCI, (emlrtConstCTX)sp);
+      emlrtDynamicBoundsCheckR2012b(i, 0, 5, &ee_emlrtBCI, (emlrtConstCTX)sp);
     }
     body = obj->Bodies[i];
     if (((int32_T)b_i < 1) || ((int32_T)b_i > indices->size[1])) {
       emlrtDynamicBoundsCheckR2012b((int32_T)b_i, 1, indices->size[1],
-                                    &ae_emlrtBCI, (emlrtConstCTX)sp);
+                                    &ge_emlrtBCI, (emlrtConstCTX)sp);
     }
     indices_data[(int32_T)b_i - 1] = body->Index;
     b_i++;
@@ -1736,22 +1737,22 @@ static void RigidBodyTree_ancestorIndices(const emlrtStack *sp,
   if (body->Index > 0.0) {
     if (((int32_T)b_i < 1) || ((int32_T)b_i > indices->size[1])) {
       emlrtDynamicBoundsCheckR2012b((int32_T)b_i, 1, indices->size[1],
-                                    &yd_emlrtBCI, (emlrtConstCTX)sp);
+                                    &fe_emlrtBCI, (emlrtConstCTX)sp);
     }
     indices_data[(int32_T)b_i - 1] = body->ParentIndex;
     b_i++;
   }
   if (indices->size[1] < 1) {
-    emlrtDynamicBoundsCheckR2012b(1, 1, indices->size[1], &vd_emlrtBCI,
+    emlrtDynamicBoundsCheckR2012b(1, 1, indices->size[1], &ce_emlrtBCI,
                                   (emlrtConstCTX)sp);
   }
   if (((int32_T)(b_i - 1U) < 1) || ((int32_T)(b_i - 1U) > indices->size[1])) {
     emlrtDynamicBoundsCheckR2012b((int32_T)(b_i - 1U), 1, indices->size[1],
-                                  &ud_emlrtBCI, (emlrtConstCTX)sp);
+                                  &be_emlrtBCI, (emlrtConstCTX)sp);
   }
   i = indices->size[0] * indices->size[1];
   indices->size[1] = (int32_T)(b_i - 1U);
-  emxEnsureCapacity_real_T(sp, indices, i, &wf_emlrtRTEI);
+  emxEnsureCapacity_real_T(sp, indices, i, &xf_emlrtRTEI);
 }
 
 static void binary_expand_op(const emlrtStack *sp, emxArray_boolean_T *in1,
@@ -1774,7 +1775,7 @@ static void binary_expand_op(const emlrtStack *sp, emxArray_boolean_T *in1,
   }
   i = in1->size[0];
   in1->size[0] = loop_ub;
-  emxEnsureCapacity_boolean_T(sp, in1, i, &bd_emlrtRTEI);
+  emxEnsureCapacity_boolean_T(sp, in1, i, &cd_emlrtRTEI);
   in1_data = in1->data;
   stride_0_0 = (in2->size[0] != 1);
   stride_1_0 = (in3->size[0] != 1);
@@ -1804,7 +1805,7 @@ static void binary_expand_op_1(const emlrtStack *sp, emxArray_boolean_T *in1,
   }
   i = in1->size[0];
   in1->size[0] = loop_ub;
-  emxEnsureCapacity_boolean_T(sp, in1, i, &ad_emlrtRTEI);
+  emxEnsureCapacity_boolean_T(sp, in1, i, &bd_emlrtRTEI);
   in1_data = in1->data;
   stride_0_0 = (in2->size[0] != 1);
   stride_1_0 = (in3->size[0] != 1);
@@ -1855,7 +1856,7 @@ static void c_RigidBodyTree_initVisualizati(const emlrtStack *sp)
       emlrtIntegerCheckR2012b(d, &xc_emlrtDCI, &b_st);
     }
     if (((int32_T)d < 1) || ((int32_T)d > 62)) {
-      emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 62, &se_emlrtBCI, &b_st);
+      emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 62, &ye_emlrtBCI, &b_st);
     }
   }
 }
@@ -1882,12 +1883,12 @@ static void c_RigidBodyTree_kinematicPathIn(
   st.prev = sp;
   st.tls = sp->tls;
   emlrtHeapReferenceStackEnterFcnR2012b((emlrtConstCTX)sp);
-  emxInit_real_T(sp, &ancestorIndices1, 2, &tf_emlrtRTEI);
-  st.site = &dk_emlrtRSI;
+  emxInit_real_T(sp, &ancestorIndices1, 2, &uf_emlrtRTEI);
+  st.site = &ek_emlrtRSI;
   RigidBodyTree_ancestorIndices(&st, obj, body1, ancestorIndices1);
   ancestorIndices1_data = ancestorIndices1->data;
-  emxInit_real_T(sp, &ancestorIndices2, 2, &uf_emlrtRTEI);
-  st.site = &ek_emlrtRSI;
+  emxInit_real_T(sp, &ancestorIndices2, 2, &vf_emlrtRTEI);
+  st.site = &fk_emlrtRSI;
   RigidBodyTree_ancestorIndices(&st, obj, body2, ancestorIndices2);
   ancestorIndices2_data = ancestorIndices2->data;
   minPathLength = (int32_T)muDoubleScalarMin(ancestorIndices1->size[1],
@@ -1898,12 +1899,12 @@ static void c_RigidBodyTree_kinematicPathIn(
     b_i = ancestorIndices1->size[1] - i;
     if ((b_i < 1) || (b_i > ancestorIndices1->size[1])) {
       emlrtDynamicBoundsCheckR2012b(b_i, 1, ancestorIndices1->size[1],
-                                    &rd_emlrtBCI, (emlrtConstCTX)sp);
+                                    &xd_emlrtBCI, (emlrtConstCTX)sp);
     }
     i1 = ancestorIndices2->size[1] - i;
     if ((i1 < 1) || (i1 > ancestorIndices2->size[1])) {
       emlrtDynamicBoundsCheckR2012b(i1, 1, ancestorIndices2->size[1],
-                                    &sd_emlrtBCI, (emlrtConstCTX)sp);
+                                    &yd_emlrtBCI, (emlrtConstCTX)sp);
     }
     if (ancestorIndices1_data[b_i - 1] != ancestorIndices2_data[i1 - 1]) {
       minPathLength = i;
@@ -1915,14 +1916,14 @@ static void c_RigidBodyTree_kinematicPathIn(
   b_i = ancestorIndices1->size[1] - minPathLength;
   if ((b_i + 1 < 1) || (b_i + 1 > ancestorIndices1->size[1])) {
     emlrtDynamicBoundsCheckR2012b(b_i + 1, 1, ancestorIndices1->size[1],
-                                  &td_emlrtBCI, (emlrtConstCTX)sp);
+                                  &ae_emlrtBCI, (emlrtConstCTX)sp);
   }
   if (b_i < 1) {
     loop_ub = 0;
   } else {
     if (b_i > ancestorIndices1->size[1]) {
       emlrtDynamicBoundsCheckR2012b(b_i, 1, ancestorIndices1->size[1],
-                                    &pd_emlrtBCI, (emlrtConstCTX)sp);
+                                    &vd_emlrtBCI, (emlrtConstCTX)sp);
     }
     loop_ub = b_i;
   }
@@ -1934,7 +1935,7 @@ static void c_RigidBodyTree_kinematicPathIn(
   } else {
     if (i1 > ancestorIndices2->size[1]) {
       emlrtDynamicBoundsCheckR2012b(i1, 1, ancestorIndices2->size[1],
-                                    &qd_emlrtBCI, (emlrtConstCTX)sp);
+                                    &wd_emlrtBCI, (emlrtConstCTX)sp);
     }
     i1--;
     i = -1;
@@ -1942,10 +1943,10 @@ static void c_RigidBodyTree_kinematicPathIn(
   }
   minPathLength = indices->size[0] * indices->size[1];
   indices->size[0] = 1;
-  st.site = &mt_emlrtRSI;
+  st.site = &nt_emlrtRSI;
   b_loop_ub = div_s32(&st, i2 - i1, i);
   indices->size[1] = (loop_ub + b_loop_ub) + 2;
-  emxEnsureCapacity_real_T(sp, indices, minPathLength, &sf_emlrtRTEI);
+  emxEnsureCapacity_real_T(sp, indices, minPathLength, &tf_emlrtRTEI);
   indices_data = indices->data;
   for (i2 = 0; i2 < loop_ub; i2++) {
     indices_data[i2] = ancestorIndices1_data[i2];
@@ -2099,7 +2100,7 @@ RigidBodyTree_RigidBodyTree(const emlrtStack *sp,
       emlrtIntegerCheckR2012b(s.Length, &c_emlrtDCI, &d_st);
     }
     if (((int32_T)s.Length < 1) || ((int32_T)s.Length > 200)) {
-      emlrtDynamicBoundsCheckR2012b((int32_T)s.Length, 1, 200, &c_emlrtBCI,
+      emlrtDynamicBoundsCheckR2012b((int32_T)s.Length, 1, 200, &i_emlrtBCI,
                                     &d_st);
     }
     i = (int32_T)s.Length;
@@ -2279,7 +2280,7 @@ RigidBodyTree_RigidBodyTree(const emlrtStack *sp,
       emlrtIntegerCheckR2012b(s.Length, &c_emlrtDCI, &d_st);
     }
     if (((int32_T)s.Length < 1) || ((int32_T)s.Length > 200)) {
-      emlrtDynamicBoundsCheckR2012b((int32_T)s.Length, 1, 200, &c_emlrtBCI,
+      emlrtDynamicBoundsCheckR2012b((int32_T)s.Length, 1, 200, &i_emlrtBCI,
                                     &d_st);
     }
     i = (int32_T)s.Length;
@@ -2311,7 +2312,7 @@ RigidBodyTree_RigidBodyTree(const emlrtStack *sp,
         emlrtIntegerCheckR2012b(d, &emlrtDCI, &b_st);
       }
       if (((int32_T)d < 1) || ((int32_T)d > 7)) {
-        emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 7, &emlrtBCI, &b_st);
+        emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 7, &g_emlrtBCI, &b_st);
       }
       ibmat = (int32_T)d;
     }
@@ -2333,7 +2334,7 @@ RigidBodyTree_RigidBodyTree(const emlrtStack *sp,
         emlrtIntegerCheckR2012b(d, &b_emlrtDCI, &b_st);
       }
       if (((int32_T)d < 1) || ((int32_T)d > 7)) {
-        emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 7, &b_emlrtBCI, &b_st);
+        emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 7, &h_emlrtBCI, &b_st);
       }
       i = (int32_T)d;
     }
@@ -2482,7 +2483,7 @@ void RigidBodyTree_addBody(
       emlrtIntegerCheckR2012b(obj_Length, &c_emlrtDCI, &b_st);
     }
     if (((int32_T)obj_Length < 1) || ((int32_T)obj_Length > 200)) {
-      emlrtDynamicBoundsCheckR2012b((int32_T)obj_Length, 1, 200, &c_emlrtBCI,
+      emlrtDynamicBoundsCheckR2012b((int32_T)obj_Length, 1, 200, &i_emlrtBCI,
                                     &b_st);
     }
     loop_ub = (int32_T)obj_Length;
@@ -2510,7 +2511,7 @@ void RigidBodyTree_addBody(
         emlrtIntegerCheckR2012b(obj_Length, &c_emlrtDCI, &b_st);
       }
       if (((int32_T)obj_Length < 1) || ((int32_T)obj_Length > 200)) {
-        emlrtDynamicBoundsCheckR2012b((int32_T)obj_Length, 1, 200, &c_emlrtBCI,
+        emlrtDynamicBoundsCheckR2012b((int32_T)obj_Length, 1, 200, &i_emlrtBCI,
                                       &b_st);
       }
       loop_ub = (int32_T)obj_Length;
@@ -2560,7 +2561,7 @@ void RigidBodyTree_addBody(
       emlrtIntegerCheckR2012b(obj_Length, &c_emlrtDCI, &b_st);
     }
     if (((int32_T)obj_Length < 1) || ((int32_T)obj_Length > 200)) {
-      emlrtDynamicBoundsCheckR2012b((int32_T)obj_Length, 1, 200, &c_emlrtBCI,
+      emlrtDynamicBoundsCheckR2012b((int32_T)obj_Length, 1, 200, &i_emlrtBCI,
                                     &b_st);
     }
     loop_ub = (int32_T)obj_Length;
@@ -2588,7 +2589,7 @@ void RigidBodyTree_addBody(
   while ((!exitg1) && (b_i <= (int32_T)bid - 1)) {
     b_st.site = &ke_emlrtRSI;
     if (b_i > 5) {
-      emlrtDynamicBoundsCheckR2012b(6, 0, 5, &s_emlrtBCI, &b_st);
+      emlrtDynamicBoundsCheckR2012b(6, 0, 5, &y_emlrtBCI, &b_st);
     }
     b_obj = obj->Bodies[b_i];
     if (b_obj->Index == 0.0) {
@@ -2613,7 +2614,7 @@ void RigidBodyTree_addBody(
         emlrtIntegerCheckR2012b(obj_Length, &c_emlrtDCI, &c_st);
       }
       if (((int32_T)obj_Length < 1) || ((int32_T)obj_Length > 200)) {
-        emlrtDynamicBoundsCheckR2012b((int32_T)obj_Length, 1, 200, &c_emlrtBCI,
+        emlrtDynamicBoundsCheckR2012b((int32_T)obj_Length, 1, 200, &i_emlrtBCI,
                                       &c_st);
       }
       loop_ub = (int32_T)obj_Length;
@@ -2656,7 +2657,7 @@ void RigidBodyTree_addBody(
         emlrtIntegerCheckR2012b(obj_Length, &c_emlrtDCI, &b_st);
       }
       if (((int32_T)obj_Length < 1) || ((int32_T)obj_Length > 200)) {
-        emlrtDynamicBoundsCheckR2012b((int32_T)obj_Length, 1, 200, &c_emlrtBCI,
+        emlrtDynamicBoundsCheckR2012b((int32_T)obj_Length, 1, 200, &i_emlrtBCI,
                                       &b_st);
       }
       loop_ub = (int32_T)obj_Length;
@@ -2686,7 +2687,7 @@ void RigidBodyTree_addBody(
       emlrtIntegerCheckR2012b(obj_Length, &c_emlrtDCI, &b_st);
     }
     if (((int32_T)obj_Length < 1) || ((int32_T)obj_Length > 200)) {
-      emlrtDynamicBoundsCheckR2012b((int32_T)obj_Length, 1, 200, &c_emlrtBCI,
+      emlrtDynamicBoundsCheckR2012b((int32_T)obj_Length, 1, 200, &i_emlrtBCI,
                                     &b_st);
     }
     loop_ub = (int32_T)obj_Length;
@@ -2786,14 +2787,14 @@ void RigidBodyTree_addBody(
     emlrtIntegerCheckR2012b(b_index, &i_emlrtDCI, (emlrtConstCTX)sp);
   }
   if (((int32_T)b_index - 1 < 0) || ((int32_T)b_index - 1 > 5)) {
-    emlrtDynamicBoundsCheckR2012b((int32_T)b_index - 1, 0, 5, &q_emlrtBCI,
+    emlrtDynamicBoundsCheckR2012b((int32_T)b_index - 1, 0, 5, &w_emlrtBCI,
                                   (emlrtConstCTX)sp);
   }
   obj->Bodies[(int32_T)b_index - 1] = iobj_2;
   iobj_2->Index = b_index;
   iobj_2->ParentIndex = pid;
   if ((pid > 0.0) && (((int32_T)pid - 1 < 0) || ((int32_T)pid - 1 > 5))) {
-    emlrtDynamicBoundsCheckR2012b((int32_T)pid - 1, 0, 5, &r_emlrtBCI,
+    emlrtDynamicBoundsCheckR2012b((int32_T)pid - 1, 0, 5, &x_emlrtBCI,
                                   (emlrtConstCTX)sp);
   }
   if (iobj_2->Index != (int32_T)muDoubleScalarFloor(iobj_2->Index)) {
@@ -2801,7 +2802,7 @@ void RigidBodyTree_addBody(
   }
   i = (int32_T)iobj_2->Index;
   if ((i < 1) || (i > 6)) {
-    emlrtDynamicBoundsCheckR2012b(i, 1, 6, &l_emlrtBCI, (emlrtConstCTX)sp);
+    emlrtDynamicBoundsCheckR2012b(i, 1, 6, &r_emlrtBCI, (emlrtConstCTX)sp);
   }
   iobj_2->JointInternal->InTree = true;
   obj->NumBodies++;
@@ -2828,7 +2829,7 @@ void RigidBodyTree_addBody(
       emlrtIntegerCheckR2012b(obj_Length, &c_emlrtDCI, &b_st);
     }
     if (((int32_T)obj_Length < 1) || ((int32_T)obj_Length > 200)) {
-      emlrtDynamicBoundsCheckR2012b((int32_T)obj_Length, 1, 200, &c_emlrtBCI,
+      emlrtDynamicBoundsCheckR2012b((int32_T)obj_Length, 1, 200, &i_emlrtBCI,
                                     &b_st);
     }
     i = (int32_T)obj_Length;
@@ -2867,7 +2868,7 @@ void RigidBodyTree_addBody(
       emlrtIntegerCheckR2012b(iobj_2->Index, &k_emlrtDCI, (emlrtConstCTX)sp);
     }
     if (((int32_T)iobj_2->Index < 1) || ((int32_T)iobj_2->Index > 6)) {
-      emlrtDynamicBoundsCheckR2012b((int32_T)iobj_2->Index, 1, 6, &m_emlrtBCI,
+      emlrtDynamicBoundsCheckR2012b((int32_T)iobj_2->Index, 1, 6, &s_emlrtBCI,
                                     (emlrtConstCTX)sp);
     }
     loop_ub = (int32_T)iobj_2->Index - 1;
@@ -2888,7 +2889,7 @@ void RigidBodyTree_addBody(
       emlrtIntegerCheckR2012b(iobj_2->Index, &l_emlrtDCI, (emlrtConstCTX)sp);
     }
     if (((int32_T)iobj_2->Index < 1) || ((int32_T)iobj_2->Index > 6)) {
-      emlrtDynamicBoundsCheckR2012b((int32_T)iobj_2->Index, 1, 6, &n_emlrtBCI,
+      emlrtDynamicBoundsCheckR2012b((int32_T)iobj_2->Index, 1, 6, &t_emlrtBCI,
                                     (emlrtConstCTX)sp);
     }
     loop_ub = (int32_T)iobj_2->Index - 1;
@@ -2900,7 +2901,7 @@ void RigidBodyTree_addBody(
       emlrtIntegerCheckR2012b(iobj_2->Index, &m_emlrtDCI, (emlrtConstCTX)sp);
     }
     if (((int32_T)iobj_2->Index < 1) || ((int32_T)iobj_2->Index > 6)) {
-      emlrtDynamicBoundsCheckR2012b((int32_T)iobj_2->Index, 1, 6, &o_emlrtBCI,
+      emlrtDynamicBoundsCheckR2012b((int32_T)iobj_2->Index, 1, 6, &u_emlrtBCI,
                                     (emlrtConstCTX)sp);
     }
     loop_ub = (int32_T)iobj_2->Index;
@@ -2910,7 +2911,7 @@ void RigidBodyTree_addBody(
       emlrtIntegerCheckR2012b(iobj_2->Index, &n_emlrtDCI, (emlrtConstCTX)sp);
     }
     if (((int32_T)iobj_2->Index < 1) || ((int32_T)iobj_2->Index > 6)) {
-      emlrtDynamicBoundsCheckR2012b((int32_T)iobj_2->Index, 1, 6, &p_emlrtBCI,
+      emlrtDynamicBoundsCheckR2012b((int32_T)iobj_2->Index, 1, 6, &v_emlrtBCI,
                                     (emlrtConstCTX)sp);
     }
     loop_ub = (int32_T)iobj_2->Index;
@@ -2983,10 +2984,10 @@ void c_RigidBodyTree_bodyIndicesToPo(const emlrtStack *sp,
       nm1d2++;
     }
   }
-  emxInit_int32_T(sp, &r, 1, &fi_emlrtRTEI);
+  emxInit_int32_T(sp, &r, 1, &gi_emlrtRTEI);
   k = r->size[0];
   r->size[0] = nm1d2;
-  emxEnsureCapacity_int32_T(sp, r, k, &vh_emlrtRTEI);
+  emxEnsureCapacity_int32_T(sp, r, k, &wh_emlrtRTEI);
   r1 = r->data;
   nm1d2 = 0;
   for (i = 0; i < end; i++) {
@@ -2995,25 +2996,25 @@ void c_RigidBodyTree_bodyIndicesToPo(const emlrtStack *sp,
       nm1d2++;
     }
   }
-  emxInit_real_T(sp, &positionMap, 2, &wh_emlrtRTEI);
+  emxInit_real_T(sp, &positionMap, 2, &xh_emlrtRTEI);
   loop_ub = r->size[0];
   k = positionMap->size[0] * positionMap->size[1];
   positionMap->size[0] = r->size[0];
   positionMap->size[1] = 2;
-  emxEnsureCapacity_real_T(sp, positionMap, k, &wh_emlrtRTEI);
+  emxEnsureCapacity_real_T(sp, positionMap, k, &xh_emlrtRTEI);
   positionMap_data = positionMap->data;
   for (k = 0; k < 2; k++) {
     for (end = 0; end < loop_ub; end++) {
       if (r1[end] > bodyIndices->size[0] - 1) {
         emlrtDynamicBoundsCheckR2012b(r1[end], 0, bodyIndices->size[0] - 1,
-                                      &qe_emlrtBCI, (emlrtConstCTX)sp);
+                                      &we_emlrtBCI, (emlrtConstCTX)sp);
       }
       d = bodyIndices_data[r1[end]];
       if (d != (int32_T)muDoubleScalarFloor(d)) {
         emlrtIntegerCheckR2012b(d, &vc_emlrtDCI, (emlrtConstCTX)sp);
       }
       if (((int32_T)d < 1) || ((int32_T)d > 6)) {
-        emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 6, &pe_emlrtBCI,
+        emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 6, &ve_emlrtBCI,
                                       (emlrtConstCTX)sp);
       }
       positionMap_data[end + positionMap->size[0] * k] =
@@ -3033,19 +3034,19 @@ void c_RigidBodyTree_bodyIndicesToPo(const emlrtStack *sp,
   posIndices->size[0] = 1;
   nm1d2 = (int32_T)d;
   posIndices->size[1] = (int32_T)d;
-  emxEnsureCapacity_real_T(sp, posIndices, k, &xh_emlrtRTEI);
+  emxEnsureCapacity_real_T(sp, posIndices, k, &yh_emlrtRTEI);
   posIndices_data = posIndices->data;
   for (k = 0; k < nm1d2; k++) {
     posIndices_data[k] = 0.0;
   }
   idxCount = 0.0;
-  emxInit_int32_T(sp, &r2, 2, &ei_emlrtRTEI);
-  emxInit_real_T(sp, &y, 2, &gi_emlrtRTEI);
+  emxInit_int32_T(sp, &r2, 2, &fi_emlrtRTEI);
+  emxInit_real_T(sp, &y, 2, &hi_emlrtRTEI);
   y_data = y->data;
   for (i = 0; i < loop_ub; i++) {
     real_T numPositions_tmp;
     if (i + 1 > loop_ub) {
-      emlrtDynamicBoundsCheckR2012b(i + 1, 1, loop_ub, &oe_emlrtBCI,
+      emlrtDynamicBoundsCheckR2012b(i + 1, 1, loop_ub, &ue_emlrtBCI,
                                     (emlrtConstCTX)sp);
     }
     numPositions_tmp =
@@ -3060,7 +3061,7 @@ void c_RigidBodyTree_bodyIndicesToPo(const emlrtStack *sp,
         k = y->size[0] * y->size[1];
         y->size[0] = 1;
         y->size[1] = (int32_T)((numPositions_tmp + 1.0) - 1.0) + 1;
-        emxEnsureCapacity_real_T(sp, y, k, &ai_emlrtRTEI);
+        emxEnsureCapacity_real_T(sp, y, k, &bi_emlrtRTEI);
         y_data = y->data;
         nm1d2 = (int32_T)((numPositions_tmp + 1.0) - 1.0);
         for (k = 0; k <= nm1d2; k++) {
@@ -3071,7 +3072,7 @@ void c_RigidBodyTree_bodyIndicesToPo(const emlrtStack *sp,
       r2->size[0] = 1;
       nm1d2 = y->size[1];
       r2->size[1] = y->size[1];
-      emxEnsureCapacity_int32_T(sp, r2, k, &bi_emlrtRTEI);
+      emxEnsureCapacity_int32_T(sp, r2, k, &ci_emlrtRTEI);
       r1 = r2->data;
       for (k = 0; k < nm1d2; k++) {
         a = idxCount + y_data[k];
@@ -3079,20 +3080,20 @@ void c_RigidBodyTree_bodyIndicesToPo(const emlrtStack *sp,
           emlrtIntegerCheckR2012b(a, &wc_emlrtDCI, (emlrtConstCTX)sp);
         }
         if (((int32_T)a < 1) || ((int32_T)a > (int32_T)d)) {
-          emlrtDynamicBoundsCheckR2012b((int32_T)a, 1, (int32_T)d, &re_emlrtBCI,
+          emlrtDynamicBoundsCheckR2012b((int32_T)a, 1, (int32_T)d, &xe_emlrtBCI,
                                         (emlrtConstCTX)sp);
         }
         r1[k] = (int32_T)a;
       }
-      st.site = &vs_emlrtRSI;
+      st.site = &ws_emlrtRSI;
       a = positionMap_data[i];
       b = positionMap_data[i + positionMap->size[0]];
-      b_st.site = &jp_emlrtRSI;
+      b_st.site = &kp_emlrtRSI;
       if (muDoubleScalarIsNaN(a) || muDoubleScalarIsNaN(b)) {
         k = y->size[0] * y->size[1];
         y->size[0] = 1;
         y->size[1] = 1;
-        emxEnsureCapacity_real_T(&b_st, y, k, &ci_emlrtRTEI);
+        emxEnsureCapacity_real_T(&b_st, y, k, &di_emlrtRTEI);
         y_data = y->data;
         y_data[0] = rtNaN;
       } else if (b < a) {
@@ -3103,7 +3104,7 @@ void c_RigidBodyTree_bodyIndicesToPo(const emlrtStack *sp,
         k = y->size[0] * y->size[1];
         y->size[0] = 1;
         y->size[1] = 1;
-        emxEnsureCapacity_real_T(&b_st, y, k, &ci_emlrtRTEI);
+        emxEnsureCapacity_real_T(&b_st, y, k, &di_emlrtRTEI);
         y_data = y->data;
         y_data[0] = rtNaN;
       } else if (muDoubleScalarFloor(a) == a) {
@@ -3111,7 +3112,7 @@ void c_RigidBodyTree_bodyIndicesToPo(const emlrtStack *sp,
         y->size[0] = 1;
         nm1d2 = (int32_T)numPositions_tmp;
         y->size[1] = (int32_T)numPositions_tmp + 1;
-        emxEnsureCapacity_real_T(&b_st, y, k, &ci_emlrtRTEI);
+        emxEnsureCapacity_real_T(&b_st, y, k, &di_emlrtRTEI);
         y_data = y->data;
         for (k = 0; k <= nm1d2; k++) {
           y_data[k] = a + (real_T)k;
@@ -3120,7 +3121,7 @@ void c_RigidBodyTree_bodyIndicesToPo(const emlrtStack *sp,
         real_T apnd;
         real_T cdiff;
         real_T ndbl;
-        c_st.site = &ws_emlrtRSI;
+        c_st.site = &xs_emlrtRSI;
         ndbl = muDoubleScalarFloor(numPositions_tmp + 0.5);
         apnd = a + ndbl;
         cdiff = apnd - b;
@@ -3139,7 +3140,7 @@ void c_RigidBodyTree_bodyIndicesToPo(const emlrtStack *sp,
         } else {
           end = 0;
         }
-        d_st.site = &xs_emlrtRSI;
+        d_st.site = &ys_emlrtRSI;
         if (ndbl > 2.147483647E+9) {
           emlrtErrorWithMessageIdR2018a(&d_st, &wb_emlrtRTEI,
                                         "Coder:MATLAB:pmaxsize",
@@ -3148,7 +3149,7 @@ void c_RigidBodyTree_bodyIndicesToPo(const emlrtStack *sp,
         k = y->size[0] * y->size[1];
         y->size[0] = 1;
         y->size[1] = end;
-        emxEnsureCapacity_real_T(&c_st, y, k, &di_emlrtRTEI);
+        emxEnsureCapacity_real_T(&c_st, y, k, &ei_emlrtRTEI);
         y_data = y->data;
         if (end > 0) {
           y_data[0] = a;
@@ -3186,7 +3187,7 @@ void c_RigidBodyTree_bodyIndicesToPo(const emlrtStack *sp,
     k = 0;
   } else {
     if ((int32_T)d < 1) {
-      emlrtDynamicBoundsCheckR2012b(1, 1, (int32_T)d, &ne_emlrtBCI,
+      emlrtDynamicBoundsCheckR2012b(1, 1, (int32_T)d, &te_emlrtBCI,
                                     (emlrtConstCTX)sp);
     }
     if (idxCount != (int32_T)muDoubleScalarFloor(idxCount)) {
@@ -3194,13 +3195,13 @@ void c_RigidBodyTree_bodyIndicesToPo(const emlrtStack *sp,
     }
     if (((int32_T)idxCount < 1) || ((int32_T)idxCount > (int32_T)d)) {
       emlrtDynamicBoundsCheckR2012b((int32_T)idxCount, 1, (int32_T)d,
-                                    &me_emlrtBCI, (emlrtConstCTX)sp);
+                                    &se_emlrtBCI, (emlrtConstCTX)sp);
     }
     k = (int32_T)idxCount;
   }
   end = posIndices->size[0] * posIndices->size[1];
   posIndices->size[1] = k;
-  emxEnsureCapacity_real_T(sp, posIndices, end, &yh_emlrtRTEI);
+  emxEnsureCapacity_real_T(sp, posIndices, end, &ai_emlrtRTEI);
   emlrtHeapReferenceStackLeaveFcnR2012b((emlrtConstCTX)sp);
 }
 
@@ -3278,13 +3279,13 @@ void c_RigidBodyTree_efficientFKAndJ(const emlrtStack *sp,
         emlrtIntegerCheckR2012b(bid1, &jc_emlrtDCI, (emlrtConstCTX)sp);
       }
       if (((int32_T)bid1 - 1 < 0) || ((int32_T)bid1 - 1 > 5)) {
-        emlrtDynamicBoundsCheckR2012b((int32_T)bid1 - 1, 0, 5, &hd_emlrtBCI,
+        emlrtDynamicBoundsCheckR2012b((int32_T)bid1 - 1, 0, 5, &nd_emlrtBCI,
                                       (emlrtConstCTX)sp);
       }
       body1 = obj->Bodies[(int32_T)bid1 - 1];
     }
-    emxInit_real_T(sp, &kinematicPathIndices, 2, &qf_emlrtRTEI);
-    st.site = &vj_emlrtRSI;
+    emxInit_real_T(sp, &kinematicPathIndices, 2, &rf_emlrtRTEI);
+    st.site = &wj_emlrtRSI;
     c_RigidBodyTree_kinematicPathIn(&st, obj, body1, &obj->Base,
                                     kinematicPathIndices);
     kinematicPathIndices_data = kinematicPathIndices->data;
@@ -3306,15 +3307,15 @@ void c_RigidBodyTree_efficientFKAndJ(const emlrtStack *sp,
     i = Jac->size[0] * Jac->size[1];
     Jac->size[0] = 6;
     Jac->size[1] = (int32_T)d;
-    emxEnsureCapacity_real_T(sp, Jac, i, &nf_emlrtRTEI);
+    emxEnsureCapacity_real_T(sp, Jac, i, &of_emlrtRTEI);
     Jac_data = Jac->data;
     loop_ub_tmp = 6 * (int32_T)d;
     for (i = 0; i < loop_ub_tmp; i++) {
       Jac_data[i] = 0.0;
     }
     i = kinematicPathIndices->size[1];
-    emxInit_real_T(sp, &C, 2, &rf_emlrtRTEI);
-    emxInit_real_T(sp, &b_qv, 1, &pf_emlrtRTEI);
+    emxInit_real_T(sp, &C, 2, &sf_emlrtRTEI);
+    emxInit_real_T(sp, &b_qv, 1, &qf_emlrtRTEI);
     for (b_i = 0; b_i <= i - 2; b_i++) {
       __m128d r;
       __m128d r1;
@@ -3327,20 +3328,20 @@ void c_RigidBodyTree_efficientFKAndJ(const emlrtStack *sp,
       boolean_T b_bool;
       boolean_T nextBodyIsParent;
       if (b_i + 1 > i) {
-        emlrtDynamicBoundsCheckR2012b(b_i + 1, 1, i, &id_emlrtBCI,
+        emlrtDynamicBoundsCheckR2012b(b_i + 1, 1, i, &od_emlrtBCI,
                                       (emlrtConstCTX)sp);
       }
       alpha1 = kinematicPathIndices_data[b_i];
       if (alpha1 != 0.0) {
         if (b_i + 1 > i) {
-          emlrtDynamicBoundsCheckR2012b(b_i + 1, 1, i, &ld_emlrtBCI,
+          emlrtDynamicBoundsCheckR2012b(b_i + 1, 1, i, &rd_emlrtBCI,
                                         (emlrtConstCTX)sp);
         }
         if (alpha1 != (int32_T)muDoubleScalarFloor(alpha1)) {
           emlrtIntegerCheckR2012b(alpha1, &kc_emlrtDCI, (emlrtConstCTX)sp);
         }
         if (((int32_T)alpha1 - 1 < 0) || ((int32_T)alpha1 - 1 > 5)) {
-          emlrtDynamicBoundsCheckR2012b((int32_T)alpha1 - 1, 0, 5, &kd_emlrtBCI,
+          emlrtDynamicBoundsCheckR2012b((int32_T)alpha1 - 1, 0, 5, &qd_emlrtBCI,
                                         (emlrtConstCTX)sp);
         }
         body1 = obj->Bodies[(int32_T)alpha1 - 1];
@@ -3348,20 +3349,20 @@ void c_RigidBodyTree_efficientFKAndJ(const emlrtStack *sp,
         body1 = &obj->Base;
       }
       if (b_i + 2 > i) {
-        emlrtDynamicBoundsCheckR2012b(b_i + 2, 1, i, &jd_emlrtBCI,
+        emlrtDynamicBoundsCheckR2012b(b_i + 2, 1, i, &pd_emlrtBCI,
                                       (emlrtConstCTX)sp);
       }
       alpha1 = kinematicPathIndices_data[b_i + 1];
       if (alpha1 != 0.0) {
         if (b_i + 2 > i) {
-          emlrtDynamicBoundsCheckR2012b(b_i + 2, 1, i, &nd_emlrtBCI,
+          emlrtDynamicBoundsCheckR2012b(b_i + 2, 1, i, &td_emlrtBCI,
                                         (emlrtConstCTX)sp);
         }
         if (alpha1 != (int32_T)muDoubleScalarFloor(alpha1)) {
           emlrtIntegerCheckR2012b(alpha1, &lc_emlrtDCI, (emlrtConstCTX)sp);
         }
         if (((int32_T)alpha1 - 1 < 0) || ((int32_T)alpha1 - 1 > 5)) {
-          emlrtDynamicBoundsCheckR2012b((int32_T)alpha1 - 1, 0, 5, &md_emlrtBCI,
+          emlrtDynamicBoundsCheckR2012b((int32_T)alpha1 - 1, 0, 5, &sd_emlrtBCI,
                                         (emlrtConstCTX)sp);
         }
         nextBody = obj->Bodies[(int32_T)alpha1 - 1];
@@ -3376,7 +3377,7 @@ void c_RigidBodyTree_efficientFKAndJ(const emlrtStack *sp,
         jointSign = -1;
       }
       joint = nextBody->JointInternal;
-      st.site = &wj_emlrtRSI;
+      st.site = &xj_emlrtRSI;
       b_st.site = &bb_emlrtRSI;
       alpha1 = joint->TypeInternal.Length;
       for (i1 = 0; i1 < 200; i1++) {
@@ -3389,7 +3390,7 @@ void c_RigidBodyTree_efficientFKAndJ(const emlrtStack *sp,
           emlrtIntegerCheckR2012b(alpha1, &c_emlrtDCI, &b_st);
         }
         if (((int32_T)alpha1 < 1) || ((int32_T)alpha1 > 200)) {
-          emlrtDynamicBoundsCheckR2012b((int32_T)alpha1, 1, 200, &c_emlrtBCI,
+          emlrtDynamicBoundsCheckR2012b((int32_T)alpha1, 1, 200, &i_emlrtBCI,
                                         &b_st);
         }
         i1 = (int32_T)alpha1;
@@ -3413,12 +3414,12 @@ void c_RigidBodyTree_efficientFKAndJ(const emlrtStack *sp,
       }
       if (b_bool) {
         real_T Tj[16];
-        st.site = &xj_emlrtRSI;
+        st.site = &yj_emlrtRSI;
         for (i1 = 0; i1 < 16; i1++) {
           Tj1[i1] = joint->JointToParentTransform[i1];
         }
-        b_st.site = &fk_emlrtRSI;
-        c_st.site = &gk_emlrtRSI;
+        b_st.site = &gk_emlrtRSI;
+        c_st.site = &hk_emlrtRSI;
         d_st.site = &bb_emlrtRSI;
         alpha1 = joint->TypeInternal.Length;
         for (i1 = 0; i1 < 200; i1++) {
@@ -3431,7 +3432,7 @@ void c_RigidBodyTree_efficientFKAndJ(const emlrtStack *sp,
             emlrtIntegerCheckR2012b(alpha1, &c_emlrtDCI, &d_st);
           }
           if (((int32_T)alpha1 < 1) || ((int32_T)alpha1 > 200)) {
-            emlrtDynamicBoundsCheckR2012b((int32_T)alpha1, 1, 200, &c_emlrtBCI,
+            emlrtDynamicBoundsCheckR2012b((int32_T)alpha1, 1, 200, &i_emlrtBCI,
                                           &d_st);
           }
           i1 = (int32_T)alpha1;
@@ -3509,12 +3510,12 @@ void c_RigidBodyTree_efficientFKAndJ(const emlrtStack *sp,
           real_T e_tempR_tmp;
           real_T qidx_idx_0;
           real_T qidx_idx_1;
-          c_st.site = &hk_emlrtRSI;
-          rigidBodyJoint_get_JointAxis(&c_st, joint, v);
           c_st.site = &ik_emlrtRSI;
-          d_st.site = &lk_emlrtRSI;
-          e_st.site = &mk_emlrtRSI;
-          f_st.site = &nk_emlrtRSI;
+          rigidBodyJoint_get_JointAxis(&c_st, joint, v);
+          c_st.site = &jk_emlrtRSI;
+          d_st.site = &mk_emlrtRSI;
+          e_st.site = &nk_emlrtRSI;
+          f_st.site = &ok_emlrtRSI;
           normalizeRows(&f_st, v, b_v);
           alpha1 = b_v[0] * b_v[1] * 0.0;
           beta1 = b_v[0] * b_v[2] * 0.0;
@@ -3548,7 +3549,7 @@ void c_RigidBodyTree_efficientFKAndJ(const emlrtStack *sp,
         } break;
         case 1: {
           real_T v[3];
-          c_st.site = &jk_emlrtRSI;
+          c_st.site = &kk_emlrtRSI;
           rigidBodyJoint_get_JointAxis(&c_st, joint, v);
           memset(&R[0], 0, 9U * sizeof(real_T));
           R[0] = 1.0;
@@ -3567,7 +3568,7 @@ void c_RigidBodyTree_efficientFKAndJ(const emlrtStack *sp,
           b[15] = 1.0;
         } break;
         case 2:
-          emlrtDynamicBoundsCheckR2012b(5, 1, 1, &od_emlrtBCI, &b_st);
+          emlrtDynamicBoundsCheckR2012b(5, 1, 1, &ud_emlrtBCI, &b_st);
           break;
         default:
           memset(&b[0], 0, 16U * sizeof(real_T));
@@ -3613,7 +3614,7 @@ void c_RigidBodyTree_efficientFKAndJ(const emlrtStack *sp,
         }
         if (((int32_T)nextBody->Index < 1) || ((int32_T)nextBody->Index > 6)) {
           emlrtDynamicBoundsCheckR2012b((int32_T)nextBody->Index, 1, 6,
-                                        &bd_emlrtBCI, (emlrtConstCTX)sp);
+                                        &hd_emlrtBCI, (emlrtConstCTX)sp);
         }
         kstr = (int32_T)nextBody->Index;
         qidx_idx_0 = obj->PositionDoFMap[kstr - 1];
@@ -3629,7 +3630,7 @@ void c_RigidBodyTree_efficientFKAndJ(const emlrtStack *sp,
           if (((int32_T)qidx_idx_0 < 1) ||
               ((int32_T)qidx_idx_0 > qv->size[0])) {
             emlrtDynamicBoundsCheckR2012b((int32_T)qidx_idx_0, 1, qv->size[0],
-                                          &cd_emlrtBCI, (emlrtConstCTX)sp);
+                                          &id_emlrtBCI, (emlrtConstCTX)sp);
           }
           i1 = (int32_T)qidx_idx_0 - 1;
           if (qidx_idx_1 != (int32_T)muDoubleScalarFloor(qidx_idx_1)) {
@@ -3639,23 +3640,23 @@ void c_RigidBodyTree_efficientFKAndJ(const emlrtStack *sp,
           if (((int32_T)qidx_idx_1 < 1) ||
               ((int32_T)qidx_idx_1 > qv->size[0])) {
             emlrtDynamicBoundsCheckR2012b((int32_T)qidx_idx_1, 1, qv->size[0],
-                                          &dd_emlrtBCI, (emlrtConstCTX)sp);
+                                          &jd_emlrtBCI, (emlrtConstCTX)sp);
           }
           kstr = (int32_T)qidx_idx_1;
         }
         b_iv[0] = 1;
         loop_ub = kstr - i1;
         b_iv[1] = loop_ub;
-        st.site = &yj_emlrtRSI;
+        st.site = &ak_emlrtRSI;
         indexShapeCheck(&st, qv->size[0], b_iv);
         kstr = b_qv->size[0];
         b_qv->size[0] = loop_ub;
-        emxEnsureCapacity_real_T(sp, b_qv, kstr, &pf_emlrtRTEI);
+        emxEnsureCapacity_real_T(sp, b_qv, kstr, &qf_emlrtRTEI);
         b_qv_data = b_qv->data;
         for (kstr = 0; kstr < loop_ub; kstr++) {
           b_qv_data[kstr] = qv_data[i1 + kstr];
         }
-        st.site = &yj_emlrtRSI;
+        st.site = &ak_emlrtRSI;
         c_rigidBodyJoint_transformBodyT(&st, joint, b_qv, Tc2p);
         if (nextBody->Index != (int32_T)muDoubleScalarFloor(nextBody->Index)) {
           emlrtIntegerCheckR2012b(nextBody->Index, &gc_emlrtDCI,
@@ -3663,7 +3664,7 @@ void c_RigidBodyTree_efficientFKAndJ(const emlrtStack *sp,
         }
         if (((int32_T)nextBody->Index < 1) || ((int32_T)nextBody->Index > 6)) {
           emlrtDynamicBoundsCheckR2012b((int32_T)nextBody->Index, 1, 6,
-                                        &ed_emlrtBCI, (emlrtConstCTX)sp);
+                                        &kd_emlrtBCI, (emlrtConstCTX)sp);
         }
         kstr = (int32_T)nextBody->Index;
         qidx_idx_0 = obj->VelocityDoFMap[kstr - 1];
@@ -3749,7 +3750,7 @@ void c_RigidBodyTree_efficientFKAndJ(const emlrtStack *sp,
         Tj1[7] = 0.0;
         Tj1[11] = 0.0;
         Tj1[15] = 1.0;
-        st.site = &bk_emlrtRSI;
+        st.site = &ck_emlrtRSI;
         R[0] = 0.0;
         R[3] = -Tj1[14];
         R[6] = Tj1[13];
@@ -3782,15 +3783,15 @@ void c_RigidBodyTree_efficientFKAndJ(const emlrtStack *sp,
           X[6 * i1 + 5] = tempR[3 * i1 + 2];
           X[X_tmp + 5] = Tj1[kstr + 2];
         }
-        b_st.site = &ak_emlrtRSI;
+        b_st.site = &bk_emlrtRSI;
         c_rigidBodyJoint_get_MotionSubs(&b_st, joint, JacSlice_data,
                                         JacSlice_size);
-        b_st.site = &dl_emlrtRSI;
+        b_st.site = &el_emlrtRSI;
         if (JacSlice_size[1] == 0) {
           JacSlice_size[1] = 0;
         } else {
-          c_st.site = &el_emlrtRSI;
-          d_st.site = &fl_emlrtRSI;
+          c_st.site = &fl_emlrtRSI;
+          d_st.site = &gl_emlrtRSI;
           TRANSB1 = 'N';
           TRANSA1 = 'N';
           alpha1 = 1.0;
@@ -3804,7 +3805,7 @@ void c_RigidBodyTree_efficientFKAndJ(const emlrtStack *sp,
           i1 = C->size[0] * C->size[1];
           C->size[0] = 6;
           C->size[1] = JacSlice_size[1];
-          emxEnsureCapacity_real_T(&d_st, C, i1, &lf_emlrtRTEI);
+          emxEnsureCapacity_real_T(&d_st, C, i1, &mf_emlrtRTEI);
           b_qv_data = C->data;
           dgemm(&TRANSA1, &TRANSB1, &m_t, &n_t, &k_t, &alpha1, &X[0], &lda_t,
                 &JacSlice_data[0], &ldb_t, &beta1, &b_qv_data[0], &ldc_t);
@@ -3837,7 +3838,7 @@ void c_RigidBodyTree_efficientFKAndJ(const emlrtStack *sp,
           }
           if (((int32_T)qidx_idx_0 < 1) || ((int32_T)qidx_idx_0 > (int32_T)d)) {
             emlrtDynamicBoundsCheckR2012b((int32_T)qidx_idx_0, 1, (int32_T)d,
-                                          &fd_emlrtBCI, (emlrtConstCTX)sp);
+                                          &ld_emlrtBCI, (emlrtConstCTX)sp);
           }
           i1 = (int32_T)qidx_idx_0 - 1;
           if (qidx_idx_1 != (int32_T)muDoubleScalarFloor(qidx_idx_1)) {
@@ -3846,7 +3847,7 @@ void c_RigidBodyTree_efficientFKAndJ(const emlrtStack *sp,
           }
           if (((int32_T)qidx_idx_1 < 1) || ((int32_T)qidx_idx_1 > (int32_T)d)) {
             emlrtDynamicBoundsCheckR2012b((int32_T)qidx_idx_1, 1, (int32_T)d,
-                                          &gd_emlrtBCI, (emlrtConstCTX)sp);
+                                          &md_emlrtBCI, (emlrtConstCTX)sp);
           }
           kstr = (int32_T)qidx_idx_1;
         }
@@ -3942,18 +3943,18 @@ void c_RigidBodyTree_efficientFKAndJ(const emlrtStack *sp,
       X[6 * i + 5] = 0.0;
       X[kstr + 5] = alpha1;
     }
-    st.site = &ck_emlrtRSI;
-    b_st.site = &dl_emlrtRSI;
+    st.site = &dk_emlrtRSI;
+    b_st.site = &el_emlrtRSI;
     if (Jac->size[1] == 0) {
       Jac->size[0] = 6;
       Jac->size[1] = 0;
     } else {
-      c_st.site = &el_emlrtRSI;
-      d_st.site = &fl_emlrtRSI;
+      c_st.site = &fl_emlrtRSI;
+      d_st.site = &gl_emlrtRSI;
       i = C->size[0] * C->size[1];
       C->size[0] = 6;
       C->size[1] = (int32_T)d;
-      emxEnsureCapacity_real_T(&d_st, C, i, &of_emlrtRTEI);
+      emxEnsureCapacity_real_T(&d_st, C, i, &pf_emlrtRTEI);
       b_qv_data = C->data;
       for (i = 0; i < loop_ub_tmp; i++) {
         b_qv_data[i] = Jac_data[i];
@@ -3971,7 +3972,7 @@ void c_RigidBodyTree_efficientFKAndJ(const emlrtStack *sp,
       i = Jac->size[0] * Jac->size[1];
       Jac->size[0] = 6;
       Jac->size[1] = (int32_T)d;
-      emxEnsureCapacity_real_T(&d_st, Jac, i, &lf_emlrtRTEI);
+      emxEnsureCapacity_real_T(&d_st, Jac, i, &mf_emlrtRTEI);
       Jac_data = Jac->data;
       dgemm(&TRANSA1, &TRANSB1, &m_t, &n_t, &k_t, &alpha1, &X[0], &lda_t,
             &b_qv_data[0], &ldb_t, &beta1, &Jac_data[0], &ldc_t);
@@ -4028,7 +4029,7 @@ real_T c_RigidBodyTree_findBodyIndexBy(const emlrtStack *sp,
       emlrtIntegerCheckR2012b(obj_Length, &c_emlrtDCI, &b_st);
     }
     if (((int32_T)obj_Length < 1) || ((int32_T)obj_Length > 200)) {
-      emlrtDynamicBoundsCheckR2012b((int32_T)obj_Length, 1, 200, &c_emlrtBCI,
+      emlrtDynamicBoundsCheckR2012b((int32_T)obj_Length, 1, 200, &i_emlrtBCI,
                                     &b_st);
     }
     loop_ub = (int32_T)obj_Length;
@@ -4055,7 +4056,7 @@ real_T c_RigidBodyTree_findBodyIndexBy(const emlrtStack *sp,
     while ((!exitg1) && (i <= (int32_T)d - 1)) {
       st.site = &kd_emlrtRSI;
       if (i > 5) {
-        emlrtDynamicBoundsCheckR2012b(6, 0, 5, &i_emlrtBCI, &st);
+        emlrtDynamicBoundsCheckR2012b(6, 0, 5, &o_emlrtBCI, &st);
       }
       b_obj = obj->Bodies[i];
       b_st.site = &dd_emlrtRSI;
@@ -4071,7 +4072,7 @@ real_T c_RigidBodyTree_findBodyIndexBy(const emlrtStack *sp,
         }
         if (((int32_T)obj_Length < 1) || ((int32_T)obj_Length > 200)) {
           emlrtDynamicBoundsCheckR2012b((int32_T)obj_Length, 1, 200,
-                                        &c_emlrtBCI, &b_st);
+                                        &i_emlrtBCI, &b_st);
         }
         loop_ub = (int32_T)obj_Length;
       }
@@ -4133,7 +4134,7 @@ void c_RigidBodyTree_get_JointPositi(const emlrtStack *sp,
   i = limits->size[0] * limits->size[1];
   limits->size[0] = (int32_T)d;
   limits->size[1] = 2;
-  emxEnsureCapacity_real_T(sp, limits, i, &mc_emlrtRTEI);
+  emxEnsureCapacity_real_T(sp, limits, i, &nc_emlrtRTEI);
   limits_data = limits->data;
   loop_ub_tmp = (int32_T)d << 1;
   for (i = 0; i < loop_ub_tmp; i++) {
@@ -4148,10 +4149,10 @@ void c_RigidBodyTree_get_JointPositi(const emlrtStack *sp,
     char_T obj_Vector[200];
     boolean_T b_bool;
     if (b_i > 5) {
-      emlrtDynamicBoundsCheckR2012b(b_i, 0, 5, &kb_emlrtBCI, (emlrtConstCTX)sp);
+      emlrtDynamicBoundsCheckR2012b(b_i, 0, 5, &qb_emlrtBCI, (emlrtConstCTX)sp);
     }
     body = obj->Bodies[b_i];
-    st.site = &cg_emlrtRSI;
+    st.site = &dg_emlrtRSI;
     b_obj = body->JointInternal;
     b_st.site = &bb_emlrtRSI;
     pnum = b_obj->TypeInternal.Length;
@@ -4165,7 +4166,7 @@ void c_RigidBodyTree_get_JointPositi(const emlrtStack *sp,
         emlrtIntegerCheckR2012b(pnum, &c_emlrtDCI, &b_st);
       }
       if (((int32_T)pnum < 1) || ((int32_T)pnum > 200)) {
-        emlrtDynamicBoundsCheckR2012b((int32_T)pnum, 1, 200, &c_emlrtBCI,
+        emlrtDynamicBoundsCheckR2012b((int32_T)pnum, 1, 200, &i_emlrtBCI,
                                       &b_st);
       }
       i1 = (int32_T)pnum;
@@ -4199,7 +4200,7 @@ void c_RigidBodyTree_get_JointPositi(const emlrtStack *sp,
           emlrtIntegerCheckR2012b(k, &hb_emlrtDCI, (emlrtConstCTX)sp);
         }
         if (((int32_T)k < 1) || ((int32_T)k > (int32_T)d)) {
-          emlrtDynamicBoundsCheckR2012b((int32_T)k, 1, (int32_T)d, &ib_emlrtBCI,
+          emlrtDynamicBoundsCheckR2012b((int32_T)k, 1, (int32_T)d, &ob_emlrtBCI,
                                         (emlrtConstCTX)sp);
         }
         i1 = (int32_T)k - 1;
@@ -4209,11 +4210,11 @@ void c_RigidBodyTree_get_JointPositi(const emlrtStack *sp,
         if (((int32_T)(pnum - 1.0) < 1) ||
             ((int32_T)(pnum - 1.0) > (int32_T)d)) {
           emlrtDynamicBoundsCheckR2012b((int32_T)(pnum - 1.0), 1, (int32_T)d,
-                                        &jb_emlrtBCI, (emlrtConstCTX)sp);
+                                        &pb_emlrtBCI, (emlrtConstCTX)sp);
         }
         i2 = (int32_T)(pnum - 1.0);
       }
-      st.site = &dg_emlrtRSI;
+      st.site = &eg_emlrtRSI;
       c_rigidBodyJoint_get_PositionLi(&st, body->JointInternal, tmp_data,
                                       tmp_size);
       loop_ub_tmp = i2 - i1;
@@ -4234,7 +4235,8 @@ void c_RigidBodyTree_get_JointPositi(const emlrtStack *sp,
 
 void c_RigidBodyTree_validateConfigu(const emlrtStack *sp,
                                      e_robotics_manip_internal_Rigid *obj,
-                                     const struct_T Q[6], emxArray_real_T *qvec)
+                                     const b_struct_T Q[6],
+                                     emxArray_real_T *qvec)
 {
   static const char_T b_cv[5] = {'f', 'i', 'x', 'e', 'd'};
   static const char_T varargin_1[5] = {'J', 'o', 'i', 'n', 't'};
@@ -4271,9 +4273,9 @@ void c_RigidBodyTree_validateConfigu(const emlrtStack *sp,
   c_st.prev = &b_st;
   c_st.tls = b_st.tls;
   emlrtHeapReferenceStackEnterFcnR2012b((emlrtConstCTX)sp);
-  st.site = &vg_emlrtRSI;
+  st.site = &wg_emlrtRSI;
   idx_idx_0 = obj->NumNonFixedBodies;
-  b_st.site = &ch_emlrtRSI;
+  b_st.site = &dh_emlrtRSI;
   c_st.site = &pb_emlrtRSI;
   if ((!(muDoubleScalarFloor(idx_idx_0) == idx_idx_0)) ||
       muDoubleScalarIsInf(idx_idx_0) || (!(idx_idx_0 >= 0.0))) {
@@ -4296,7 +4298,7 @@ void c_RigidBodyTree_validateConfigu(const emlrtStack *sp,
   }
   i = qvec->size[0];
   qvec->size[0] = (int32_T)d;
-  emxEnsureCapacity_real_T(&st, qvec, i, &yc_emlrtRTEI);
+  emxEnsureCapacity_real_T(&st, qvec, i, &ad_emlrtRTEI);
   qvec_data = qvec->data;
   if (!(obj->PositionNumber >= 0.0)) {
     emlrtNonNegativeCheckR2012b(obj->PositionNumber, &ac_emlrtDCI, &st);
@@ -4316,10 +4318,10 @@ void c_RigidBodyTree_validateConfigu(const emlrtStack *sp,
   for (b_i = 0; b_i < i; b_i++) {
     boolean_T b_bool;
     if (b_i > 5) {
-      emlrtDynamicBoundsCheckR2012b(b_i, 0, 5, &fc_emlrtBCI, &st);
+      emlrtDynamicBoundsCheckR2012b(b_i, 0, 5, &lc_emlrtBCI, &st);
     }
     body = obj->Bodies[b_i];
-    b_st.site = &dh_emlrtRSI;
+    b_st.site = &eh_emlrtRSI;
     jnt = body->JointInternal;
     c_st.site = &bb_emlrtRSI;
     idx_idx_0 = jnt->TypeInternal.Length;
@@ -4333,7 +4335,7 @@ void c_RigidBodyTree_validateConfigu(const emlrtStack *sp,
         emlrtIntegerCheckR2012b(idx_idx_0, &c_emlrtDCI, &c_st);
       }
       if (((int32_T)idx_idx_0 < 1) || ((int32_T)idx_idx_0 > 200)) {
-        emlrtDynamicBoundsCheckR2012b((int32_T)idx_idx_0, 1, 200, &c_emlrtBCI,
+        emlrtDynamicBoundsCheckR2012b((int32_T)idx_idx_0, 1, 200, &i_emlrtBCI,
                                       &c_st);
       }
       i1 = (int32_T)idx_idx_0;
@@ -4360,7 +4362,7 @@ void c_RigidBodyTree_validateConfigu(const emlrtStack *sp,
       real_T idx_idx_1;
       int32_T j;
       boolean_T exitg2;
-      b_st.site = &eh_emlrtRSI;
+      b_st.site = &fh_emlrtRSI;
       if (body->Index == 0.0) {
         c_st.site = &he_emlrtRSI;
         emlrtErrorWithMessageIdR2018a(
@@ -4374,7 +4376,7 @@ void c_RigidBodyTree_validateConfigu(const emlrtStack *sp,
       j = 0;
       exitg2 = false;
       while ((!exitg2) && (j < 6)) {
-        b_st.site = &fh_emlrtRSI;
+        b_st.site = &gh_emlrtRSI;
         c_st.site = &ie_emlrtRSI;
         idx_idx_0 = jnt->NameInternal.Length;
         for (i1 = 0; i1 < 200; i1++) {
@@ -4388,7 +4390,7 @@ void c_RigidBodyTree_validateConfigu(const emlrtStack *sp,
           }
           if (((int32_T)idx_idx_0 < 1) || ((int32_T)idx_idx_0 > 200)) {
             emlrtDynamicBoundsCheckR2012b((int32_T)idx_idx_0, 1, 200,
-                                          &c_emlrtBCI, &c_st);
+                                          &i_emlrtBCI, &c_st);
           }
           loop_ub = (int32_T)idx_idx_0;
         }
@@ -4398,7 +4400,7 @@ void c_RigidBodyTree_validateConfigu(const emlrtStack *sp,
           memcpy(&obj_Vector_data[0], &obj_Vector[0],
                  (uint32_T)loop_ub * sizeof(char_T));
         }
-        b_st.site = &fh_emlrtRSI;
+        b_st.site = &gh_emlrtRSI;
         if (b_strcmp(Q[j].JointName.data, Q[j].JointName.size, obj_Vector_data,
                      obj_Vector_size)) {
           idx = j;
@@ -4408,7 +4410,7 @@ void c_RigidBodyTree_validateConfigu(const emlrtStack *sp,
         }
       }
       if (idx + 1 == -1) {
-        b_st.site = &gh_emlrtRSI;
+        b_st.site = &hh_emlrtRSI;
         emlrtErrorWithMessageIdR2018a(&b_st, &c_emlrtRTEI,
                                       "robotics:robotmanip:rigidbodytree:"
                                       "ConfigStructArrayInvalidJointNames",
@@ -4417,10 +4419,10 @@ void c_RigidBodyTree_validateConfigu(const emlrtStack *sp,
                                       0);
       }
       if (idx + 1 < 1) {
-        emlrtDynamicBoundsCheckR2012b(idx + 1, 1, 6, &cc_emlrtBCI, &st);
+        emlrtDynamicBoundsCheckR2012b(idx + 1, 1, 6, &ic_emlrtBCI, &st);
       }
       idx_idx_0 = jnt->PositionNumber;
-      b_st.site = &hh_emlrtRSI;
+      b_st.site = &ih_emlrtRSI;
       c_st.site = &pb_emlrtRSI;
       d = Q[idx].JointPosition;
       if (muDoubleScalarIsNaN(d)) {
@@ -4461,7 +4463,7 @@ void c_RigidBodyTree_validateConfigu(const emlrtStack *sp,
         }
         if (((int32_T)idx_idx_0 < 1) || ((int32_T)idx_idx_0 > qvec->size[0])) {
           emlrtDynamicBoundsCheckR2012b((int32_T)idx_idx_0, 1, qvec->size[0],
-                                        &dc_emlrtBCI, &st);
+                                        &jc_emlrtBCI, &st);
         }
         i1 = (int32_T)idx_idx_0 - 1;
         if (idx_idx_1 != (int32_T)muDoubleScalarFloor(idx_idx_1)) {
@@ -4469,7 +4471,7 @@ void c_RigidBodyTree_validateConfigu(const emlrtStack *sp,
         }
         if (((int32_T)idx_idx_1 < 1) || ((int32_T)idx_idx_1 > qvec->size[0])) {
           emlrtDynamicBoundsCheckR2012b((int32_T)idx_idx_1, 1, qvec->size[0],
-                                        &ec_emlrtBCI, &st);
+                                        &kc_emlrtBCI, &st);
         }
         idx = (int32_T)idx_idx_1;
       }
@@ -4479,8 +4481,8 @@ void c_RigidBodyTree_validateConfigu(const emlrtStack *sp,
       }
     }
   }
-  emxInit_real_T(sp, &limits, 2, &gd_emlrtRTEI);
-  st.site = &wg_emlrtRSI;
+  emxInit_real_T(sp, &limits, 2, &hd_emlrtRTEI);
+  st.site = &xg_emlrtRSI;
   c_RigidBodyTree_get_JointPositi(&st, obj, limits);
   limits_data = limits->data;
   loop_ub = qvec->size[0];
@@ -4489,18 +4491,18 @@ void c_RigidBodyTree_validateConfigu(const emlrtStack *sp,
     emlrtDimSizeImpxCheckR2021b(qvec->size[0], limits->size[0], &o_emlrtECI,
                                 (emlrtConstCTX)sp);
   }
-  emxInit_boolean_T(sp, &ubOK, &ad_emlrtRTEI);
+  emxInit_boolean_T(sp, &ubOK, &bd_emlrtRTEI);
   if (qvec->size[0] == limits->size[0]) {
     i = ubOK->size[0];
     ubOK->size[0] = qvec->size[0];
-    emxEnsureCapacity_boolean_T(sp, ubOK, i, &ad_emlrtRTEI);
+    emxEnsureCapacity_boolean_T(sp, ubOK, i, &bd_emlrtRTEI);
     ubOK_data = ubOK->data;
     for (i = 0; i < loop_ub; i++) {
       ubOK_data[i] = (qvec_data[i] <= limits_data[i + limits->size[0]] +
                                           4.4408920985006262E-16);
     }
   } else {
-    st.site = &nt_emlrtRSI;
+    st.site = &ot_emlrtRSI;
     binary_expand_op_1(&st, ubOK, qvec, limits);
     ubOK_data = ubOK->data;
   }
@@ -4510,50 +4512,50 @@ void c_RigidBodyTree_validateConfigu(const emlrtStack *sp,
     emlrtDimSizeImpxCheckR2021b(qvec->size[0], limits->size[0], &p_emlrtECI,
                                 (emlrtConstCTX)sp);
   }
-  emxInit_boolean_T(sp, &lbOK, &bd_emlrtRTEI);
+  emxInit_boolean_T(sp, &lbOK, &cd_emlrtRTEI);
   if (qvec->size[0] == limits->size[0]) {
     i = lbOK->size[0];
     lbOK->size[0] = qvec->size[0];
-    emxEnsureCapacity_boolean_T(sp, lbOK, i, &bd_emlrtRTEI);
+    emxEnsureCapacity_boolean_T(sp, lbOK, i, &cd_emlrtRTEI);
     lbOK_data = lbOK->data;
     for (i = 0; i < loop_ub; i++) {
       lbOK_data[i] = (qvec_data[i] >= limits_data[i] - 4.4408920985006262E-16);
     }
   } else {
-    st.site = &ot_emlrtRSI;
+    st.site = &pt_emlrtRSI;
     binary_expand_op(&st, lbOK, qvec, limits);
     lbOK_data = lbOK->data;
   }
-  emxInit_int32_T(sp, &indicesUpperBoundViolation, 1, &cd_emlrtRTEI);
-  emxInit_int32_T(sp, &ii, 1, &hd_emlrtRTEI);
-  st.site = &xg_emlrtRSI;
+  emxInit_int32_T(sp, &indicesUpperBoundViolation, 1, &dd_emlrtRTEI);
+  emxInit_int32_T(sp, &ii, 1, &id_emlrtRTEI);
+  st.site = &yg_emlrtRSI;
   if ((!all(&st, ubOK)) || (!all(&st, lbOK))) {
-    st.site = &yg_emlrtRSI;
+    st.site = &ah_emlrtRSI;
     loop_ub = ubOK->size[0];
     for (i = 0; i < loop_ub; i++) {
       ubOK_data[i] = !ubOK_data[i];
     }
-    b_st.site = &kh_emlrtRSI;
+    b_st.site = &lh_emlrtRSI;
     eml_find(&b_st, ubOK, ii);
     ii_data = ii->data;
     loop_ub = ii->size[0];
     i = indicesUpperBoundViolation->size[0];
     indicesUpperBoundViolation->size[0] = ii->size[0];
     emxEnsureCapacity_int32_T(&st, indicesUpperBoundViolation, i,
-                              &cd_emlrtRTEI);
+                              &dd_emlrtRTEI);
     indicesUpperBoundViolation_data = indicesUpperBoundViolation->data;
     for (i = 0; i < loop_ub; i++) {
       indicesUpperBoundViolation_data[i] = ii_data[i];
     }
     i = ii->size[0];
     ii->size[0] = loop_ub;
-    emxEnsureCapacity_int32_T(sp, ii, i, &dd_emlrtRTEI);
+    emxEnsureCapacity_int32_T(sp, ii, i, &ed_emlrtRTEI);
     ii_data = ii->data;
     for (i = 0; i < loop_ub; i++) {
       if ((indicesUpperBoundViolation_data[i] < 1) ||
           (indicesUpperBoundViolation_data[i] > qvec->size[0])) {
         emlrtDynamicBoundsCheckR2012b(indicesUpperBoundViolation_data[i], 1,
-                                      qvec->size[0], &gc_emlrtBCI,
+                                      qvec->size[0], &mc_emlrtBCI,
                                       (emlrtConstCTX)sp);
       }
       ii_data[i] = indicesUpperBoundViolation_data[i];
@@ -4561,7 +4563,7 @@ void c_RigidBodyTree_validateConfigu(const emlrtStack *sp,
     for (i = 0; i < loop_ub; i++) {
       i1 = indicesUpperBoundViolation_data[i];
       if ((i1 < 1) || (i1 > limits->size[0])) {
-        emlrtDynamicBoundsCheckR2012b(i1, 1, limits->size[0], &hc_emlrtBCI,
+        emlrtDynamicBoundsCheckR2012b(i1, 1, limits->size[0], &nc_emlrtBCI,
                                       (emlrtConstCTX)sp);
       }
     }
@@ -4574,32 +4576,32 @@ void c_RigidBodyTree_validateConfigu(const emlrtStack *sp,
           limits_data[(indicesUpperBoundViolation_data[i] + limits->size[0]) -
                       1];
     }
-    st.site = &ah_emlrtRSI;
+    st.site = &bh_emlrtRSI;
     loop_ub = lbOK->size[0];
     for (i = 0; i < loop_ub; i++) {
       lbOK_data[i] = !lbOK_data[i];
     }
-    b_st.site = &kh_emlrtRSI;
+    b_st.site = &lh_emlrtRSI;
     eml_find(&b_st, lbOK, ii);
     ii_data = ii->data;
     loop_ub = ii->size[0];
     i = indicesUpperBoundViolation->size[0];
     indicesUpperBoundViolation->size[0] = ii->size[0];
     emxEnsureCapacity_int32_T(&st, indicesUpperBoundViolation, i,
-                              &ed_emlrtRTEI);
+                              &fd_emlrtRTEI);
     indicesUpperBoundViolation_data = indicesUpperBoundViolation->data;
     for (i = 0; i < loop_ub; i++) {
       indicesUpperBoundViolation_data[i] = ii_data[i];
     }
     i = ii->size[0];
     ii->size[0] = loop_ub;
-    emxEnsureCapacity_int32_T(sp, ii, i, &fd_emlrtRTEI);
+    emxEnsureCapacity_int32_T(sp, ii, i, &gd_emlrtRTEI);
     ii_data = ii->data;
     for (i = 0; i < loop_ub; i++) {
       if ((indicesUpperBoundViolation_data[i] < 1) ||
           (indicesUpperBoundViolation_data[i] > qvec->size[0])) {
         emlrtDynamicBoundsCheckR2012b(indicesUpperBoundViolation_data[i], 1,
-                                      qvec->size[0], &ic_emlrtBCI,
+                                      qvec->size[0], &oc_emlrtBCI,
                                       (emlrtConstCTX)sp);
       }
       ii_data[i] = indicesUpperBoundViolation_data[i];
@@ -4607,7 +4609,7 @@ void c_RigidBodyTree_validateConfigu(const emlrtStack *sp,
     for (i = 0; i < loop_ub; i++) {
       i1 = indicesUpperBoundViolation_data[i];
       if ((i1 < 1) || (i1 > limits->size[0])) {
-        emlrtDynamicBoundsCheckR2012b(i1, 1, limits->size[0], &jc_emlrtBCI,
+        emlrtDynamicBoundsCheckR2012b(i1, 1, limits->size[0], &pc_emlrtBCI,
                                       (emlrtConstCTX)sp);
       }
     }
@@ -4619,7 +4621,7 @@ void c_RigidBodyTree_validateConfigu(const emlrtStack *sp,
       qvec_data[ii_data[i] - 1] =
           limits_data[indicesUpperBoundViolation_data[i] - 1];
     }
-    st.site = &bh_emlrtRSI;
+    st.site = &ch_emlrtRSI;
     b_st.site = &lf_emlrtRSI;
     e_warning(&b_st);
   }

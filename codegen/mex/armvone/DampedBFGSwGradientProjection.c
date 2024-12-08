@@ -46,512 +46,518 @@
 #include <stddef.h>
 
 /* Variable Definitions */
-static emlrtRSInfo bi_emlrtRSI = {
+static emlrtRSInfo ci_emlrtRSI = {
     221,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
-};
-
-static emlrtRSInfo ci_emlrtRSI = {
-    227,                                           /* lineNo */
-    "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo di_emlrtRSI = {
-    228,                                           /* lineNo */
+    227,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo ei_emlrtRSI = {
-    232,                                           /* lineNo */
+    228,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo fi_emlrtRSI = {
-    233,                                           /* lineNo */
+    232,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo gi_emlrtRSI = {
-    240,                                           /* lineNo */
+    233,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo hi_emlrtRSI = {
-    241,                                           /* lineNo */
+    240,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo ii_emlrtRSI = {
-    251,                                           /* lineNo */
+    241,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo ji_emlrtRSI = {
-    254,                                           /* lineNo */
+    251,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo ki_emlrtRSI = {
-    263,                                           /* lineNo */
+    254,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo li_emlrtRSI = {
-    266,                                           /* lineNo */
+    263,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo mi_emlrtRSI = {
-    267,                                           /* lineNo */
+    266,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo ni_emlrtRSI = {
-    271,                                           /* lineNo */
+    267,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo oi_emlrtRSI = {
-    278,                                           /* lineNo */
+    271,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo pi_emlrtRSI = {
-    279,                                           /* lineNo */
+    278,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo qi_emlrtRSI = {
-    286,                                           /* lineNo */
+    279,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo ri_emlrtRSI = {
-    294,                                           /* lineNo */
+    286,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo si_emlrtRSI = {
-    299,                                           /* lineNo */
+    294,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo ti_emlrtRSI = {
-    314,                                           /* lineNo */
+    299,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo ui_emlrtRSI = {
-    318,                                           /* lineNo */
+    314,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo vi_emlrtRSI = {
-    319,                                           /* lineNo */
+    318,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo wi_emlrtRSI = {
-    322,                                           /* lineNo */
+    319,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo xi_emlrtRSI = {
-    324,                                           /* lineNo */
+    322,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo yi_emlrtRSI = {
-    348,                                           /* lineNo */
+    324,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo aj_emlrtRSI = {
-    350,                                           /* lineNo */
+    348,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo bj_emlrtRSI = {
-    352,                                           /* lineNo */
+    350,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo cj_emlrtRSI = {
-    355,                                           /* lineNo */
+    352,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo dj_emlrtRSI = {
-    362,                                           /* lineNo */
+    355,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo ej_emlrtRSI = {
-    365,                                           /* lineNo */
+    362,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo fj_emlrtRSI = {
-    376,                                           /* lineNo */
+    365,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo gj_emlrtRSI = {
-    383,                                           /* lineNo */
+    376,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo hj_emlrtRSI = {
-    392,                                           /* lineNo */
+    383,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo ij_emlrtRSI = {
-    393,                                           /* lineNo */
+    392,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo jj_emlrtRSI = {
-    397,                                           /* lineNo */
+    393,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo kj_emlrtRSI = {
-    398,                                           /* lineNo */
+    397,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo lj_emlrtRSI = {
-    399,                                           /* lineNo */
+    398,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo mj_emlrtRSI = {
-    400,                                           /* lineNo */
+    399,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo nj_emlrtRSI = {
-    413,                                           /* lineNo */
+    400,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo oj_emlrtRSI = {
-    416,                                           /* lineNo */
+    413,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo pj_emlrtRSI = {
-    422,                                           /* lineNo */
+    416,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo qj_emlrtRSI = {
-    426,                                           /* lineNo */
+    422,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo rj_emlrtRSI = {
-    438,                                           /* lineNo */
+    426,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
-static emlrtRSInfo wm_emlrtRSI = {
-    184,                                               /* lineNo */
-    "DampedBFGSwGradientProjection/identifyActiveSet", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+static emlrtRSInfo sj_emlrtRSI = {
+    438,                                           /* lineNo */
+    "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo xm_emlrtRSI = {
-    186,                                               /* lineNo */
+    184,                                               /* lineNo */
     "DampedBFGSwGradientProjection/identifyActiveSet", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo ym_emlrtRSI = {
-    195,                                               /* lineNo */
+    186,                                               /* lineNo */
     "DampedBFGSwGradientProjection/identifyActiveSet", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo an_emlrtRSI = {
-    206,                                               /* lineNo */
+    195,                                               /* lineNo */
     "DampedBFGSwGradientProjection/identifyActiveSet", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo bn_emlrtRSI = {
-    11,                                                            /* lineNo */
-    "rank",                                                        /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/rank.m" /* pathName
-                                                                    */
+    206,                                               /* lineNo */
+    "DampedBFGSwGradientProjection/identifyActiveSet", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo cn_emlrtRSI = {
-    20,                                                            /* lineNo */
-    "local_rank",                                                  /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/rank.m" /* pathName
-                                                                    */
+    11,     /* lineNo */
+    "rank", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/rank.m" /* pathName
+                                                                            */
 };
 
 static emlrtRSInfo dn_emlrtRSI = {
-    31,                                                            /* lineNo */
-    "local_rank",                                                  /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/rank.m" /* pathName
-                                                                    */
+    20,           /* lineNo */
+    "local_rank", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/rank.m" /* pathName
+                                                                            */
 };
 
 static emlrtRSInfo en_emlrtRSI = {
-    18,                                                           /* lineNo */
-    "svd",                                                        /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/svd.m" /* pathName */
+    31,           /* lineNo */
+    "local_rank", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/rank.m" /* pathName
+                                                                            */
 };
 
 static emlrtRSInfo fn_emlrtRSI = {
-    28,    /* lineNo */
+    18,    /* lineNo */
     "svd", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/svd.m" /* pathName
-                                                                      */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/svd.m" /* pathName
+                                                                           */
 };
 
-static emlrtRSInfo gn_emlrtRSI =
-    {
-        31,       /* lineNo */
-        "xgesvd", /* fcnName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+lapack/"
-        "xgesvd.m" /* pathName */
+static emlrtRSInfo
+    gn_emlrtRSI =
+        {
+            28,    /* lineNo */
+            "svd", /* fcnName */
+            "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/"
+            "svd.m" /* pathName */
 };
 
-static emlrtRSInfo hn_emlrtRSI =
-    {
-        205,            /* lineNo */
-        "ceval_xgesvd", /* fcnName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+lapack/"
-        "xgesvd.m" /* pathName */
+static emlrtRSInfo hn_emlrtRSI = {
+    31,       /* lineNo */
+    "xgesvd", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+lapack/"
+    "xgesvd.m" /* pathName */
 };
 
 static emlrtRSInfo in_emlrtRSI = {
-    17,                                                          /* lineNo */
-    "qr",                                                        /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/qr.m" /* pathName */
+    205,            /* lineNo */
+    "ceval_xgesvd", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+lapack/"
+    "xgesvd.m" /* pathName */
 };
 
-static emlrtRSInfo uo_emlrtRSI = {
-    20,         /* lineNo */
-    "mldivide", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/ops/mldivide.m" /* pathName
-                                                                     */
+static emlrtRSInfo jn_emlrtRSI = {
+    17,   /* lineNo */
+    "qr", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/qr.m" /* pathName
+                                                                          */
 };
 
-static emlrtRSInfo lq_emlrtRSI = {
+static emlrtRSInfo
+    vo_emlrtRSI =
+        {
+            20,         /* lineNo */
+            "mldivide", /* fcnName */
+            "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/ops/"
+            "mldivide.m" /* pathName */
+};
+
+static emlrtRSInfo mq_emlrtRSI = {
     443,                                            /* lineNo */
     "DampedBFGSwGradientProjection/atLocalMinimum", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
-};
-
-static emlrtRSInfo xq_emlrtRSI =
-    {
-        34,               /* lineNo */
-        "rdivide_helper", /* fcnName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/"
-        "rdivide_helper.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo yq_emlrtRSI = {
-    53,    /* lineNo */
-    "div", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/div.m" /* pathName
-                                                                      */
+    34,               /* lineNo */
+    "rdivide_helper", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/"
+    "rdivide_helper.m" /* pathName */
 };
 
-static emlrtRSInfo ar_emlrtRSI = {
-    17,                                                            /* lineNo */
-    "max",                                                         /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/datafun/max.m" /* pathName
-                                                                    */
+static emlrtRSInfo
+    ar_emlrtRSI =
+        {
+            53,    /* lineNo */
+            "div", /* fcnName */
+            "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/"
+            "div.m" /* pathName */
 };
 
 static emlrtRSInfo br_emlrtRSI = {
-    58,         /* lineNo */
-    "minOrMax", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/minOrMax.m" /* pathName
-                                                                           */
+    17,    /* lineNo */
+    "max", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/datafun/max.m" /* pathName
+                                                                            */
 };
 
 static emlrtRSInfo cr_emlrtRSI = {
-    97,        /* lineNo */
-    "maximum", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/minOrMax.m" /* pathName
-                                                                           */
+    58,         /* lineNo */
+    "minOrMax", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/"
+    "minOrMax.m" /* pathName */
 };
 
-static emlrtRSInfo dr_emlrtRSI =
-    {
-        238,             /* lineNo */
-        "unaryMinOrMax", /* fcnName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/"
-        "unaryMinOrMax.m" /* pathName */
+static emlrtRSInfo dr_emlrtRSI = {
+    97,        /* lineNo */
+    "maximum", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/"
+    "minOrMax.m" /* pathName */
 };
 
 static emlrtRSInfo er_emlrtRSI = {
-    73,                      /* lineNo */
-    "vectorMinOrMaxInPlace", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/"
-    "vectorMinOrMaxInPlace.m" /* pathName */
+    238,             /* lineNo */
+    "unaryMinOrMax", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/"
+    "unaryMinOrMax.m" /* pathName */
 };
 
 static emlrtRSInfo fr_emlrtRSI = {
-    65,                      /* lineNo */
+    73,                      /* lineNo */
     "vectorMinOrMaxInPlace", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/"
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/"
     "vectorMinOrMaxInPlace.m" /* pathName */
 };
 
 static emlrtRSInfo gr_emlrtRSI = {
-    114,         /* lineNo */
-    "findFirst", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/"
+    65,                      /* lineNo */
+    "vectorMinOrMaxInPlace", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/"
     "vectorMinOrMaxInPlace.m" /* pathName */
 };
 
 static emlrtRSInfo hr_emlrtRSI = {
-    131,                        /* lineNo */
-    "minOrMaxRealVectorKernel", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/"
+    114,         /* lineNo */
+    "findFirst", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/"
     "vectorMinOrMaxInPlace.m" /* pathName */
 };
 
-static emlrtRSInfo jr_emlrtRSI = {
-    17,                                                            /* lineNo */
-    "min",                                                         /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/datafun/min.m" /* pathName
-                                                                    */
+static emlrtRSInfo ir_emlrtRSI = {
+    131,                        /* lineNo */
+    "minOrMaxRealVectorKernel", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/"
+    "vectorMinOrMaxInPlace.m" /* pathName */
 };
 
 static emlrtRSInfo kr_emlrtRSI = {
-    60,         /* lineNo */
-    "minOrMax", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/minOrMax.m" /* pathName
-                                                                           */
+    17,    /* lineNo */
+    "min", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/datafun/min.m" /* pathName
+                                                                            */
 };
 
 static emlrtRSInfo lr_emlrtRSI = {
+    60,         /* lineNo */
+    "minOrMax", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/"
+    "minOrMax.m" /* pathName */
+};
+
+static emlrtRSInfo mr_emlrtRSI = {
     110,       /* lineNo */
     "minimum", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/minOrMax.m" /* pathName
-                                                                           */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/"
+    "minOrMax.m" /* pathName */
 };
 
-static emlrtRSInfo ur_emlrtRSI = {
+static emlrtRSInfo vr_emlrtRSI = {
     447,                                                    /* lineNo */
     "DampedBFGSwGradientProjection/searchDirectionInvalid", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
-static emlrtRTEInfo db_emlrtRTEI = {
-    16,                                                             /* lineNo */
-    19,                                                             /* colNo */
-    "mldivide",                                                     /* fName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/ops/mldivide.m" /* pName */
+static emlrtRTEInfo
+    db_emlrtRTEI =
+        {
+            16,         /* lineNo */
+            19,         /* colNo */
+            "mldivide", /* fName */
+            "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/ops/"
+            "mldivide.m" /* pName */
 };
 
-static emlrtRTEInfo eb_emlrtRTEI =
-    {
-        198,             /* lineNo */
-        27,              /* colNo */
-        "unaryMinOrMax", /* fName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/"
-        "unaryMinOrMax.m" /* pName */
+static emlrtRTEInfo eb_emlrtRTEI = {
+    198,             /* lineNo */
+    27,              /* colNo */
+    "unaryMinOrMax", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/"
+    "unaryMinOrMax.m" /* pName */
 };
 
 static emlrtECInfo s_emlrtECI = {
@@ -559,8 +565,8 @@ static emlrtECInfo s_emlrtECI = {
     413,                                           /* lineNo */
     67,                                            /* colNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtECInfo t_emlrtECI = {
@@ -568,8 +574,8 @@ static emlrtECInfo t_emlrtECI = {
     413,                                           /* lineNo */
     67,                                            /* colNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtECInfo u_emlrtECI = {
@@ -577,8 +583,8 @@ static emlrtECInfo u_emlrtECI = {
     400,                                           /* lineNo */
     25,                                            /* colNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtECInfo v_emlrtECI = {
@@ -586,8 +592,8 @@ static emlrtECInfo v_emlrtECI = {
     400,                                           /* lineNo */
     25,                                            /* colNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtECInfo w_emlrtECI = {
@@ -595,8 +601,8 @@ static emlrtECInfo w_emlrtECI = {
     399,                                           /* lineNo */
     25,                                            /* colNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtECInfo x_emlrtECI = {
@@ -604,8 +610,8 @@ static emlrtECInfo x_emlrtECI = {
     399,                                           /* lineNo */
     25,                                            /* colNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtECInfo y_emlrtECI = {
@@ -613,8 +619,8 @@ static emlrtECInfo y_emlrtECI = {
     397,                                           /* lineNo */
     28,                                            /* colNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtECInfo ab_emlrtECI = {
@@ -622,8 +628,8 @@ static emlrtECInfo ab_emlrtECI = {
     386,                                           /* lineNo */
     25,                                            /* colNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtECInfo bb_emlrtECI = {
@@ -631,8 +637,8 @@ static emlrtECInfo bb_emlrtECI = {
     383,                                           /* lineNo */
     25,                                            /* colNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtECInfo cb_emlrtECI = {
@@ -640,20 +646,20 @@ static emlrtECInfo cb_emlrtECI = {
     383,                                           /* lineNo */
     25,                                            /* colNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
-static emlrtBCInfo kc_emlrtBCI = {
+static emlrtBCInfo qc_emlrtBCI = {
     -1,                                            /* iFirst */
     -1,                                            /* iLast */
     377,                                           /* lineNo */
     48,                                            /* colNo */
     "",                                            /* aName */
     "DampedBFGSwGradientProjection/solveInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
-    0                                                  /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
+    0                                                            /* checkKind */
 };
 
 static emlrtECInfo db_emlrtECI = {
@@ -661,8 +667,8 @@ static emlrtECInfo db_emlrtECI = {
     364,                                           /* lineNo */
     24,                                            /* colNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtECInfo eb_emlrtECI = {
@@ -670,8 +676,8 @@ static emlrtECInfo eb_emlrtECI = {
     362,                                           /* lineNo */
     64,                                            /* colNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtECInfo fb_emlrtECI = {
@@ -679,8 +685,8 @@ static emlrtECInfo fb_emlrtECI = {
     348,                                           /* lineNo */
     60,                                            /* colNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtECInfo gb_emlrtECI = {
@@ -688,8 +694,8 @@ static emlrtECInfo gb_emlrtECI = {
     319,                                           /* lineNo */
     32,                                            /* colNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtECInfo hb_emlrtECI = {
@@ -697,8 +703,8 @@ static emlrtECInfo hb_emlrtECI = {
     299,                                           /* lineNo */
     30,                                            /* colNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtECInfo ib_emlrtECI = {
@@ -706,20 +712,20 @@ static emlrtECInfo ib_emlrtECI = {
     299,                                           /* lineNo */
     30,                                            /* colNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
-static emlrtBCInfo lc_emlrtBCI = {
+static emlrtBCInfo rc_emlrtBCI = {
     -1,                                            /* iFirst */
     -1,                                            /* iLast */
     298,                                           /* lineNo */
     55,                                            /* colNo */
     "",                                            /* aName */
     "DampedBFGSwGradientProjection/solveInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
-    0                                                  /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
+    0                                                            /* checkKind */
 };
 
 static emlrtECInfo jb_emlrtECI = {
@@ -727,8 +733,8 @@ static emlrtECInfo jb_emlrtECI = {
     294,                                           /* lineNo */
     30,                                            /* colNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtECInfo kb_emlrtECI = {
@@ -736,28 +742,28 @@ static emlrtECInfo kb_emlrtECI = {
     294,                                           /* lineNo */
     30,                                            /* colNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
-static emlrtBCInfo mc_emlrtBCI = {
+static emlrtBCInfo sc_emlrtBCI = {
     -1,                                            /* iFirst */
     -1,                                            /* iLast */
     287,                                           /* lineNo */
     57,                                            /* colNo */
     "",                                            /* aName */
     "DampedBFGSwGradientProjection/solveInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
-    0                                                  /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
+    0                                                            /* checkKind */
 };
 
 static emlrtRTEInfo gb_emlrtRTEI = {
     248,                                           /* lineNo */
     21,                                            /* colNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtECInfo lb_emlrtECI = {
@@ -765,8 +771,8 @@ static emlrtECInfo lb_emlrtECI = {
     241,                                           /* lineNo */
     21,                                            /* colNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtECInfo mb_emlrtECI = {
@@ -774,159 +780,162 @@ static emlrtECInfo mb_emlrtECI = {
     241,                                           /* lineNo */
     21,                                            /* colNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
-static emlrtBCInfo nc_emlrtBCI = {
+static emlrtBCInfo tc_emlrtBCI = {
     -1,                                            /* iFirst */
     -1,                                            /* iLast */
     239,                                           /* lineNo */
     25,                                            /* colNo */
     "",                                            /* aName */
     "DampedBFGSwGradientProjection/solveInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
-    0                                                  /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
+    0                                                            /* checkKind */
 };
 
-static emlrtBCInfo oc_emlrtBCI = {
+static emlrtBCInfo uc_emlrtBCI = {
     -1,                                            /* iFirst */
     -1,                                            /* iLast */
     316,                                           /* lineNo */
     47,                                            /* colNo */
     "",                                            /* aName */
     "DampedBFGSwGradientProjection/solveInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
-    0                                                  /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
+    0                                                            /* checkKind */
 };
 
-static emlrtBCInfo pc_emlrtBCI = {
+static emlrtBCInfo vc_emlrtBCI = {
     -1,                                            /* iFirst */
     -1,                                            /* iLast */
     317,                                           /* lineNo */
     50,                                            /* colNo */
     "",                                            /* aName */
     "DampedBFGSwGradientProjection/solveInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
-    0                                                  /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
+    0                                                            /* checkKind */
 };
 
-static emlrtBCInfo qc_emlrtBCI = {
+static emlrtBCInfo wc_emlrtBCI = {
     -1,                                            /* iFirst */
     -1,                                            /* iLast */
     379,                                           /* lineNo */
     31,                                            /* colNo */
     "",                                            /* aName */
     "DampedBFGSwGradientProjection/solveInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
-    0                                                  /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
+    0                                                            /* checkKind */
 };
 
-static emlrtBCInfo rc_emlrtBCI = {
+static emlrtBCInfo xc_emlrtBCI = {
     -1,                                            /* iFirst */
     -1,                                            /* iLast */
     290,                                           /* lineNo */
     36,                                            /* colNo */
     "",                                            /* aName */
     "DampedBFGSwGradientProjection/solveInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
-    0                                                  /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
+    0                                                            /* checkKind */
 };
 
-static emlrtBCInfo sc_emlrtBCI = {
+static emlrtBCInfo yc_emlrtBCI = {
     -1,                                            /* iFirst */
     -1,                                            /* iLast */
     380,                                           /* lineNo */
     49,                                            /* colNo */
     "",                                            /* aName */
     "DampedBFGSwGradientProjection/solveInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
-    0                                                  /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
+    0                                                            /* checkKind */
 };
 
-static emlrtBCInfo tc_emlrtBCI = {
+static emlrtBCInfo ad_emlrtBCI = {
     -1,                                            /* iFirst */
     -1,                                            /* iLast */
     291,                                           /* lineNo */
     54,                                            /* colNo */
     "",                                            /* aName */
     "DampedBFGSwGradientProjection/solveInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
-    0                                                  /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
+    0                                                            /* checkKind */
 };
 
-static emlrtBCInfo uc_emlrtBCI = {
+static emlrtBCInfo bd_emlrtBCI = {
     -1,                                            /* iFirst */
     -1,                                            /* iLast */
     324,                                           /* lineNo */
     51,                                            /* colNo */
     "",                                            /* aName */
     "DampedBFGSwGradientProjection/solveInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
-    0                                                  /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
+    0                                                            /* checkKind */
 };
 
-static emlrtBCInfo vc_emlrtBCI = {
+static emlrtBCInfo cd_emlrtBCI = {
     -1,                                            /* iFirst */
     -1,                                            /* iLast */
     325,                                           /* lineNo */
     58,                                            /* colNo */
     "",                                            /* aName */
     "DampedBFGSwGradientProjection/solveInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
-    0                                                  /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
+    0                                                            /* checkKind */
 };
 
-static emlrtBCInfo wc_emlrtBCI = {
+static emlrtBCInfo dd_emlrtBCI = {
     -1,                                            /* iFirst */
     -1,                                            /* iLast */
     325,                                           /* lineNo */
     60,                                            /* colNo */
     "",                                            /* aName */
     "DampedBFGSwGradientProjection/solveInternal", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
-    0                                                  /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
+    0                                                            /* checkKind */
 };
 
-static emlrtRTEInfo pb_emlrtRTEI = {
-    111,          /* lineNo */
-    5,            /* colNo */
-    "callLAPACK", /* fName */
-    "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/svd.m" /* pName */
+static emlrtRTEInfo
+    pb_emlrtRTEI =
+        {
+            111,          /* lineNo */
+            5,            /* colNo */
+            "callLAPACK", /* fName */
+            "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/"
+            "svd.m" /* pName */
 };
 
-static emlrtBCInfo de_emlrtBCI = {
+static emlrtBCInfo je_emlrtBCI = {
     -1,                                                /* iFirst */
     -1,                                                /* iLast */
     205,                                               /* lineNo */
     30,                                                /* colNo */
     "",                                                /* aName */
     "DampedBFGSwGradientProjection/identifyActiveSet", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
-    0                                                  /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
+    0                                                            /* checkKind */
 };
 
-static emlrtBCInfo ee_emlrtBCI = {
+static emlrtBCInfo ke_emlrtBCI = {
     -1,                                                /* iFirst */
     -1,                                                /* iLast */
     205,                                               /* lineNo */
     28,                                                /* colNo */
     "",                                                /* aName */
     "DampedBFGSwGradientProjection/identifyActiveSet", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
-    0                                                  /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
+    0                                                            /* checkKind */
 };
 
 static emlrtECInfo pb_emlrtECI = {
@@ -934,56 +943,56 @@ static emlrtECInfo pb_emlrtECI = {
     184,                                               /* lineNo */
     36,                                                /* colNo */
     "DampedBFGSwGradientProjection/identifyActiveSet", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
-static emlrtBCInfo fe_emlrtBCI = {
+static emlrtBCInfo le_emlrtBCI = {
     -1,                                                /* iFirst */
     -1,                                                /* iLast */
     185,                                               /* lineNo */
     43,                                                /* colNo */
     "",                                                /* aName */
     "DampedBFGSwGradientProjection/identifyActiveSet", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
-    0                                                  /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
+    0                                                            /* checkKind */
 };
 
-static emlrtBCInfo ge_emlrtBCI = {
+static emlrtBCInfo me_emlrtBCI = {
     -1,                                                /* iFirst */
     -1,                                                /* iLast */
     208,                                               /* lineNo */
     42,                                                /* colNo */
     "",                                                /* aName */
     "DampedBFGSwGradientProjection/identifyActiveSet", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
-    0                                                  /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
+    0                                                            /* checkKind */
 };
 
-static emlrtBCInfo he_emlrtBCI = {
+static emlrtBCInfo ne_emlrtBCI = {
     -1,                                                /* iFirst */
     -1,                                                /* iLast */
     209,                                               /* lineNo */
     27,                                                /* colNo */
     "",                                                /* aName */
     "DampedBFGSwGradientProjection/identifyActiveSet", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
-    0                                                  /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
+    0                                                            /* checkKind */
 };
 
-static emlrtBCInfo ie_emlrtBCI = {
+static emlrtBCInfo oe_emlrtBCI = {
     -1,                                                /* iFirst */
     -1,                                                /* iLast */
     206,                                               /* lineNo */
     49,                                                /* colNo */
     "",                                                /* aName */
     "DampedBFGSwGradientProjection/identifyActiveSet", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
-    0                                                  /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m", /* pName */
+    0                                                            /* checkKind */
 };
 
 static emlrtECInfo qb_emlrtECI = {
@@ -991,606 +1000,599 @@ static emlrtECInfo qb_emlrtECI = {
     447,                                                    /* lineNo */
     45,                                                     /* colNo */
     "DampedBFGSwGradientProjection/searchDirectionInvalid", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
-};
-
-static emlrtRTEInfo kd_emlrtRTEI = {
-    218,                             /* lineNo */
-    13,                              /* colNo */
-    "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo ld_emlrtRTEI = {
-    228,                             /* lineNo */
+    218,                             /* lineNo */
     13,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo md_emlrtRTEI = {
-    244,                             /* lineNo */
+    228,                             /* lineNo */
     13,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo nd_emlrtRTEI = {
+    244,                             /* lineNo */
+    13,                              /* colNo */
+    "DampedBFGSwGradientProjection", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+};
+
+static emlrtRTEInfo od_emlrtRTEI = {
     239,                             /* lineNo */
     17,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
-};
-
-static emlrtRTEInfo
-    od_emlrtRTEI =
-        {
-            76,                  /* lineNo */
-            9,                   /* colNo */
-            "eml_mtimes_helper", /* fName */
-            "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/ops/"
-            "eml_mtimes_helper.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo pd_emlrtRTEI = {
+    76,                  /* lineNo */
+    9,                   /* colNo */
+    "eml_mtimes_helper", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/ops/"
+    "eml_mtimes_helper.m" /* pName */
+};
+
+static emlrtRTEInfo qd_emlrtRTEI = {
     261,                             /* lineNo */
     21,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
-};
-
-static emlrtRTEInfo
-    qd_emlrtRTEI =
-        {
-            86,                  /* lineNo */
-            9,                   /* colNo */
-            "eml_mtimes_helper", /* fName */
-            "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/ops/"
-            "eml_mtimes_helper.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo rd_emlrtRTEI = {
-    263,                             /* lineNo */
-    36,                              /* colNo */
-    "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    86,                  /* lineNo */
+    9,                   /* colNo */
+    "eml_mtimes_helper", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/ops/"
+    "eml_mtimes_helper.m" /* pName */
 };
 
 static emlrtRTEInfo sd_emlrtRTEI = {
-    314,                             /* lineNo */
-    32,                              /* colNo */
+    263,                             /* lineNo */
+    36,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo td_emlrtRTEI = {
-    316,                             /* lineNo */
-    47,                              /* colNo */
+    314,                             /* lineNo */
+    32,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo ud_emlrtRTEI = {
-    348,                             /* lineNo */
-    62,                              /* colNo */
+    316,                             /* lineNo */
+    47,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo vd_emlrtRTEI = {
-    216,                             /* lineNo */
-    48,                              /* colNo */
+    348,                             /* lineNo */
+    62,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo wd_emlrtRTEI = {
-    348,                             /* lineNo */
-    60,                              /* colNo */
+    216,                             /* lineNo */
+    48,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo xd_emlrtRTEI = {
-    316,                             /* lineNo */
-    21,                              /* colNo */
+    348,                             /* lineNo */
+    60,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo yd_emlrtRTEI = {
+    316,                             /* lineNo */
+    21,                              /* colNo */
+    "DampedBFGSwGradientProjection", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+};
+
+static emlrtRTEInfo ae_emlrtRTEI = {
     317,                             /* lineNo */
     21,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
-};
-
-static emlrtRTEInfo
-    ae_emlrtRTEI =
-        {
-            74,                  /* lineNo */
-            9,                   /* colNo */
-            "eml_mtimes_helper", /* fName */
-            "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/ops/"
-            "eml_mtimes_helper.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo be_emlrtRTEI = {
-    318,                             /* lineNo */
-    21,                              /* colNo */
-    "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    74,                  /* lineNo */
+    9,                   /* colNo */
+    "eml_mtimes_helper", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/ops/"
+    "eml_mtimes_helper.m" /* pName */
 };
 
 static emlrtRTEInfo ce_emlrtRTEI = {
-    286,                             /* lineNo */
-    26,                              /* colNo */
+    318,                             /* lineNo */
+    21,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo de_emlrtRTEI = {
-    364,                             /* lineNo */
-    28,                              /* colNo */
+    286,                             /* lineNo */
+    26,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo ee_emlrtRTEI = {
-    362,                             /* lineNo */
-    68,                              /* colNo */
+    364,                             /* lineNo */
+    28,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo fe_emlrtRTEI = {
-    364,                             /* lineNo */
-    17,                              /* colNo */
+    362,                             /* lineNo */
+    68,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo ge_emlrtRTEI = {
-    291,                             /* lineNo */
-    26,                              /* colNo */
+    364,                             /* lineNo */
+    17,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo he_emlrtRTEI = {
-    365,                             /* lineNo */
-    17,                              /* colNo */
+    291,                             /* lineNo */
+    26,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo ie_emlrtRTEI = {
-    362,                             /* lineNo */
-    64,                              /* colNo */
+    365,                             /* lineNo */
+    17,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo je_emlrtRTEI = {
-    322,                             /* lineNo */
-    30,                              /* colNo */
+    362,                             /* lineNo */
+    64,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo ke_emlrtRTEI = {
     322,                             /* lineNo */
-    21,                              /* colNo */
+    30,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo le_emlrtRTEI = {
-    386,                             /* lineNo */
+    322,                             /* lineNo */
     21,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo me_emlrtRTEI = {
-    294,                             /* lineNo */
-    49,                              /* colNo */
+    386,                             /* lineNo */
+    21,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo ne_emlrtRTEI = {
-    377,                             /* lineNo */
-    21,                              /* colNo */
+    294,                             /* lineNo */
+    49,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo oe_emlrtRTEI = {
-    298,                             /* lineNo */
-    26,                              /* colNo */
+    377,                             /* lineNo */
+    21,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo pe_emlrtRTEI = {
-    380,                             /* lineNo */
-    21,                              /* colNo */
+    298,                             /* lineNo */
+    26,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo qe_emlrtRTEI = {
-    399,                             /* lineNo */
-    33,                              /* colNo */
+    380,                             /* lineNo */
+    21,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo re_emlrtRTEI = {
-    431,                             /* lineNo */
-    17,                              /* colNo */
+    399,                             /* lineNo */
+    33,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo se_emlrtRTEI = {
-    424,                             /* lineNo */
-    21,                              /* colNo */
+    431,                             /* lineNo */
+    17,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo te_emlrtRTEI = {
-    432,                             /* lineNo */
-    17,                              /* colNo */
+    424,                             /* lineNo */
+    21,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo ue_emlrtRTEI = {
-    400,                             /* lineNo */
-    34,                              /* colNo */
+    432,                             /* lineNo */
+    17,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo ve_emlrtRTEI = {
-    413,                             /* lineNo */
-    67,                              /* colNo */
+    400,                             /* lineNo */
+    34,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo we_emlrtRTEI = {
-    232,                             /* lineNo */
-    13,                              /* colNo */
+    413,                             /* lineNo */
+    67,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo xe_emlrtRTEI = {
-    233,                             /* lineNo */
-    14,                              /* colNo */
+    232,                             /* lineNo */
+    13,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo ye_emlrtRTEI = {
     233,                             /* lineNo */
-    24,                              /* colNo */
+    14,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo af_emlrtRTEI = {
-    266,                             /* lineNo */
-    17,                              /* colNo */
+    233,                             /* lineNo */
+    24,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo bf_emlrtRTEI = {
-    294,                             /* lineNo */
-    26,                              /* colNo */
+    266,                             /* lineNo */
+    17,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo cf_emlrtRTEI = {
-    324,                             /* lineNo */
-    51,                              /* colNo */
+    294,                             /* lineNo */
+    26,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo df_emlrtRTEI = {
-    240,                             /* lineNo */
-    23,                              /* colNo */
+    324,                             /* lineNo */
+    51,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo ef_emlrtRTEI = {
-    241,                             /* lineNo */
-    25,                              /* colNo */
+    240,                             /* lineNo */
+    23,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo ff_emlrtRTEI = {
-    392,                             /* lineNo */
-    31,                              /* colNo */
+    241,                             /* lineNo */
+    25,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo gf_emlrtRTEI = {
-    380,                             /* lineNo */
-    49,                              /* colNo */
+    392,                             /* lineNo */
+    31,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo hf_emlrtRTEI = {
+    380,                             /* lineNo */
+    49,                              /* colNo */
+    "DampedBFGSwGradientProjection", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+};
+
+static emlrtRTEInfo if_emlrtRTEI = {
     291,                             /* lineNo */
     54,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
-static emlrtRTEInfo xf_emlrtRTEI = {
+static emlrtRTEInfo yf_emlrtRTEI = {
     180,                             /* lineNo */
     13,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
-};
-
-static emlrtRTEInfo ag_emlrtRTEI = {
-    184,                             /* lineNo */
-    17,                              /* colNo */
-    "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo bg_emlrtRTEI = {
-    185,                             /* lineNo */
+    184,                             /* lineNo */
     17,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo cg_emlrtRTEI = {
-    208,                             /* lineNo */
+    185,                             /* lineNo */
     17,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo dg_emlrtRTEI = {
-    20,                                                           /* lineNo */
-    9,                                                            /* colNo */
-    "svd",                                                        /* fName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/svd.m" /* pName */
+    208,                             /* lineNo */
+    17,                              /* colNo */
+    "DampedBFGSwGradientProjection", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo eg_emlrtRTEI = {
+    20,    /* lineNo */
+    9,     /* colNo */
+    "svd", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/svd.m" /* pName
+                                                                           */
+};
+
+static emlrtRTEInfo fg_emlrtRTEI = {
     209,                             /* lineNo */
     27,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
-};
-
-static emlrtRTEInfo fg_emlrtRTEI =
-    {
-        31,       /* lineNo */
-        33,       /* colNo */
-        "xgesvd", /* fName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+lapack/"
-        "xgesvd.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo gg_emlrtRTEI = {
-    206,                             /* lineNo */
-    35,                              /* colNo */
-    "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    31,       /* lineNo */
+    33,       /* colNo */
+    "xgesvd", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+lapack/"
+    "xgesvd.m" /* pName */
 };
 
 static emlrtRTEInfo hg_emlrtRTEI = {
     206,                             /* lineNo */
+    35,                              /* colNo */
+    "DampedBFGSwGradientProjection", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+};
+
+static emlrtRTEInfo ig_emlrtRTEI = {
+    206,                             /* lineNo */
     21,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
-static emlrtRTEInfo ig_emlrtRTEI =
-    {
-        98,       /* lineNo */
-        20,       /* colNo */
-        "xgesvd", /* fName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+lapack/"
-        "xgesvd.m" /* pName */
+static emlrtRTEInfo jg_emlrtRTEI = {
+    98,       /* lineNo */
+    20,       /* colNo */
+    "xgesvd", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+lapack/"
+    "xgesvd.m" /* pName */
 };
 
-static emlrtRTEInfo jg_emlrtRTEI =
-    {
-        131,      /* lineNo */
-        9,        /* colNo */
-        "xgesvd", /* fName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+lapack/"
-        "xgesvd.m" /* pName */
-};
-
-static emlrtRTEInfo kg_emlrtRTEI =
-    {
-        129,      /* lineNo */
-        33,       /* colNo */
-        "xgesvd", /* fName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+lapack/"
-        "xgesvd.m" /* pName */
+static emlrtRTEInfo kg_emlrtRTEI = {
+    131,      /* lineNo */
+    9,        /* colNo */
+    "xgesvd", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+lapack/"
+    "xgesvd.m" /* pName */
 };
 
 static emlrtRTEInfo lg_emlrtRTEI = {
-    178,                             /* lineNo */
-    32,                              /* colNo */
-    "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    129,      /* lineNo */
+    33,       /* colNo */
+    "xgesvd", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+lapack/"
+    "xgesvd.m" /* pName */
 };
 
 static emlrtRTEInfo mg_emlrtRTEI = {
-    18,                                                           /* lineNo */
-    9,                                                            /* colNo */
-    "svd",                                                        /* fName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/svd.m" /* pName */
+    178,                             /* lineNo */
+    32,                              /* colNo */
+    "DampedBFGSwGradientProjection", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
-static emlrtRTEInfo ng_emlrtRTEI =
-    {
-        129,      /* lineNo */
-        9,        /* colNo */
-        "xgesvd", /* fName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+lapack/"
-        "xgesvd.m" /* pName */
+static emlrtRTEInfo ng_emlrtRTEI = {
+    18,    /* lineNo */
+    9,     /* colNo */
+    "svd", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/svd.m" /* pName
+                                                                           */
 };
 
-static emlrtRTEInfo gh_emlrtRTEI = {
+static emlrtRTEInfo og_emlrtRTEI = {
+    129,      /* lineNo */
+    9,        /* colNo */
+    "xgesvd", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+lapack/"
+    "xgesvd.m" /* pName */
+};
+
+static emlrtRTEInfo hh_emlrtRTEI = {
     443,                             /* lineNo */
     58,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
-static emlrtRTEInfo uh_emlrtRTEI = {
+static emlrtRTEInfo vh_emlrtRTEI = {
     447,                             /* lineNo */
     45,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo oi_emlrtRTEI = {
     241,                             /* lineNo */
     21,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo pi_emlrtRTEI = {
     299,                             /* lineNo */
     30,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo qi_emlrtRTEI = {
     397,                             /* lineNo */
     28,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo ri_emlrtRTEI = {
     386,                             /* lineNo */
     25,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo si_emlrtRTEI = {
     364,                             /* lineNo */
     24,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRTEInfo ui_emlrtRTEI = {
     319,                             /* lineNo */
     32,                              /* colNo */
     "DampedBFGSwGradientProjection", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
-};
-
-static emlrtRSInfo jt_emlrtRSI = {
-    386,                                           /* lineNo */
-    "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pName */
 };
 
 static emlrtRSInfo kt_emlrtRSI = {
-    364,                                           /* lineNo */
+    386,                                           /* lineNo */
     "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutils/+robotics/"
-    "+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
 };
 
 static emlrtRSInfo lt_emlrtRSI = {
-    54,    /* lineNo */
-    "div", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/div.m" /* pathName
-                                                                      */
+    364,                                           /* lineNo */
+    "DampedBFGSwGradientProjection/solveInternal", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutils/"
+    "+robotics/+core/+internal/DampedBFGSwGradientProjection.m" /* pathName */
+};
+
+static emlrtRSInfo
+    mt_emlrtRSI =
+        {
+            54,    /* lineNo */
+            "div", /* fcnName */
+            "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/"
+            "div.m" /* pathName */
 };
 
 /* Function Declarations */
@@ -1736,7 +1738,7 @@ static real_T binary_expand_op_2(const emlrtStack *sp, const emlrtRSInfo in1,
   in3_data = in3->data;
   in2_data = in2->data;
   emlrtHeapReferenceStackEnterFcnR2012b((emlrtConstCTX)sp);
-  emxInit_real_T(sp, &b_in2, 1, &ie_emlrtRTEI);
+  emxInit_real_T(sp, &b_in2, 1, &je_emlrtRTEI);
   if (in3->size[0] == 1) {
     loop_ub = in2->size[0];
   } else {
@@ -1744,7 +1746,7 @@ static real_T binary_expand_op_2(const emlrtStack *sp, const emlrtRSInfo in1,
   }
   i = b_in2->size[0];
   b_in2->size[0] = loop_ub;
-  emxEnsureCapacity_real_T(sp, b_in2, i, &ie_emlrtRTEI);
+  emxEnsureCapacity_real_T(sp, b_in2, i, &je_emlrtRTEI);
   b_in2_data = b_in2->data;
   stride_0_0 = (in2->size[0] != 1);
   stride_1_0 = (in3->size[0] != 1);
@@ -1892,7 +1894,7 @@ static void d_DampedBFGSwGradientProjection(
   loop_ub = obj->ConstraintBound->size[0];
   i = activeSet->size[0];
   activeSet->size[0] = loop_ub;
-  emxEnsureCapacity_boolean_T(sp, activeSet, i, &xf_emlrtRTEI);
+  emxEnsureCapacity_boolean_T(sp, activeSet, i, &yf_emlrtRTEI);
   activeSet_data = activeSet->data;
   for (i = 0; i < loop_ub; i++) {
     activeSet_data[i] = false;
@@ -1904,8 +1906,8 @@ static void d_DampedBFGSwGradientProjection(
     int32_T c_loop_ub;
     int32_T minnm;
     int32_T obj_tmp;
-    st.site = &wm_emlrtRSI;
-    b_st.site = &wk_emlrtRSI;
+    st.site = &xm_emlrtRSI;
+    b_st.site = &xk_emlrtRSI;
     if (obj->ConstraintMatrix->size[0] != x->size[0]) {
       if (((obj->ConstraintMatrix->size[0] == 1) &&
            (obj->ConstraintMatrix->size[1] == 1)) ||
@@ -1919,8 +1921,8 @@ static void d_DampedBFGSwGradientProjection(
                                       "MATLAB:innerdim", 0);
       }
     }
-    emxInit_real_T(&st, &activeSetCols, 1, &ag_emlrtRTEI);
-    b_st.site = &dl_emlrtRSI;
+    emxInit_real_T(&st, &activeSetCols, 1, &bg_emlrtRTEI);
+    b_st.site = &el_emlrtRSI;
     mtimes(&b_st, obj->ConstraintMatrix, x, activeSetCols);
     activeSetCols_data = activeSetCols->data;
     b_loop_ub = activeSetCols->size[0];
@@ -1929,48 +1931,48 @@ static void d_DampedBFGSwGradientProjection(
       emlrtDimSizeImpxCheckR2021b(activeSetCols->size[0], loop_ub, &pb_emlrtECI,
                                   (emlrtConstCTX)sp);
     }
-    st.site = &wm_emlrtRSI;
-    emxInit_int32_T(&st, &ii, 1, &hd_emlrtRTEI);
+    st.site = &xm_emlrtRSI;
+    emxInit_int32_T(&st, &ii, 1, &id_emlrtRTEI);
     if (activeSetCols->size[0] == obj->ConstraintBound->size[0]) {
-      emxInit_boolean_T(&st, &b_activeSetCols, &yf_emlrtRTEI);
+      emxInit_boolean_T(&st, &b_activeSetCols, &ag_emlrtRTEI);
       i = b_activeSetCols->size[0];
       b_activeSetCols->size[0] = activeSetCols->size[0];
-      emxEnsureCapacity_boolean_T(&st, b_activeSetCols, i, &yf_emlrtRTEI);
+      emxEnsureCapacity_boolean_T(&st, b_activeSetCols, i, &ag_emlrtRTEI);
       b_activeSetCols_data = b_activeSetCols->data;
       for (i = 0; i < b_loop_ub; i++) {
         b_activeSetCols_data[i] =
             (activeSetCols_data[i] >= obj->ConstraintBound->data[i]);
       }
-      b_st.site = &kh_emlrtRSI;
+      b_st.site = &lh_emlrtRSI;
       eml_find(&b_st, b_activeSetCols, ii);
       ii_data = ii->data;
       emxFree_boolean_T(&st, &b_activeSetCols);
     } else {
-      b_st.site = &kh_emlrtRSI;
-      binary_expand_op_4(&b_st, ii, kh_emlrtRSI, activeSetCols, obj);
+      b_st.site = &lh_emlrtRSI;
+      binary_expand_op_4(&b_st, ii, lh_emlrtRSI, activeSetCols, obj);
       ii_data = ii->data;
     }
     b_loop_ub = ii->size[0];
     i = activeSetCols->size[0];
     activeSetCols->size[0] = ii->size[0];
-    emxEnsureCapacity_real_T(&st, activeSetCols, i, &ag_emlrtRTEI);
+    emxEnsureCapacity_real_T(&st, activeSetCols, i, &bg_emlrtRTEI);
     activeSetCols_data = activeSetCols->data;
     for (i = 0; i < b_loop_ub; i++) {
       activeSetCols_data[i] = ii_data[i];
     }
     obj_tmp = obj->ConstraintMatrix->size[1];
-    emxInit_real_T(sp, &A_, 2, &bg_emlrtRTEI);
+    emxInit_real_T(sp, &A_, 2, &cg_emlrtRTEI);
     c_loop_ub = obj->ConstraintMatrix->size[0];
     i = A_->size[0] * A_->size[1];
     A_->size[0] = c_loop_ub;
     A_->size[1] = ii->size[0];
-    emxEnsureCapacity_real_T(sp, A_, i, &bg_emlrtRTEI);
+    emxEnsureCapacity_real_T(sp, A_, i, &cg_emlrtRTEI);
     A__data = A_->data;
     for (i = 0; i < b_loop_ub; i++) {
       for (irank = 0; irank < c_loop_ub; irank++) {
         minnm = (int32_T)activeSetCols_data[i];
         if ((minnm < 1) || (minnm > obj_tmp)) {
-          emlrtDynamicBoundsCheckR2012b(minnm, 1, obj_tmp, &fe_emlrtBCI,
+          emlrtDynamicBoundsCheckR2012b(minnm, 1, obj_tmp, &le_emlrtBCI,
                                         (emlrtConstCTX)sp);
         }
         A__data[irank + A_->size[0] * i] =
@@ -1978,32 +1980,32 @@ static void d_DampedBFGSwGradientProjection(
                 ->data[irank + obj->ConstraintMatrix->size[0] * (minnm - 1)];
       }
     }
-    st.site = &xm_emlrtRSI;
-    b_st.site = &bn_emlrtRSI;
+    st.site = &ym_emlrtRSI;
+    b_st.site = &cn_emlrtRSI;
     irank = 0;
-    emxInit_real_T(&b_st, &s, 1, &mg_emlrtRTEI);
+    emxInit_real_T(&b_st, &s, 1, &ng_emlrtRTEI);
     s_data = s->data;
     if ((obj->ConstraintMatrix->size[0] != 0) &&
         (activeSetCols->size[0] != 0)) {
       real_T absx;
       boolean_T p;
-      c_st.site = &cn_emlrtRSI;
-      d_st.site = &jl_emlrtRSI;
-      e_st.site = &ll_emlrtRSI;
-      f_st.site = &ml_emlrtRSI;
+      c_st.site = &dn_emlrtRSI;
+      d_st.site = &kl_emlrtRSI;
+      e_st.site = &ml_emlrtRSI;
+      f_st.site = &nl_emlrtRSI;
       p = flatVectorAllOrAny(&f_st, A_);
       if (p) {
-        d_st.site = &en_emlrtRSI;
+        d_st.site = &fn_emlrtRSI;
         if (obj->ConstraintMatrix->size[0] == 0) {
           s->size[0] = 0;
         } else {
-          e_st.site = &fn_emlrtRSI;
-          f_st.site = &pl_emlrtRSI;
-          g_st.site = &gn_emlrtRSI;
+          e_st.site = &gn_emlrtRSI;
+          f_st.site = &ql_emlrtRSI;
+          g_st.site = &hn_emlrtRSI;
           i = A->size[0] * A->size[1];
           A->size[0] = A_->size[0];
           A->size[1] = A_->size[1];
-          emxEnsureCapacity_real_T(&g_st, A, i, &fg_emlrtRTEI);
+          emxEnsureCapacity_real_T(&g_st, A, i, &gg_emlrtRTEI);
           A_data = A->data;
           minnm = A_->size[0] * A_->size[1];
           for (i = 0; i < minnm; i++) {
@@ -2012,20 +2014,20 @@ static void d_DampedBFGSwGradientProjection(
           minnm = muIntScalarMin_sint32(b_loop_ub, c_loop_ub);
           i = s->size[0];
           s->size[0] = minnm;
-          emxEnsureCapacity_real_T(&g_st, s, i, &ig_emlrtRTEI);
+          emxEnsureCapacity_real_T(&g_st, s, i, &jg_emlrtRTEI);
           s_data = s->data;
           if (obj->ConstraintMatrix->size[0] != 0) {
             ptrdiff_t info_t;
-            emxInit_real_T(&g_st, &superb, 1, &ng_emlrtRTEI);
+            emxInit_real_T(&g_st, &superb, 1, &og_emlrtRTEI);
             if (minnm > 1) {
               i = superb->size[0];
               superb->size[0] = minnm - 1;
-              emxEnsureCapacity_real_T(&g_st, superb, i, &kg_emlrtRTEI);
+              emxEnsureCapacity_real_T(&g_st, superb, i, &lg_emlrtRTEI);
               A__data = superb->data;
             } else {
               i = superb->size[0];
               superb->size[0] = 1;
-              emxEnsureCapacity_real_T(&g_st, superb, i, &jg_emlrtRTEI);
+              emxEnsureCapacity_real_T(&g_st, superb, i, &kg_emlrtRTEI);
               A__data = superb->data;
             }
             info_t =
@@ -2038,7 +2040,7 @@ static void d_DampedBFGSwGradientProjection(
           } else {
             minnm = 0;
           }
-          h_st.site = &hn_emlrtRSI;
+          h_st.site = &in_emlrtRSI;
           if (minnm < 0) {
             if (minnm == -1010) {
               emlrtErrorWithMessageIdR2018a(&h_st, &ob_emlrtRTEI,
@@ -2062,7 +2064,7 @@ static void d_DampedBFGSwGradientProjection(
         i = s->size[0];
         s->size[0] = (int32_T)muDoubleScalarMin(obj->ConstraintMatrix->size[0],
                                                 activeSetCols->size[0]);
-        emxEnsureCapacity_real_T(&c_st, s, i, &dg_emlrtRTEI);
+        emxEnsureCapacity_real_T(&c_st, s, i, &eg_emlrtRTEI);
         s_data = s->data;
         for (i = 0; i < minnm; i++) {
           s_data[i] = rtNaN;
@@ -2100,7 +2102,7 @@ static void d_DampedBFGSwGradientProjection(
           }
         }
       }
-      c_st.site = &dn_emlrtRSI;
+      c_st.site = &en_emlrtRSI;
       if (s->size[0] > 2147483646) {
         d_st.site = &rb_emlrtRSI;
         check_forloop_overflow_error(&d_st);
@@ -2113,11 +2115,11 @@ static void d_DampedBFGSwGradientProjection(
     }
     if (irank < activeSetCols->size[0]) {
       int32_T b_iv[2];
-      st.site = &ym_emlrtRSI;
-      emxInit_real_T(&st, &Q, 2, &lg_emlrtRTEI);
-      emxInit_real_T(&st, &R, 2, &lg_emlrtRTEI);
-      emxInit_int32_T(&st, &b_p, 2, &lg_emlrtRTEI);
-      b_st.site = &in_emlrtRSI;
+      st.site = &an_emlrtRSI;
+      emxInit_real_T(&st, &Q, 2, &mg_emlrtRTEI);
+      emxInit_real_T(&st, &R, 2, &mg_emlrtRTEI);
+      emxInit_int32_T(&st, &b_p, 2, &mg_emlrtRTEI);
+      b_st.site = &jn_emlrtRSI;
       eml_qr(&b_st, A_, Q, R, b_p);
       ii_data = b_p->data;
       emxFree_real_T(&st, &R);
@@ -2126,25 +2128,25 @@ static void d_DampedBFGSwGradientProjection(
         irank = 0;
       } else {
         if (b_p->size[1] < 1) {
-          emlrtDynamicBoundsCheckR2012b(1, 1, b_p->size[1], &ee_emlrtBCI,
+          emlrtDynamicBoundsCheckR2012b(1, 1, b_p->size[1], &ke_emlrtBCI,
                                         (emlrtConstCTX)sp);
         }
         if (irank > b_p->size[1]) {
-          emlrtDynamicBoundsCheckR2012b(irank, 1, b_p->size[1], &de_emlrtBCI,
+          emlrtDynamicBoundsCheckR2012b(irank, 1, b_p->size[1], &je_emlrtBCI,
                                         (emlrtConstCTX)sp);
         }
       }
       b_iv[0] = 1;
       b_iv[1] = irank;
-      st.site = &an_emlrtRSI;
+      st.site = &bn_emlrtRSI;
       indexShapeCheck(&st, activeSetCols->size[0], b_iv);
       i = s->size[0];
       s->size[0] = irank;
-      emxEnsureCapacity_real_T(sp, s, i, &gg_emlrtRTEI);
+      emxEnsureCapacity_real_T(sp, s, i, &hg_emlrtRTEI);
       s_data = s->data;
       for (i = 0; i < irank; i++) {
         if ((ii_data[i] < 1) || (ii_data[i] > b_loop_ub)) {
-          emlrtDynamicBoundsCheckR2012b(ii_data[i], 1, b_loop_ub, &ie_emlrtBCI,
+          emlrtDynamicBoundsCheckR2012b(ii_data[i], 1, b_loop_ub, &oe_emlrtBCI,
                                         (emlrtConstCTX)sp);
         }
         s_data[i] = activeSetCols_data[ii_data[i] - 1];
@@ -2153,7 +2155,7 @@ static void d_DampedBFGSwGradientProjection(
       b_loop_ub = s->size[0];
       i = activeSetCols->size[0];
       activeSetCols->size[0] = s->size[0];
-      emxEnsureCapacity_real_T(sp, activeSetCols, i, &hg_emlrtRTEI);
+      emxEnsureCapacity_real_T(sp, activeSetCols, i, &ig_emlrtRTEI);
       activeSetCols_data = activeSetCols->data;
       for (i = 0; i < b_loop_ub; i++) {
         activeSetCols_data[i] = s_data[i];
@@ -2165,13 +2167,13 @@ static void d_DampedBFGSwGradientProjection(
     A->size[0] = c_loop_ub;
     b_loop_ub = activeSetCols->size[0];
     A->size[1] = activeSetCols->size[0];
-    emxEnsureCapacity_real_T(sp, A, i, &cg_emlrtRTEI);
+    emxEnsureCapacity_real_T(sp, A, i, &dg_emlrtRTEI);
     A_data = A->data;
     for (i = 0; i < b_loop_ub; i++) {
       for (irank = 0; irank < c_loop_ub; irank++) {
         minnm = (int32_T)activeSetCols_data[i];
         if ((minnm < 1) || (minnm > obj_tmp)) {
-          emlrtDynamicBoundsCheckR2012b(minnm, 1, obj_tmp, &ge_emlrtBCI,
+          emlrtDynamicBoundsCheckR2012b(minnm, 1, obj_tmp, &me_emlrtBCI,
                                         (emlrtConstCTX)sp);
         }
         A_data[irank + A->size[0] * i] =
@@ -2181,12 +2183,12 @@ static void d_DampedBFGSwGradientProjection(
     }
     i = ii->size[0];
     ii->size[0] = activeSetCols->size[0];
-    emxEnsureCapacity_int32_T(sp, ii, i, &eg_emlrtRTEI);
+    emxEnsureCapacity_int32_T(sp, ii, i, &fg_emlrtRTEI);
     ii_data = ii->data;
     for (i = 0; i < b_loop_ub; i++) {
       irank = (int32_T)activeSetCols_data[i];
       if ((irank < 1) || (irank > loop_ub)) {
-        emlrtDynamicBoundsCheckR2012b(irank, 1, loop_ub, &he_emlrtBCI,
+        emlrtDynamicBoundsCheckR2012b(irank, 1, loop_ub, &ne_emlrtBCI,
                                       (emlrtConstCTX)sp);
       }
       ii_data[i] = irank;
@@ -2227,18 +2229,18 @@ static boolean_T e_DampedBFGSwGradientProjection(
     incx_t = (ptrdiff_t)1;
     y = dnrm2(&n_t, (real_T *)&Hg_data[0], &incx_t);
   }
-  emxInit_boolean_T(sp, &b_alpha, &gh_emlrtRTEI);
+  emxInit_boolean_T(sp, &b_alpha, &hh_emlrtRTEI);
   if (y < obj->GradientTolerance) {
     int32_T loop_ub;
     loop_ub = alpha->size[0];
     i = b_alpha->size[0];
     b_alpha->size[0] = alpha->size[0];
-    emxEnsureCapacity_boolean_T(sp, b_alpha, i, &gh_emlrtRTEI);
+    emxEnsureCapacity_boolean_T(sp, b_alpha, i, &hh_emlrtRTEI);
     b_alpha_data = b_alpha->data;
     for (i = 0; i < loop_ub; i++) {
       b_alpha_data[i] = (alpha_data[i] <= 0.0);
     }
-    st.site = &lq_emlrtRSI;
+    st.site = &mq_emlrtRSI;
     if (all(&st, b_alpha)) {
       flag = true;
     } else {
@@ -2270,14 +2272,14 @@ f_DampedBFGSwGradientProjection(const emlrtStack *sp,
   b_st.prev = &st;
   b_st.tls = st.tls;
   emlrtHeapReferenceStackEnterFcnR2012b((emlrtConstCTX)sp);
-  emxInit_real_T(sp, &r, 1, &uh_emlrtRTEI);
-  emxInit_boolean_T(sp, &r1, &uh_emlrtRTEI);
+  emxInit_real_T(sp, &r, 1, &vh_emlrtRTEI);
+  emxInit_boolean_T(sp, &r1, &vh_emlrtRTEI);
   if (obj->ConstraintsOn) {
     int32_T loop_ub;
     int32_T stride_0_0;
     int32_T stride_1_0;
-    st.site = &ur_emlrtRSI;
-    b_st.site = &wk_emlrtRSI;
+    st.site = &vr_emlrtRSI;
+    b_st.site = &xk_emlrtRSI;
     if (obj->ConstraintMatrix->size[0] != xNew->size[0]) {
       if (((obj->ConstraintMatrix->size[0] == 1) &&
            (obj->ConstraintMatrix->size[1] == 1)) ||
@@ -2291,7 +2293,7 @@ f_DampedBFGSwGradientProjection(const emlrtStack *sp,
                                       "MATLAB:innerdim", 0);
       }
     }
-    b_st.site = &dl_emlrtRSI;
+    b_st.site = &el_emlrtRSI;
     mtimes(&b_st, obj->ConstraintMatrix, xNew, r);
     r2 = r->data;
     i = obj->ConstraintBound->size[0];
@@ -2299,7 +2301,7 @@ f_DampedBFGSwGradientProjection(const emlrtStack *sp,
       emlrtDimSizeImpxCheckR2021b(r->size[0], i, &qb_emlrtECI,
                                   (emlrtConstCTX)sp);
     }
-    st.site = &ur_emlrtRSI;
+    st.site = &vr_emlrtRSI;
     if (obj->ConstraintBound->size[0] == 1) {
       loop_ub = r->size[0];
     } else {
@@ -2307,7 +2309,7 @@ f_DampedBFGSwGradientProjection(const emlrtStack *sp,
     }
     i = r1->size[0];
     r1->size[0] = loop_ub;
-    emxEnsureCapacity_boolean_T(sp, r1, i, &uh_emlrtRTEI);
+    emxEnsureCapacity_boolean_T(sp, r1, i, &vh_emlrtRTEI);
     r3 = r1->data;
     stride_0_0 = (r->size[0] != 1);
     stride_1_0 = (obj->ConstraintBound->size[0] != 1);
@@ -2315,7 +2317,7 @@ f_DampedBFGSwGradientProjection(const emlrtStack *sp,
       r3[i] = (r2[i * stride_0_0] - obj->ConstraintBound->data[i * stride_1_0] >
                1.4901161193847656E-8);
     }
-    st.site = &ur_emlrtRSI;
+    st.site = &vr_emlrtRSI;
     if (any(&st, r1)) {
       flag = true;
     } else {
@@ -2553,77 +2555,77 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
   h_st.prev = &g_st;
   h_st.tls = g_st.tls;
   emlrtHeapReferenceStackEnterFcnR2012b((emlrtConstCTX)sp);
-  emxInit_real_T(sp, &x, 1, &kd_emlrtRTEI);
+  emxInit_real_T(sp, &x, 1, &ld_emlrtRTEI);
   n = obj->SeedInternal->size[0];
   i = x->size[0];
   x->size[0] = n;
-  emxEnsureCapacity_real_T(sp, x, i, &kd_emlrtRTEI);
+  emxEnsureCapacity_real_T(sp, x, i, &ld_emlrtRTEI);
   x_data = x->data;
   loop_ub = obj->SeedInternal->size[0];
   for (i = 0; i < loop_ub; i++) {
     x_data[i] = obj->SeedInternal->data[i];
   }
-  st.site = &bi_emlrtRSI;
-  b_st.site = &uh_emlrtRSI;
-  obj->TimeObjInternal.StartTime = tic(&b_st);
-  b_st.site = &vh_emlrtRSI;
-  emxInit_real_T(sp, &a__4, 2, &vd_emlrtRTEI);
   st.site = &ci_emlrtRSI;
+  b_st.site = &vh_emlrtRSI;
+  obj->TimeObjInternal.StartTime = tic(&b_st);
+  b_st.site = &wh_emlrtRSI;
+  emxInit_real_T(sp, &a__4, 2, &wd_emlrtRTEI);
+  st.site = &di_emlrtRSI;
   cost = IKHelpers_computeCost(&st, x, obj->ExtraArgs, a__3, a__4, &r);
   obj->ExtraArgs = r;
-  st.site = &di_emlrtRSI;
+  st.site = &ei_emlrtRSI;
   args = obj->ExtraArgs;
-  emxInit_real_T(&st, &grad, 1, &ld_emlrtRTEI);
+  emxInit_real_T(&st, &grad, 1, &md_emlrtRTEI);
   i = grad->size[0];
   grad->size[0] = args->GradTemp->size[0];
-  emxEnsureCapacity_real_T(&st, grad, i, &ld_emlrtRTEI);
+  emxEnsureCapacity_real_T(&st, grad, i, &md_emlrtRTEI);
   grad_data = grad->data;
   loop_ub = args->GradTemp->size[0];
   for (i = 0; i < loop_ub; i++) {
     grad_data[i] = args->GradTemp->data[i];
   }
-  emxInit_real_T(sp, &H, 2, &we_emlrtRTEI);
-  st.site = &ei_emlrtRSI;
+  emxInit_real_T(sp, &H, 2, &xe_emlrtRTEI);
+  st.site = &fi_emlrtRSI;
   eye(&st, x->size[0], H);
   H_data = H->data;
-  emxInit_boolean_T(sp, &activeSet, &xe_emlrtRTEI);
-  emxInit_real_T(sp, &A, 2, &ye_emlrtRTEI);
-  st.site = &fi_emlrtRSI;
+  emxInit_boolean_T(sp, &activeSet, &ye_emlrtRTEI);
+  emxInit_real_T(sp, &A, 2, &af_emlrtRTEI);
+  st.site = &gi_emlrtRSI;
   d_DampedBFGSwGradientProjection(&st, obj, x, activeSet, A);
   A_data = A->data;
   activeSet_data = activeSet->data;
   i = A->size[1];
-  emxInit_real_T(sp, &a, 1, &nd_emlrtRTEI);
-  emxInit_real_T(sp, &AIn, 2, &yd_emlrtRTEI);
-  emxInit_real_T(sp, &y, 2, &df_emlrtRTEI);
-  emxInit_real_T(sp, &b_y, 2, &ef_emlrtRTEI);
-  emxInit_real_T(sp, &c_y, 2, &ef_emlrtRTEI);
+  emxInit_real_T(sp, &a, 1, &od_emlrtRTEI);
+  emxInit_real_T(sp, &AIn, 2, &ae_emlrtRTEI);
+  emxInit_real_T(sp, &y, 2, &ef_emlrtRTEI);
+  emxInit_real_T(sp, &b_y, 2, &ff_emlrtRTEI);
+  emxInit_real_T(sp, &c_y, 2, &ff_emlrtRTEI);
   for (k = 0; k < i; k++) {
     if (k + 1 > i) {
-      emlrtDynamicBoundsCheckR2012b(k + 1, 1, i, &nc_emlrtBCI,
+      emlrtDynamicBoundsCheckR2012b(k + 1, 1, i, &tc_emlrtBCI,
                                     (emlrtConstCTX)sp);
     }
     loop_ub_tmp = A->size[0];
     i1 = a->size[0];
     a->size[0] = A->size[0];
-    emxEnsureCapacity_real_T(sp, a, i1, &nd_emlrtRTEI);
+    emxEnsureCapacity_real_T(sp, a, i1, &od_emlrtRTEI);
     a_data = a->data;
     for (i1 = 0; i1 < loop_ub_tmp; i1++) {
       a_data[i1] = A_data[i1 + A->size[0] * k];
     }
-    st.site = &gi_emlrtRSI;
-    b_st.site = &wk_emlrtRSI;
+    st.site = &hi_emlrtRSI;
+    b_st.site = &xk_emlrtRSI;
     b_dynamic_size_checks(&b_st, a, H, A->size[0], H->size[0]);
-    b_st.site = &dl_emlrtRSI;
+    b_st.site = &el_emlrtRSI;
     b_mtimes(&b_st, a, H, y);
-    st.site = &gi_emlrtRSI;
-    b_st.site = &wk_emlrtRSI;
+    st.site = &hi_emlrtRSI;
+    b_st.site = &xk_emlrtRSI;
     c_dynamic_size_checks(&b_st, y, a, y->size[1], A->size[0]);
     b_gamma = 1.0 / c_mtimes(y, a);
     i1 = b_y->size[0] * b_y->size[1];
     b_y->size[0] = H->size[0];
     b_y->size[1] = H->size[1];
-    emxEnsureCapacity_real_T(sp, b_y, i1, &od_emlrtRTEI);
+    emxEnsureCapacity_real_T(sp, b_y, i1, &pd_emlrtRTEI);
     y_data = b_y->data;
     last = H->size[0] * H->size[1];
     scalarLB_tmp = (last / 2) << 1;
@@ -2638,7 +2640,7 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
     i1 = AIn->size[0] * AIn->size[1];
     AIn->size[0] = A->size[0];
     AIn->size[1] = A->size[0];
-    emxEnsureCapacity_real_T(sp, AIn, i1, &qd_emlrtRTEI);
+    emxEnsureCapacity_real_T(sp, AIn, i1, &rd_emlrtRTEI);
     AIn_data = AIn->data;
     for (i1 = 0; i1 < loop_ub_tmp; i1++) {
       scalarLB = (A->size[0] / 2) << 1;
@@ -2653,15 +2655,15 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
             A_data[i2 + A->size[0] * k] * A_data[i1 + A->size[0] * k];
       }
     }
-    st.site = &hi_emlrtRSI;
-    b_st.site = &wk_emlrtRSI;
+    st.site = &ii_emlrtRSI;
+    b_st.site = &xk_emlrtRSI;
     d_dynamic_size_checks(&b_st, b_y, AIn, b_y->size[1], AIn->size[0]);
-    b_st.site = &dl_emlrtRSI;
+    b_st.site = &el_emlrtRSI;
     d_mtimes(&b_st, b_y, AIn, c_y);
-    st.site = &hi_emlrtRSI;
-    b_st.site = &wk_emlrtRSI;
+    st.site = &ii_emlrtRSI;
+    b_st.site = &xk_emlrtRSI;
     d_dynamic_size_checks(&b_st, c_y, H, c_y->size[1], H->size[0]);
-    b_st.site = &dl_emlrtRSI;
+    b_st.site = &el_emlrtRSI;
     d_mtimes(&b_st, c_y, H, b_y);
     y_data = b_y->data;
     if ((H->size[0] != b_y->size[0]) &&
@@ -2684,14 +2686,14 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
         H_data[i1] -= y_data[i1];
       }
     } else {
-      st.site = &hi_emlrtRSI;
+      st.site = &ii_emlrtRSI;
       minus(&st, H, b_y);
       H_data = H->data;
     }
   }
   i = xSol->size[0];
   xSol->size[0] = n;
-  emxEnsureCapacity_real_T(sp, xSol, i, &md_emlrtRTEI);
+  emxEnsureCapacity_real_T(sp, xSol, i, &nd_emlrtRTEI);
   xSol_data = xSol->data;
   for (i = 0; i < n; i++) {
     xSol_data[i] = x_data[i];
@@ -2701,26 +2703,26 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
   emlrtForLoopVectorCheckR2021a(1.0, 1.0, beta, mxDOUBLE_CLASS, (int32_T)beta,
                                 &gb_emlrtRTEI, (emlrtConstCTX)sp);
   b_i = 0;
-  emxInit_real_T(sp, &Hg, 1, &af_emlrtRTEI);
-  emxInit_real_T(sp, &P, 2, &bf_emlrtRTEI);
-  emxInit_real_T(sp, &bIn, 1, &xd_emlrtRTEI);
-  emxInit_int32_T(sp, &inactiveConstraintIndices, 1, &be_emlrtRTEI);
-  emxInit_real_T(sp, &gradNew, 1, &he_emlrtRTEI);
-  emxInit_int32_T(sp, &r1, 1, &cf_emlrtRTEI);
-  emxInit_int32_T(sp, &r2, 1, &td_emlrtRTEI);
-  emxInit_int32_T(sp, &ii, 1, &hd_emlrtRTEI);
-  emxInit_real_T(sp, &d_y, 2, &ff_emlrtRTEI);
-  emxInit_int32_T(sp, &r3, 1, &gf_emlrtRTEI);
-  emxInit_int32_T(sp, &r4, 1, &hf_emlrtRTEI);
-  emxInit_boolean_T(sp, &b_activeSet, &sd_emlrtRTEI);
+  emxInit_real_T(sp, &Hg, 1, &bf_emlrtRTEI);
+  emxInit_real_T(sp, &P, 2, &cf_emlrtRTEI);
+  emxInit_real_T(sp, &bIn, 1, &yd_emlrtRTEI);
+  emxInit_int32_T(sp, &inactiveConstraintIndices, 1, &ce_emlrtRTEI);
+  emxInit_real_T(sp, &gradNew, 1, &ie_emlrtRTEI);
+  emxInit_int32_T(sp, &r1, 1, &df_emlrtRTEI);
+  emxInit_int32_T(sp, &r2, 1, &ud_emlrtRTEI);
+  emxInit_int32_T(sp, &ii, 1, &id_emlrtRTEI);
+  emxInit_real_T(sp, &d_y, 2, &gf_emlrtRTEI);
+  emxInit_int32_T(sp, &r3, 1, &hf_emlrtRTEI);
+  emxInit_int32_T(sp, &r4, 1, &if_emlrtRTEI);
+  emxInit_boolean_T(sp, &b_activeSet, &td_emlrtRTEI);
   int32_T exitg2;
   do {
     exitg2 = 0;
     if (b_i <= i - 1) {
       boolean_T valid;
       *iter = (real_T)b_i + 1.0;
-      st.site = &ii_emlrtRSI;
-      b_st.site = &qo_emlrtRSI;
+      st.site = &ji_emlrtRSI;
+      b_st.site = &ro_emlrtRSI;
       valid = (obj->TimeObjInternal.StartTime.tv_sec > 0.0);
       if (!valid) {
         emlrtErrorWithMessageIdR2018a(&st, &t_emlrtRTEI,
@@ -2730,37 +2732,37 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                                       "TimeProviderNotInitialized",
                                       0);
       }
-      b_st.site = &ro_emlrtRSI;
+      b_st.site = &so_emlrtRSI;
       b_gamma = toc(&b_st, obj->TimeObjInternal.StartTime.tv_sec,
                     obj->TimeObjInternal.StartTime.tv_nsec);
-      st.site = &ii_emlrtRSI;
+      st.site = &ji_emlrtRSI;
       valid = (b_gamma > obj->MaxTimeInternal);
       if (valid) {
         exitFlag = TimeLimitExceeded;
-        st.site = &ji_emlrtRSI;
+        st.site = &ki_emlrtRSI;
         *err = IKHelpers_evaluateSolution(&st, obj->ExtraArgs);
         exitg2 = 1;
       } else {
         if ((A->size[0] == 0) || (A->size[1] == 0)) {
           i1 = a->size[0];
           a->size[0] = 1;
-          emxEnsureCapacity_real_T(sp, a, i1, &pd_emlrtRTEI);
+          emxEnsureCapacity_real_T(sp, a, i1, &qd_emlrtRTEI);
           a_data = a->data;
           a_data[0] = 0.0;
         } else {
-          st.site = &ki_emlrtRSI;
-          b_st.site = &wk_emlrtRSI;
+          st.site = &li_emlrtRSI;
+          b_st.site = &xk_emlrtRSI;
           d_dynamic_size_checks(&b_st, A, A, A->size[0], A->size[0]);
-          b_st.site = &dl_emlrtRSI;
+          b_st.site = &el_emlrtRSI;
           e_mtimes(&b_st, A, A, b_y);
-          st.site = &ki_emlrtRSI;
-          b_st.site = &ki_emlrtRSI;
+          st.site = &li_emlrtRSI;
+          b_st.site = &li_emlrtRSI;
           loop_ub = A->size[1];
           i1 = c_y->size[0] * c_y->size[1];
           c_y->size[0] = A->size[1];
           k = A->size[0];
           c_y->size[1] = A->size[0];
-          emxEnsureCapacity_real_T(&b_st, c_y, i1, &rd_emlrtRTEI);
+          emxEnsureCapacity_real_T(&b_st, c_y, i1, &sd_emlrtRTEI);
           y_data = c_y->data;
           for (i1 = 0; i1 < k; i1++) {
             for (i2 = 0; i2 < loop_ub; i2++) {
@@ -2771,24 +2773,24 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
             emlrtErrorWithMessageIdR2018a(
                 &b_st, &db_emlrtRTEI, "MATLAB:dimagree", "MATLAB:dimagree", 0);
           }
-          c_st.site = &uo_emlrtRSI;
+          c_st.site = &vo_emlrtRSI;
           mldiv(&c_st, b_y, c_y, AIn);
-          b_st.site = &wk_emlrtRSI;
+          b_st.site = &xk_emlrtRSI;
           dynamic_size_checks(&b_st, AIn, grad, AIn->size[1], grad->size[0]);
-          b_st.site = &dl_emlrtRSI;
+          b_st.site = &el_emlrtRSI;
           f_mtimes(&b_st, AIn, grad, a);
           a_data = a->data;
         }
-        st.site = &li_emlrtRSI;
-        b_st.site = &wk_emlrtRSI;
+        st.site = &mi_emlrtRSI;
+        b_st.site = &xk_emlrtRSI;
         dynamic_size_checks(&b_st, H, grad, H->size[1], grad->size[0]);
-        b_st.site = &dl_emlrtRSI;
+        b_st.site = &el_emlrtRSI;
         f_mtimes(&b_st, H, grad, Hg);
         Hg_data = Hg->data;
-        st.site = &mi_emlrtRSI;
+        st.site = &ni_emlrtRSI;
         if (e_DampedBFGSwGradientProjection(&st, obj, Hg, a)) {
           exitFlag = LocalMinimumFound;
-          st.site = &ni_emlrtRSI;
+          st.site = &oi_emlrtRSI;
           *err = IKHelpers_evaluateSolution(&st, obj->ExtraArgs);
           exitg2 = 1;
         } else {
@@ -2801,21 +2803,21 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
           guard2 = false;
           guard3 = false;
           if (obj->ConstraintsOn && ((A->size[0] != 0) && (A->size[1] != 0))) {
-            st.site = &oi_emlrtRSI;
-            b_st.site = &wk_emlrtRSI;
-            d_dynamic_size_checks(&b_st, A, A, A->size[0], A->size[0]);
-            b_st.site = &dl_emlrtRSI;
-            e_mtimes(&b_st, A, A, b_y);
-            st.site = &oi_emlrtRSI;
-            inv(&st, b_y, c_y);
             st.site = &pi_emlrtRSI;
-            b_st.site = &pi_emlrtRSI;
+            b_st.site = &xk_emlrtRSI;
+            d_dynamic_size_checks(&b_st, A, A, A->size[0], A->size[0]);
+            b_st.site = &el_emlrtRSI;
+            e_mtimes(&b_st, A, A, b_y);
+            st.site = &pi_emlrtRSI;
+            inv(&st, b_y, c_y);
+            st.site = &qi_emlrtRSI;
+            b_st.site = &qi_emlrtRSI;
             diag(&b_st, c_y, gradNew);
-            b_st.site = &pi_emlrtRSI;
+            b_st.site = &qi_emlrtRSI;
             c_sqrt(&b_st, gradNew);
             gradNew_data = gradNew->data;
-            b_st.site = &xq_emlrtRSI;
-            c_st.site = &yq_emlrtRSI;
+            b_st.site = &yq_emlrtRSI;
+            c_st.site = &ar_emlrtRSI;
             assertCompatibleDims(&c_st, a, gradNew);
             if (a->size[0] == gradNew->size[0]) {
               loop_ub = a->size[0];
@@ -2830,21 +2832,21 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                 a_data[i1] /= gradNew_data[i1];
               }
             } else {
-              c_st.site = &lt_emlrtRSI;
+              c_st.site = &mt_emlrtRSI;
               rdivide(&c_st, a, gradNew);
               a_data = a->data;
             }
-            st.site = &pi_emlrtRSI;
-            b_st.site = &ar_emlrtRSI;
-            c_st.site = &br_emlrtRSI;
-            d_st.site = &cr_emlrtRSI;
+            st.site = &qi_emlrtRSI;
+            b_st.site = &br_emlrtRSI;
+            c_st.site = &cr_emlrtRSI;
+            d_st.site = &dr_emlrtRSI;
             if (a->size[0] < 1) {
               emlrtErrorWithMessageIdR2018a(
                   &d_st, &eb_emlrtRTEI,
                   "Coder:toolbox:eml_min_or_max_varDimZero",
                   "Coder:toolbox:eml_min_or_max_varDimZero", 0);
             }
-            e_st.site = &dr_emlrtRSI;
+            e_st.site = &er_emlrtRSI;
             last = a->size[0];
             if (a->size[0] <= 2) {
               if (a->size[0] == 1) {
@@ -2860,12 +2862,12 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                 scalarLB = 1;
               }
             } else {
-              f_st.site = &fr_emlrtRSI;
+              f_st.site = &gr_emlrtRSI;
               if (!muDoubleScalarIsNaN(a_data[0])) {
                 scalarLB = 1;
               } else {
                 scalarLB = 0;
-                g_st.site = &gr_emlrtRSI;
+                g_st.site = &hr_emlrtRSI;
                 if (a->size[0] > 2147483646) {
                   h_st.site = &rb_emlrtRSI;
                   check_forloop_overflow_error(&h_st);
@@ -2885,10 +2887,10 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                 b_gamma = a_data[0];
                 scalarLB = 1;
               } else {
-                f_st.site = &er_emlrtRSI;
+                f_st.site = &fr_emlrtRSI;
                 b_gamma = a_data[scalarLB - 1];
                 idxl = scalarLB + 1;
-                g_st.site = &hr_emlrtRSI;
+                g_st.site = &ir_emlrtRSI;
                 if ((scalarLB + 1 <= a->size[0]) && (a->size[0] > 2147483646)) {
                   h_st.site = &rb_emlrtRSI;
                   check_forloop_overflow_error(&h_st);
@@ -2903,26 +2905,26 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
               }
             }
             if (c_norm(Hg) < 0.5 * b_gamma) {
-              st.site = &qi_emlrtRSI;
-              b_st.site = &kh_emlrtRSI;
+              st.site = &ri_emlrtRSI;
+              b_st.site = &lh_emlrtRSI;
               eml_find(&b_st, activeSet, ii);
               ii_data = ii->data;
               loop_ub = ii->size[0];
               i1 = a->size[0];
               a->size[0] = ii->size[0];
-              emxEnsureCapacity_real_T(&st, a, i1, &ce_emlrtRTEI);
+              emxEnsureCapacity_real_T(&st, a, i1, &de_emlrtRTEI);
               a_data = a->data;
               for (i1 = 0; i1 < loop_ub; i1++) {
                 a_data[i1] = ii_data[i1];
               }
               if ((scalarLB < 1) || (scalarLB > ii->size[0])) {
                 emlrtDynamicBoundsCheckR2012b(scalarLB, 1, ii->size[0],
-                                              &mc_emlrtBCI, (emlrtConstCTX)sp);
+                                              &sc_emlrtBCI, (emlrtConstCTX)sp);
               }
               idxl = (int32_T)a_data[scalarLB - 1];
               if ((idxl < 1) || (idxl > activeSet->size[0])) {
                 emlrtDynamicBoundsCheckR2012b(idxl, 1, activeSet->size[0],
-                                              &rc_emlrtBCI, (emlrtConstCTX)sp);
+                                              &xc_emlrtBCI, (emlrtConstCTX)sp);
               }
               activeSet_data[idxl - 1] = false;
               scalarLB = activeSet->size[0];
@@ -2934,7 +2936,7 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
               }
               i1 = r4->size[0];
               r4->size[0] = last;
-              emxEnsureCapacity_int32_T(sp, r4, i1, &vd_emlrtRTEI);
+              emxEnsureCapacity_int32_T(sp, r4, i1, &wd_emlrtRTEI);
               ii_data = r4->data;
               last = 0;
               for (loop_ub_tmp = 0; loop_ub_tmp < scalarLB; loop_ub_tmp++) {
@@ -2948,14 +2950,14 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
               A->size[0] = obj->ConstraintMatrix->size[0];
               loop_ub = r4->size[0];
               A->size[1] = r4->size[0];
-              emxEnsureCapacity_real_T(sp, A, i1, &ge_emlrtRTEI);
+              emxEnsureCapacity_real_T(sp, A, i1, &he_emlrtRTEI);
               A_data = A->data;
               for (i1 = 0; i1 < loop_ub; i1++) {
                 k = obj->ConstraintMatrix->size[0];
                 for (i2 = 0; i2 < k; i2++) {
                   if ((ii_data[i1] < 0) || (ii_data[i1] > last - 1)) {
                     emlrtDynamicBoundsCheckR2012b(ii_data[i1], 0, last - 1,
-                                                  &tc_emlrtBCI,
+                                                  &ad_emlrtBCI,
                                                   (emlrtConstCTX)sp);
                   }
                   A_data[i2 + A->size[0] * i1] =
@@ -2964,22 +2966,22 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                                  obj->ConstraintMatrix->size[0] * ii_data[i1]];
                 }
               }
-              st.site = &ri_emlrtRSI;
+              st.site = &si_emlrtRSI;
               eye(&st, n, P);
               xSol_data = P->data;
-              st.site = &ri_emlrtRSI;
-              b_st.site = &wk_emlrtRSI;
+              st.site = &si_emlrtRSI;
+              b_st.site = &xk_emlrtRSI;
               d_dynamic_size_checks(&b_st, A, A, A->size[0], A->size[0]);
-              b_st.site = &dl_emlrtRSI;
+              b_st.site = &el_emlrtRSI;
               e_mtimes(&b_st, A, A, b_y);
-              st.site = &ri_emlrtRSI;
-              b_st.site = &ri_emlrtRSI;
+              st.site = &si_emlrtRSI;
+              b_st.site = &si_emlrtRSI;
               loop_ub = A->size[1];
               i1 = c_y->size[0] * c_y->size[1];
               c_y->size[0] = A->size[1];
               k = A->size[0];
               c_y->size[1] = A->size[0];
-              emxEnsureCapacity_real_T(&b_st, c_y, i1, &me_emlrtRTEI);
+              emxEnsureCapacity_real_T(&b_st, c_y, i1, &ne_emlrtRTEI);
               y_data = c_y->data;
               for (i1 = 0; i1 < k; i1++) {
                 for (i2 = 0; i2 < loop_ub; i2++) {
@@ -2991,11 +2993,11 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                                               "MATLAB:dimagree",
                                               "MATLAB:dimagree", 0);
               }
-              c_st.site = &uo_emlrtRSI;
+              c_st.site = &vo_emlrtRSI;
               mldiv(&c_st, b_y, c_y, AIn);
-              b_st.site = &wk_emlrtRSI;
+              b_st.site = &xk_emlrtRSI;
               d_dynamic_size_checks(&b_st, A, AIn, A->size[1], AIn->size[0]);
-              b_st.site = &dl_emlrtRSI;
+              b_st.site = &el_emlrtRSI;
               d_mtimes(&b_st, A, AIn, b_y);
               y_data = b_y->data;
               if ((P->size[0] != b_y->size[0]) &&
@@ -3022,19 +3024,19 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                   xSol_data[i1] -= y_data[i1];
                 }
               } else {
-                st.site = &ri_emlrtRSI;
+                st.site = &si_emlrtRSI;
                 minus(&st, P, b_y);
                 xSol_data = P->data;
               }
               i1 = obj->ConstraintMatrix->size[1];
               if (idxl > i1) {
-                emlrtDynamicBoundsCheckR2012b(idxl, 1, i1, &lc_emlrtBCI,
+                emlrtDynamicBoundsCheckR2012b(idxl, 1, i1, &rc_emlrtBCI,
                                               (emlrtConstCTX)sp);
               }
               loop_ub = obj->ConstraintMatrix->size[0];
               i1 = a->size[0];
               a->size[0] = loop_ub;
-              emxEnsureCapacity_real_T(sp, a, i1, &oe_emlrtRTEI);
+              emxEnsureCapacity_real_T(sp, a, i1, &pe_emlrtRTEI);
               a_data = a->data;
               k = obj->ConstraintMatrix->size[0];
               for (i1 = 0; i1 < k; i1++) {
@@ -3042,19 +3044,19 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                                  ->data[i1 + obj->ConstraintMatrix->size[0] *
                                                  (idxl - 1)];
               }
-              st.site = &si_emlrtRSI;
-              b_st.site = &wk_emlrtRSI;
+              st.site = &ti_emlrtRSI;
+              b_st.site = &xk_emlrtRSI;
               b_dynamic_size_checks(&b_st, a, P, a->size[0], P->size[0]);
-              b_st.site = &dl_emlrtRSI;
+              b_st.site = &el_emlrtRSI;
               b_mtimes(&b_st, a, P, y);
-              st.site = &si_emlrtRSI;
-              b_st.site = &wk_emlrtRSI;
+              st.site = &ti_emlrtRSI;
+              b_st.site = &xk_emlrtRSI;
               c_dynamic_size_checks(&b_st, y, a, y->size[1], a->size[0]);
               b_gamma = 1.0 / c_mtimes(y, a);
               i1 = b_y->size[0] * b_y->size[1];
               b_y->size[0] = P->size[0];
               b_y->size[1] = P->size[1];
-              emxEnsureCapacity_real_T(sp, b_y, i1, &od_emlrtRTEI);
+              emxEnsureCapacity_real_T(sp, b_y, i1, &pd_emlrtRTEI);
               y_data = b_y->data;
               loop_ub_tmp = P->size[0] * P->size[1];
               scalarLB = (loop_ub_tmp / 2) << 1;
@@ -3070,7 +3072,7 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
               i1 = AIn->size[0] * AIn->size[1];
               AIn->size[0] = loop_ub;
               AIn->size[1] = loop_ub;
-              emxEnsureCapacity_real_T(sp, AIn, i1, &qd_emlrtRTEI);
+              emxEnsureCapacity_real_T(sp, AIn, i1, &rd_emlrtRTEI);
               AIn_data = AIn->data;
               for (i1 = 0; i1 < loop_ub; i1++) {
                 scalarLB = (a->size[0] / 2) << 1;
@@ -3084,16 +3086,16 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                   AIn_data[i2 + AIn->size[0] * i1] = a_data[i2] * a_data[i1];
                 }
               }
-              st.site = &si_emlrtRSI;
-              b_st.site = &wk_emlrtRSI;
+              st.site = &ti_emlrtRSI;
+              b_st.site = &xk_emlrtRSI;
               d_dynamic_size_checks(&b_st, b_y, AIn, b_y->size[1],
                                     AIn->size[0]);
-              b_st.site = &dl_emlrtRSI;
+              b_st.site = &el_emlrtRSI;
               d_mtimes(&b_st, b_y, AIn, c_y);
-              st.site = &si_emlrtRSI;
-              b_st.site = &wk_emlrtRSI;
+              st.site = &ti_emlrtRSI;
+              b_st.site = &xk_emlrtRSI;
               d_dynamic_size_checks(&b_st, c_y, P, c_y->size[1], P->size[0]);
-              b_st.site = &dl_emlrtRSI;
+              b_st.site = &el_emlrtRSI;
               d_mtimes(&b_st, c_y, P, b_y);
               y_data = b_y->data;
               if ((H->size[0] != b_y->size[0]) &&
@@ -3120,7 +3122,7 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                   H_data[i1] += y_data[i1];
                 }
               } else {
-                st.site = &si_emlrtRSI;
+                st.site = &ti_emlrtRSI;
                 plus(&st, H, b_y);
                 H_data = H->data;
               }
@@ -3151,16 +3153,16 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
               loop_ub = activeSet->size[0];
               i1 = b_activeSet->size[0];
               b_activeSet->size[0] = activeSet->size[0];
-              emxEnsureCapacity_boolean_T(sp, b_activeSet, i1, &sd_emlrtRTEI);
+              emxEnsureCapacity_boolean_T(sp, b_activeSet, i1, &td_emlrtRTEI);
               b_activeSet_data = b_activeSet->data;
               for (i1 = 0; i1 < loop_ub; i1++) {
                 b_activeSet_data[i1] = !activeSet_data[i1];
               }
-              st.site = &ti_emlrtRSI;
+              st.site = &ui_emlrtRSI;
               if (any(&st, b_activeSet)) {
                 i1 = b_activeSet->size[0];
                 b_activeSet->size[0] = activeSet->size[0];
-                emxEnsureCapacity_boolean_T(sp, b_activeSet, i1, &td_emlrtRTEI);
+                emxEnsureCapacity_boolean_T(sp, b_activeSet, i1, &ud_emlrtRTEI);
                 b_activeSet_data = b_activeSet->data;
                 for (i1 = 0; i1 < loop_ub; i1++) {
                   b_activeSet_data[i1] = !activeSet_data[i1];
@@ -3173,7 +3175,7 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                 }
                 i1 = r2->size[0];
                 r2->size[0] = last;
-                emxEnsureCapacity_int32_T(sp, r2, i1, &vd_emlrtRTEI);
+                emxEnsureCapacity_int32_T(sp, r2, i1, &wd_emlrtRTEI);
                 ii_data = r2->data;
                 last = 0;
                 for (loop_ub_tmp = 0; loop_ub_tmp < loop_ub; loop_ub_tmp++) {
@@ -3186,12 +3188,12 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                 loop_ub = r2->size[0];
                 i1 = bIn->size[0];
                 bIn->size[0] = r2->size[0];
-                emxEnsureCapacity_real_T(sp, bIn, i1, &xd_emlrtRTEI);
+                emxEnsureCapacity_real_T(sp, bIn, i1, &yd_emlrtRTEI);
                 xSol_data = bIn->data;
                 for (i1 = 0; i1 < loop_ub; i1++) {
                   if ((ii_data[i1] < 0) || (ii_data[i1] > last - 1)) {
                     emlrtDynamicBoundsCheckR2012b(ii_data[i1], 0, last - 1,
-                                                  &oc_emlrtBCI,
+                                                  &uc_emlrtBCI,
                                                   (emlrtConstCTX)sp);
                   }
                   xSol_data[i1] = obj->ConstraintBound->data[ii_data[i1]];
@@ -3200,14 +3202,14 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                 i1 = AIn->size[0] * AIn->size[1];
                 AIn->size[0] = obj->ConstraintMatrix->size[0];
                 AIn->size[1] = r2->size[0];
-                emxEnsureCapacity_real_T(sp, AIn, i1, &yd_emlrtRTEI);
+                emxEnsureCapacity_real_T(sp, AIn, i1, &ae_emlrtRTEI);
                 AIn_data = AIn->data;
                 for (i1 = 0; i1 < loop_ub; i1++) {
                   k = obj->ConstraintMatrix->size[0];
                   for (i2 = 0; i2 < k; i2++) {
                     if ((ii_data[i1] < 0) || (ii_data[i1] > last - 1)) {
                       emlrtDynamicBoundsCheckR2012b(ii_data[i1], 0, last - 1,
-                                                    &pc_emlrtBCI,
+                                                    &vc_emlrtBCI,
                                                     (emlrtConstCTX)sp);
                     }
                     AIn_data[i2 + AIn->size[0] * i1] =
@@ -3216,24 +3218,24 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                                             ii_data[i1]];
                   }
                 }
-                st.site = &ui_emlrtRSI;
-                b_st.site = &kh_emlrtRSI;
+                st.site = &vi_emlrtRSI;
+                b_st.site = &lh_emlrtRSI;
                 eml_find(&b_st, b_activeSet, ii);
                 ii_data = ii->data;
                 loop_ub = ii->size[0];
                 i1 = inactiveConstraintIndices->size[0];
                 inactiveConstraintIndices->size[0] = ii->size[0];
                 emxEnsureCapacity_int32_T(&st, inactiveConstraintIndices, i1,
-                                          &be_emlrtRTEI);
+                                          &ce_emlrtRTEI);
                 inactiveConstraintIndices_data =
                     inactiveConstraintIndices->data;
                 for (i1 = 0; i1 < loop_ub; i1++) {
                   inactiveConstraintIndices_data[i1] = ii_data[i1];
                 }
-                st.site = &vi_emlrtRSI;
-                b_st.site = &wk_emlrtRSI;
+                st.site = &wi_emlrtRSI;
+                b_st.site = &xk_emlrtRSI;
                 dynamic_size_checks(&b_st, AIn, x, AIn->size[0], x->size[0]);
-                b_st.site = &dl_emlrtRSI;
+                b_st.site = &el_emlrtRSI;
                 mtimes(&b_st, AIn, x, a);
                 a_data = a->data;
                 k = bIn->size[0];
@@ -3242,13 +3244,13 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                   emlrtDimSizeImpxCheckR2021b(bIn->size[0], a->size[0],
                                               &gb_emlrtECI, (emlrtConstCTX)sp);
                 }
-                st.site = &vi_emlrtRSI;
-                b_st.site = &wk_emlrtRSI;
+                st.site = &wi_emlrtRSI;
+                b_st.site = &xk_emlrtRSI;
                 dynamic_size_checks(&b_st, AIn, Hg, AIn->size[0], Hg->size[0]);
-                b_st.site = &dl_emlrtRSI;
+                b_st.site = &el_emlrtRSI;
                 mtimes(&b_st, AIn, Hg, gradNew);
                 gradNew_data = gradNew->data;
-                st.site = &vi_emlrtRSI;
+                st.site = &wi_emlrtRSI;
                 if (bIn->size[0] == a->size[0]) {
                   scalarLB = (bIn->size[0] / 2) << 1;
                   vectorUB = scalarLB - 2;
@@ -3261,12 +3263,12 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                     xSol_data[i1] -= a_data[i1];
                   }
                 } else {
-                  b_st.site = &vi_emlrtRSI;
+                  b_st.site = &wi_emlrtRSI;
                   c_minus(&b_st, bIn, a);
                   xSol_data = bIn->data;
                 }
-                b_st.site = &xq_emlrtRSI;
-                c_st.site = &yq_emlrtRSI;
+                b_st.site = &yq_emlrtRSI;
+                c_st.site = &ar_emlrtRSI;
                 assertCompatibleDims(&c_st, bIn, gradNew);
                 if (bIn->size[0] == gradNew->size[0]) {
                   k = bIn->size[0];
@@ -3281,27 +3283,27 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                     xSol_data[i1] /= gradNew_data[i1];
                   }
                 } else {
-                  c_st.site = &lt_emlrtRSI;
+                  c_st.site = &mt_emlrtRSI;
                   rdivide(&c_st, bIn, gradNew);
                   xSol_data = bIn->data;
                 }
-                st.site = &wi_emlrtRSI;
+                st.site = &xi_emlrtRSI;
                 k = bIn->size[0];
                 i1 = b_activeSet->size[0];
                 b_activeSet->size[0] = bIn->size[0];
                 emxEnsureCapacity_boolean_T(&st, b_activeSet, i1,
-                                            &je_emlrtRTEI);
+                                            &ke_emlrtRTEI);
                 b_activeSet_data = b_activeSet->data;
                 for (i1 = 0; i1 < k; i1++) {
                   b_activeSet_data[i1] = (xSol_data[i1] > 0.0);
                 }
-                b_st.site = &kh_emlrtRSI;
+                b_st.site = &lh_emlrtRSI;
                 eml_find(&b_st, b_activeSet, ii);
                 ii_data = ii->data;
                 scalarLB = ii->size[0];
                 i1 = a->size[0];
                 a->size[0] = ii->size[0];
-                emxEnsureCapacity_real_T(&st, a, i1, &ke_emlrtRTEI);
+                emxEnsureCapacity_real_T(&st, a, i1, &le_emlrtRTEI);
                 a_data = a->data;
                 for (i1 = 0; i1 < scalarLB; i1++) {
                   a_data[i1] = ii_data[i1];
@@ -3315,7 +3317,7 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                   }
                   i1 = r1->size[0];
                   r1->size[0] = last;
-                  emxEnsureCapacity_int32_T(sp, r1, i1, &vd_emlrtRTEI);
+                  emxEnsureCapacity_int32_T(sp, r1, i1, &wd_emlrtRTEI);
                   ii_data = r1->data;
                   last = 0;
                   for (loop_ub_tmp = 0; loop_ub_tmp < k; loop_ub_tmp++) {
@@ -3324,24 +3326,24 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                       last++;
                     }
                   }
-                  st.site = &xi_emlrtRSI;
+                  st.site = &yi_emlrtRSI;
                   loop_ub_tmp = r1->size[0];
                   for (i1 = 0; i1 < loop_ub_tmp; i1++) {
                     if ((ii_data[i1] < 0) || (ii_data[i1] > bIn->size[0] - 1)) {
                       emlrtDynamicBoundsCheckR2012b(
-                          ii_data[i1], 0, bIn->size[0] - 1, &uc_emlrtBCI, &st);
+                          ii_data[i1], 0, bIn->size[0] - 1, &bd_emlrtBCI, &st);
                     }
                   }
-                  b_st.site = &jr_emlrtRSI;
-                  c_st.site = &kr_emlrtRSI;
-                  d_st.site = &lr_emlrtRSI;
+                  b_st.site = &kr_emlrtRSI;
+                  c_st.site = &lr_emlrtRSI;
+                  d_st.site = &mr_emlrtRSI;
                   if (r1->size[0] < 1) {
                     emlrtErrorWithMessageIdR2018a(
                         &d_st, &eb_emlrtRTEI,
                         "Coder:toolbox:eml_min_or_max_varDimZero",
                         "Coder:toolbox:eml_min_or_max_varDimZero", 0);
                   }
-                  e_st.site = &dr_emlrtRSI;
+                  e_st.site = &er_emlrtRSI;
                   if (r1->size[0] <= 2) {
                     if (r1->size[0] == 1) {
                       lambda = xSol_data[ii_data[0]];
@@ -3358,13 +3360,13 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                       }
                     }
                   } else {
-                    f_st.site = &fr_emlrtRSI;
+                    f_st.site = &gr_emlrtRSI;
                     lambda = xSol_data[ii_data[0]];
                     if (!muDoubleScalarIsNaN(lambda)) {
                       scalarLB = 1;
                     } else {
                       scalarLB = 0;
-                      g_st.site = &gr_emlrtRSI;
+                      g_st.site = &hr_emlrtRSI;
                       if (r1->size[0] > 2147483646) {
                         h_st.site = &rb_emlrtRSI;
                         check_forloop_overflow_error(&h_st);
@@ -3383,10 +3385,10 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                     if (scalarLB == 0) {
                       scalarLB = 1;
                     } else {
-                      f_st.site = &er_emlrtRSI;
+                      f_st.site = &fr_emlrtRSI;
                       lambda = xSol_data[ii_data[scalarLB - 1]];
                       idxl = scalarLB + 1;
-                      g_st.site = &hr_emlrtRSI;
+                      g_st.site = &ir_emlrtRSI;
                       if ((scalarLB + 1 <= r1->size[0]) &&
                           (r1->size[0] > 2147483646)) {
                         h_st.site = &rb_emlrtRSI;
@@ -3403,12 +3405,12 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                   }
                   if ((scalarLB < 1) || (scalarLB > ii->size[0])) {
                     emlrtDynamicBoundsCheckR2012b(scalarLB, 1, ii->size[0],
-                                                  &wc_emlrtBCI,
+                                                  &dd_emlrtBCI,
                                                   (emlrtConstCTX)sp);
                   }
                   i1 = (int32_T)a_data[scalarLB - 1];
                   if ((i1 < 1) || (i1 > loop_ub)) {
-                    emlrtDynamicBoundsCheckR2012b(i1, 1, loop_ub, &vc_emlrtBCI,
+                    emlrtDynamicBoundsCheckR2012b(i1, 1, loop_ub, &cd_emlrtBCI,
                                                   (emlrtConstCTX)sp);
                   }
                   idxl = inactiveConstraintIndices_data[i1 - 1];
@@ -3431,7 +3433,7 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
             loop_ub = Hg->size[0];
             i1 = a->size[0];
             a->size[0] = Hg->size[0];
-            emxEnsureCapacity_real_T(sp, a, i1, &ud_emlrtRTEI);
+            emxEnsureCapacity_real_T(sp, a, i1, &vd_emlrtRTEI);
             a_data = a->data;
             scalarLB_tmp = (Hg->size[0] / 2) << 1;
             vectorUB_tmp = scalarLB_tmp - 2;
@@ -3451,7 +3453,7 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
             if (x->size[0] == a->size[0]) {
               i1 = a->size[0];
               a->size[0] = x->size[0];
-              emxEnsureCapacity_real_T(sp, a, i1, &wd_emlrtRTEI);
+              emxEnsureCapacity_real_T(sp, a, i1, &xd_emlrtRTEI);
               a_data = a->data;
               scalarLB = (x->size[0] / 2) << 1;
               vectorUB = scalarLB - 2;
@@ -3463,12 +3465,12 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
               for (i1 = scalarLB; i1 < k; i1++) {
                 a_data[i1] += x_data[i1];
               }
-              st.site = &yi_emlrtRSI;
+              st.site = &aj_emlrtRSI;
               costNew = IKHelpers_computeCost(&st, a, obj->ExtraArgs, a__3,
                                               a__4, &r8);
             } else {
-              st.site = &yi_emlrtRSI;
-              costNew = binary_expand_op_2(&st, yi_emlrtRSI, x, a, obj, a__3,
+              st.site = &aj_emlrtRSI;
+              costNew = binary_expand_op_2(&st, aj_emlrtRSI, x, a, obj, a__3,
                                            a__4, &r7);
               r8 = r7;
             }
@@ -3480,7 +3482,7 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
               y->size[0] = 1;
               k = grad->size[0];
               y->size[1] = grad->size[0];
-              emxEnsureCapacity_real_T(sp, y, i1, &ae_emlrtRTEI);
+              emxEnsureCapacity_real_T(sp, y, i1, &be_emlrtRTEI);
               y_data = y->data;
               scalarLB = (grad->size[0] / 2) << 1;
               vectorUB = scalarLB - 2;
@@ -3493,7 +3495,7 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
               }
               i1 = gradNew->size[0];
               gradNew->size[0] = Hg->size[0];
-              emxEnsureCapacity_real_T(sp, gradNew, i1, &od_emlrtRTEI);
+              emxEnsureCapacity_real_T(sp, gradNew, i1, &pd_emlrtRTEI);
               gradNew_data = gradNew->data;
               for (i1 = 0; i1 <= vectorUB_tmp; i1 += 2) {
                 r5 = _mm_loadu_pd(&Hg_data[i1]);
@@ -3503,16 +3505,16 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
               for (i1 = scalarLB_tmp; i1 < loop_ub; i1++) {
                 gradNew_data[i1] = b_gamma * Hg_data[i1];
               }
-              st.site = &aj_emlrtRSI;
-              b_st.site = &wk_emlrtRSI;
+              st.site = &bj_emlrtRSI;
+              b_st.site = &xk_emlrtRSI;
               c_dynamic_size_checks(&b_st, y, gradNew, y->size[1],
                                     gradNew->size[0]);
               if (cost - costNew < c_mtimes(y, gradNew)) {
-                st.site = &bj_emlrtRSI;
+                st.site = &cj_emlrtRSI;
                 valid = (b_gamma < obj->StepTolerance);
                 if (valid) {
                   exitFlag = StepSizeBelowMinimum;
-                  st.site = &cj_emlrtRSI;
+                  st.site = &dj_emlrtRSI;
                   *err = IKHelpers_evaluateSolution(&st, obj->ExtraArgs);
                   exitg1 = 1;
                 } else {
@@ -3520,7 +3522,7 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                   m++;
                   i1 = a->size[0];
                   a->size[0] = Hg->size[0];
-                  emxEnsureCapacity_real_T(sp, a, i1, &ee_emlrtRTEI);
+                  emxEnsureCapacity_real_T(sp, a, i1, &fe_emlrtRTEI);
                   a_data = a->data;
                   for (i1 = 0; i1 <= vectorUB_tmp; i1 += 2) {
                     r5 = _mm_loadu_pd(&Hg_data[i1]);
@@ -3540,7 +3542,7 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                   if (x->size[0] == a->size[0]) {
                     i1 = a->size[0];
                     a->size[0] = x->size[0];
-                    emxEnsureCapacity_real_T(sp, a, i1, &ie_emlrtRTEI);
+                    emxEnsureCapacity_real_T(sp, a, i1, &je_emlrtRTEI);
                     a_data = a->data;
                     scalarLB = (x->size[0] / 2) << 1;
                     vectorUB = scalarLB - 2;
@@ -3552,12 +3554,12 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                     for (i1 = scalarLB; i1 < k; i1++) {
                       a_data[i1] += x_data[i1];
                     }
-                    st.site = &dj_emlrtRSI;
+                    st.site = &ej_emlrtRSI;
                     costNew = IKHelpers_computeCost(&st, a, obj->ExtraArgs,
                                                     a__3, a__4, &r10);
                   } else {
-                    st.site = &dj_emlrtRSI;
-                    costNew = binary_expand_op_2(&st, dj_emlrtRSI, x, a, obj,
+                    st.site = &ej_emlrtRSI;
+                    costNew = binary_expand_op_2(&st, ej_emlrtRSI, x, a, obj,
                                                  a__3, a__4, &r9);
                     r10 = r9;
                   }
@@ -3566,7 +3568,7 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
               } else {
                 i1 = xSol->size[0];
                 xSol->size[0] = Hg->size[0];
-                emxEnsureCapacity_real_T(sp, xSol, i1, &de_emlrtRTEI);
+                emxEnsureCapacity_real_T(sp, xSol, i1, &ee_emlrtRTEI);
                 xSol_data = xSol->data;
                 for (i1 = 0; i1 <= vectorUB_tmp; i1 += 2) {
                   r5 = _mm_loadu_pd(&Hg_data[i1]);
@@ -3585,7 +3587,7 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                 if (x->size[0] == xSol->size[0]) {
                   i1 = xSol->size[0];
                   xSol->size[0] = x->size[0];
-                  emxEnsureCapacity_real_T(sp, xSol, i1, &fe_emlrtRTEI);
+                  emxEnsureCapacity_real_T(sp, xSol, i1, &ge_emlrtRTEI);
                   xSol_data = xSol->data;
                   scalarLB = (x->size[0] / 2) << 1;
                   vectorUB = scalarLB - 2;
@@ -3598,16 +3600,16 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                     xSol_data[i1] += x_data[i1];
                   }
                 } else {
-                  st.site = &kt_emlrtRSI;
+                  st.site = &lt_emlrtRSI;
                   c_plus(&st, xSol, x);
                   xSol_data = xSol->data;
                 }
-                st.site = &ej_emlrtRSI;
+                st.site = &fj_emlrtRSI;
                 args = obj->ExtraArgs;
                 k = args->GradTemp->size[0];
                 i1 = gradNew->size[0];
                 gradNew->size[0] = k;
-                emxEnsureCapacity_real_T(&st, gradNew, i1, &he_emlrtRTEI);
+                emxEnsureCapacity_real_T(&st, gradNew, i1, &ie_emlrtRTEI);
                 gradNew_data = gradNew->data;
                 scalarLB = args->GradTemp->size[0];
                 for (i1 = 0; i1 < scalarLB; i1++) {
@@ -3619,17 +3621,17 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
             if (exitg1 == 1) {
               exitg2 = 1;
             } else if (m == 0.0) {
-              st.site = &fj_emlrtRSI;
+              st.site = &gj_emlrtRSI;
               if (muDoubleScalarAbs(b_gamma - lambda) < 1.4901161193847656E-8) {
                 i1 = obj->ConstraintMatrix->size[1];
                 if ((idxl < 1) || (idxl > i1)) {
-                  emlrtDynamicBoundsCheckR2012b(idxl, 1, i1, &kc_emlrtBCI,
+                  emlrtDynamicBoundsCheckR2012b(idxl, 1, i1, &qc_emlrtBCI,
                                                 (emlrtConstCTX)sp);
                 }
                 loop_ub = obj->ConstraintMatrix->size[0];
                 i1 = a->size[0];
                 a->size[0] = loop_ub;
-                emxEnsureCapacity_real_T(sp, a, i1, &ne_emlrtRTEI);
+                emxEnsureCapacity_real_T(sp, a, i1, &oe_emlrtRTEI);
                 a_data = a->data;
                 k = obj->ConstraintMatrix->size[0];
                 for (i1 = 0; i1 < k; i1++) {
@@ -3639,7 +3641,7 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                 }
                 if (idxl > activeSet->size[0]) {
                   emlrtDynamicBoundsCheckR2012b(idxl, 1, activeSet->size[0],
-                                                &qc_emlrtBCI,
+                                                &wc_emlrtBCI,
                                                 (emlrtConstCTX)sp);
                 }
                 activeSet_data[idxl - 1] = true;
@@ -3652,7 +3654,7 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                 }
                 i1 = r3->size[0];
                 r3->size[0] = last;
-                emxEnsureCapacity_int32_T(sp, r3, i1, &vd_emlrtRTEI);
+                emxEnsureCapacity_int32_T(sp, r3, i1, &wd_emlrtRTEI);
                 ii_data = r3->data;
                 last = 0;
                 for (loop_ub_tmp = 0; loop_ub_tmp < scalarLB; loop_ub_tmp++) {
@@ -3666,14 +3668,14 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                 A->size[0] = obj->ConstraintMatrix->size[0];
                 k = r3->size[0];
                 A->size[1] = r3->size[0];
-                emxEnsureCapacity_real_T(sp, A, i1, &pe_emlrtRTEI);
+                emxEnsureCapacity_real_T(sp, A, i1, &qe_emlrtRTEI);
                 A_data = A->data;
                 for (i1 = 0; i1 < k; i1++) {
                   scalarLB = obj->ConstraintMatrix->size[0];
                   for (i2 = 0; i2 < scalarLB; i2++) {
                     if ((ii_data[i1] < 0) || (ii_data[i1] > last - 1)) {
                       emlrtDynamicBoundsCheckR2012b(ii_data[i1], 0, last - 1,
-                                                    &sc_emlrtBCI,
+                                                    &yc_emlrtBCI,
                                                     (emlrtConstCTX)sp);
                     }
                     A_data[i2 + A->size[0] * i1] =
@@ -3682,18 +3684,18 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                                             ii_data[i1]];
                   }
                 }
-                st.site = &gj_emlrtRSI;
-                b_st.site = &wk_emlrtRSI;
+                st.site = &hj_emlrtRSI;
+                b_st.site = &xk_emlrtRSI;
                 b_dynamic_size_checks(&b_st, a, H, a->size[0], H->size[0]);
-                b_st.site = &dl_emlrtRSI;
+                b_st.site = &el_emlrtRSI;
                 b_mtimes(&b_st, a, H, y);
-                st.site = &gj_emlrtRSI;
-                b_st.site = &wk_emlrtRSI;
+                st.site = &hj_emlrtRSI;
+                b_st.site = &xk_emlrtRSI;
                 c_dynamic_size_checks(&b_st, y, a, y->size[1], a->size[0]);
                 i1 = b_y->size[0] * b_y->size[1];
                 b_y->size[0] = loop_ub;
                 b_y->size[1] = loop_ub;
-                emxEnsureCapacity_real_T(sp, b_y, i1, &qd_emlrtRTEI);
+                emxEnsureCapacity_real_T(sp, b_y, i1, &rd_emlrtRTEI);
                 y_data = b_y->data;
                 for (i1 = 0; i1 < loop_ub; i1++) {
                   scalarLB = (a->size[0] / 2) << 1;
@@ -3707,15 +3709,15 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                     y_data[i2 + b_y->size[0] * i1] = a_data[i2] * a_data[i1];
                   }
                 }
-                st.site = &gj_emlrtRSI;
-                b_st.site = &wk_emlrtRSI;
+                st.site = &hj_emlrtRSI;
+                b_st.site = &xk_emlrtRSI;
                 d_dynamic_size_checks(&b_st, b_y, H, b_y->size[1], H->size[0]);
-                b_st.site = &dl_emlrtRSI;
+                b_st.site = &el_emlrtRSI;
                 d_mtimes(&b_st, b_y, H, AIn);
-                st.site = &gj_emlrtRSI;
-                b_st.site = &wk_emlrtRSI;
+                st.site = &hj_emlrtRSI;
+                b_st.site = &xk_emlrtRSI;
                 d_dynamic_size_checks(&b_st, H, AIn, H->size[1], AIn->size[0]);
-                b_st.site = &dl_emlrtRSI;
+                b_st.site = &el_emlrtRSI;
                 d_mtimes(&b_st, H, AIn, b_y);
                 y_data = b_y->data;
                 b_gamma = 1.0 / c_mtimes(y, a);
@@ -3754,7 +3756,7 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                     H_data[i1] -= y_data[i1];
                   }
                 } else {
-                  st.site = &gj_emlrtRSI;
+                  st.site = &hj_emlrtRSI;
                   minus(&st, H, b_y);
                   H_data = H->data;
                 }
@@ -3775,7 +3777,7 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
             if (gradNew->size[0] == grad->size[0]) {
               i1 = grad->size[0];
               grad->size[0] = k;
-              emxEnsureCapacity_real_T(sp, grad, i1, &le_emlrtRTEI);
+              emxEnsureCapacity_real_T(sp, grad, i1, &me_emlrtRTEI);
               grad_data = grad->data;
               scalarLB = (gradNew->size[0] / 2) << 1;
               vectorUB = scalarLB - 2;
@@ -3788,19 +3790,19 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                 grad_data[i1] = gradNew_data[i1] - grad_data[i1];
               }
             } else {
-              st.site = &jt_emlrtRSI;
+              st.site = &kt_emlrtRSI;
               b_minus(&st, grad, gradNew);
               grad_data = grad->data;
             }
-            st.site = &hj_emlrtRSI;
-            b_st.site = &wk_emlrtRSI;
+            st.site = &ij_emlrtRSI;
+            b_st.site = &xk_emlrtRSI;
             e_dynamic_size_checks(&b_st, Hg, grad, Hg->size[0], grad->size[0]);
             b_gamma = g_mtimes(Hg, grad);
             i1 = y->size[0] * y->size[1];
             y->size[0] = 1;
             k = grad->size[0];
             y->size[1] = grad->size[0];
-            emxEnsureCapacity_real_T(sp, y, i1, &ae_emlrtRTEI);
+            emxEnsureCapacity_real_T(sp, y, i1, &be_emlrtRTEI);
             y_data = y->data;
             last = (grad->size[0] / 2) << 1;
             scalarLB = last - 2;
@@ -3811,20 +3813,20 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
             for (i1 = last; i1 < k; i1++) {
               y_data[i1] = 0.2 * grad_data[i1];
             }
-            st.site = &hj_emlrtRSI;
-            b_st.site = &wk_emlrtRSI;
+            st.site = &ij_emlrtRSI;
+            b_st.site = &xk_emlrtRSI;
             f_dynamic_size_checks(&b_st, y, H, y->size[1], H->size[0]);
-            b_st.site = &dl_emlrtRSI;
+            b_st.site = &el_emlrtRSI;
             h_mtimes(&b_st, y, H, d_y);
-            st.site = &hj_emlrtRSI;
-            b_st.site = &wk_emlrtRSI;
+            st.site = &ij_emlrtRSI;
+            b_st.site = &xk_emlrtRSI;
             c_dynamic_size_checks(&b_st, d_y, grad, d_y->size[1],
                                   grad->size[0]);
             if (b_gamma < c_mtimes(d_y, grad)) {
               i1 = y->size[0] * y->size[1];
               y->size[0] = 1;
               y->size[1] = grad->size[0];
-              emxEnsureCapacity_real_T(sp, y, i1, &ae_emlrtRTEI);
+              emxEnsureCapacity_real_T(sp, y, i1, &be_emlrtRTEI);
               y_data = y->data;
               for (i1 = 0; i1 <= scalarLB; i1 += 2) {
                 r5 = _mm_loadu_pd(&grad_data[i1]);
@@ -3833,25 +3835,25 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
               for (i1 = last; i1 < k; i1++) {
                 y_data[i1] = 0.8 * grad_data[i1];
               }
-              st.site = &ij_emlrtRSI;
-              b_st.site = &wk_emlrtRSI;
+              st.site = &jj_emlrtRSI;
+              b_st.site = &xk_emlrtRSI;
               f_dynamic_size_checks(&b_st, y, H, y->size[1], H->size[0]);
-              b_st.site = &dl_emlrtRSI;
+              b_st.site = &el_emlrtRSI;
               h_mtimes(&b_st, y, H, d_y);
-              st.site = &ij_emlrtRSI;
-              b_st.site = &wk_emlrtRSI;
+              st.site = &jj_emlrtRSI;
+              b_st.site = &xk_emlrtRSI;
               c_dynamic_size_checks(&b_st, d_y, grad, d_y->size[1],
                                     grad->size[0]);
-              st.site = &ij_emlrtRSI;
-              b_st.site = &wk_emlrtRSI;
+              st.site = &jj_emlrtRSI;
+              b_st.site = &xk_emlrtRSI;
               b_dynamic_size_checks(&b_st, grad, H, grad->size[0], H->size[0]);
-              b_st.site = &dl_emlrtRSI;
+              b_st.site = &el_emlrtRSI;
               b_mtimes(&b_st, grad, H, y);
-              st.site = &ij_emlrtRSI;
-              b_st.site = &wk_emlrtRSI;
+              st.site = &jj_emlrtRSI;
+              b_st.site = &xk_emlrtRSI;
               c_dynamic_size_checks(&b_st, y, grad, y->size[1], grad->size[0]);
-              st.site = &ij_emlrtRSI;
-              b_st.site = &wk_emlrtRSI;
+              st.site = &jj_emlrtRSI;
+              b_st.site = &xk_emlrtRSI;
               e_dynamic_size_checks(&b_st, Hg, grad, Hg->size[0],
                                     grad->size[0]);
               b_gamma = c_mtimes(d_y, grad) / (c_mtimes(y, grad) - b_gamma);
@@ -3868,7 +3870,7 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
             i1 = b_y->size[0] * b_y->size[1];
             b_y->size[0] = H->size[0];
             b_y->size[1] = H->size[1];
-            emxEnsureCapacity_real_T(sp, b_y, i1, &od_emlrtRTEI);
+            emxEnsureCapacity_real_T(sp, b_y, i1, &pd_emlrtRTEI);
             y_data = b_y->data;
             loop_ub_tmp = H->size[0] * H->size[1];
             scalarLB = (loop_ub_tmp / 2) << 1;
@@ -3881,10 +3883,10 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
             for (i1 = scalarLB; i1 < loop_ub_tmp; i1++) {
               y_data[i1] = (1.0 - b_gamma) * H_data[i1];
             }
-            st.site = &jj_emlrtRSI;
-            b_st.site = &wk_emlrtRSI;
+            st.site = &kj_emlrtRSI;
+            b_st.site = &xk_emlrtRSI;
             dynamic_size_checks(&b_st, b_y, grad, b_y->size[1], grad->size[0]);
-            b_st.site = &dl_emlrtRSI;
+            b_st.site = &el_emlrtRSI;
             f_mtimes(&b_st, b_y, grad, a);
             a_data = a->data;
             loop_ub = Hg->size[0];
@@ -3905,22 +3907,22 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                 Hg_data[i1] += a_data[i1];
               }
             } else {
-              st.site = &jj_emlrtRSI;
+              st.site = &kj_emlrtRSI;
               b_plus(&st, Hg, a);
               Hg_data = Hg->data;
             }
-            st.site = &kj_emlrtRSI;
-            b_st.site = &wk_emlrtRSI;
+            st.site = &lj_emlrtRSI;
+            b_st.site = &xk_emlrtRSI;
             e_dynamic_size_checks(&b_st, Hg, grad, Hg->size[0], grad->size[0]);
             b_gamma = g_mtimes(Hg, grad);
-            st.site = &lj_emlrtRSI;
+            st.site = &mj_emlrtRSI;
             eye(&st, n, AIn);
             AIn_data = AIn->data;
             loop_ub = Hg->size[0];
             i1 = b_y->size[0] * b_y->size[1];
             b_y->size[0] = Hg->size[0];
             b_y->size[1] = grad->size[0];
-            emxEnsureCapacity_real_T(sp, b_y, i1, &qe_emlrtRTEI);
+            emxEnsureCapacity_real_T(sp, b_y, i1, &re_emlrtRTEI);
             y_data = b_y->data;
             for (i1 = 0; i1 < k; i1++) {
               scalarLB = (Hg->size[0] / 2) << 1;
@@ -3963,24 +3965,24 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                 AIn_data[i1] -= y_data[i1];
               }
             } else {
-              st.site = &lj_emlrtRSI;
+              st.site = &mj_emlrtRSI;
               minus(&st, AIn, b_y);
             }
-            st.site = &mj_emlrtRSI;
-            b_st.site = &wk_emlrtRSI;
+            st.site = &nj_emlrtRSI;
+            b_st.site = &xk_emlrtRSI;
             d_dynamic_size_checks(&b_st, AIn, H, AIn->size[1], H->size[0]);
-            b_st.site = &dl_emlrtRSI;
+            b_st.site = &el_emlrtRSI;
             d_mtimes(&b_st, AIn, H, b_y);
-            st.site = &mj_emlrtRSI;
-            b_st.site = &wk_emlrtRSI;
+            st.site = &nj_emlrtRSI;
+            b_st.site = &xk_emlrtRSI;
             d_dynamic_size_checks(&b_st, b_y, AIn, b_y->size[1], AIn->size[1]);
-            b_st.site = &dl_emlrtRSI;
+            b_st.site = &el_emlrtRSI;
             i_mtimes(&b_st, b_y, AIn, H);
             H_data = H->data;
             i1 = b_y->size[0] * b_y->size[1];
             b_y->size[0] = Hg->size[0];
             b_y->size[1] = Hg->size[0];
-            emxEnsureCapacity_real_T(sp, b_y, i1, &ue_emlrtRTEI);
+            emxEnsureCapacity_real_T(sp, b_y, i1, &ve_emlrtRTEI);
             y_data = b_y->data;
             for (i1 = 0; i1 < loop_ub; i1++) {
               scalarLB = (Hg->size[0] / 2) << 1;
@@ -4022,13 +4024,13 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                 H_data[i1] += y_data[i1];
               }
             } else {
-              st.site = &mj_emlrtRSI;
+              st.site = &nj_emlrtRSI;
               plus(&st, H, b_y);
               H_data = H->data;
             }
             b_H[0] = H->size[0];
             b_H[1] = H->size[1];
-            st.site = &nj_emlrtRSI;
+            st.site = &oj_emlrtRSI;
             b_eye(&st, b_H, AIn);
             AIn_data = AIn->data;
             loop_ub_tmp = AIn->size[0] * AIn->size[1];
@@ -4065,7 +4067,7 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
               k = AIn->size[1];
             }
             b_y->size[1] = k;
-            emxEnsureCapacity_real_T(sp, b_y, i1, &ve_emlrtRTEI);
+            emxEnsureCapacity_real_T(sp, b_y, i1, &we_emlrtRTEI);
             y_data = b_y->data;
             last = (H->size[0] != 1);
             scalarLB = (H->size[1] != 1);
@@ -4085,7 +4087,7 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
             i1 = AIn->size[0] * AIn->size[1];
             AIn->size[0] = loop_ub;
             AIn->size[1] = k;
-            emxEnsureCapacity_real_T(sp, AIn, i1, &ve_emlrtRTEI);
+            emxEnsureCapacity_real_T(sp, AIn, i1, &we_emlrtRTEI);
             AIn_data = AIn->data;
             for (i1 = 0; i1 < k; i1++) {
               for (i2 = 0; i2 < loop_ub; i2++) {
@@ -4093,10 +4095,10 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
                     y_data[i2 + b_y->size[0] * i1];
               }
             }
-            st.site = &nj_emlrtRSI;
+            st.site = &oj_emlrtRSI;
             if (!isPositiveDefinite(&st, AIn)) {
               exitFlag = HessianNotPositiveSemidefinite;
-              st.site = &oj_emlrtRSI;
+              st.site = &pj_emlrtRSI;
               *err = IKHelpers_evaluateSolution(&st, obj->ExtraArgs);
               exitg2 = 1;
             } else {
@@ -4104,25 +4106,25 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
             }
           }
           if (guard1) {
-            st.site = &pj_emlrtRSI;
+            st.site = &qj_emlrtRSI;
             if (f_DampedBFGSwGradientProjection(&st, obj, xSol)) {
               loop_ub = x->size[0];
               i = xSol->size[0];
               xSol->size[0] = x->size[0];
-              emxEnsureCapacity_real_T(sp, xSol, i, &se_emlrtRTEI);
+              emxEnsureCapacity_real_T(sp, xSol, i, &te_emlrtRTEI);
               xSol_data = xSol->data;
               for (i = 0; i < loop_ub; i++) {
                 xSol_data[i] = x_data[i];
               }
               exitFlag = SearchDirectionInvalid;
-              st.site = &qj_emlrtRSI;
+              st.site = &rj_emlrtRSI;
               *err = IKHelpers_evaluateSolution(&st, obj->ExtraArgs);
               exitg2 = 1;
             } else {
               loop_ub = xSol->size[0];
               i1 = x->size[0];
               x->size[0] = xSol->size[0];
-              emxEnsureCapacity_real_T(sp, x, i1, &re_emlrtRTEI);
+              emxEnsureCapacity_real_T(sp, x, i1, &se_emlrtRTEI);
               x_data = x->data;
               for (i1 = 0; i1 < loop_ub; i1++) {
                 x_data[i1] = xSol_data[i1];
@@ -4130,7 +4132,7 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
               loop_ub = gradNew->size[0];
               i1 = grad->size[0];
               grad->size[0] = gradNew->size[0];
-              emxEnsureCapacity_real_T(sp, grad, i1, &te_emlrtRTEI);
+              emxEnsureCapacity_real_T(sp, grad, i1, &ue_emlrtRTEI);
               grad_data = grad->data;
               for (i1 = 0; i1 < loop_ub; i1++) {
                 grad_data[i1] = gradNew_data[i1];
@@ -4143,7 +4145,7 @@ c_robotics_core_internal_NLPSol c_DampedBFGSwGradientProjection(
       }
     } else {
       exitFlag = IterationLimitExceeded;
-      st.site = &rj_emlrtRSI;
+      st.site = &sj_emlrtRSI;
       *err = IKHelpers_evaluateSolution(&st, obj->ExtraArgs);
       *iter = obj->MaxNumIterationInternal;
       exitg2 = 1;

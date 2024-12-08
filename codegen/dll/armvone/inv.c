@@ -2,13 +2,14 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: inv.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * inv.c
+ *
+ * Code generation for function 'inv'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "inv.h"
 #include "armvone_emxutil.h"
 #include "armvone_types.h"
@@ -16,11 +17,6 @@
 #include "xzgetrf.h"
 
 /* Function Definitions */
-/*
- * Arguments    : const emxArray_real_T *x
- *                emxArray_real_T *y
- * Return Type  : void
- */
 void inv(const emxArray_real_T *x, emxArray_real_T *y)
 {
   emxArray_int32_T *ipiv;
@@ -132,8 +128,4 @@ void inv(const emxArray_real_T *x, emxArray_real_T *y)
   }
 }
 
-/*
- * File trailer for inv.c
- *
- * [EOF]
- */
+/* End of code generation (inv.c) */

@@ -2,16 +2,17 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: armvone_terminate.h
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * armvone_terminate.h
+ *
+ * Code generation for function 'armvone_terminate'
+ *
  */
 
 #ifndef ARMVONE_TERMINATE_H
 #define ARMVONE_TERMINATE_H
 
-/* Include Files */
+/* Include files */
 #include "rtwtypes.h"
 #include <stddef.h>
 #include <stdlib.h>
@@ -28,8 +29,4 @@ extern void armvone_terminate(void);
 #endif
 
 #endif
-/*
- * File trailer for armvone_terminate.h
- *
- * [EOF]
- */
+/* End of code generation (armvone_terminate.h) */

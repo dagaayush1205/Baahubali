@@ -18,20 +18,18 @@
 #include <stddef.h>
 
 /* Variable Definitions */
-static emlrtRSInfo no_emlrtRSI =
-    {
-        60,             /* lineNo */
-        "ceval_xorgqr", /* fcnName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+lapack/"
-        "xorgqr.m" /* pathName */
+static emlrtRSInfo oo_emlrtRSI = {
+    60,             /* lineNo */
+    "ceval_xorgqr", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+lapack/"
+    "xorgqr.m" /* pathName */
 };
 
-static emlrtRSInfo po_emlrtRSI =
-    {
-        14,       /* lineNo */
-        "xorgqr", /* fcnName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+lapack/"
-        "xorgqr.m" /* pathName */
+static emlrtRSInfo qo_emlrtRSI = {
+    14,       /* lineNo */
+    "xorgqr", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+lapack/"
+    "xorgqr.m" /* pathName */
 };
 
 /* Function Definitions */
@@ -52,13 +50,13 @@ void xorgqr(const emlrtStack *sp, int32_T m, int32_T n, int32_T k,
   b_st.tls = st.tls;
   tau_data = tau->data;
   A_data = A->data;
-  st.site = &po_emlrtRSI;
+  st.site = &qo_emlrtRSI;
   if ((A->size[0] != 0) && (A->size[1] != 0)) {
     ptrdiff_t info_t;
     boolean_T p;
     info_t = LAPACKE_dorgqr(102, (ptrdiff_t)m, (ptrdiff_t)n, (ptrdiff_t)k,
                             &A_data[0], (ptrdiff_t)lda, (real_T *)&tau_data[0]);
-    b_st.site = &no_emlrtRSI;
+    b_st.site = &oo_emlrtRSI;
     if ((int32_T)info_t != 0) {
       boolean_T b_p;
       p = true;

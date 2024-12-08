@@ -2,22 +2,19 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: eml_rand_mt19937ar.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * eml_rand_mt19937ar.c
+ *
+ * Code generation for function 'eml_rand_mt19937ar'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "eml_rand_mt19937ar.h"
 #include "rt_nonfinite.h"
 #include <math.h>
 
 /* Function Definitions */
-/*
- * Arguments    : unsigned int b_state[625]
- * Return Type  : double
- */
 double b_eml_rand_mt19937ar(unsigned int b_state[625])
 {
   static const double dv[257] = {0.0,
@@ -748,10 +745,6 @@ double b_eml_rand_mt19937ar(unsigned int b_state[625])
   return r;
 }
 
-/*
- * Arguments    : unsigned int b_state[625]
- * Return Type  : void
- */
 void eml_rand_mt19937ar(unsigned int b_state[625])
 {
   int mti;
@@ -765,11 +758,6 @@ void eml_rand_mt19937ar(unsigned int b_state[625])
   b_state[624] = 624U;
 }
 
-/*
- * Arguments    : unsigned int mt[625]
- *                unsigned int u[2]
- * Return Type  : void
- */
 void genrand_uint32_vector(unsigned int mt[625], unsigned int u[2])
 {
   int j;
@@ -815,8 +803,4 @@ void genrand_uint32_vector(unsigned int mt[625], unsigned int u[2])
   }
 }
 
-/*
- * File trailer for eml_rand_mt19937ar.c
- *
- * [EOF]
- */
+/* End of code generation (eml_rand_mt19937ar.c) */

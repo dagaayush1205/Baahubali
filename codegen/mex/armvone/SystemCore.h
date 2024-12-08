@@ -25,7 +25,8 @@
 
 /* Function Declarations */
 void SystemCore_step(const emlrtStack *sp, inverseKinematics *obj,
-                     const real_T varargin_2[16], const struct_T varargin_4[6],
-                     emxArray_struct0_T *varargout_1);
+                     const real_T varargin_2[16],
+                     const b_struct_T varargin_4[6],
+                     emxArray_struct_T *varargout_1);
 
 /* End of code generation (SystemCore.h) */

@@ -2,16 +2,17 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: svd.h
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * svd.h
+ *
+ * Code generation for function 'svd'
+ *
  */
 
 #ifndef SVD_H
 #define SVD_H
 
-/* Include Files */
+/* Include files */
 #include "rtwtypes.h"
 #include <stddef.h>
 #include <stdlib.h>
@@ -28,8 +29,4 @@ void svd(const double A[9], double U[9], double s[3], double V[9]);
 #endif
 
 #endif
-/*
- * File trailer for svd.h
- *
- * [EOF]
- */
+/* End of code generation (svd.h) */

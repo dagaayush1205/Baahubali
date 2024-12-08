@@ -2,16 +2,17 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: DampedBFGSwGradientProjection.h
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * DampedBFGSwGradientProjection.h
+ *
+ * Code generation for function 'DampedBFGSwGradientProjection'
+ *
  */
 
 #ifndef DAMPEDBFGSWGRADIENTPROJECTION_H
 #define DAMPEDBFGSWGRADIENTPROJECTION_H
 
-/* Include Files */
+/* Include files */
 #include "armvone_internal_types.h"
 #include "armvone_types.h"
 #include "rtwtypes.h"
@@ -33,8 +34,4 @@ c_DampedBFGSwGradientProjection(c_robotics_core_internal_Damped *obj,
 #endif
 
 #endif
-/*
- * File trailer for DampedBFGSwGradientProjection.h
- *
- * [EOF]
- */
+/* End of code generation (DampedBFGSwGradientProjection.h) */

@@ -24,7 +24,7 @@ get_filename_component(START_DIR ../../.. ABSOLUTE)
 # by setting the variable from the command line, e.g.,
 # 
 # 	cmake . -DMATLAB_ROOT=/path/to/another/matlab/root
-set(MATLAB_ROOT /home/pritesh0/matlab24 CACHE PATH "")
+set(MATLAB_ROOT /home/ayush/Applications/matlab CACHE PATH "")
 
 ###########################################################################
 ## System Libraries
@@ -98,7 +98,6 @@ add_library(armvone SHARED ${MATLAB_ROOT}/toolbox/shared/robotics/externalDepend
     ${START_DIR}/codegen/dll/armvone/xzlascl.c
     ${START_DIR}/codegen/dll/armvone/div.c
     ${START_DIR}/codegen/dll/armvone/armvone_emxutil.c
-    ${START_DIR}/codegen/dll/armvone/armvone_emxAPI.c
     $<$<BOOL:${MSVC}>:${START_DIR}/codegen/dll/armvone/armvone.def>)
 
 # Set properties for target "armvone".

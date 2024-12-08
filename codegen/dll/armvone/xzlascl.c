@@ -2,13 +2,14 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: xzlascl.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * xzlascl.c
+ *
+ * Code generation for function 'xzlascl'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "xzlascl.h"
 #include "armvone_types.h"
 #include "rt_nonfinite.h"
@@ -16,12 +17,6 @@
 #include <math.h>
 
 /* Function Definitions */
-/*
- * Arguments    : double cfrom
- *                double cto
- *                double A[3]
- * Return Type  : void
- */
 void b_xzlascl(double cfrom, double cto, double A[3])
 {
   double cfromc;
@@ -53,15 +48,6 @@ void b_xzlascl(double cfrom, double cto, double A[3])
   }
 }
 
-/*
- * Arguments    : double cfrom
- *                double cto
- *                int m
- *                int n
- *                emxArray_real_T *A
- *                int lda
- * Return Type  : void
- */
 void c_xzlascl(double cfrom, double cto, int m, int n, emxArray_real_T *A,
                int lda)
 {
@@ -103,13 +89,6 @@ void c_xzlascl(double cfrom, double cto, int m, int n, emxArray_real_T *A,
   }
 }
 
-/*
- * Arguments    : double cfrom
- *                double cto
- *                int m
- *                emxArray_real_T *A
- * Return Type  : void
- */
 void d_xzlascl(double cfrom, double cto, int m, emxArray_real_T *A)
 {
   double cfromc;
@@ -152,12 +131,6 @@ void d_xzlascl(double cfrom, double cto, int m, emxArray_real_T *A)
   }
 }
 
-/*
- * Arguments    : double cfrom
- *                double cto
- *                double A[9]
- * Return Type  : void
- */
 void xzlascl(double cfrom, double cto, double A[9])
 {
   double cfromc;
@@ -193,8 +166,4 @@ void xzlascl(double cfrom, double cto, double A[9])
   }
 }
 
-/*
- * File trailer for xzlascl.c
- *
- * [EOF]
- */
+/* End of code generation (xzlascl.c) */

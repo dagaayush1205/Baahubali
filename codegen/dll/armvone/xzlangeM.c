@@ -2,13 +2,14 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: xzlangeM.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * xzlangeM.c
+ *
+ * Code generation for function 'xzlangeM'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "xzlangeM.h"
 #include "armvone_types.h"
 #include "rt_nonfinite.h"
@@ -16,10 +17,6 @@
 #include <math.h>
 
 /* Function Definitions */
-/*
- * Arguments    : const emxArray_real_T *x
- * Return Type  : double
- */
 double b_xzlangeM(const emxArray_real_T *x)
 {
   const double *x_data;
@@ -58,10 +55,6 @@ double b_xzlangeM(const emxArray_real_T *x)
   return y;
 }
 
-/*
- * Arguments    : const double x[9]
- * Return Type  : double
- */
 double xzlangeM(const double x[9])
 {
   double y;
@@ -86,8 +79,4 @@ double xzlangeM(const double x[9])
   return y;
 }
 
-/*
- * File trailer for xzlangeM.c
- *
- * [EOF]
- */
+/* End of code generation (xzlangeM.c) */

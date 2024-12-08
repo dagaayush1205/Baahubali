@@ -17,21 +17,18 @@
 #include <emmintrin.h>
 
 /* Variable Definitions */
-static emlrtRSInfo
-    om_emlrtRSI =
-        {
-            31,      /* lineNo */
-            "xscal", /* fcnName */
-            "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+blas/"
-            "xscal.m" /* pathName */
+static emlrtRSInfo pm_emlrtRSI = {
+    31,      /* lineNo */
+    "xscal", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+blas/"
+    "xscal.m" /* pathName */
 };
 
-static emlrtRSInfo pm_emlrtRSI =
-    {
-        18,      /* lineNo */
-        "xscal", /* fcnName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+refblas/"
-        "xscal.m" /* pathName */
+static emlrtRSInfo qm_emlrtRSI = {
+    18,      /* lineNo */
+    "xscal", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+refblas/"
+    "xscal.m" /* pathName */
 };
 
 /* Function Definitions */
@@ -46,13 +43,13 @@ void b_xscal(const emlrtStack *sp, real_T a, real_T x[9], int32_T ix0)
   int32_T vectorUB;
   st.prev = sp;
   st.tls = sp->tls;
-  st.site = &om_emlrtRSI;
+  st.site = &pm_emlrtRSI;
   b_st.prev = &st;
   b_st.tls = st.tls;
   c_st.prev = &b_st;
   c_st.tls = b_st.tls;
   b = ix0 + 2;
-  b_st.site = &pm_emlrtRSI;
+  b_st.site = &qm_emlrtRSI;
   if ((ix0 <= ix0 + 2) && (ix0 + 2 > 2147483646)) {
     c_st.site = &rb_emlrtRSI;
     check_forloop_overflow_error(&c_st);
@@ -81,13 +78,13 @@ void c_xscal(const emlrtStack *sp, real_T x[9], int32_T ix0)
   int32_T vectorUB;
   st.prev = sp;
   st.tls = sp->tls;
-  st.site = &om_emlrtRSI;
+  st.site = &pm_emlrtRSI;
   b_st.prev = &st;
   b_st.tls = st.tls;
   c_st.prev = &b_st;
   c_st.tls = b_st.tls;
   b = ix0 + 2;
-  b_st.site = &pm_emlrtRSI;
+  b_st.site = &qm_emlrtRSI;
   if ((ix0 <= ix0 + 2) && (ix0 + 2 > 2147483646)) {
     c_st.site = &rb_emlrtRSI;
     check_forloop_overflow_error(&c_st);
@@ -123,13 +120,13 @@ void xscal(const emlrtStack *sp, int32_T n, real_T a, real_T x[9], int32_T ix0)
   int32_T vectorUB;
   st.prev = sp;
   st.tls = sp->tls;
-  st.site = &om_emlrtRSI;
+  st.site = &pm_emlrtRSI;
   b_st.prev = &st;
   b_st.tls = st.tls;
   c_st.prev = &b_st;
   c_st.tls = b_st.tls;
   b = (ix0 + n) - 1;
-  b_st.site = &pm_emlrtRSI;
+  b_st.site = &qm_emlrtRSI;
   if ((ix0 <= b) && (b > 2147483646)) {
     c_st.site = &rb_emlrtRSI;
     check_forloop_overflow_error(&c_st);

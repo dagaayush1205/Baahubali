@@ -2,16 +2,17 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: tic.h
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * tic.h
+ *
+ * Code generation for function 'tic'
+ *
  */
 
 #ifndef TIC_H
 #define TIC_H
 
-/* Include Files */
+/* Include files */
 #include "rtwtypes.h"
 #include <stddef.h>
 #include <stdlib.h>
@@ -28,8 +29,4 @@ double tic(double *tstart_tv_nsec);
 #endif
 
 #endif
-/*
- * File trailer for tic.h
- *
- * [EOF]
- */
+/* End of code generation (tic.h) */

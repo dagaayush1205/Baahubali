@@ -2,13 +2,14 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: minOrMax.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * minOrMax.c
+ *
+ * Code generation for function 'minOrMax'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "minOrMax.h"
 #include "armvone_emxutil.h"
 #include "armvone_types.h"
@@ -16,12 +17,6 @@
 #include "rt_nonfinite.h"
 
 /* Function Definitions */
-/*
- * Arguments    : const emxArray_real_T *in1
- *                const emxArray_real_T *in2
- *                int *out2
- * Return Type  : double
- */
 double binary_expand_op_10(const emxArray_real_T *in1,
                            const emxArray_real_T *in2, int *out2)
 {
@@ -56,11 +51,6 @@ double binary_expand_op_10(const emxArray_real_T *in1,
   return out1;
 }
 
-/*
- * Arguments    : const emxArray_real_T *x
- *                int *idx
- * Return Type  : double
- */
 double maximum(const emxArray_real_T *x, int *idx)
 {
   const double *x_data;
@@ -119,11 +109,6 @@ double maximum(const emxArray_real_T *x, int *idx)
   return ex;
 }
 
-/*
- * Arguments    : const emxArray_real_T *x
- *                int *idx
- * Return Type  : double
- */
 double minimum(const emxArray_real_T *x, int *idx)
 {
   const double *x_data;
@@ -182,8 +167,4 @@ double minimum(const emxArray_real_T *x, int *idx)
   return ex;
 }
 
-/*
- * File trailer for minOrMax.c
- *
- * [EOF]
- */
+/* End of code generation (minOrMax.c) */

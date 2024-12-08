@@ -2,16 +2,17 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: find.h
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * find.h
+ *
+ * Code generation for function 'find'
+ *
  */
 
 #ifndef FIND_H
 #define FIND_H
 
-/* Include Files */
+/* Include files */
 #include "armvone_types.h"
 #include "rtwtypes.h"
 #include <stddef.h>
@@ -32,8 +33,4 @@ void eml_find(const emxArray_boolean_T *x, emxArray_int32_T *i);
 #endif
 
 #endif
-/*
- * File trailer for find.h
- *
- * [EOF]
- */
+/* End of code generation (find.h) */

@@ -28,86 +28,88 @@
 #include <string.h>
 
 /* Variable Definitions */
-static emlrtRSInfo sj_emlrtRSI = {
+static emlrtRSInfo tj_emlrtRSI = {
     26,                      /* lineNo */
     "IKHelpers/computeCost", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/IKHelpers.m" /* pathName */
-};
-
-static emlrtRSInfo tj_emlrtRSI = {
-    32,                      /* lineNo */
-    "IKHelpers/computeCost", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/IKHelpers.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/IKHelpers.m" /* pathName */
 };
 
 static emlrtRSInfo uj_emlrtRSI = {
-    35,                      /* lineNo */
+    32,                      /* lineNo */
     "IKHelpers/computeCost", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/IKHelpers.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/IKHelpers.m" /* pathName */
 };
 
-static emlrtRSInfo gl_emlrtRSI = {
-    69,                    /* lineNo */
-    "IKHelpers/poseError", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/IKHelpers.m" /* pathName */
+static emlrtRSInfo vj_emlrtRSI = {
+    35,                      /* lineNo */
+    "IKHelpers/computeCost", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/IKHelpers.m" /* pathName */
 };
 
 static emlrtRSInfo hl_emlrtRSI = {
-    51,           /* lineNo */
-    "rotm2axang", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutilsint/+robotics/"
-    "+internal/rotm2axang.m" /* pathName */
+    69,                    /* lineNo */
+    "IKHelpers/poseError", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/IKHelpers.m" /* pathName */
 };
 
 static emlrtRSInfo il_emlrtRSI = {
+    51,           /* lineNo */
+    "rotm2axang", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutilsint/"
+    "+robotics/+internal/rotm2axang.m" /* pathName */
+};
+
+static emlrtRSInfo jl_emlrtRSI = {
     42,           /* lineNo */
     "rotm2axang", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutilsint/+robotics/"
-    "+internal/rotm2axang.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutilsint/"
+    "+robotics/+internal/rotm2axang.m" /* pathName */
 };
 
-static emlrtRSInfo kl_emlrtRSI = {
-    36,                                                           /* lineNo */
-    "svd",                                                        /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/svd.m" /* pathName */
-};
-
-static emlrtRSInfo ol_emlrtRSI = {
-    52,    /* lineNo */
+static emlrtRSInfo ll_emlrtRSI = {
+    36,    /* lineNo */
     "svd", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/svd.m" /* pathName
-                                                                      */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/svd.m" /* pathName
+                                                                           */
 };
 
-static emlrtRSInfo ql_emlrtRSI =
-    {
-        34,       /* lineNo */
-        "xgesvd", /* fcnName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+lapack/"
-        "xgesvd.m" /* pathName */
+static emlrtRSInfo
+    pl_emlrtRSI =
+        {
+            52,    /* lineNo */
+            "svd", /* fcnName */
+            "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/"
+            "svd.m" /* pathName */
 };
 
-static emlrtRSInfo to_emlrtRSI = {
+static emlrtRSInfo rl_emlrtRSI = {
+    34,       /* lineNo */
+    "xgesvd", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+lapack/"
+    "xgesvd.m" /* pathName */
+};
+
+static emlrtRSInfo uo_emlrtRSI = {
     47,                           /* lineNo */
     "IKHelpers/evaluateSolution", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/IKHelpers.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/IKHelpers.m" /* pathName */
 };
 
-static emlrtBCInfo xc_emlrtBCI = {
+static emlrtBCInfo ed_emlrtBCI = {
     -1,                    /* iFirst */
     -1,                    /* iLast */
     66,                    /* lineNo */
     23,                    /* colNo */
     "",                    /* aName */
     "IKHelpers/poseError", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/IKHelpers.m", /* pName */
-    0                        /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/IKHelpers.m", /* pName */
+    0                               /* checkKind */
 };
 
 static emlrtECInfo nb_emlrtECI = {
@@ -115,64 +117,64 @@ static emlrtECInfo nb_emlrtECI = {
     45,           /* lineNo */
     9,            /* colNo */
     "rotm2axang", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/robotics/robotutilsint/+robotics/"
-    "+internal/rotm2axang.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/robotics/robotutilsint/"
+    "+robotics/+internal/rotm2axang.m" /* pName */
 };
 
-static emlrtBCInfo yc_emlrtBCI = {
+static emlrtBCInfo fd_emlrtBCI = {
     -1,                    /* iFirst */
     -1,                    /* iLast */
     64,                    /* lineNo */
     23,                    /* colNo */
     "",                    /* aName */
     "IKHelpers/poseError", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/IKHelpers.m", /* pName */
-    0                        /* checkKind */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/IKHelpers.m", /* pName */
+    0                               /* checkKind */
 };
 
-static emlrtBCInfo ad_emlrtBCI = {
+static emlrtBCInfo gd_emlrtBCI = {
     -1,                    /* iFirst */
     -1,                    /* iLast */
     64,                    /* lineNo */
     19,                    /* colNo */
     "",                    /* aName */
     "IKHelpers/poseError", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/IKHelpers.m", /* pName */
-    0                        /* checkKind */
-};
-
-static emlrtRTEInfo if_emlrtRTEI = {
-    31,          /* lineNo */
-    13,          /* colNo */
-    "IKHelpers", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/IKHelpers.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/IKHelpers.m", /* pName */
+    0                               /* checkKind */
 };
 
 static emlrtRTEInfo jf_emlrtRTEI = {
-    33,          /* lineNo */
+    31,          /* lineNo */
     13,          /* colNo */
     "IKHelpers", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/IKHelpers.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/IKHelpers.m" /* pName */
 };
 
 static emlrtRTEInfo kf_emlrtRTEI = {
+    33,          /* lineNo */
+    13,          /* colNo */
+    "IKHelpers", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/IKHelpers.m" /* pName */
+};
+
+static emlrtRTEInfo lf_emlrtRTEI = {
     35,          /* lineNo */
     13,          /* colNo */
     "IKHelpers", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/IKHelpers.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/IKHelpers.m" /* pName */
 };
 
-static emlrtRTEInfo mf_emlrtRTEI = {
+static emlrtRTEInfo nf_emlrtRTEI = {
     35,          /* lineNo */
     30,          /* colNo */
     "IKHelpers", /* fName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/IKHelpers.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/IKHelpers.m" /* pName */
 };
 
 /* Function Definitions */
@@ -251,13 +253,13 @@ real_T IKHelpers_computeCost(const emlrtStack *sp, const emxArray_real_T *x,
     W[i] = (*b_args)->WeightMatrix[i];
   }
   cost = (*b_args)->BodyIndex;
-  st.site = &sj_emlrtRSI;
+  st.site = &tj_emlrtRSI;
   c_RigidBodyTree_efficientFKAndJ(&st, treeInternal, x, cost, T_data, T_size,
                                   Jac);
   loop_ub = 6 * Jac->size[1];
   i = Jac->size[0] * Jac->size[1];
   Jac->size[0] = 6;
-  emxEnsureCapacity_real_T(sp, Jac, i, &if_emlrtRTEI);
+  emxEnsureCapacity_real_T(sp, Jac, i, &jf_emlrtRTEI);
   Jac_data = Jac->data;
   scalarLB = (loop_ub / 2) << 1;
   vectorUB = scalarLB - 2;
@@ -268,30 +270,30 @@ real_T IKHelpers_computeCost(const emlrtStack *sp, const emxArray_real_T *x,
   for (i = scalarLB; i < loop_ub; i++) {
     Jac_data[i] = -Jac_data[i];
   }
-  st.site = &tj_emlrtRSI;
+  st.site = &uj_emlrtRSI;
   if (T_size[0] < 1) {
-    emlrtDynamicBoundsCheckR2012b(1, 1, T_size[0], &ad_emlrtBCI, &st);
+    emlrtDynamicBoundsCheckR2012b(1, 1, T_size[0], &gd_emlrtBCI, &st);
   }
   R_tmp[0] = 1;
   if (T_size[0] < 2) {
-    emlrtDynamicBoundsCheckR2012b(2, 1, 1, &ad_emlrtBCI, &st);
+    emlrtDynamicBoundsCheckR2012b(2, 1, 1, &gd_emlrtBCI, &st);
   }
   R_tmp[1] = 2;
   if (T_size[0] < 3) {
-    emlrtDynamicBoundsCheckR2012b(3, 1, 2, &ad_emlrtBCI, &st);
+    emlrtDynamicBoundsCheckR2012b(3, 1, 2, &gd_emlrtBCI, &st);
   }
   R_tmp[2] = 3;
   if (T_size[1] < 1) {
-    emlrtDynamicBoundsCheckR2012b(1, 1, T_size[1], &yc_emlrtBCI, &st);
+    emlrtDynamicBoundsCheckR2012b(1, 1, T_size[1], &fd_emlrtBCI, &st);
   }
   if (T_size[1] < 2) {
-    emlrtDynamicBoundsCheckR2012b(2, 1, 1, &yc_emlrtBCI, &st);
+    emlrtDynamicBoundsCheckR2012b(2, 1, 1, &fd_emlrtBCI, &st);
   }
   if (T_size[1] < 3) {
-    emlrtDynamicBoundsCheckR2012b(3, 1, 2, &yc_emlrtBCI, &st);
+    emlrtDynamicBoundsCheckR2012b(3, 1, 2, &fd_emlrtBCI, &st);
   }
   if (T_size[1] < 4) {
-    emlrtDynamicBoundsCheckR2012b(4, 1, 3, &xc_emlrtBCI, &st);
+    emlrtDynamicBoundsCheckR2012b(4, 1, 3, &ed_emlrtBCI, &st);
   }
   i = T_size[0];
   for (scalarLB = 0; scalarLB < 3; scalarLB++) {
@@ -310,7 +312,7 @@ real_T IKHelpers_computeCost(const emlrtStack *sp, const emxArray_real_T *x,
           q * T[3 * scalarLB + 2];
     }
   }
-  b_st.site = &gl_emlrtRSI;
+  b_st.site = &hl_emlrtRSI;
   cost = 0.5 * (((y[0] + y[4]) + y[8]) - 1.0);
   if (!(muDoubleScalarAbs(cost) > 1.0)) {
     u.re = muDoubleScalarAcos(cost);
@@ -378,7 +380,7 @@ real_T IKHelpers_computeCost(const emlrtStack *sp, const emxArray_real_T *x,
     T[0] = 1.0;
     T[4] = 1.0;
     T[8] = 1.0;
-    c_st.site = &il_emlrtRSI;
+    c_st.site = &jl_emlrtRSI;
     r = _mm_loadu_pd(&T[0]);
     r1 = _mm_loadu_pd(&y[0]);
     _mm_storeu_pd(&T[0], _mm_sub_pd(r, r1));
@@ -392,8 +394,8 @@ real_T IKHelpers_computeCost(const emlrtStack *sp, const emxArray_real_T *x,
     r1 = _mm_loadu_pd(&y[6]);
     _mm_storeu_pd(&T[6], _mm_sub_pd(r, r1));
     T[8] -= y[8];
-    d_st.site = &jl_emlrtRSI;
-    e_st.site = &ll_emlrtRSI;
+    d_st.site = &kl_emlrtRSI;
+    e_st.site = &ml_emlrtRSI;
     b_T.data = &T[0];
     b_iv[0] = 3;
     b_iv[1] = 3;
@@ -401,15 +403,15 @@ real_T IKHelpers_computeCost(const emlrtStack *sp, const emxArray_real_T *x,
     b_T.allocatedSize = 9;
     b_T.numDimensions = 2;
     b_T.canFreeData = false;
-    f_st.site = &ml_emlrtRSI;
+    f_st.site = &nl_emlrtRSI;
     rEQ0 = flatVectorAllOrAny(&f_st, &b_T);
     if (rEQ0) {
       real_T U[9];
-      d_st.site = &kl_emlrtRSI;
-      e_st.site = &ol_emlrtRSI;
-      f_st.site = &pl_emlrtRSI;
+      d_st.site = &ll_emlrtRSI;
+      e_st.site = &pl_emlrtRSI;
+      f_st.site = &ql_emlrtRSI;
       memcpy(&c_T[0], &T[0], 9U * sizeof(real_T));
-      g_st.site = &ql_emlrtRSI;
+      g_st.site = &rl_emlrtRSI;
       xzsvdc(&g_st, c_T, U, b_v, y);
     } else {
       for (i = 0; i < 9; i++) {
@@ -428,7 +430,7 @@ real_T IKHelpers_computeCost(const emlrtStack *sp, const emxArray_real_T *x,
   for (i = 0; i < 3; i++) {
     c_v[i] = b_v[i];
   }
-  c_st.site = &hl_emlrtRSI;
+  c_st.site = &il_emlrtRSI;
   normalizeRows(&c_st, c_v, b_v);
   e[0] = u.re * b_v[0];
   e[3] = Td[12] - T_data[T_size[0] * 3];
@@ -438,7 +440,7 @@ real_T IKHelpers_computeCost(const emlrtStack *sp, const emxArray_real_T *x,
   e[5] = Td[14] - T_data[T_size[0] * 3 + 2];
   i = (*b_args)->ErrTemp->size[0];
   (*b_args)->ErrTemp->size[0] = 6;
-  emxEnsureCapacity_real_T(sp, (*b_args)->ErrTemp, i, &jf_emlrtRTEI);
+  emxEnsureCapacity_real_T(sp, (*b_args)->ErrTemp, i, &kf_emlrtRTEI);
   for (i = 0; i < 6; i++) {
     (*b_args)->ErrTemp->data[i] = e[i];
   }
@@ -458,16 +460,16 @@ real_T IKHelpers_computeCost(const emlrtStack *sp, const emxArray_real_T *x,
     }
     b_y[i] = br_tmp_tmp;
   }
-  emxInit_real_T(sp, &c_y, 2, &mf_emlrtRTEI);
+  emxInit_real_T(sp, &c_y, 2, &nf_emlrtRTEI);
   y_data = c_y->data;
-  st.site = &uj_emlrtRSI;
-  b_st.site = &dl_emlrtRSI;
+  st.site = &vj_emlrtRSI;
+  b_st.site = &el_emlrtRSI;
   if (Jac->size[1] == 0) {
     c_y->size[0] = 1;
     c_y->size[1] = 0;
   } else {
-    c_st.site = &el_emlrtRSI;
-    d_st.site = &fl_emlrtRSI;
+    c_st.site = &fl_emlrtRSI;
+    d_st.site = &gl_emlrtRSI;
     TRANSB1 = 'N';
     TRANSA1 = 'N';
     cost = 1.0;
@@ -481,7 +483,7 @@ real_T IKHelpers_computeCost(const emlrtStack *sp, const emxArray_real_T *x,
     i = c_y->size[0] * c_y->size[1];
     c_y->size[0] = 1;
     c_y->size[1] = Jac->size[1];
-    emxEnsureCapacity_real_T(&d_st, c_y, i, &lf_emlrtRTEI);
+    emxEnsureCapacity_real_T(&d_st, c_y, i, &mf_emlrtRTEI);
     y_data = c_y->data;
     dgemm(&TRANSA1, &TRANSB1, &m_t, &n_t, &k_t, &cost, &b_y[0], &lda_t,
           &Jac_data[0], &ldb_t, &q, &y_data[0], &ldc_t);
@@ -489,7 +491,7 @@ real_T IKHelpers_computeCost(const emlrtStack *sp, const emxArray_real_T *x,
   loop_ub = c_y->size[1];
   i = (*b_args)->GradTemp->size[0];
   (*b_args)->GradTemp->size[0] = c_y->size[1];
-  emxEnsureCapacity_real_T(sp, (*b_args)->GradTemp, i, &kf_emlrtRTEI);
+  emxEnsureCapacity_real_T(sp, (*b_args)->GradTemp, i, &lf_emlrtRTEI);
   for (i = 0; i < loop_ub; i++) {
     (*b_args)->GradTemp->data[i] = y_data[i];
   }
@@ -513,8 +515,8 @@ real_T IKHelpers_evaluateSolution(const emlrtStack *sp,
   st.tls = sp->tls;
   b_st.prev = &st;
   b_st.tls = st.tls;
-  st.site = &to_emlrtRSI;
-  b_st.site = &wk_emlrtRSI;
+  st.site = &uo_emlrtRSI;
+  b_st.site = &xk_emlrtRSI;
   if (args->ErrTemp->size[0] != 6) {
     if (args->ErrTemp->size[0] == 1) {
       emlrtErrorWithMessageIdR2018a(

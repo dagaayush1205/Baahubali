@@ -2,13 +2,14 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: DampedBFGSwGradientProjection.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * DampedBFGSwGradientProjection.c
+ *
+ * Code generation for function 'DampedBFGSwGradientProjection'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "DampedBFGSwGradientProjection.h"
 #include "IKHelpers.h"
 #include "any.h"
@@ -77,11 +78,6 @@ static void minus(emxArray_real_T *in1, const emxArray_real_T *in2);
 static void plus(emxArray_real_T *in1, const emxArray_real_T *in2);
 
 /* Function Definitions */
-/*
- * Arguments    : emxArray_real_T *in1
- *                const emxArray_real_T *in2
- * Return Type  : void
- */
 static void b_minus(emxArray_real_T *in1, const emxArray_real_T *in2)
 {
   emxArray_real_T *b_in2;
@@ -119,12 +115,6 @@ static void b_minus(emxArray_real_T *in1, const emxArray_real_T *in2)
   emxFree_real_T(&b_in2);
 }
 
-/*
- * Arguments    : emxArray_boolean_T *in1
- *                const emxArray_real_T *in2
- *                const c_robotics_core_internal_Damped *in3
- * Return Type  : void
- */
 static void binary_expand_op_12(emxArray_boolean_T *in1,
                                 const emxArray_real_T *in2,
                                 const c_robotics_core_internal_Damped *in3)
@@ -154,16 +144,6 @@ static void binary_expand_op_12(emxArray_boolean_T *in1,
   }
 }
 
-/*
- * Arguments    : const emxArray_real_T *in1
- *                double in2
- *                const emxArray_real_T *in3
- *                c_robotics_core_internal_Damped *in4
- *                double in5[36]
- *                emxArray_real_T *in6
- *                c_robotics_manip_internal_IKExt **out2
- * Return Type  : double
- */
 static double binary_expand_op_2(const emxArray_real_T *in1, double in2,
                                  const emxArray_real_T *in3,
                                  c_robotics_core_internal_Damped *in4,
@@ -201,12 +181,6 @@ static double binary_expand_op_2(const emxArray_real_T *in1, double in2,
   return out1;
 }
 
-/*
- * Arguments    : emxArray_real_T *in1
- *                double in2
- *                const emxArray_real_T *in3
- * Return Type  : void
- */
 static void binary_expand_op_3(emxArray_real_T *in1, double in2,
                                const emxArray_real_T *in3)
 {
@@ -270,13 +244,6 @@ static void binary_expand_op_3(emxArray_real_T *in1, double in2,
   emxFree_real_T(&b_in1);
 }
 
-/*
- * Arguments    : emxArray_real_T *in1
- *                const emxArray_real_T *in2
- *                const emxArray_real_T *in3
- *                double in4
- * Return Type  : void
- */
 static void binary_expand_op_4(emxArray_real_T *in1, const emxArray_real_T *in2,
                                const emxArray_real_T *in3, double in4)
 {
@@ -363,14 +330,6 @@ static void binary_expand_op_4(emxArray_real_T *in1, const emxArray_real_T *in2,
   emxFree_real_T(&b_in2);
 }
 
-/*
- * Arguments    : emxArray_real_T *in1
- *                const emxArray_real_T *in2
- *                const emxArray_real_T *in3
- *                const emxArray_real_T *in4
- *                double in5
- * Return Type  : void
- */
 static void binary_expand_op_5(emxArray_real_T *in1, const emxArray_real_T *in2,
                                const emxArray_real_T *in3,
                                const emxArray_real_T *in4, double in5)
@@ -463,12 +422,6 @@ static void binary_expand_op_5(emxArray_real_T *in1, const emxArray_real_T *in2,
   emxFree_real_T(&b_in2);
 }
 
-/*
- * Arguments    : emxArray_real_T *in1
- *                double in2
- *                const emxArray_real_T *in3
- * Return Type  : void
- */
 static void binary_expand_op_6(emxArray_real_T *in1, double in2,
                                const emxArray_real_T *in3)
 {
@@ -507,13 +460,6 @@ static void binary_expand_op_6(emxArray_real_T *in1, double in2,
   emxFree_real_T(&b_in2);
 }
 
-/*
- * Arguments    : emxArray_real_T *in1
- *                const emxArray_real_T *in2
- *                double in3
- *                const emxArray_real_T *in4
- * Return Type  : void
- */
 static void binary_expand_op_7(emxArray_real_T *in1, const emxArray_real_T *in2,
                                double in3, const emxArray_real_T *in4)
 {
@@ -542,13 +488,6 @@ static void binary_expand_op_7(emxArray_real_T *in1, const emxArray_real_T *in2,
   }
 }
 
-/*
- * Arguments    : const c_robotics_core_internal_Damped *obj
- *                const emxArray_real_T *x
- *                emxArray_boolean_T *activeSet
- *                emxArray_real_T *A
- * Return Type  : void
- */
 static void d_DampedBFGSwGradientProjection(
     const c_robotics_core_internal_Damped *obj, const emxArray_real_T *x,
     emxArray_boolean_T *activeSet, emxArray_real_T *A)
@@ -802,11 +741,6 @@ static void d_DampedBFGSwGradientProjection(
   }
 }
 
-/*
- * Arguments    : const c_robotics_core_internal_Damped *obj
- *                const emxArray_real_T *xNew
- * Return Type  : boolean_T
- */
 static boolean_T
 e_DampedBFGSwGradientProjection(const c_robotics_core_internal_Damped *obj,
                                 const emxArray_real_T *xNew)
@@ -879,11 +813,6 @@ e_DampedBFGSwGradientProjection(const c_robotics_core_internal_Damped *obj,
   return flag;
 }
 
-/*
- * Arguments    : emxArray_real_T *in1
- *                const emxArray_real_T *in2
- * Return Type  : void
- */
 static void minus(emxArray_real_T *in1, const emxArray_real_T *in2)
 {
   emxArray_real_T *b_in1;
@@ -946,11 +875,6 @@ static void minus(emxArray_real_T *in1, const emxArray_real_T *in2)
   emxFree_real_T(&b_in1);
 }
 
-/*
- * Arguments    : emxArray_real_T *in1
- *                const emxArray_real_T *in2
- * Return Type  : void
- */
 static void plus(emxArray_real_T *in1, const emxArray_real_T *in2)
 {
   emxArray_real_T *b_in1;
@@ -1013,13 +937,6 @@ static void plus(emxArray_real_T *in1, const emxArray_real_T *in2)
   emxFree_real_T(&b_in1);
 }
 
-/*
- * Arguments    : c_robotics_core_internal_Damped *obj
- *                emxArray_real_T *xSol
- *                double *err
- *                double *iter
- * Return Type  : c_robotics_core_internal_NLPSol
- */
 c_robotics_core_internal_NLPSol
 c_DampedBFGSwGradientProjection(c_robotics_core_internal_Damped *obj,
                                 emxArray_real_T *xSol, double *err,
@@ -2307,8 +2224,4 @@ c_DampedBFGSwGradientProjection(c_robotics_core_internal_Damped *obj,
   return exitFlag;
 }
 
-/*
- * File trailer for DampedBFGSwGradientProjection.c
- *
- * [EOF]
- */
+/* End of code generation (DampedBFGSwGradientProjection.c) */

@@ -20,8 +20,8 @@
 static emlrtRSInfo bf_emlrtRSI = {
     164,         /* lineNo */
     "get_match", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/lang/validatestring.m" /* pathName
-                                                                            */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/lang/"
+    "validatestring.m" /* pathName */
 };
 
 /* Function Definitions */

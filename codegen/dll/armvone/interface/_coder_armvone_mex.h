@@ -2,16 +2,17 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: _coder_armvone_mex.h
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * _coder_armvone_mex.h
+ *
+ * Code generation for function 'armvone'
+ *
  */
 
 #ifndef _CODER_ARMVONE_MEX_H
 #define _CODER_ARMVONE_MEX_H
 
-/* Include Files */
+/* Include files */
 #include "emlrt.h"
 #include "mex.h"
 #include "tmwtypes.h"
@@ -34,8 +35,4 @@ void unsafe_armvone_mexFunction(int32_T nlhs, mxArray *plhs[1], int32_T nrhs,
 #endif
 
 #endif
-/*
- * File trailer for _coder_armvone_mex.h
- *
- * [EOF]
- */
+/* End of code generation (_coder_armvone_mex.h) */

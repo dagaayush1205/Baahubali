@@ -2,16 +2,17 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: norm.h
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * norm.h
+ *
+ * Code generation for function 'norm'
+ *
  */
 
 #ifndef NORM_H
 #define NORM_H
 
-/* Include Files */
+/* Include files */
 #include "armvone_types.h"
 #include "rtwtypes.h"
 #include <stddef.h>
@@ -29,8 +30,4 @@ double b_norm(const emxArray_real_T *x);
 #endif
 
 #endif
-/*
- * File trailer for norm.h
- *
- * [EOF]
- */
+/* End of code generation (norm.h) */

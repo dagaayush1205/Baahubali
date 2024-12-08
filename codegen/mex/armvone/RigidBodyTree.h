@@ -56,7 +56,7 @@ void c_RigidBodyTree_get_JointPositi(const emlrtStack *sp,
 
 void c_RigidBodyTree_validateConfigu(const emlrtStack *sp,
                                      e_robotics_manip_internal_Rigid *obj,
-                                     const struct_T Q[6],
+                                     const b_struct_T Q[6],
                                      emxArray_real_T *qvec);
 
 /* End of code generation (RigidBodyTree.h) */

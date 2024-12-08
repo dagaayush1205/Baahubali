@@ -2,10 +2,11 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: main.h
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * main.h
+ *
+ * Code generation for function 'main'
+ *
  */
 
 /*************************************************************************/
@@ -36,7 +37,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-/* Include Files */
+/* Include files */
 #include "rtwtypes.h"
 #include <stddef.h>
 #include <stdlib.h>
@@ -55,8 +56,4 @@ extern void main_armvone(void);
 #endif
 
 #endif
-/*
- * File trailer for main.h
- *
- * [EOF]
- */
+/* End of code generation (main.h) */

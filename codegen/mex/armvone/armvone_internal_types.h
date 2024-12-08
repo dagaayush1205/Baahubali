@@ -48,13 +48,13 @@ struct emxArray_char_T_1x14 {
 typedef struct emxArray_char_T_1x14 emxArray_char_T_1x14;
 #endif /* typedef_emxArray_char_T_1x14 */
 
-#ifndef typedef_struct_T
-#define typedef_struct_T
+#ifndef typedef_b_struct_T
+#define typedef_b_struct_T
 typedef struct {
   emxArray_char_T_1x14 JointName;
   real_T JointPosition;
-} struct_T;
-#endif /* typedef_struct_T */
+} b_struct_T;
+#endif /* typedef_b_struct_T */
 
 #ifndef typedef_b_rigidBodyTree
 #define typedef_b_rigidBodyTree

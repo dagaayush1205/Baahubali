@@ -2,16 +2,17 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: RigidBody.h
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * RigidBody.h
+ *
+ * Code generation for function 'RigidBody'
+ *
  */
 
 #ifndef RIGIDBODY_H
 #define RIGIDBODY_H
 
-/* Include Files */
+/* Include files */
 #include "armvone_types.h"
 #include "rtwtypes.h"
 #include <stddef.h>
@@ -61,8 +62,4 @@ f_RigidBody_RigidBody(c_robotics_manip_internal_Rigid *obj,
 #endif
 
 #endif
-/*
- * File trailer for RigidBody.h
- *
- * [EOF]
- */
+/* End of code generation (RigidBody.h) */

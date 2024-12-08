@@ -23,53 +23,54 @@
 #include <string.h>
 
 /* Variable Definitions */
-static emlrtRSInfo e_emlrtRSI = {
-    87,            /* lineNo */
-    "importrobot", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/importrobot.m" /* pathName
-                                                                         */
+static emlrtRSInfo e_emlrtRSI =
+    {
+        87,            /* lineNo */
+        "importrobot", /* fcnName */
+        "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/"
+        "importrobot.m" /* pathName */
 };
 
 static emlrtRSInfo n_emlrtRSI = {
     192,                           /* lineNo */
     "RigidBodyTree/RigidBodyTree", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo o_emlrtRSI = {
     182,                           /* lineNo */
     "RigidBodyTree/RigidBodyTree", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo p_emlrtRSI = {
     185,                           /* lineNo */
     "RigidBodyTree/RigidBodyTree", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo q_emlrtRSI = {
     201,                           /* lineNo */
     "RigidBodyTree/RigidBodyTree", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBodyTree.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBodyTree.m" /* pathName */
 };
 
 static emlrtRSInfo lb_emlrtRSI = {
     167,                   /* lineNo */
     "RigidBody/RigidBody", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBody.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBody.m" /* pathName */
 };
 
 static emlrtRSInfo mb_emlrtRSI = {
     168,                   /* lineNo */
     "RigidBody/RigidBody", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/robotics/robotmanip/+robotics/+manip/"
-    "+internal/RigidBody.m" /* pathName */
+    "/home/ayush/Applications/matlab/toolbox/robotics/robotmanip/+robotics/"
+    "+manip/+internal/RigidBody.m" /* pathName */
 };
 
 /* Function Definitions */
@@ -129,7 +130,7 @@ void importrobot(const emlrtStack *sp, d_robotics_manip_internal_Rigid *iobj_0,
       emlrtIntegerCheckR2012b(d, &xc_emlrtDCI, &d_st);
     }
     if (((int32_T)d < 1) || ((int32_T)d > 62)) {
-      emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 62, &se_emlrtBCI, &d_st);
+      emlrtDynamicBoundsCheckR2012b((int32_T)d, 1, 62, &ye_emlrtBCI, &d_st);
     }
   }
   iobj_0->NumBodies = 6.0;
@@ -222,7 +223,7 @@ void importrobot(const emlrtStack *sp, d_robotics_manip_internal_Rigid *iobj_0,
       emlrtIntegerCheckR2012b(s.Length, &c_emlrtDCI, &c_st);
     }
     if (((int32_T)s.Length < 1) || ((int32_T)s.Length > 200)) {
-      emlrtDynamicBoundsCheckR2012b((int32_T)s.Length, 1, 200, &c_emlrtBCI,
+      emlrtDynamicBoundsCheckR2012b((int32_T)s.Length, 1, 200, &i_emlrtBCI,
                                     &c_st);
     }
     loop_ub = (int32_T)s.Length;

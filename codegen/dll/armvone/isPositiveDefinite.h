@@ -2,16 +2,17 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: isPositiveDefinite.h
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * isPositiveDefinite.h
+ *
+ * Code generation for function 'isPositiveDefinite'
+ *
  */
 
 #ifndef ISPOSITIVEDEFINITE_H
 #define ISPOSITIVEDEFINITE_H
 
-/* Include Files */
+/* Include files */
 #include "armvone_types.h"
 #include "rtwtypes.h"
 #include <stddef.h>
@@ -29,8 +30,4 @@ boolean_T isPositiveDefinite(const emxArray_real_T *B);
 #endif
 
 #endif
-/*
- * File trailer for isPositiveDefinite.h
- *
- * [EOF]
- */
+/* End of code generation (isPositiveDefinite.h) */

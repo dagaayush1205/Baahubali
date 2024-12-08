@@ -2,16 +2,17 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: xrot.h
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * xrot.h
+ *
+ * Code generation for function 'xrot'
+ *
  */
 
 #ifndef XROT_H
 #define XROT_H
 
-/* Include Files */
+/* Include files */
 #include "rtwtypes.h"
 #include <stddef.h>
 #include <stdlib.h>
@@ -28,8 +29,4 @@ void xrot(double x[9], int ix0, int iy0, double c, double s);
 #endif
 
 #endif
-/*
- * File trailer for xrot.h
- *
- * [EOF]
- */
+/* End of code generation (xrot.h) */

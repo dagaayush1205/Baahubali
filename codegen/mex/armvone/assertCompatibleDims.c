@@ -20,8 +20,8 @@ static emlrtRTEInfo sb_emlrtRTEI = {
     13,                     /* lineNo */
     27,                     /* colNo */
     "assertCompatibleDims", /* fName */
-    "/home/pritesh0/matlab24/toolbox/shared/coder/coder/lib/+coder/+internal/"
-    "assertCompatibleDims.m" /* pName */
+    "/home/ayush/Applications/matlab/toolbox/shared/coder/coder/lib/+coder/"
+    "+internal/assertCompatibleDims.m" /* pName */
 };
 
 /* Function Definitions */

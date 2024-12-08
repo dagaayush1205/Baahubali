@@ -20,253 +20,199 @@
 #include "xorgqr.h"
 
 /* Variable Definitions */
-static emlrtRSInfo
-    jn_emlrtRSI =
-        {
-            21,       /* lineNo */
-            "eml_qr", /* fcnName */
-            "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/private/"
-            "eml_qr.m" /* pathName */
+static emlrtRSInfo kn_emlrtRSI = {
+    21,       /* lineNo */
+    "eml_qr", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/private/"
+    "eml_qr.m" /* pathName */
 };
 
-static emlrtRSInfo
-    kn_emlrtRSI =
-        {
-            102,       /* lineNo */
-            "qr_full", /* fcnName */
-            "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/private/"
-            "eml_qr.m" /* pathName */
+static emlrtRSInfo ln_emlrtRSI = {
+    102,       /* lineNo */
+    "qr_full", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/private/"
+    "eml_qr.m" /* pathName */
 };
 
-static emlrtRSInfo
-    ln_emlrtRSI =
-        {
-            103,       /* lineNo */
-            "qr_full", /* fcnName */
-            "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/private/"
-            "eml_qr.m" /* pathName */
+static emlrtRSInfo mn_emlrtRSI = {
+    103,       /* lineNo */
+    "qr_full", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/private/"
+    "eml_qr.m" /* pathName */
 };
 
-static emlrtRSInfo
-    mn_emlrtRSI =
-        {
-            107,       /* lineNo */
-            "qr_full", /* fcnName */
-            "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/private/"
-            "eml_qr.m" /* pathName */
+static emlrtRSInfo nn_emlrtRSI = {
+    107,       /* lineNo */
+    "qr_full", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/private/"
+    "eml_qr.m" /* pathName */
 };
 
-static emlrtRSInfo
-    nn_emlrtRSI =
-        {
-            108,       /* lineNo */
-            "qr_full", /* fcnName */
-            "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/private/"
-            "eml_qr.m" /* pathName */
+static emlrtRSInfo on_emlrtRSI = {
+    108,       /* lineNo */
+    "qr_full", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/private/"
+    "eml_qr.m" /* pathName */
 };
 
-static emlrtRSInfo
-    on_emlrtRSI =
-        {
-            113,       /* lineNo */
-            "qr_full", /* fcnName */
-            "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/private/"
-            "eml_qr.m" /* pathName */
+static emlrtRSInfo pn_emlrtRSI = {
+    113,       /* lineNo */
+    "qr_full", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/private/"
+    "eml_qr.m" /* pathName */
 };
 
-static emlrtRSInfo
-    pn_emlrtRSI =
-        {
-            115,       /* lineNo */
-            "qr_full", /* fcnName */
-            "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/private/"
-            "eml_qr.m" /* pathName */
+static emlrtRSInfo qn_emlrtRSI = {
+    115,       /* lineNo */
+    "qr_full", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/private/"
+    "eml_qr.m" /* pathName */
 };
 
-static emlrtRSInfo
-    qn_emlrtRSI =
-        {
-            121,       /* lineNo */
-            "qr_full", /* fcnName */
-            "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/private/"
-            "eml_qr.m" /* pathName */
+static emlrtRSInfo rn_emlrtRSI = {
+    121,       /* lineNo */
+    "qr_full", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/private/"
+    "eml_qr.m" /* pathName */
 };
 
-static emlrtRSInfo
-    rn_emlrtRSI =
-        {
-            122,       /* lineNo */
-            "qr_full", /* fcnName */
-            "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/private/"
-            "eml_qr.m" /* pathName */
+static emlrtRSInfo sn_emlrtRSI = {
+    122,       /* lineNo */
+    "qr_full", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/private/"
+    "eml_qr.m" /* pathName */
 };
 
-static emlrtRSInfo
-    sn_emlrtRSI =
-        {
-            125,       /* lineNo */
-            "qr_full", /* fcnName */
-            "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/private/"
-            "eml_qr.m" /* pathName */
+static emlrtRSInfo tn_emlrtRSI = {
+    125,       /* lineNo */
+    "qr_full", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/private/"
+    "eml_qr.m" /* pathName */
 };
 
-static emlrtRSInfo
-    tn_emlrtRSI =
-        {
-            129,       /* lineNo */
-            "qr_full", /* fcnName */
-            "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/private/"
-            "eml_qr.m" /* pathName */
+static emlrtRSInfo un_emlrtRSI = {
+    129,       /* lineNo */
+    "qr_full", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/private/"
+    "eml_qr.m" /* pathName */
 };
 
-static emlrtRSInfo
-    un_emlrtRSI =
-        {
-            132,       /* lineNo */
-            "qr_full", /* fcnName */
-            "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/private/"
-            "eml_qr.m" /* pathName */
+static emlrtRSInfo vn_emlrtRSI = {
+    132,       /* lineNo */
+    "qr_full", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/private/"
+    "eml_qr.m" /* pathName */
 };
 
-static emlrtRSInfo
-    vn_emlrtRSI =
-        {
-            136,       /* lineNo */
-            "qr_full", /* fcnName */
-            "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/private/"
-            "eml_qr.m" /* pathName */
+static emlrtRSInfo wn_emlrtRSI = {
+    136,       /* lineNo */
+    "qr_full", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/private/"
+    "eml_qr.m" /* pathName */
 };
 
-static emlrtRSInfo
-    wn_emlrtRSI =
-        {
-            137,       /* lineNo */
-            "qr_full", /* fcnName */
-            "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/private/"
-            "eml_qr.m" /* pathName */
+static emlrtRSInfo xn_emlrtRSI = {
+    137,       /* lineNo */
+    "qr_full", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/private/"
+    "eml_qr.m" /* pathName */
 };
 
-static emlrtRSInfo
-    xn_emlrtRSI =
-        {
-            140,       /* lineNo */
-            "qr_full", /* fcnName */
-            "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/private/"
-            "eml_qr.m" /* pathName */
+static emlrtRSInfo yn_emlrtRSI = {
+    140,       /* lineNo */
+    "qr_full", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/private/"
+    "eml_qr.m" /* pathName */
 };
 
-static emlrtRSInfo
-    yn_emlrtRSI =
-        {
-            144,       /* lineNo */
-            "qr_full", /* fcnName */
-            "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/private/"
-            "eml_qr.m" /* pathName */
+static emlrtRSInfo ao_emlrtRSI = {
+    144,       /* lineNo */
+    "qr_full", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/private/"
+    "eml_qr.m" /* pathName */
 };
 
-static emlrtRSInfo
-    ao_emlrtRSI =
-        {
-            145,       /* lineNo */
-            "qr_full", /* fcnName */
-            "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/private/"
-            "eml_qr.m" /* pathName */
+static emlrtRSInfo bo_emlrtRSI = {
+    145,       /* lineNo */
+    "qr_full", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/private/"
+    "eml_qr.m" /* pathName */
 };
 
-static emlrtRSInfo
-    bo_emlrtRSI =
-        {
-            149,       /* lineNo */
-            "qr_full", /* fcnName */
-            "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/private/"
-            "eml_qr.m" /* pathName */
+static emlrtRSInfo co_emlrtRSI = {
+    149,       /* lineNo */
+    "qr_full", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/private/"
+    "eml_qr.m" /* pathName */
 };
 
-static emlrtRSInfo
-    co_emlrtRSI =
-        {
-            150,       /* lineNo */
-            "qr_full", /* fcnName */
-            "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/private/"
-            "eml_qr.m" /* pathName */
+static emlrtRSInfo do_emlrtRSI = {
+    150,       /* lineNo */
+    "qr_full", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/private/"
+    "eml_qr.m" /* pathName */
 };
 
-static emlrtRSInfo
-    do_emlrtRSI =
-        {
-            151,       /* lineNo */
-            "qr_full", /* fcnName */
-            "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/private/"
-            "eml_qr.m" /* pathName */
+static emlrtRSInfo eo_emlrtRSI = {
+    151,       /* lineNo */
+    "qr_full", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/private/"
+    "eml_qr.m" /* pathName */
 };
 
-static emlrtRSInfo
-    oo_emlrtRSI =
-        {
-            202,        /* lineNo */
-            "unpackQR", /* fcnName */
-            "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/private/"
-            "eml_qr.m" /* pathName */
+static emlrtRSInfo po_emlrtRSI = {
+    202,        /* lineNo */
+    "unpackQR", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/private/"
+    "eml_qr.m" /* pathName */
 };
 
-static emlrtRTEInfo
-    pg_emlrtRTEI =
-        {
-            98,       /* lineNo */
-            20,       /* colNo */
-            "eml_qr", /* fName */
-            "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/private/"
-            "eml_qr.m" /* pName */
+static emlrtRTEInfo qg_emlrtRTEI = {
+    98,       /* lineNo */
+    20,       /* colNo */
+    "eml_qr", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/private/"
+    "eml_qr.m" /* pName */
 };
 
-static emlrtRTEInfo
-    qg_emlrtRTEI =
-        {
-            99,       /* lineNo */
-            20,       /* colNo */
-            "eml_qr", /* fName */
-            "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/private/"
-            "eml_qr.m" /* pName */
+static emlrtRTEInfo rg_emlrtRTEI = {
+    99,       /* lineNo */
+    20,       /* colNo */
+    "eml_qr", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/private/"
+    "eml_qr.m" /* pName */
 };
 
-static emlrtRTEInfo
-    rg_emlrtRTEI =
-        {
-            132,      /* lineNo */
-            10,       /* colNo */
-            "eml_qr", /* fName */
-            "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/private/"
-            "eml_qr.m" /* pName */
+static emlrtRTEInfo sg_emlrtRTEI = {
+    132,      /* lineNo */
+    10,       /* colNo */
+    "eml_qr", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/private/"
+    "eml_qr.m" /* pName */
 };
 
-static emlrtRTEInfo
-    sg_emlrtRTEI =
-        {
-            114,      /* lineNo */
-            31,       /* colNo */
-            "eml_qr", /* fName */
-            "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/private/"
-            "eml_qr.m" /* pName */
+static emlrtRTEInfo tg_emlrtRTEI = {
+    114,      /* lineNo */
+    31,       /* colNo */
+    "eml_qr", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/private/"
+    "eml_qr.m" /* pName */
 };
 
-static emlrtRTEInfo
-    tg_emlrtRTEI =
-        {
-            21,       /* lineNo */
-            30,       /* colNo */
-            "eml_qr", /* fName */
-            "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/private/"
-            "eml_qr.m" /* pName */
+static emlrtRTEInfo ug_emlrtRTEI = {
+    21,       /* lineNo */
+    30,       /* colNo */
+    "eml_qr", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/private/"
+    "eml_qr.m" /* pName */
 };
 
-static emlrtRTEInfo
-    ug_emlrtRTEI =
-        {
-            1,        /* lineNo */
-            20,       /* colNo */
-            "eml_qr", /* fName */
-            "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/matfun/private/"
-            "eml_qr.m" /* pName */
+static emlrtRTEInfo vg_emlrtRTEI = {
+    1,        /* lineNo */
+    20,       /* colNo */
+    "eml_qr", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/matfun/private/"
+    "eml_qr.m" /* pName */
 };
 
 /* Function Definitions */
@@ -297,25 +243,25 @@ void eml_qr(const emlrtStack *sp, const emxArray_real_T *A, emxArray_real_T *Q,
   c_st.tls = b_st.tls;
   A_data = A->data;
   emlrtHeapReferenceStackEnterFcnR2012b((emlrtConstCTX)sp);
-  st.site = &jn_emlrtRSI;
+  st.site = &kn_emlrtRSI;
   m_tmp = A->size[0];
   n = A->size[1] - 1;
   j = Q->size[0] * Q->size[1];
   Q->size[0] = A->size[0];
   Q->size[1] = A->size[0];
-  emxEnsureCapacity_real_T(&st, Q, j, &pg_emlrtRTEI);
+  emxEnsureCapacity_real_T(&st, Q, j, &qg_emlrtRTEI);
   Q_data = Q->data;
   j = R->size[0] * R->size[1];
   R->size[0] = A->size[0];
   R->size[1] = A->size[1];
-  emxEnsureCapacity_real_T(&st, R, j, &qg_emlrtRTEI);
+  emxEnsureCapacity_real_T(&st, R, j, &rg_emlrtRTEI);
   R_data = R->data;
-  emxInit_real_T(&st, &tau, 1, &ug_emlrtRTEI);
+  emxInit_real_T(&st, &tau, 1, &vg_emlrtRTEI);
   if (A->size[0] > A->size[1]) {
     int32_T loop_ub_tmp;
-    b_st.site = &kn_emlrtRSI;
+    b_st.site = &ln_emlrtRSI;
     for (j = 0; j <= n; j++) {
-      b_st.site = &ln_emlrtRSI;
+      b_st.site = &mn_emlrtRSI;
       if (m_tmp > 2147483646) {
         c_st.site = &rb_emlrtRSI;
         check_forloop_overflow_error(&c_st);
@@ -325,13 +271,13 @@ void eml_qr(const emlrtStack *sp, const emxArray_real_T *A, emxArray_real_T *Q,
       }
     }
     loop_ub_tmp = A->size[1] + 1;
-    b_st.site = &mn_emlrtRSI;
+    b_st.site = &nn_emlrtRSI;
     if ((A->size[1] + 1 <= A->size[0]) && (A->size[0] > 2147483646)) {
       c_st.site = &rb_emlrtRSI;
       check_forloop_overflow_error(&c_st);
     }
     for (j = loop_ub_tmp; j <= m_tmp; j++) {
-      b_st.site = &nn_emlrtRSI;
+      b_st.site = &on_emlrtRSI;
       if (m_tmp > 2147483646) {
         c_st.site = &rb_emlrtRSI;
         check_forloop_overflow_error(&c_st);
@@ -340,29 +286,29 @@ void eml_qr(const emlrtStack *sp, const emxArray_real_T *A, emxArray_real_T *Q,
         Q_data[i + Q->size[0] * (j - 1)] = 0.0;
       }
     }
-    emxInit_int32_T(&st, &jpvt1, 2, &ug_emlrtRTEI);
-    b_st.site = &on_emlrtRSI;
+    emxInit_int32_T(&st, &jpvt1, 2, &vg_emlrtRTEI);
+    b_st.site = &pn_emlrtRSI;
     xgeqp3(&b_st, Q, tau, jpvt1);
     jpvt1_data = jpvt1->data;
     Q_data = Q->data;
     j = E->size[0] * E->size[1];
     E->size[0] = 1;
     E->size[1] = A->size[1];
-    emxEnsureCapacity_int32_T(&st, E, j, &sg_emlrtRTEI);
+    emxEnsureCapacity_int32_T(&st, E, j, &tg_emlrtRTEI);
     E_data = E->data;
-    b_st.site = &pn_emlrtRSI;
+    b_st.site = &qn_emlrtRSI;
     for (j = 0; j <= n; j++) {
       E_data[j] = jpvt1_data[j];
     }
     emxFree_int32_T(&st, &jpvt1);
-    b_st.site = &qn_emlrtRSI;
+    b_st.site = &rn_emlrtRSI;
     for (j = 0; j <= n; j++) {
-      b_st.site = &rn_emlrtRSI;
+      b_st.site = &sn_emlrtRSI;
       for (i = 0; i <= j; i++) {
         R_data[i + R->size[0] * j] = Q_data[i + Q->size[0] * j];
       }
       loop_ub_tmp = j + 2;
-      b_st.site = &sn_emlrtRSI;
+      b_st.site = &tn_emlrtRSI;
       if ((j + 2 <= m_tmp) && (m_tmp > 2147483646)) {
         c_st.site = &rb_emlrtRSI;
         check_forloop_overflow_error(&c_st);
@@ -371,31 +317,31 @@ void eml_qr(const emlrtStack *sp, const emxArray_real_T *A, emxArray_real_T *Q,
         R_data[(i + R->size[0] * j) - 1] = 0.0;
       }
     }
-    b_st.site = &tn_emlrtRSI;
-    c_st.site = &oo_emlrtRSI;
+    b_st.site = &un_emlrtRSI;
+    c_st.site = &po_emlrtRSI;
     xorgqr(&c_st, A->size[0], A->size[0], A->size[1], Q, A->size[0], tau);
   } else {
     int32_T loop_ub_tmp;
-    emxInit_real_T(&st, &b_A, 2, &tg_emlrtRTEI);
+    emxInit_real_T(&st, &b_A, 2, &ug_emlrtRTEI);
     j = b_A->size[0] * b_A->size[1];
     b_A->size[0] = A->size[0];
     b_A->size[1] = A->size[1];
-    emxEnsureCapacity_real_T(&st, b_A, j, &rg_emlrtRTEI);
+    emxEnsureCapacity_real_T(&st, b_A, j, &sg_emlrtRTEI);
     b_A_data = b_A->data;
     loop_ub_tmp = A->size[0] * A->size[1];
     for (j = 0; j < loop_ub_tmp; j++) {
       b_A_data[j] = A_data[j];
     }
-    b_st.site = &un_emlrtRSI;
+    b_st.site = &vn_emlrtRSI;
     xgeqp3(&b_st, b_A, tau, E);
     b_A_data = b_A->data;
-    b_st.site = &vn_emlrtRSI;
+    b_st.site = &wn_emlrtRSI;
     if (A->size[0] > 2147483646) {
       c_st.site = &rb_emlrtRSI;
       check_forloop_overflow_error(&c_st);
     }
     for (j = 0; j < m_tmp; j++) {
-      b_st.site = &wn_emlrtRSI;
+      b_st.site = &xn_emlrtRSI;
       if (j + 1 > 2147483646) {
         c_st.site = &rb_emlrtRSI;
         check_forloop_overflow_error(&c_st);
@@ -404,7 +350,7 @@ void eml_qr(const emlrtStack *sp, const emxArray_real_T *A, emxArray_real_T *Q,
         R_data[i + R->size[0] * j] = b_A_data[i + b_A->size[0] * j];
       }
       loop_ub_tmp = j + 2;
-      b_st.site = &xn_emlrtRSI;
+      b_st.site = &yn_emlrtRSI;
       if ((j + 2 <= m_tmp) && (m_tmp > 2147483646)) {
         c_st.site = &rb_emlrtRSI;
         check_forloop_overflow_error(&c_st);
@@ -414,13 +360,13 @@ void eml_qr(const emlrtStack *sp, const emxArray_real_T *A, emxArray_real_T *Q,
       }
     }
     loop_ub_tmp = A->size[0] + 1;
-    b_st.site = &yn_emlrtRSI;
+    b_st.site = &ao_emlrtRSI;
     if ((A->size[0] + 1 <= A->size[1]) && (A->size[1] > 2147483646)) {
       c_st.site = &rb_emlrtRSI;
       check_forloop_overflow_error(&c_st);
     }
     for (j = loop_ub_tmp; j <= n + 1; j++) {
-      b_st.site = &ao_emlrtRSI;
+      b_st.site = &bo_emlrtRSI;
       if (m_tmp > 2147483646) {
         c_st.site = &rb_emlrtRSI;
         check_forloop_overflow_error(&c_st);
@@ -429,13 +375,13 @@ void eml_qr(const emlrtStack *sp, const emxArray_real_T *A, emxArray_real_T *Q,
         R_data[i + R->size[0] * (j - 1)] = b_A_data[i + b_A->size[0] * (j - 1)];
       }
     }
-    b_st.site = &bo_emlrtRSI;
-    c_st.site = &oo_emlrtRSI;
+    b_st.site = &co_emlrtRSI;
+    c_st.site = &po_emlrtRSI;
     xorgqr(&c_st, A->size[0], A->size[0], A->size[0], b_A, A->size[0], tau);
     b_A_data = b_A->data;
-    b_st.site = &co_emlrtRSI;
+    b_st.site = &do_emlrtRSI;
     for (j = 0; j < m_tmp; j++) {
-      b_st.site = &do_emlrtRSI;
+      b_st.site = &eo_emlrtRSI;
       if (m_tmp > 2147483646) {
         c_st.site = &rb_emlrtRSI;
         check_forloop_overflow_error(&c_st);

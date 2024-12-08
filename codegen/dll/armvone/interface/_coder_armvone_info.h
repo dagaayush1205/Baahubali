@@ -2,16 +2,17 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: _coder_armvone_info.h
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * _coder_armvone_info.h
+ *
+ * Code generation for function 'armvone'
+ *
  */
 
 #ifndef _CODER_ARMVONE_INFO_H
 #define _CODER_ARMVONE_INFO_H
 
-/* Include Files */
+/* Include files */
 #include "mex.h"
 
 #ifdef __cplusplus
@@ -26,8 +27,4 @@ MEXFUNCTION_LINKAGE mxArray *emlrtMexFcnProperties(void);
 #endif
 
 #endif
-/*
- * File trailer for _coder_armvone_info.h
- *
- * [EOF]
- */
+/* End of code generation (_coder_armvone_info.h) */

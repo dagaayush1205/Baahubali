@@ -2,10 +2,11 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: main.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * main.c
+ *
+ * Code generation for function 'main'
+ *
  */
 
 /*************************************************************************/
@@ -33,13 +34,12 @@
 /*                                                                       */
 /*************************************************************************/
 
-/* Include Files */
+/* Include files */
 #include "main.h"
 #include "armvone.h"
-#include "armvone_emxAPI.h"
 #include "armvone_terminate.h"
-#include "armvone_types.h"
 #include "rt_nonfinite.h"
+#include <stdio.h>
 
 /* Function Declarations */
 static void argInit_1x3_real_T(double result[3]);
@@ -49,10 +49,6 @@ static void argInit_1x6_real_T(double result[6]);
 static double argInit_real_T(void);
 
 /* Function Definitions */
-/*
- * Arguments    : double result[3]
- * Return Type  : void
- */
 static void argInit_1x3_real_T(double result[3])
 {
   int idx1;
@@ -60,14 +56,10 @@ static void argInit_1x3_real_T(double result[3])
   for (idx1 = 0; idx1 < 3; idx1++) {
     /* Set the value of the array element.
 Change this value to the value that the application requires. */
-    result[idx1] = argInit_real_T();
+    scanf("%f",&result[idx1]);
   }
 }
 
-/*
- * Arguments    : double result[6]
- * Return Type  : void
- */
 static void argInit_1x6_real_T(double result[6])
 {
   int idx1;
@@ -75,24 +67,15 @@ static void argInit_1x6_real_T(double result[6])
   for (idx1 = 0; idx1 < 6; idx1++) {
     /* Set the value of the array element.
 Change this value to the value that the application requires. */
-    result[idx1] = argInit_real_T();
+    scanf("%f",&result[idx1]);
   }
 }
 
-/*
- * Arguments    : void
- * Return Type  : double
- */
 static double argInit_real_T(void)
 {
   return 0.0;
 }
 
-/*
- * Arguments    : int argc
- *                char **argv
- * Return Type  : int
- */
 int main(int argc, char **argv)
 {
   (void)argc;
@@ -108,28 +91,25 @@ You do not need to do this more than one time. */
   return 0;
 }
 
-/*
- * Arguments    : void
- * Return Type  : void
- */
 void main_armvone(void)
 {
-  emxArray_struct0_T *vone;
   double dv[6];
+  double vone_data[6];
   double dv1[3];
+  int vone_size[2];
   /* Initialize function 'armvone' input arguments. */
   /* Initialize function input argument 'q0'. */
   /* Initialize function input argument 'pos'. */
   /* Call the entry-point 'armvone'. */
-  emxInitArray_struct0_T(&vone, 2);
-  argInit_1x6_real_T(dv);
-  argInit_1x3_real_T(dv1);
-  armvone(dv, dv1, vone);
-  emxDestroyArray_struct0_T(vone);
+  for (int i = 0; i < 6; i++) scanf("%lf", dv+i);
+  for (int i = 0; i < 3; i++) scanf("%lf", dv1+i);
+  // scanf("%lf", dv+0);
+  // printf("Got %.3f \n", dv[0]);
+  // argInit_1x6_real_T(dv);
+  // argInit_1x3_real_T(dv1);
+  armvone(dv, dv1, vone_data, vone_size);
+  for(int i=0 ; i<6 ; i++)
+  printf("%f\n", vone_data[i]);
 }
 
-/*
- * File trailer for main.c
- *
- * [EOF]
- */
+/* End of code generation (main.c) */

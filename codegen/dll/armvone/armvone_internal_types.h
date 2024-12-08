@@ -2,16 +2,17 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: armvone_internal_types.h
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * armvone_internal_types.h
+ *
+ * Code generation for function 'armvone'
+ *
  */
 
 #ifndef ARMVONE_INTERNAL_TYPES_H
 #define ARMVONE_INTERNAL_TYPES_H
 
-/* Include Files */
+/* Include files */
 #include "armvone_types.h"
 #include "rtwtypes.h"
 
@@ -47,13 +48,13 @@ struct emxArray_char_T_1x14 {
 typedef struct emxArray_char_T_1x14 emxArray_char_T_1x14;
 #endif /* typedef_emxArray_char_T_1x14 */
 
-#ifndef typedef_struct_T
-#define typedef_struct_T
+#ifndef typedef_b_struct_T
+#define typedef_b_struct_T
 typedef struct {
   emxArray_char_T_1x14 JointName;
   double JointPosition;
-} struct_T;
-#endif /* typedef_struct_T */
+} b_struct_T;
+#endif /* typedef_b_struct_T */
 
 #ifndef typedef_b_rigidBodyTree
 #define typedef_b_rigidBodyTree
@@ -64,8 +65,4 @@ typedef struct {
 #endif /* typedef_b_rigidBodyTree */
 
 #endif
-/*
- * File trailer for armvone_internal_types.h
- *
- * [EOF]
- */
+/* End of code generation (armvone_internal_types.h) */

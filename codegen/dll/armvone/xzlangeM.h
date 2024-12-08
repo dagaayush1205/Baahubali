@@ -2,16 +2,17 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: xzlangeM.h
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * xzlangeM.h
+ *
+ * Code generation for function 'xzlangeM'
+ *
  */
 
 #ifndef XZLANGEM_H
 #define XZLANGEM_H
 
-/* Include Files */
+/* Include files */
 #include "armvone_types.h"
 #include "rtwtypes.h"
 #include <stddef.h>
@@ -31,8 +32,4 @@ double xzlangeM(const double x[9]);
 #endif
 
 #endif
-/*
- * File trailer for xzlangeM.h
- *
- * [EOF]
- */
+/* End of code generation (xzlangeM.h) */

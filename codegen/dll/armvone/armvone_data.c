@@ -2,13 +2,14 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: armvone_data.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * armvone_data.c
+ *
+ * Code generation for function 'armvone_data'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "armvone_data.h"
 #include "rt_nonfinite.h"
 
@@ -44,8 +45,4 @@ const char cv9[10] = {'d', 'u', 'm', 'm', 'y', 'b', 'o', 'd', 'y', '6'};
 
 boolean_T isInitialized_armvone = false;
 
-/*
- * File trailer for armvone_data.c
- *
- * [EOF]
- */
+/* End of code generation (armvone_data.c) */

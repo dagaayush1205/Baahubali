@@ -2,13 +2,14 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: xgeqp3.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * xgeqp3.c
+ *
+ * Code generation for function 'xgeqp3'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "xgeqp3.h"
 #include "armvone_emxutil.h"
 #include "armvone_types.h"
@@ -19,12 +20,6 @@
 #include <math.h>
 
 /* Function Definitions */
-/*
- * Arguments    : emxArray_real_T *A
- *                emxArray_real_T *tau
- *                emxArray_int32_T *jpvt
- * Return Type  : void
- */
 void xgeqp3(emxArray_real_T *A, emxArray_real_T *tau, emxArray_int32_T *jpvt)
 {
   static const int offsets[4] = {0, 1, 2, 3};
@@ -371,8 +366,4 @@ void xgeqp3(emxArray_real_T *A, emxArray_real_T *tau, emxArray_int32_T *jpvt)
   emxFree_real_T(&work);
 }
 
-/*
- * File trailer for xgeqp3.c
- *
- * [EOF]
- */
+/* End of code generation (xgeqp3.c) */

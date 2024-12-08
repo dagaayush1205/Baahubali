@@ -16,35 +16,37 @@
 #include "mwmathutil.h"
 
 /* Variable Definitions */
-static emlrtRSInfo gs_emlrtRSI = {
-    114,     /* lineNo */
-    "randn", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/randfun/randn.m" /* pathName
-                                                                      */
-};
-
-static emlrtRSInfo qs_emlrtRSI =
-    {
-        20,                /* lineNo */
-        "zerosWithChecks", /* fcnName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/"
-        "zerosWithChecks.m" /* pathName */
+static emlrtRSInfo
+    hs_emlrtRSI =
+        {
+            114,     /* lineNo */
+            "randn", /* fcnName */
+            "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/randfun/"
+            "randn.m" /* pathName */
 };
 
 static emlrtRSInfo rs_emlrtRSI = {
-    139,                 /* lineNo */
-    "extrinsicRandnGen", /* fcnName */
-    "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/randfun/randn.m" /* pathName
-                                                                      */
+    20,                /* lineNo */
+    "zerosWithChecks", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/"
+    "zerosWithChecks.m" /* pathName */
 };
 
-static emlrtRTEInfo vb_emlrtRTEI =
-    {
-        13,              /* lineNo */
-        27,              /* colNo */
-        "mustBeInteger", /* fName */
-        "/home/pritesh0/matlab24/toolbox/eml/lib/matlab/validators/"
-        "mustBeInteger.m" /* pName */
+static emlrtRSInfo
+    ss_emlrtRSI =
+        {
+            139,                 /* lineNo */
+            "extrinsicRandnGen", /* fcnName */
+            "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/randfun/"
+            "randn.m" /* pathName */
+};
+
+static emlrtRTEInfo vb_emlrtRTEI = {
+    13,              /* lineNo */
+    27,              /* colNo */
+    "mustBeInteger", /* fName */
+    "/home/ayush/Applications/matlab/toolbox/eml/lib/matlab/validators/"
+    "mustBeInteger.m" /* pName */
 };
 
 /* Function Definitions */
@@ -58,13 +60,13 @@ int32_T randn(const emlrtStack *sp, const real_T varargin_1[2], real_T r_data[])
   boolean_T p;
   st.prev = sp;
   st.tls = sp->tls;
-  st.site = &gs_emlrtRSI;
+  st.site = &hs_emlrtRSI;
   b_st.prev = &st;
   b_st.tls = st.tls;
   c_st.prev = &b_st;
   c_st.tls = b_st.tls;
-  b_st.site = &rs_emlrtRSI;
-  c_st.site = &qs_emlrtRSI;
+  b_st.site = &ss_emlrtRSI;
+  c_st.site = &rs_emlrtRSI;
   p = true;
   for (k = 0; k < 2; k++) {
     if (p) {

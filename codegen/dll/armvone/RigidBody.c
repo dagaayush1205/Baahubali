@@ -2,13 +2,14 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: RigidBody.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * RigidBody.c
+ *
+ * Code generation for function 'RigidBody'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "RigidBody.h"
 #include "CharacterVector.h"
 #include "CollisionSet.h"
@@ -21,13 +22,6 @@
 #include <string.h>
 
 /* Function Definitions */
-/*
- * Arguments    : c_robotics_manip_internal_Rigid *obj
- *                const char bodyInput[10]
- *                d_robotics_manip_internal_Colli *iobj_0
- *                rigidBodyJoint *iobj_1
- * Return Type  : c_robotics_manip_internal_Rigid *
- */
 c_robotics_manip_internal_Rigid *RigidBody_RigidBody(
     c_robotics_manip_internal_Rigid *obj, const char bodyInput[10],
     d_robotics_manip_internal_Colli *iobj_0, rigidBodyJoint *iobj_1)
@@ -338,13 +332,6 @@ c_robotics_manip_internal_Rigid *RigidBody_RigidBody(
   return b_obj;
 }
 
-/*
- * Arguments    : c_robotics_manip_internal_Rigid *obj
- *                d_robotics_manip_internal_Colli *iobj_0
- *                rigidBodyJoint *iobj_1
- *                c_robotics_manip_internal_Rigid *iobj_2
- * Return Type  : c_robotics_manip_internal_Rigid *
- */
 c_robotics_manip_internal_Rigid *
 RigidBody_copy(c_robotics_manip_internal_Rigid *obj,
                d_robotics_manip_internal_Colli *iobj_0, rigidBodyJoint *iobj_1,
@@ -825,12 +812,6 @@ RigidBody_copy(c_robotics_manip_internal_Rigid *obj,
   return newbody;
 }
 
-/*
- * Arguments    : c_robotics_manip_internal_Rigid *obj
- *                d_robotics_manip_internal_Colli *iobj_0
- *                rigidBodyJoint *iobj_1
- * Return Type  : c_robotics_manip_internal_Rigid *
- */
 c_robotics_manip_internal_Rigid *
 b_RigidBody_RigidBody(c_robotics_manip_internal_Rigid *obj,
                       d_robotics_manip_internal_Colli *iobj_0,
@@ -1190,12 +1171,6 @@ b_RigidBody_RigidBody(c_robotics_manip_internal_Rigid *obj,
   return b_obj;
 }
 
-/*
- * Arguments    : c_robotics_manip_internal_Rigid *obj
- *                d_robotics_manip_internal_Colli *iobj_0
- *                rigidBodyJoint *iobj_1
- * Return Type  : c_robotics_manip_internal_Rigid *
- */
 c_robotics_manip_internal_Rigid *
 c_RigidBody_RigidBody(c_robotics_manip_internal_Rigid *obj,
                       d_robotics_manip_internal_Colli *iobj_0,
@@ -1555,12 +1530,6 @@ c_RigidBody_RigidBody(c_robotics_manip_internal_Rigid *obj,
   return b_obj;
 }
 
-/*
- * Arguments    : c_robotics_manip_internal_Rigid *obj
- *                d_robotics_manip_internal_Colli *iobj_0
- *                rigidBodyJoint *iobj_1
- * Return Type  : c_robotics_manip_internal_Rigid *
- */
 c_robotics_manip_internal_Rigid *
 d_RigidBody_RigidBody(c_robotics_manip_internal_Rigid *obj,
                       d_robotics_manip_internal_Colli *iobj_0,
@@ -1919,12 +1888,6 @@ d_RigidBody_RigidBody(c_robotics_manip_internal_Rigid *obj,
   return b_obj;
 }
 
-/*
- * Arguments    : c_robotics_manip_internal_Rigid *obj
- *                d_robotics_manip_internal_Colli *iobj_0
- *                rigidBodyJoint *iobj_1
- * Return Type  : c_robotics_manip_internal_Rigid *
- */
 c_robotics_manip_internal_Rigid *
 e_RigidBody_RigidBody(c_robotics_manip_internal_Rigid *obj,
                       d_robotics_manip_internal_Colli *iobj_0,
@@ -2284,12 +2247,6 @@ e_RigidBody_RigidBody(c_robotics_manip_internal_Rigid *obj,
   return b_obj;
 }
 
-/*
- * Arguments    : c_robotics_manip_internal_Rigid *obj
- *                d_robotics_manip_internal_Colli *iobj_0
- *                rigidBodyJoint *iobj_1
- * Return Type  : c_robotics_manip_internal_Rigid *
- */
 c_robotics_manip_internal_Rigid *
 f_RigidBody_RigidBody(c_robotics_manip_internal_Rigid *obj,
                       d_robotics_manip_internal_Colli *iobj_0,
@@ -2649,8 +2606,4 @@ f_RigidBody_RigidBody(c_robotics_manip_internal_Rigid *obj,
   return b_obj;
 }
 
-/*
- * File trailer for RigidBody.c
- *
- * [EOF]
- */
+/* End of code generation (RigidBody.c) */

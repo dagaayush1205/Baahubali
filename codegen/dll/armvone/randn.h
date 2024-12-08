@@ -2,16 +2,17 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: randn.h
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * randn.h
+ *
+ * Code generation for function 'randn'
+ *
  */
 
 #ifndef RANDN_H
 #define RANDN_H
 
-/* Include Files */
+/* Include files */
 #include "rtwtypes.h"
 #include <stddef.h>
 #include <stdlib.h>
@@ -32,8 +33,4 @@ void randn(double r[4]);
 #endif
 
 #endif
-/*
- * File trailer for randn.h
- *
- * [EOF]
- */
+/* End of code generation (randn.h) */

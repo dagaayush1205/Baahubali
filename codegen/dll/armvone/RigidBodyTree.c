@@ -2,13 +2,14 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: RigidBodyTree.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * RigidBodyTree.c
+ *
+ * Code generation for function 'RigidBodyTree'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "RigidBodyTree.h"
 #include "CollisionSet.h"
 #include "RigidBody.h"
@@ -41,12 +42,6 @@ static void binary_expand_op_1(emxArray_boolean_T *in1,
 static int div_s32(int numerator, int denominator);
 
 /* Function Definitions */
-/*
- * Arguments    : e_robotics_manip_internal_Rigid *obj
- *                c_robotics_manip_internal_Rigid *body
- *                emxArray_real_T *indices
- * Return Type  : void
- */
 static void RigidBodyTree_ancestorIndices(e_robotics_manip_internal_Rigid *obj,
                                           c_robotics_manip_internal_Rigid *body,
                                           emxArray_real_T *indices)
@@ -80,12 +75,6 @@ static void RigidBodyTree_ancestorIndices(e_robotics_manip_internal_Rigid *obj,
   emxEnsureCapacity_real_T(indices, i);
 }
 
-/*
- * Arguments    : emxArray_boolean_T *in1
- *                const emxArray_real_T *in2
- *                const emxArray_real_T *in3
- * Return Type  : void
- */
 static void binary_expand_op(emxArray_boolean_T *in1,
                              const emxArray_real_T *in2,
                              const emxArray_real_T *in3)
@@ -116,12 +105,6 @@ static void binary_expand_op(emxArray_boolean_T *in1,
   }
 }
 
-/*
- * Arguments    : emxArray_boolean_T *in1
- *                const emxArray_real_T *in2
- *                const emxArray_real_T *in3
- * Return Type  : void
- */
 static void binary_expand_op_1(emxArray_boolean_T *in1,
                                const emxArray_real_T *in2,
                                const emxArray_real_T *in3)
@@ -153,11 +136,6 @@ static void binary_expand_op_1(emxArray_boolean_T *in1,
   }
 }
 
-/*
- * Arguments    : int numerator
- *                int denominator
- * Return Type  : int
- */
 static int div_s32(int numerator, int denominator)
 {
   int quotient;
@@ -190,10 +168,6 @@ static int div_s32(int numerator, int denominator)
   return quotient;
 }
 
-/*
- * Arguments    : e_robotics_manip_internal_Rigid *obj
- * Return Type  : e_robotics_manip_internal_Rigid *
- */
 e_robotics_manip_internal_Rigid *
 RigidBodyTree_RigidBodyTree(e_robotics_manip_internal_Rigid *obj)
 {
@@ -531,16 +505,6 @@ RigidBodyTree_RigidBodyTree(e_robotics_manip_internal_Rigid *obj)
   return b_obj;
 }
 
-/*
- * Arguments    : e_robotics_manip_internal_Rigid *obj
- *                c_robotics_manip_internal_Rigid *bodyin
- *                const char parentName_data[]
- *                const int parentName_size[2]
- *                d_robotics_manip_internal_Colli *iobj_0
- *                rigidBodyJoint *iobj_1
- *                c_robotics_manip_internal_Rigid *iobj_2
- * Return Type  : void
- */
 void RigidBodyTree_addBody(e_robotics_manip_internal_Rigid *obj,
                            c_robotics_manip_internal_Rigid *bodyin,
                            const char parentName_data[],
@@ -637,15 +601,6 @@ void RigidBodyTree_addBody(e_robotics_manip_internal_Rigid *obj,
   obj->VelocityNumber += jnt->VelocityNumber;
 }
 
-/*
- * Arguments    : e_robotics_manip_internal_Rigid *obj
- *                const emxArray_real_T *qv
- *                double bid1
- *                double T_data[]
- *                int T_size[2]
- *                emxArray_real_T *Jac
- * Return Type  : void
- */
 void c_RigidBodyTree_efficientFKAndJ(e_robotics_manip_internal_Rigid *obj,
                                      const emxArray_real_T *qv, double bid1,
                                      double T_data[], int T_size[2],
@@ -1301,12 +1256,6 @@ void c_RigidBodyTree_efficientFKAndJ(e_robotics_manip_internal_Rigid *obj,
   }
 }
 
-/*
- * Arguments    : e_robotics_manip_internal_Rigid *obj
- *                const char bodyname_data[]
- *                const int bodyname_size[2]
- * Return Type  : double
- */
 double c_RigidBodyTree_findBodyIndexBy(e_robotics_manip_internal_Rigid *obj,
                                        const char bodyname_data[],
                                        const int bodyname_size[2])
@@ -1373,11 +1322,6 @@ double c_RigidBodyTree_findBodyIndexBy(e_robotics_manip_internal_Rigid *obj,
   return bid;
 }
 
-/*
- * Arguments    : e_robotics_manip_internal_Rigid *obj
- *                emxArray_real_T *limits
- * Return Type  : void
- */
 void c_RigidBodyTree_get_JointPositi(e_robotics_manip_internal_Rigid *obj,
                                      emxArray_real_T *limits)
 {
@@ -1462,14 +1406,9 @@ void c_RigidBodyTree_get_JointPositi(e_robotics_manip_internal_Rigid *obj,
   }
 }
 
-/*
- * Arguments    : e_robotics_manip_internal_Rigid *obj
- *                const struct_T Q[6]
- *                emxArray_real_T *qvec
- * Return Type  : void
- */
 void c_RigidBodyTree_validateConfigu(e_robotics_manip_internal_Rigid *obj,
-                                     const struct_T Q[6], emxArray_real_T *qvec)
+                                     const b_struct_T Q[6],
+                                     emxArray_real_T *qvec)
 {
   static const char b_cv[5] = {'f', 'i', 'x', 'e', 'd'};
   c_robotics_manip_internal_Rigid *body;
@@ -1676,8 +1615,4 @@ void c_RigidBodyTree_validateConfigu(e_robotics_manip_internal_Rigid *obj,
   emxFree_real_T(&limits);
 }
 
-/*
- * File trailer for RigidBodyTree.c
- *
- * [EOF]
- */
+/* End of code generation (RigidBodyTree.c) */

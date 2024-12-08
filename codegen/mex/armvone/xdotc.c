@@ -16,38 +16,32 @@
 #include "rt_nonfinite.h"
 
 /* Variable Definitions */
-static emlrtRSInfo
-    qm_emlrtRSI =
-        {
-            32,      /* lineNo */
-            "xdotc", /* fcnName */
-            "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+blas/"
-            "xdotc.m" /* pathName */
+static emlrtRSInfo rm_emlrtRSI = {
+    32,      /* lineNo */
+    "xdotc", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+blas/"
+    "xdotc.m" /* pathName */
 };
 
-static emlrtRSInfo
-    rm_emlrtRSI =
-        {
-            35,     /* lineNo */
-            "xdot", /* fcnName */
-            "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+blas/"
-            "xdot.m" /* pathName */
+static emlrtRSInfo sm_emlrtRSI = {
+    35,     /* lineNo */
+    "xdot", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+blas/"
+    "xdot.m" /* pathName */
 };
 
-static emlrtRSInfo sm_emlrtRSI =
-    {
-        15,     /* lineNo */
-        "xdot", /* fcnName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+refblas/"
-        "xdot.m" /* pathName */
+static emlrtRSInfo tm_emlrtRSI = {
+    15,     /* lineNo */
+    "xdot", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+refblas/"
+    "xdot.m" /* pathName */
 };
 
-static emlrtRSInfo tm_emlrtRSI =
-    {
-        42,      /* lineNo */
-        "xdotx", /* fcnName */
-        "/home/pritesh0/matlab24/toolbox/eml/eml/+coder/+internal/+refblas/"
-        "xdotx.m" /* pathName */
+static emlrtRSInfo um_emlrtRSI = {
+    42,      /* lineNo */
+    "xdotx", /* fcnName */
+    "/home/ayush/Applications/matlab/toolbox/eml/eml/+coder/+internal/+refblas/"
+    "xdotx.m" /* pathName */
 };
 
 /* Function Definitions */
@@ -64,7 +58,7 @@ real_T xdotc(const emlrtStack *sp, int32_T n, const real_T x[9], int32_T ix0,
   int32_T k;
   st.prev = sp;
   st.tls = sp->tls;
-  st.site = &qm_emlrtRSI;
+  st.site = &rm_emlrtRSI;
   b_st.prev = &st;
   b_st.tls = st.tls;
   c_st.prev = &b_st;
@@ -73,10 +67,10 @@ real_T xdotc(const emlrtStack *sp, int32_T n, const real_T x[9], int32_T ix0,
   d_st.tls = c_st.tls;
   e_st.prev = &d_st;
   e_st.tls = d_st.tls;
-  b_st.site = &rm_emlrtRSI;
-  c_st.site = &sm_emlrtRSI;
+  b_st.site = &sm_emlrtRSI;
+  c_st.site = &tm_emlrtRSI;
   d = 0.0;
-  d_st.site = &tm_emlrtRSI;
+  d_st.site = &um_emlrtRSI;
   if (n > 2147483646) {
     e_st.site = &rb_emlrtRSI;
     check_forloop_overflow_error(&e_st);

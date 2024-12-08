@@ -26,12 +26,12 @@ static void armvone_once(void)
   covrtAllocateInstanceData(&emlrtCoverageInstance);
   /* Initialize Coverage Information */
   covrtScriptInit(&emlrtCoverageInstance,
-                  "/home/pritesh0/ayush/baahubali/armvone.m", 0U, 1U, 1U, 0U,
-                  0U, 0U, 0U, 0U, 0U, 0U, 0U);
+                  "/home/ayush/misc/baahubali/armvone.m", 0U, 1U, 1U, 0U, 0U,
+                  0U, 0U, 0U, 0U, 0U, 0U);
   /* Initialize Function Information */
-  covrtFcnInit(&emlrtCoverageInstance, 0U, 0U, "armvone", 0, -1, 993);
+  covrtFcnInit(&emlrtCoverageInstance, 0U, 0U, "armvone", 0, -1, 1124);
   /* Initialize Basic Block Information */
-  covrtBasicBlockInit(&emlrtCoverageInstance, 0U, 0U, 60, -1, 822);
+  covrtBasicBlockInit(&emlrtCoverageInstance, 0U, 0U, 60, -1, 1120);
   /* Initialize If Information */
   /* Initialize MCDC Information */
   /* Initialize For Information */

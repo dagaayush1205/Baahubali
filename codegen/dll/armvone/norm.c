@@ -2,23 +2,20 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: norm.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * norm.c
+ *
+ * Code generation for function 'norm'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "norm.h"
 #include "armvone_types.h"
 #include "rt_nonfinite.h"
 #include <math.h>
 
 /* Function Definitions */
-/*
- * Arguments    : const emxArray_real_T *x
- * Return Type  : double
- */
 double b_norm(const emxArray_real_T *x)
 {
   const double *x_data;
@@ -56,8 +53,4 @@ double b_norm(const emxArray_real_T *x)
   return y;
 }
 
-/*
- * File trailer for norm.c
- *
- * [EOF]
- */
+/* End of code generation (norm.c) */

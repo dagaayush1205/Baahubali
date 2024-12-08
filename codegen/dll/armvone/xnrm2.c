@@ -2,25 +2,20 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: xnrm2.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * xnrm2.c
+ *
+ * Code generation for function 'xnrm2'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "xnrm2.h"
 #include "armvone_types.h"
 #include "rt_nonfinite.h"
 #include <math.h>
 
 /* Function Definitions */
-/*
- * Arguments    : int n
- *                const emxArray_real_T *x
- *                int ix0
- * Return Type  : double
- */
 double b_xnrm2(int n, const emxArray_real_T *x, int ix0)
 {
   const double *x_data;
@@ -56,10 +51,6 @@ double b_xnrm2(int n, const emxArray_real_T *x, int ix0)
   return y;
 }
 
-/*
- * Arguments    : const double x[3]
- * Return Type  : double
- */
 double c_xnrm2(const double x[3])
 {
   double scale;
@@ -84,12 +75,6 @@ double c_xnrm2(const double x[3])
   return scale * sqrt(y);
 }
 
-/*
- * Arguments    : int n
- *                const double x[9]
- *                int ix0
- * Return Type  : double
- */
 double xnrm2(int n, const double x[9], int ix0)
 {
   double scale;
@@ -116,8 +101,4 @@ double xnrm2(int n, const double x[9], int ix0)
   return scale * sqrt(y);
 }
 
-/*
- * File trailer for xnrm2.c
- *
- * [EOF]
- */
+/* End of code generation (xnrm2.c) */

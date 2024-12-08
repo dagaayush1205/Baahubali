@@ -2,13 +2,14 @@
  * Sponsored License - for use in support of a program or activity
  * sponsored by MathWorks.  Not for government, commercial or other
  * non-sponsored organizational use.
- * File: SystemCore.c
  *
- * MATLAB Coder version            : 24.2
- * C/C++ source code generated on  : 05-Dec-2024 16:36:04
+ * SystemCore.c
+ *
+ * Code generation for function 'SystemCore'
+ *
  */
 
-/* Include Files */
+/* Include files */
 #include "SystemCore.h"
 #include "RigidBodyTree.h"
 #include "armvone_emxutil.h"
@@ -19,20 +20,13 @@
 #include "rt_nonfinite.h"
 
 /* Function Definitions */
-/*
- * Arguments    : inverseKinematics *obj
- *                const double varargin_2[16]
- *                const struct_T varargin_4[6]
- *                emxArray_struct0_T *varargout_1
- * Return Type  : void
- */
 void SystemCore_step(inverseKinematics *obj, const double varargin_2[16],
-                     const struct_T varargin_4[6],
-                     emxArray_struct0_T *varargout_1)
+                     const b_struct_T varargin_4[6],
+                     emxArray_struct_T *varargout_1)
 {
-  static const signed char b_iv[6] = {0, 0, 0, 1, 1, 1};
+  static const signed char b_iv[6] = {0, 0, 0, 1, 1, 0};
+  static const char b_cv[5] = {'p', 'i', 't', 'c', 'h'};
   static const char b_cv1[5] = {'f', 'i', 'x', 'e', 'd'};
-  static const char b_cv[4] = {'r', 'o', 'l', 'l'};
   c_robotics_manip_internal_IKExt *args;
   c_robotics_manip_internal_Rigid *c_obj;
   e_robotics_manip_internal_Rigid *b_obj;
@@ -293,11 +287,11 @@ void SystemCore_step(inverseKinematics *obj, const double varargin_2[16],
     i = (int)expl_temp;
   }
   b_bool = false;
-  if (i == 4) {
+  if (i == 5) {
     kstr = 0;
     do {
       exitg1 = 0;
-      if (kstr < 4) {
+      if (kstr < 5) {
         if (obj_Vector[kstr] != b_cv[kstr]) {
           exitg1 = 1;
         } else {
@@ -328,11 +322,11 @@ void SystemCore_step(inverseKinematics *obj, const double varargin_2[16],
         i = (int)expl_temp;
       }
       b_bool = false;
-      if (i == 4) {
+      if (i == 5) {
         kstr = 0;
         do {
           exitg1 = 0;
-          if (kstr < 4) {
+          if (kstr < 5) {
             if (obj_Vector[kstr] != b_cv[kstr]) {
               exitg1 = 1;
             } else {
@@ -371,8 +365,4 @@ void SystemCore_step(inverseKinematics *obj, const double varargin_2[16],
                           tmp_size, &expl_temp, &t_tmp, &n);
 }
 
-/*
- * File trailer for SystemCore.c
- *
- * [EOF]
- */
+/* End of code generation (SystemCore.c) */
