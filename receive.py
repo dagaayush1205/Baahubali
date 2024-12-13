@@ -25,15 +25,18 @@ class Out(ctypes.Structure):
               ("f",ctypes.c_double),
               ("g",ctypes.c_double),
               ("h",ctypes.c_double)]
+
 Sample_send = Out()
-Sample_send.a = 8.0
-Sample_send.b = 0.0
-Sample_send.c = 0.0
-Sample_send.d = 8.0
-Sample_send.e = 5.0
-Sample_send.f = 10.0
-Sample_send.g = 15.0
-Sample_send.h = 20.0
+def initialize():
+    Sample_send.a = 8.0
+    Sample_send.b = 0.0
+    Sample_send.c = 0.0
+    Sample_send.d = 8.0
+    Sample_send.e = 5.0
+    Sample_send.f = 10.0
+    Sample_send.g = 15.0
+    Sample_send.h = 20.0
+initialize()
 # output_buffer = (ctypes.c_int *("n",ctypes.c_int) 12)()
 #
 # class sample(ctypes.Structure):
@@ -45,13 +48,13 @@ Sample_send.h = 20.0
 # sample_encoding = cobs.encode(sample)
 # while True:
 #     # data = cobs.encode(in_bytes="hel")
-print("i am alive")
+
 output_buffer = bytes(66)
-sample_data = (1.0 , 2.0 , 3.0 , 4.0 , 5.0 , 6.0 , 7.0 , 8.0)
+sample_data = (1.0 , 2.0 , 3.0 , 3.0 , 5.0 , 6.0 , 7.0 , 8.0)
 sample_data_format = 'dddddddd'
 # print("OUTPUT BUFFER: ", output_buffer)
 encoded_data = cobs.encode(bytearray(Sample_send))
-print(list(encoded_data))
+# print(list(encoded_data))
 # encoded_data = encoded_data + bytes([0])
 # print(f"Cobs encoded data: {0:x}",encoded_data)
 # breakpoint()
@@ -66,11 +69,13 @@ print(list(encoded_data))
 # print(result.contents.a , result.contents.b , result.contents.c , result.contents.d , result.contents.e , result.contents.f , result.contents.g , result.contents.h)
 print("Writing data: ",encoded_data)
 while True:
-    # ser.setDTR(False)
-    # ser.setRTS(False)
     ser.write(encoded_data)
+# ser.setDTR(False)
+    # ser.setRTS(False)
+    # for x in encoded_data:
+    #     ser.write(x)
+    #     print(x)
     print("Sent")
-    time.sleep(5.0)
 # # print(unpack_data[1])
 #     #
 #     # try :
