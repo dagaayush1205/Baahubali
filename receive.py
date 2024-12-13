@@ -29,7 +29,7 @@ Sample_send = Out()
 Sample_send.a = 8.0
 Sample_send.b = 0.0
 Sample_send.c = 0.0
-Sample_send.d = 4.0
+Sample_send.d = 8.0
 Sample_send.e = 5.0
 Sample_send.f = 10.0
 Sample_send.g = 15.0
@@ -52,7 +52,7 @@ sample_data_format = 'dddddddd'
 # print("OUTPUT BUFFER: ", output_buffer)
 encoded_data = cobs.encode(bytearray(Sample_send))
 print(list(encoded_data))
-encoded_data = encoded_data + bytes([0])
+# encoded_data = encoded_data + bytes([0])
 # print(f"Cobs encoded data: {0:x}",encoded_data)
 # breakpoint()
 # decoded_data = cobs.decode(encoded_data)
@@ -65,15 +65,12 @@ encoded_data = encoded_data + bytes([0])
 #     print("success")
 # print(result.contents.a , result.contents.b , result.contents.c , result.contents.d , result.contents.e , result.contents.f , result.contents.g , result.contents.h)
 print("Writing data: ",encoded_data)
-ser.setDTR(True)
-ser.setRTS(True)
 while True:
+    # ser.setDTR(False)
+    # ser.setRTS(False)
     ser.write(encoded_data)
-    time.sleep(1.0)
     print("Sent")
-    ser.write(encoded_data)
-    print("Sent")
-    time.sleep(1.0)
+    time.sleep(5.0)
 # # print(unpack_data[1])
 #     #
 #     # try :
