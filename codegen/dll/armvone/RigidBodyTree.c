@@ -171,7 +171,7 @@ static int div_s32(int numerator, int denominator)
 e_robotics_manip_internal_Rigid *
 RigidBodyTree_RigidBodyTree(e_robotics_manip_internal_Rigid *obj)
 {
-  static const signed char iv3[12] = {0, 0, 0, 0, 0, 0, -1, -1, -1, -1, -1, -1};
+  static const signed char iv3[10] = {0, 0, 0, 0, 0, -1, -1, -1, -1, -1};
   static const char b_cv[8] = {'b', 'a', 's', 'e', '_', 'j', 'n', 't'};
   static const char b_cv2[8] = {'r', 'e', 'v', 'o', 'l', 'u', 't', 'e'};
   static const char b_cv3[8] = {'f', 'l', 'o', 'a', 't', 'i', 'n', 'g'};
@@ -279,7 +279,7 @@ RigidBodyTree_RigidBodyTree(e_robotics_manip_internal_Rigid *obj)
       do {
         exitg1 = 0;
         if (ibmat < 9) {
-          if (cv3[ibmat] != s.Vector[ibmat]) {
+          if (cv5[ibmat] != s.Vector[ibmat]) {
             exitg1 = 1;
           } else {
             ibmat++;
@@ -478,27 +478,25 @@ RigidBodyTree_RigidBodyTree(e_robotics_manip_internal_Rigid *obj)
       CollisionSet_CollisionSet(&b_obj->_pobj1[0], 0.0);
   b_obj->Base.matlabCodegenIsDeleted = false;
   b_obj->Base.Index = 0.0;
-  b_obj->Bodies[0] = RigidBody_RigidBody(&b_obj->_pobj0[0], cv4,
+  b_obj->Bodies[0] = RigidBody_RigidBody(&b_obj->_pobj0[0], cv6,
                                          &b_obj->_pobj1[1], &b_obj->_pobj2[1]);
-  b_obj->Bodies[1] = RigidBody_RigidBody(&b_obj->_pobj0[1], cv5,
+  b_obj->Bodies[1] = RigidBody_RigidBody(&b_obj->_pobj0[1], cv7,
                                          &b_obj->_pobj1[2], &b_obj->_pobj2[2]);
-  b_obj->Bodies[2] = RigidBody_RigidBody(&b_obj->_pobj0[2], cv6,
+  b_obj->Bodies[2] = RigidBody_RigidBody(&b_obj->_pobj0[2], cv8,
                                          &b_obj->_pobj1[3], &b_obj->_pobj2[3]);
-  b_obj->Bodies[3] = RigidBody_RigidBody(&b_obj->_pobj0[3], cv7,
+  b_obj->Bodies[3] = RigidBody_RigidBody(&b_obj->_pobj0[3], cv9,
                                          &b_obj->_pobj1[4], &b_obj->_pobj2[4]);
-  b_obj->Bodies[4] = RigidBody_RigidBody(&b_obj->_pobj0[4], cv8,
+  b_obj->Bodies[4] = RigidBody_RigidBody(&b_obj->_pobj0[4], cv10,
                                          &b_obj->_pobj1[5], &b_obj->_pobj2[5]);
-  b_obj->Bodies[5] = RigidBody_RigidBody(&b_obj->_pobj0[5], cv9,
-                                         &b_obj->_pobj1[6], &b_obj->_pobj2[6]);
   b_obj->NumBodies = 0.0;
   b_obj->NumNonFixedBodies = 0.0;
   b_obj->PositionNumber = 0.0;
   b_obj->VelocityNumber = 0.0;
   b_rand(unusedExpr);
-  for (i = 0; i < 12; i++) {
+  for (i = 0; i < 10; i++) {
     b_obj->PositionDoFMap[i] = iv3[i];
   }
-  for (i = 0; i < 12; i++) {
+  for (i = 0; i < 10; i++) {
     b_obj->VelocityDoFMap[i] = iv3[i];
   }
   b_obj->matlabCodegenIsDeleted = false;
@@ -580,20 +578,20 @@ void RigidBodyTree_addBody(e_robotics_manip_internal_Rigid *obj,
     jnt = body->JointInternal;
     loop_ub = (int)body->Index - 1;
     obj->PositionDoFMap[loop_ub] = obj->PositionNumber + 1.0;
-    obj->PositionDoFMap[loop_ub + 6] =
+    obj->PositionDoFMap[loop_ub + 5] =
         obj->PositionNumber + jnt->PositionNumber;
     jnt = body->JointInternal;
     loop_ub = (int)body->Index - 1;
     obj->VelocityDoFMap[loop_ub] = obj->VelocityNumber + 1.0;
-    obj->VelocityDoFMap[loop_ub + 6] =
+    obj->VelocityDoFMap[loop_ub + 5] =
         obj->VelocityNumber + jnt->VelocityNumber;
   } else {
     loop_ub = (int)body->Index;
     obj->PositionDoFMap[loop_ub - 1] = 0.0;
-    obj->PositionDoFMap[loop_ub + 5] = -1.0;
+    obj->PositionDoFMap[loop_ub + 4] = -1.0;
     loop_ub = (int)body->Index;
     obj->VelocityDoFMap[loop_ub - 1] = 0.0;
-    obj->VelocityDoFMap[loop_ub + 5] = -1.0;
+    obj->VelocityDoFMap[loop_ub + 4] = -1.0;
   }
   jnt = body->JointInternal;
   obj->PositionNumber += jnt->PositionNumber;
@@ -814,7 +812,7 @@ void c_RigidBodyTree_efficientFKAndJ(e_robotics_manip_internal_Rigid *obj,
             do {
               exitg2 = 0;
               if (minPathLength < 9) {
-                if (cv3[minPathLength] != obj_Vector[minPathLength]) {
+                if (cv5[minPathLength] != obj_Vector[minPathLength]) {
                   exitg2 = 1;
                 } else {
                   minPathLength++;
@@ -971,7 +969,7 @@ void c_RigidBodyTree_efficientFKAndJ(e_robotics_manip_internal_Rigid *obj,
         double qidx_idx_1;
         minPathLength = (int)nextBody->Index;
         qidx_idx_0 = obj->PositionDoFMap[minPathLength - 1];
-        qidx_idx_1 = obj->PositionDoFMap[minPathLength + 5];
+        qidx_idx_1 = obj->PositionDoFMap[minPathLength + 4];
         if (qidx_idx_0 > qidx_idx_1) {
           k = 0;
           b_i = 0;
@@ -990,7 +988,7 @@ void c_RigidBodyTree_efficientFKAndJ(e_robotics_manip_internal_Rigid *obj,
         c_rigidBodyJoint_transformBodyT(joint, b_qv, Tc2p);
         minPathLength = (int)nextBody->Index;
         qidx_idx_0 = obj->VelocityDoFMap[minPathLength - 1];
-        qidx_idx_1 = obj->VelocityDoFMap[minPathLength + 5];
+        qidx_idx_1 = obj->VelocityDoFMap[minPathLength + 4];
         if (nextBodyIsParent) {
           for (k = 0; k < 16; k++) {
             Tj[k] = joint->ChildToJointTransform[k];
@@ -1407,7 +1405,7 @@ void c_RigidBodyTree_get_JointPositi(e_robotics_manip_internal_Rigid *obj,
 }
 
 void c_RigidBodyTree_validateConfigu(e_robotics_manip_internal_Rigid *obj,
-                                     const b_struct_T Q[6],
+                                     const b_struct_T Q[5],
                                      emxArray_real_T *qvec)
 {
   static const char b_cv[5] = {'f', 'i', 'x', 'e', 'd'};
@@ -1483,7 +1481,7 @@ void c_RigidBodyTree_validateConfigu(e_robotics_manip_internal_Rigid *obj,
       idx = -2;
       kstr = 0;
       exitg2 = false;
-      while ((!exitg2) && (kstr < 6)) {
+      while ((!exitg2) && (kstr < 5)) {
         idx_idx_0 = jnt->NameInternal.Length;
         for (i1 = 0; i1 < 200; i1++) {
           obj_Vector[i1] = jnt->NameInternal.Vector[i1];
@@ -1508,7 +1506,7 @@ void c_RigidBodyTree_validateConfigu(e_robotics_manip_internal_Rigid *obj,
         }
       }
       idx_idx_0 = obj->PositionDoFMap[b_i];
-      idx_idx_1 = obj->PositionDoFMap[b_i + 6];
+      idx_idx_1 = obj->PositionDoFMap[b_i + 5];
       if (idx_idx_0 > idx_idx_1) {
         i1 = 0;
         kstr = 0;

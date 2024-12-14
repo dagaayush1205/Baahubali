@@ -110,7 +110,7 @@ void validatestring(const char str_data[], const int str_size[2],
         exitg1 = 0;
         if (u0 <= u1 - 1) {
           if (b_cv[(int)((unsigned char)str_data[u0] & 127U)] !=
-              b_cv[(int)cv3[u0]]) {
+              b_cv[(int)cv5[u0]]) {
             exitg1 = 1;
           } else {
             u0++;
@@ -125,13 +125,13 @@ void validatestring(const char str_data[], const int str_size[2],
           nmatched = 1;
           partial_match_size_idx_1 = 9;
           for (u0 = 0; u0 < 9; u0++) {
-            partial_match_data[u0] = cv3[u0];
+            partial_match_data[u0] = cv5[u0];
           }
         } else {
           if (!matched) {
             partial_match_size_idx_1 = 9;
             for (u0 = 0; u0 < 9; u0++) {
-              partial_match_data[u0] = cv3[u0];
+              partial_match_data[u0] = cv5[u0];
             }
           }
           matched = true;

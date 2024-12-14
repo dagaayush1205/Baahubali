@@ -28,7 +28,7 @@ c_emxEnsureCapacity_robotics_ma(c_emxArray_robotics_manip_inter *emxArray,
                                 int oldNumel);
 
 extern void
-c_emxFreeMatrix_robotics_manip_(d_robotics_manip_internal_Colli pMatrix[13]);
+c_emxFreeMatrix_robotics_manip_(d_robotics_manip_internal_Colli pMatrix[17]);
 
 extern void
 c_emxFreeStruct_robotics_core_i(c_robotics_core_internal_Damped *pStruct);
@@ -40,7 +40,7 @@ extern void
 c_emxFree_robotics_manip_intern(c_emxArray_robotics_manip_inter **pEmxArray);
 
 extern void
-c_emxInitMatrix_robotics_manip_(d_robotics_manip_internal_Colli pMatrix[13]);
+c_emxInitMatrix_robotics_manip_(d_robotics_manip_internal_Colli pMatrix[17]);
 
 extern void
 c_emxInitStruct_robotics_core_i(c_robotics_core_internal_Damped *pStruct);
@@ -52,19 +52,25 @@ extern void
 c_emxInit_robotics_manip_intern(c_emxArray_robotics_manip_inter **pEmxArray);
 
 extern void
-d_emxFreeMatrix_robotics_manip_(d_robotics_manip_internal_Colli pMatrix[7]);
+d_emxFreeMatrix_robotics_manip_(d_robotics_manip_internal_Colli pMatrix[11]);
 
 extern void
 d_emxFreeStruct_robotics_manip_(d_robotics_manip_internal_Rigid *pStruct);
 
 extern void
-d_emxInitMatrix_robotics_manip_(d_robotics_manip_internal_Colli pMatrix[7]);
+d_emxInitMatrix_robotics_manip_(d_robotics_manip_internal_Colli pMatrix[11]);
 
 extern void
 d_emxInitStruct_robotics_manip_(d_robotics_manip_internal_Colli *pStruct);
 
 extern void
+e_emxFreeMatrix_robotics_manip_(d_robotics_manip_internal_Colli pMatrix[6]);
+
+extern void
 e_emxFreeStruct_robotics_manip_(c_robotics_manip_internal_IKExt *pStruct);
+
+extern void
+e_emxInitMatrix_robotics_manip_(d_robotics_manip_internal_Colli pMatrix[6]);
 
 extern void
 e_emxInitStruct_robotics_manip_(c_robotics_manip_internal_IKExt *pStruct);

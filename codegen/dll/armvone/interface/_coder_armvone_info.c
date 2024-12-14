@@ -69,10 +69,11 @@ mxArray *emlrtMexFcnProperties(void)
   emlrtSetField(xEntryPoints, 0, "NumberOfOutputs",
                 emlrtMxCreateDoubleScalar(1.0));
   emlrtSetField(xEntryPoints, 0, "ConstantInputs", xInputs);
-  emlrtSetField(xEntryPoints, 0, "ResolvedFilePath",
-                emlrtMxCreateString("/home/ayush/misc/baahubali/armvone.m"));
+  emlrtSetField(
+      xEntryPoints, 0, "ResolvedFilePath",
+      emlrtMxCreateString("/home/ayush/Vibranium/baahubali/urdf/armvone.m"));
   emlrtSetField(xEntryPoints, 0, "TimeStamp",
-                emlrtMxCreateDoubleScalar(739593.61439814814));
+                emlrtMxCreateDoubleScalar(739600.87582175923));
   emlrtSetField(xEntryPoints, 0, "Constructor",
                 emlrtMxCreateLogicalScalar(false));
   emlrtSetField(xEntryPoints, 0, "Visible", emlrtMxCreateLogicalScalar(true));

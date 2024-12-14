@@ -27,7 +27,7 @@ extern "C" {
 #endif
 
 /* Function Declarations */
-void armvone(real_T q0[6], real_T pos[3], real_T vone_data[],
+void armvone(real_T q0[5], real_T pos[3], real_T vone_data[],
              int32_T vone_size[2]);
 
 void armvone_api(const mxArray *const prhs[2], const mxArray **plhs);

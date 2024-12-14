@@ -25,53 +25,50 @@
 #include "trvec2tform.h"
 
 /* Function Definitions */
-void armvone(const double q0[6], const double pos[3], double vone_data[],
+void armvone(const double q0[5], const double pos[3], double vone_data[],
              int vone_size[2])
 {
-  static const char t2_f5[8] = {'y', 'a', 'w', 'j', 'o', 'i', 'n', 't'};
-  static const char t2_f2[6] = {'j', 'o', 'i', 'n', 't', '1'};
-  static const char t2_f3[6] = {'j', 'o', 'i', 'n', 't', '2'};
   b_rigidBodyTree arm;
   b_rigidBodyTree *r;
-  b_struct_T rv[6];
+  b_struct_T rv[5];
   c_robotics_manip_internal_Rigid *obj;
   d_robotics_manip_internal_Rigid lobj_2;
   emxArray_struct_T *new;
   inverseKinematics ik;
   struct_T *new_data;
-  double C[6];
+  double C[5];
   int i;
   if (!isInitialized_armvone) {
     armvone_initialize();
   }
   c_emxInitStruct_robotics_manip_(&lobj_2);
   emxInitStruct_inverseKinematics(&ik);
-  for (i = 0; i < 13; i++) {
+  for (i = 0; i < 17; i++) {
     lobj_2._pobj0[i].matlabCodegenIsDeleted = true;
   }
-  for (i = 0; i < 7; i++) {
+  for (i = 0; i < 6; i++) {
     ik._pobj5._pobj1._pobj1[i].matlabCodegenIsDeleted = true;
   }
   ik._pobj5._pobj0.matlabCodegenIsDeleted = true;
-  for (i = 0; i < 7; i++) {
+  for (i = 0; i < 6; i++) {
     ik._pobj4._pobj1[i].matlabCodegenIsDeleted = true;
   }
-  for (i = 0; i < 13; i++) {
+  for (i = 0; i < 11; i++) {
     ik._pobj3[i].matlabCodegenIsDeleted = true;
   }
-  for (i = 0; i < 12; i++) {
+  for (i = 0; i < 10; i++) {
     lobj_2._pobj2[i].matlabCodegenIsDeleted = true;
   }
   lobj_2.Base.matlabCodegenIsDeleted = true;
-  for (i = 0; i < 6; i++) {
+  for (i = 0; i < 5; i++) {
     ik._pobj5._pobj1._pobj0[i].matlabCodegenIsDeleted = true;
   }
   ik._pobj5._pobj1.Base.matlabCodegenIsDeleted = true;
-  for (i = 0; i < 6; i++) {
+  for (i = 0; i < 5; i++) {
     ik._pobj4._pobj0[i].matlabCodegenIsDeleted = true;
   }
   ik._pobj4.Base.matlabCodegenIsDeleted = true;
-  for (i = 0; i < 6; i++) {
+  for (i = 0; i < 5; i++) {
     ik._pobj2[i].matlabCodegenIsDeleted = true;
   }
   lobj_2.matlabCodegenIsDeleted = true;
@@ -86,7 +83,7 @@ void armvone(const double q0[6], const double pos[3], double vone_data[],
   r = &arm;
   importrobot(&lobj_2, &r);
   /*  Define the initial joint configuration as an array */
-  for (i = 0; i < 6; i++) {
+  for (i = 0; i < 5; i++) {
     C[i] = q0[i];
   }
   double dv[16];
@@ -98,22 +95,20 @@ void armvone(const double q0[6], const double pos[3], double vone_data[],
   /*  Adjust as necessary for your DOF */
   /*  Solve the inverse kinematics */
   /* [newConfig, ~] = ik(endEffector, trvec2tform(pos), weights, qInitial); */
-  structConstructorHelper(cv, t2_f2, t2_f3, cv1, t2_f5, cv2, C, rv);
+  structConstructorHelper(cv, cv1, cv2, cv3, cv4, C, rv);
   emxInit_struct_T(&new);
   trvec2tform(pos, dv);
   SystemCore_step(&ik, dv, rv, new);
   new_data = new->data;
   /*  Extract the new joint positions and return as an array */
   /* vone = [newConfig.JointPosition]; */
-  printf("hello");
   vone_size[0] = 1;
-  vone_size[1] = 6;
+  vone_size[1] = 5;
   vone_data[0] = new_data[0].JointPosition.data[0];
   vone_data[1] = new_data[1].JointPosition.data[0];
   vone_data[2] = new_data[2].JointPosition.data[0];
   vone_data[3] = new_data[3].JointPosition.data[0];
   vone_data[4] = new_data[4].JointPosition.data[0];
-  vone_data[5] = new_data[5].JointPosition.data[0];
   emxFree_struct_T(&new);
   if (!ik._pobj5.matlabCodegenIsDeleted) {
     ik._pobj5.matlabCodegenIsDeleted = true;
@@ -137,7 +132,7 @@ void armvone(const double q0[6], const double pos[3], double vone_data[],
   if (!lobj_2.matlabCodegenIsDeleted) {
     lobj_2.matlabCodegenIsDeleted = true;
   }
-  for (i = 0; i < 6; i++) {
+  for (i = 0; i < 5; i++) {
     obj = &ik._pobj2[i];
     if (!obj->matlabCodegenIsDeleted) {
       obj->matlabCodegenIsDeleted = true;
@@ -146,7 +141,7 @@ void armvone(const double q0[6], const double pos[3], double vone_data[],
   if (!ik._pobj4.Base.matlabCodegenIsDeleted) {
     ik._pobj4.Base.matlabCodegenIsDeleted = true;
   }
-  for (i = 0; i < 6; i++) {
+  for (i = 0; i < 5; i++) {
     obj = &ik._pobj4._pobj0[i];
     if (!obj->matlabCodegenIsDeleted) {
       obj->matlabCodegenIsDeleted = true;
@@ -155,7 +150,7 @@ void armvone(const double q0[6], const double pos[3], double vone_data[],
   if (!ik._pobj5._pobj1.Base.matlabCodegenIsDeleted) {
     ik._pobj5._pobj1.Base.matlabCodegenIsDeleted = true;
   }
-  for (i = 0; i < 6; i++) {
+  for (i = 0; i < 5; i++) {
     obj = &ik._pobj5._pobj1._pobj0[i];
     if (!obj->matlabCodegenIsDeleted) {
       obj->matlabCodegenIsDeleted = true;
@@ -164,23 +159,23 @@ void armvone(const double q0[6], const double pos[3], double vone_data[],
   if (!lobj_2.Base.matlabCodegenIsDeleted) {
     lobj_2.Base.matlabCodegenIsDeleted = true;
   }
-  for (i = 0; i < 12; i++) {
+  for (i = 0; i < 10; i++) {
     obj = &lobj_2._pobj2[i];
     if (!obj->matlabCodegenIsDeleted) {
       obj->matlabCodegenIsDeleted = true;
     }
   }
-  for (i = 0; i < 13; i++) {
+  for (i = 0; i < 11; i++) {
     b_handle_matlabCodegenDestructo(&ik._pobj3[i]);
   }
-  for (i = 0; i < 7; i++) {
+  for (i = 0; i < 6; i++) {
     b_handle_matlabCodegenDestructo(&ik._pobj4._pobj1[i]);
   }
   b_handle_matlabCodegenDestructo(&ik._pobj5._pobj0);
-  for (i = 0; i < 7; i++) {
+  for (i = 0; i < 6; i++) {
     b_handle_matlabCodegenDestructo(&ik._pobj5._pobj1._pobj1[i]);
   }
-  for (i = 0; i < 13; i++) {
+  for (i = 0; i < 17; i++) {
     b_handle_matlabCodegenDestructo(&lobj_2._pobj0[i]);
   }
   emxFreeStruct_inverseKinematics(&ik);

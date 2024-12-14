@@ -21,12 +21,12 @@
 
 /* Function Definitions */
 void SystemCore_step(inverseKinematics *obj, const double varargin_2[16],
-                     const b_struct_T varargin_4[6],
+                     const b_struct_T varargin_4[5],
                      emxArray_struct_T *varargout_1)
 {
   static const signed char b_iv[6] = {0, 0, 0, 1, 1, 0};
-  static const char b_cv[5] = {'p', 'i', 't', 'c', 'h'};
   static const char b_cv1[5] = {'f', 'i', 'x', 'e', 'd'};
+  static const char b_cv[4] = {'r', 'o', 'l', 'l'};
   c_robotics_manip_internal_IKExt *args;
   c_robotics_manip_internal_Rigid *c_obj;
   e_robotics_manip_internal_Rigid *b_obj;
@@ -287,11 +287,11 @@ void SystemCore_step(inverseKinematics *obj, const double varargin_2[16],
     i = (int)expl_temp;
   }
   b_bool = false;
-  if (i == 5) {
+  if (i == 4) {
     kstr = 0;
     do {
       exitg1 = 0;
-      if (kstr < 5) {
+      if (kstr < 4) {
         if (obj_Vector[kstr] != b_cv[kstr]) {
           exitg1 = 1;
         } else {
@@ -322,11 +322,11 @@ void SystemCore_step(inverseKinematics *obj, const double varargin_2[16],
         i = (int)expl_temp;
       }
       b_bool = false;
-      if (i == 5) {
+      if (i == 4) {
         kstr = 0;
         do {
           exitg1 = 0;
-          if (kstr < 5) {
+          if (kstr < 4) {
             if (obj_Vector[kstr] != b_cv[kstr]) {
               exitg1 = 1;
             } else {

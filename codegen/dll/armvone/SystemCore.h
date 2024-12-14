@@ -25,7 +25,7 @@ extern "C" {
 
 /* Function Declarations */
 void SystemCore_step(inverseKinematics *obj, const double varargin_2[16],
-                     const b_struct_T varargin_4[6],
+                     const b_struct_T varargin_4[5],
                      emxArray_struct_T *varargout_1);
 
 #ifdef __cplusplus

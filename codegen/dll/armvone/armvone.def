@@ -4,12 +4,13 @@ DLL {
 		armvone_initialize;
 		armvone_terminate;
 		c_emxInitStruct_robotics_manip_;
+		c_emxInitMatrix_robotics_manip_;
 		emxInitStruct_inverseKinematics;
 		e_emxInitStruct_robotics_manip_;
-		c_emxInitMatrix_robotics_manip_;
+		d_emxInitMatrix_robotics_manip_;
 		emxInitStruct_rigidBodyTree;
 		f_emxInitStruct_robotics_manip_;
-		d_emxInitMatrix_robotics_manip_;
+		e_emxInitMatrix_robotics_manip_;
 		d_emxInitStruct_robotics_manip_;
 		c_emxInit_robotics_manip_intern;
 		c_emxInitStruct_robotics_core_i;
@@ -40,9 +41,10 @@ DLL {
 		emxFree_struct_T;
 		emxFreeStruct_inverseKinematics;
 		e_emxFreeStruct_robotics_manip_;
+		d_emxFreeMatrix_robotics_manip_;
 		emxFreeStruct_rigidBodyTree;
 		f_emxFreeStruct_robotics_manip_;
-		d_emxFreeMatrix_robotics_manip_;
+		e_emxFreeMatrix_robotics_manip_;
 		c_emxFreeStruct_robotics_core_i;
 		emxFree_real_T;
 		d_emxFreeStruct_robotics_manip_;

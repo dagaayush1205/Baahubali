@@ -237,13 +237,13 @@ typedef struct {
   double NumBodies;
   c_robotics_manip_internal_Rigid Base;
   double Gravity[3];
-  c_robotics_manip_internal_Rigid *Bodies[6];
+  c_robotics_manip_internal_Rigid *Bodies[5];
   double NumNonFixedBodies;
   double PositionNumber;
   double VelocityNumber;
-  d_robotics_manip_internal_Colli _pobj0[13];
-  rigidBodyJoint _pobj1[13];
-  c_robotics_manip_internal_Rigid _pobj2[12];
+  d_robotics_manip_internal_Colli _pobj0[17];
+  rigidBodyJoint _pobj1[11];
+  c_robotics_manip_internal_Rigid _pobj2[10];
 } d_robotics_manip_internal_Rigid;
 #endif /* d_typedef_d_robotics_manip_inte */
 
@@ -253,15 +253,15 @@ typedef struct {
   boolean_T matlabCodegenIsDeleted;
   double NumBodies;
   c_robotics_manip_internal_Rigid Base;
-  c_robotics_manip_internal_Rigid *Bodies[6];
+  c_robotics_manip_internal_Rigid *Bodies[5];
   double NumNonFixedBodies;
   double PositionNumber;
   double VelocityNumber;
-  double PositionDoFMap[12];
-  double VelocityDoFMap[12];
-  c_robotics_manip_internal_Rigid _pobj0[6];
-  d_robotics_manip_internal_Colli _pobj1[7];
-  rigidBodyJoint _pobj2[7];
+  double PositionDoFMap[10];
+  double VelocityDoFMap[10];
+  c_robotics_manip_internal_Rigid _pobj0[5];
+  d_robotics_manip_internal_Colli _pobj1[6];
+  rigidBodyJoint _pobj2[6];
 } e_robotics_manip_internal_Rigid;
 #endif /* c_typedef_e_robotics_manip_inte */
 
@@ -325,9 +325,9 @@ typedef struct {
   emxArray_real_T *Limits;
   e_robotics_manip_internal_Rigid *RigidBodyTreeInternal;
   c_robotics_manip_internal_IKExt _pobj0;
-  rigidBodyJoint _pobj1[12];
-  c_robotics_manip_internal_Rigid _pobj2[6];
-  d_robotics_manip_internal_Colli _pobj3[13];
+  rigidBodyJoint _pobj1[10];
+  c_robotics_manip_internal_Rigid _pobj2[5];
+  d_robotics_manip_internal_Colli _pobj3[11];
   e_robotics_manip_internal_Rigid _pobj4;
   rigidBodyTree _pobj5;
   c_robotics_core_internal_Damped _pobj6;

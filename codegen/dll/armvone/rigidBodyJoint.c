@@ -325,7 +325,7 @@ void c_rigidBodyJoint_transformBodyT(const rigidBodyJoint *obj,
       do {
         exitg1 = 0;
         if (kstr < 9) {
-          if (cv3[kstr] != obj->TypeInternal.Vector[kstr]) {
+          if (cv5[kstr] != obj->TypeInternal.Vector[kstr]) {
             exitg1 = 1;
           } else {
             kstr++;
@@ -622,7 +622,7 @@ void rigidBodyJoint_get_JointAxis(const rigidBodyJoint *obj, double ax[3])
       do {
         exitg1 = 0;
         if (kstr < 9) {
-          if (obj->TypeInternal.Vector[kstr] != cv3[kstr]) {
+          if (obj->TypeInternal.Vector[kstr] != cv5[kstr]) {
             exitg1 = 1;
           } else {
             kstr++;
@@ -742,7 +742,7 @@ rigidBodyJoint *rigidBodyJoint_rigidBodyJoint(rigidBodyJoint *obj,
       do {
         exitg1 = 0;
         if (ibmat < 9) {
-          if (cv3[ibmat] != s.Vector[ibmat]) {
+          if (cv5[ibmat] != s.Vector[ibmat]) {
             exitg1 = 1;
           } else {
             ibmat++;

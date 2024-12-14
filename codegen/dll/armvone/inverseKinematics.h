@@ -28,7 +28,7 @@ inverseKinematics *c_inverseKinematics_inverseKine(inverseKinematics *obj,
                                                    b_rigidBodyTree *varargin_2);
 
 double inverseKinematics_solve(
-    inverseKinematics *obj, const b_struct_T initialGuess[6],
+    inverseKinematics *obj, const b_struct_T initialGuess[5],
     emxArray_struct_T *QSol, char solutionInfo_Status_data[],
     int solutionInfo_Status_size[2], double *solutionInfo_NumRandomRestarts,
     double *solutionInfo_PoseErrorNorm, double *solutionInfo_ExitFlag);

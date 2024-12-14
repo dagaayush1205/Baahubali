@@ -30,7 +30,7 @@ emlrtContext emlrtContextGlobal = {
 
 /* Function Declarations */
 static real_T (*b_emlrt_marshallIn(const emlrtStack *sp, const mxArray *u,
-                                   const emlrtMsgIdentifier *parentId))[6];
+                                   const emlrtMsgIdentifier *parentId))[5];
 
 static real_T (*c_emlrt_marshallIn(const emlrtStack *sp, const mxArray *nullptr,
                                    const char_T *identifier))[3];
@@ -39,12 +39,12 @@ static real_T (*d_emlrt_marshallIn(const emlrtStack *sp, const mxArray *u,
                                    const emlrtMsgIdentifier *parentId))[3];
 
 static real_T (*e_emlrt_marshallIn(const emlrtStack *sp, const mxArray *src,
-                                   const emlrtMsgIdentifier *msgId))[6];
+                                   const emlrtMsgIdentifier *msgId))[5];
 
 static void emlrtExitTimeCleanupDtorFcn(const void *r);
 
 static real_T (*emlrt_marshallIn(const emlrtStack *sp, const mxArray *nullptr,
-                                 const char_T *identifier))[6];
+                                 const char_T *identifier))[5];
 
 static const mxArray *emlrt_marshallOut(real_T u_data[],
                                         const int32_T u_size[2]);
@@ -54,9 +54,9 @@ static real_T (*f_emlrt_marshallIn(const emlrtStack *sp, const mxArray *src,
 
 /* Function Definitions */
 static real_T (*b_emlrt_marshallIn(const emlrtStack *sp, const mxArray *u,
-                                   const emlrtMsgIdentifier *parentId))[6]
+                                   const emlrtMsgIdentifier *parentId))[5]
 {
-  real_T(*y)[6];
+  real_T(*y)[5];
   y = e_emlrt_marshallIn(sp, emlrtAlias(u), parentId);
   emlrtDestroyArray(&u);
   return y;
@@ -85,15 +85,15 @@ static real_T (*d_emlrt_marshallIn(const emlrtStack *sp, const mxArray *u,
 }
 
 static real_T (*e_emlrt_marshallIn(const emlrtStack *sp, const mxArray *src,
-                                   const emlrtMsgIdentifier *msgId))[6]
+                                   const emlrtMsgIdentifier *msgId))[5]
 {
-  static const int32_T dims[2] = {1, 6};
-  real_T(*ret)[6];
+  static const int32_T dims[2] = {1, 5};
+  real_T(*ret)[5];
   int32_T iv[2];
   boolean_T bv[2] = {false, false};
   emlrtCheckVsBuiltInR2012b((emlrtConstCTX)sp, msgId, src, "double", false, 2U,
                             (const void *)&dims[0], &bv[0], &iv[0]);
-  ret = (real_T(*)[6])emlrtMxGetData(src);
+  ret = (real_T(*)[5])emlrtMxGetData(src);
   emlrtDestroyArray(&src);
   return ret;
 }
@@ -104,10 +104,10 @@ static void emlrtExitTimeCleanupDtorFcn(const void *r)
 }
 
 static real_T (*emlrt_marshallIn(const emlrtStack *sp, const mxArray *nullptr,
-                                 const char_T *identifier))[6]
+                                 const char_T *identifier))[5]
 {
   emlrtMsgIdentifier thisId;
-  real_T(*y)[6];
+  real_T(*y)[5];
   thisId.fIdentifier = (const char_T *)identifier;
   thisId.fParent = NULL;
   thisId.bParentIsCell = false;
@@ -151,12 +151,12 @@ void armvone_api(const mxArray *const prhs[2], const mxArray **plhs)
       NULL, /* tls */
       NULL  /* prev */
   };
-  real_T(*q0)[6];
-  real_T(*vone_data)[6];
+  real_T(*q0)[5];
+  real_T(*vone_data)[5];
   real_T(*pos)[3];
   int32_T vone_size[2];
   st.tls = emlrtRootTLSGlobal;
-  vone_data = (real_T(*)[6])mxMalloc(sizeof(real_T[6]));
+  vone_data = (real_T(*)[5])mxMalloc(sizeof(real_T[5]));
   /* Marshall function inputs */
   q0 = emlrt_marshallIn(&st, emlrtAlias(prhs[0]), "q0");
   pos = c_emlrt_marshallIn(&st, emlrtAlias(prhs[1]), "pos");

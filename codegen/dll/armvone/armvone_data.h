@@ -22,17 +22,18 @@
 extern unsigned int state[625];
 extern double freq;
 extern boolean_T freq_not_empty;
-extern const char cv[14];
-extern const char cv1[10];
-extern const char cv2[10];
+extern const char cv[15];
+extern const char cv1[12];
+extern const char cv2[12];
+extern const char cv3[10];
+extern const char cv4[9];
 extern const signed char iv[16];
-extern const char cv3[9];
-extern const char cv4[10];
-extern const char cv5[10];
+extern const char cv5[9];
 extern const char cv6[10];
 extern const char cv7[10];
 extern const char cv8[10];
 extern const char cv9[10];
+extern const char cv10[10];
 extern boolean_T isInitialized_armvone;
 
 #endif

@@ -52,7 +52,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /home/ayush/Applications/matlab/bin/glnxa64/cmake/bin/cmake --regenerate-during-build -S/home/ayush/misc/baahubali/codegen/dll/armvone -B/home/ayush/misc/baahubali/codegen/dll/armvone/build
+  command = /home/ayush/Applications/matlab/bin/glnxa64/cmake/bin/cmake --regenerate-during-build -S/home/ayush/Vibranium/baahubali/urdf/codegen/dll/armvone -B/home/ayush/Vibranium/baahubali/urdf/codegen/dll/armvone/build
   description = Re-running CMake...
   generator = 1
 

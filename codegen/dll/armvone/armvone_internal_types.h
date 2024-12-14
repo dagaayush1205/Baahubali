@@ -36,22 +36,22 @@ enum c_robotics_core_internal_NLPSol
 typedef enum c_robotics_core_internal_NLPSol c_robotics_core_internal_NLPSol;
 #endif /* c_typedef_c_robotics_core_inter */
 
-#ifndef struct_emxArray_char_T_1x14
-#define struct_emxArray_char_T_1x14
-struct emxArray_char_T_1x14 {
-  char data[14];
+#ifndef struct_emxArray_char_T_1x15
+#define struct_emxArray_char_T_1x15
+struct emxArray_char_T_1x15 {
+  char data[15];
   int size[2];
 };
-#endif /* struct_emxArray_char_T_1x14 */
-#ifndef typedef_emxArray_char_T_1x14
-#define typedef_emxArray_char_T_1x14
-typedef struct emxArray_char_T_1x14 emxArray_char_T_1x14;
-#endif /* typedef_emxArray_char_T_1x14 */
+#endif /* struct_emxArray_char_T_1x15 */
+#ifndef typedef_emxArray_char_T_1x15
+#define typedef_emxArray_char_T_1x15
+typedef struct emxArray_char_T_1x15 emxArray_char_T_1x15;
+#endif /* typedef_emxArray_char_T_1x15 */
 
 #ifndef typedef_b_struct_T
 #define typedef_b_struct_T
 typedef struct {
-  emxArray_char_T_1x14 JointName;
+  emxArray_char_T_1x15 JointName;
   double JointPosition;
 } b_struct_T;
 #endif /* typedef_b_struct_T */

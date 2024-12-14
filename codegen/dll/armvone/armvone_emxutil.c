@@ -57,10 +57,10 @@ void c_emxEnsureCapacity_robotics_ma(c_emxArray_robotics_manip_inter *emxArray,
 }
 
 void c_emxFreeMatrix_robotics_manip_(
-    d_robotics_manip_internal_Colli pMatrix[13])
+    d_robotics_manip_internal_Colli pMatrix[17])
 {
   int i;
-  for (i = 0; i < 13; i++) {
+  for (i = 0; i < 17; i++) {
     c_emxFreeStruct_robotics_manip_(&pMatrix[i]);
   }
 }
@@ -92,10 +92,10 @@ void c_emxFree_robotics_manip_intern(
 }
 
 void c_emxInitMatrix_robotics_manip_(
-    d_robotics_manip_internal_Colli pMatrix[13])
+    d_robotics_manip_internal_Colli pMatrix[17])
 {
   int i;
-  for (i = 0; i < 13; i++) {
+  for (i = 0; i < 17; i++) {
     d_emxInitStruct_robotics_manip_(&pMatrix[i]);
   }
 }
@@ -130,10 +130,11 @@ void c_emxInit_robotics_manip_intern(
   }
 }
 
-void d_emxFreeMatrix_robotics_manip_(d_robotics_manip_internal_Colli pMatrix[7])
+void d_emxFreeMatrix_robotics_manip_(
+    d_robotics_manip_internal_Colli pMatrix[11])
 {
   int i;
-  for (i = 0; i < 7; i++) {
+  for (i = 0; i < 11; i++) {
     c_emxFreeStruct_robotics_manip_(&pMatrix[i]);
   }
 }
@@ -143,10 +144,11 @@ void d_emxFreeStruct_robotics_manip_(d_robotics_manip_internal_Rigid *pStruct)
   c_emxFreeMatrix_robotics_manip_(pStruct->_pobj0);
 }
 
-void d_emxInitMatrix_robotics_manip_(d_robotics_manip_internal_Colli pMatrix[7])
+void d_emxInitMatrix_robotics_manip_(
+    d_robotics_manip_internal_Colli pMatrix[11])
 {
   int i;
-  for (i = 0; i < 7; i++) {
+  for (i = 0; i < 11; i++) {
     d_emxInitStruct_robotics_manip_(&pMatrix[i]);
   }
 }
@@ -156,10 +158,26 @@ void d_emxInitStruct_robotics_manip_(d_robotics_manip_internal_Colli *pStruct)
   c_emxInit_robotics_manip_intern(&pStruct->CollisionGeometries);
 }
 
+void e_emxFreeMatrix_robotics_manip_(d_robotics_manip_internal_Colli pMatrix[6])
+{
+  int i;
+  for (i = 0; i < 6; i++) {
+    c_emxFreeStruct_robotics_manip_(&pMatrix[i]);
+  }
+}
+
 void e_emxFreeStruct_robotics_manip_(c_robotics_manip_internal_IKExt *pStruct)
 {
   emxFree_real_T(&pStruct->ErrTemp);
   emxFree_real_T(&pStruct->GradTemp);
+}
+
+void e_emxInitMatrix_robotics_manip_(d_robotics_manip_internal_Colli pMatrix[6])
+{
+  int i;
+  for (i = 0; i < 6; i++) {
+    d_emxInitStruct_robotics_manip_(&pMatrix[i]);
+  }
 }
 
 void e_emxInitStruct_robotics_manip_(c_robotics_manip_internal_IKExt *pStruct)
@@ -460,7 +478,7 @@ void emxFreeStruct_inverseKinematics(inverseKinematics *pStruct)
 {
   emxFree_real_T(&pStruct->Limits);
   e_emxFreeStruct_robotics_manip_(&pStruct->_pobj0);
-  c_emxFreeMatrix_robotics_manip_(pStruct->_pobj3);
+  d_emxFreeMatrix_robotics_manip_(pStruct->_pobj3);
   f_emxFreeStruct_robotics_manip_(&pStruct->_pobj4);
   emxFreeStruct_rigidBodyTree(&pStruct->_pobj5);
   c_emxFreeStruct_robotics_core_i(&pStruct->_pobj6);
@@ -564,7 +582,7 @@ void emxInitStruct_inverseKinematics(inverseKinematics *pStruct)
 {
   emxInit_real_T(&pStruct->Limits, 2);
   e_emxInitStruct_robotics_manip_(&pStruct->_pobj0);
-  c_emxInitMatrix_robotics_manip_(pStruct->_pobj3);
+  d_emxInitMatrix_robotics_manip_(pStruct->_pobj3);
   f_emxInitStruct_robotics_manip_(&pStruct->_pobj4);
   emxInitStruct_rigidBodyTree(&pStruct->_pobj5);
   c_emxInitStruct_robotics_core_i(&pStruct->_pobj6);
@@ -703,12 +721,12 @@ void emxInit_struct_T2(c_emxArray_struct_T **pEmxArray)
 
 void f_emxFreeStruct_robotics_manip_(e_robotics_manip_internal_Rigid *pStruct)
 {
-  d_emxFreeMatrix_robotics_manip_(pStruct->_pobj1);
+  e_emxFreeMatrix_robotics_manip_(pStruct->_pobj1);
 }
 
 void f_emxInitStruct_robotics_manip_(e_robotics_manip_internal_Rigid *pStruct)
 {
-  d_emxInitMatrix_robotics_manip_(pStruct->_pobj1);
+  e_emxInitMatrix_robotics_manip_(pStruct->_pobj1);
 }
 
 /* End of code generation (armvone_emxutil.c) */

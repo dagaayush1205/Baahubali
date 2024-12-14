@@ -351,7 +351,7 @@ int IKHelpers_randomConfig(c_robotics_manip_internal_IKExt *args,
     double p_idx_0;
     double p_idx_1;
     p_idx_0 = obj->PositionDoFMap[b_i];
-    p_idx_1 = obj->PositionDoFMap[b_i + 6];
+    p_idx_1 = obj->PositionDoFMap[b_i + 5];
     if (p_idx_0 <= p_idx_1) {
       char obj_Vector[200];
       signed char unnamed_idx_1;

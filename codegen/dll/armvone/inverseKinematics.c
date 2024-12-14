@@ -98,8 +98,8 @@ inverseKinematics *c_inverseKinematics_inverseKine(inverseKinematics *obj,
   d_robotics_manip_internal_Rigid *c_obj;
   e_robotics_manip_internal_Rigid *newRobotInternal;
   inverseKinematics *b_obj;
-  double t23_LocalPose[16];
-  double t23_WorldPose[16];
+  double t29_LocalPose[16];
+  double t29_WorldPose[16];
   double bid;
   int obj_Vector_size[2];
   int i;
@@ -165,12 +165,12 @@ inverseKinematics *c_inverseKinematics_inverseKine(inverseKinematics *obj,
   loop_ub = (int)bid;
   for (i = 0; i < loop_ub; i++) {
     r = e_obj->CollisionGeometries->data[i];
-    memcpy(&t23_LocalPose[0], &r.LocalPose[0], 16U * sizeof(double));
-    memcpy(&t23_WorldPose[0], &r.WorldPose[0], 16U * sizeof(double));
+    memcpy(&t29_LocalPose[0], &r.LocalPose[0], 16U * sizeof(double));
+    memcpy(&t29_WorldPose[0], &r.WorldPose[0], 16U * sizeof(double));
     copyGeometryInternal = collisioncodegen_copyGeometry(r.CollisionPrimitive);
     expl_temp.CollisionPrimitive = copyGeometryInternal;
-    memcpy(&expl_temp.LocalPose[0], &t23_LocalPose[0], 16U * sizeof(double));
-    memcpy(&expl_temp.WorldPose[0], &t23_WorldPose[0], 16U * sizeof(double));
+    memcpy(&expl_temp.LocalPose[0], &t29_LocalPose[0], 16U * sizeof(double));
+    memcpy(&expl_temp.WorldPose[0], &t29_WorldPose[0], 16U * sizeof(double));
     expl_temp.MeshScale[0] = r.MeshScale[0];
     expl_temp.MeshScale[1] = r.MeshScale[1];
     expl_temp.MeshScale[2] = r.MeshScale[2];
@@ -312,33 +312,6 @@ inverseKinematics *c_inverseKinematics_inverseKine(inverseKinematics *obj,
                           obj_Vector_size, &b_obj->_pobj3[9], &b_obj->_pobj1[8],
                           &b_obj->_pobj2[4]);
   }
-  if (c_obj->NumBodies >= 6.0) {
-    body = c_obj->Bodies[5];
-    bid = body->ParentIndex;
-    if (bid > 0.0) {
-      parent = c_obj->Bodies[(int)bid - 1];
-    } else {
-      parent = &c_obj->Base;
-    }
-    bid = parent->NameInternal.Length;
-    for (loop_ub = 0; loop_ub < 200; loop_ub++) {
-      obj_Vector[loop_ub] = parent->NameInternal.Vector[loop_ub];
-    }
-    if (bid < 1.0) {
-      loop_ub = 0;
-    } else {
-      loop_ub = (int)bid;
-    }
-    obj_Vector_size[0] = 1;
-    obj_Vector_size[1] = loop_ub;
-    if (loop_ub - 1 >= 0) {
-      memcpy(&obj_Vector_data[0], &obj_Vector[0],
-             (unsigned int)loop_ub * sizeof(char));
-    }
-    RigidBodyTree_addBody(newRobotInternal, body, obj_Vector_data,
-                          obj_Vector_size, &b_obj->_pobj3[11],
-                          &b_obj->_pobj1[10], &b_obj->_pobj2[5]);
-  }
   b_obj->_pobj5.TreeInternal =
       RigidBodyTree_RigidBodyTree(&b_obj->_pobj5._pobj1);
   b_obj->_pobj5.TreeInternal->Base.CollisionsInternal =
@@ -353,7 +326,7 @@ inverseKinematics *c_inverseKinematics_inverseKine(inverseKinematics *obj,
 }
 
 double inverseKinematics_solve(
-    inverseKinematics *obj, const b_struct_T initialGuess[6],
+    inverseKinematics *obj, const b_struct_T initialGuess[5],
     emxArray_struct_T *QSol, char solutionInfo_Status_data[],
     int solutionInfo_Status_size[2], double *solutionInfo_NumRandomRestarts,
     double *solutionInfo_PoseErrorNorm, double *solutionInfo_ExitFlag)
@@ -381,7 +354,7 @@ double inverseKinematics_solve(
   emxArray_real_T *xSolPrev;
   emxArray_real_T *y;
   rigidBodyJoint *d_obj;
-  double newseed_data[42];
+  double newseed_data[35];
   double err;
   double iter;
   double solutionInfo_Iterations;
@@ -544,7 +517,7 @@ double inverseKinematics_solve(
   for (k = 0; k < 2; k++) {
     for (end = 0; end < loop_ub; end++) {
       positionMap_data[end + positionMap->size[0] * k] =
-          c_obj->PositionDoFMap[((int)bodyIndices_data[r1[end]] + 6 * k) - 1];
+          c_obj->PositionDoFMap[((int)bodyIndices_data[r1[end]] + 5 * k) - 1];
     }
   }
   emxFree_int32_T(&r);
@@ -741,7 +714,7 @@ double inverseKinematics_solve(
     if (!b_bool) {
       nm1d2 = (int)body->Index;
       iter = c_obj->PositionDoFMap[nm1d2 - 1];
-      tol = c_obj->PositionDoFMap[nm1d2 + 5];
+      tol = c_obj->PositionDoFMap[nm1d2 + 4];
       d_obj = body->JointInternal;
       err = d_obj->NameInternal.Length;
       for (end = 0; end < 200; end++) {

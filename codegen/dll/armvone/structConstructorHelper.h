@@ -23,13 +23,12 @@ extern "C" {
 #endif
 
 /* Function Declarations */
-void structConstructorHelper(const char varargin_2_f1[14],
-                             const char varargin_2_f2[6],
-                             const char varargin_2_f3[6],
+void structConstructorHelper(const char varargin_2_f1[15],
+                             const char varargin_2_f2[12],
+                             const char varargin_2_f3[12],
                              const char varargin_2_f4[10],
-                             const char varargin_2_f5[8],
-                             const char varargin_2_f6[10],
-                             const double varargin_4[6], b_struct_T s[6]);
+                             const char varargin_2_f5[9],
+                             const double varargin_4[5], b_struct_T s[5]);
 
 #ifdef __cplusplus
 }

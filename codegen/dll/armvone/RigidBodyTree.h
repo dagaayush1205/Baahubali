@@ -48,7 +48,7 @@ void c_RigidBodyTree_get_JointPositi(e_robotics_manip_internal_Rigid *obj,
                                      emxArray_real_T *limits);
 
 void c_RigidBodyTree_validateConfigu(e_robotics_manip_internal_Rigid *obj,
-                                     const b_struct_T Q[6],
+                                     const b_struct_T Q[5],
                                      emxArray_real_T *qvec);
 
 #ifdef __cplusplus

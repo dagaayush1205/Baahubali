@@ -38,13 +38,13 @@
 #include "main.h"
 #include "armvone.h"
 #include "armvone_terminate.h"
-#include "rt_nonfinite.h"
 #include <stdio.h>
+#include "rt_nonfinite.h"
 
 /* Function Declarations */
 static void argInit_1x3_real_T(double result[3]);
 
-static void argInit_1x6_real_T(double result[6]);
+static void argInit_1x5_real_T(double result[5]);
 
 static double argInit_real_T(void);
 
@@ -56,18 +56,18 @@ static void argInit_1x3_real_T(double result[3])
   for (idx1 = 0; idx1 < 3; idx1++) {
     /* Set the value of the array element.
 Change this value to the value that the application requires. */
-    scanf("%f",&result[idx1]);
+    result[idx1] = argInit_real_T();
   }
 }
 
-static void argInit_1x6_real_T(double result[6])
+static void argInit_1x5_real_T(double result[5])
 {
   int idx1;
   /* Loop over the array to initialize each element. */
-  for (idx1 = 0; idx1 < 6; idx1++) {
+  for (idx1 = 0; idx1 < 5; idx1++) {
     /* Set the value of the array element.
 Change this value to the value that the application requires. */
-    scanf("%f",&result[idx1]);
+    result[idx1] = argInit_real_T();
   }
 }
 
@@ -93,22 +93,21 @@ You do not need to do this more than one time. */
 
 void main_armvone(void)
 {
-  double dv[6];
-  double vone_data[6];
+  double dv[5];
+  double vone_data[5];
   double dv1[3];
   int vone_size[2];
   /* Initialize function 'armvone' input arguments. */
   /* Initialize function input argument 'q0'. */
   /* Initialize function input argument 'pos'. */
   /* Call the entry-point 'armvone'. */
-  for (int i = 0; i < 6; i++) scanf("%lf", dv+i);
-  for (int i = 0; i < 3; i++) scanf("%lf", dv1+i);
-  // scanf("%lf", dv+0);
-  // printf("Got %.3f \n", dv[0]);
-  // argInit_1x6_real_T(dv);
+  // argInit_1x5_real_T(dv);
   // argInit_1x3_real_T(dv1);
+
+  for (int i = 0; i < 5; i++) scanf("%lf", dv+i);
+  for (int i = 0; i < 3; i++) scanf("%lf", dv1+i);
   armvone(dv, dv1, vone_data, vone_size);
-  for(int i=0 ; i<6 ; i++)
+  for(int i=0 ; i<5 ; i++)
   printf("%f\n", vone_data[i]);
 }
 

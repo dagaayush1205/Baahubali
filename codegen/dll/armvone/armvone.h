@@ -22,7 +22,7 @@ extern "C" {
 #endif
 
 /* Function Declarations */
-extern void armvone(const double q0[6], const double pos[3], double vone_data[],
+extern void armvone(const double q0[5], const double pos[3], double vone_data[],
                     int vone_size[2]);
 
 #ifdef __cplusplus

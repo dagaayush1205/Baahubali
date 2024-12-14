@@ -15,25 +15,24 @@
 #include "rt_nonfinite.h"
 
 /* Function Definitions */
-void structConstructorHelper(const char varargin_2_f1[14],
-                             const char varargin_2_f2[6],
-                             const char varargin_2_f3[6],
+void structConstructorHelper(const char varargin_2_f1[15],
+                             const char varargin_2_f2[12],
+                             const char varargin_2_f3[12],
                              const char varargin_2_f4[10],
-                             const char varargin_2_f5[8],
-                             const char varargin_2_f6[10],
-                             const double varargin_4[6], b_struct_T s[6])
+                             const char varargin_2_f5[9],
+                             const double varargin_4[5], b_struct_T s[5])
 {
   int j;
   s[0].JointName.size[0] = 1;
-  s[0].JointName.size[1] = 14;
-  for (j = 0; j < 14; j++) {
+  s[0].JointName.size[1] = 15;
+  for (j = 0; j < 15; j++) {
     s[0].JointName.data[j] = varargin_2_f1[j];
   }
   s[1].JointName.size[0] = 1;
-  s[1].JointName.size[1] = 6;
+  s[1].JointName.size[1] = 12;
   s[2].JointName.size[0] = 1;
-  s[2].JointName.size[1] = 6;
-  for (j = 0; j < 6; j++) {
+  s[2].JointName.size[1] = 12;
+  for (j = 0; j < 12; j++) {
     s[1].JointName.data[j] = varargin_2_f2[j];
     s[2].JointName.data[j] = varargin_2_f3[j];
   }
@@ -43,16 +42,11 @@ void structConstructorHelper(const char varargin_2_f1[14],
     s[3].JointName.data[j] = varargin_2_f4[j];
   }
   s[4].JointName.size[0] = 1;
-  s[4].JointName.size[1] = 8;
-  for (j = 0; j < 8; j++) {
+  s[4].JointName.size[1] = 9;
+  for (j = 0; j < 9; j++) {
     s[4].JointName.data[j] = varargin_2_f5[j];
   }
-  s[5].JointName.size[0] = 1;
-  s[5].JointName.size[1] = 10;
-  for (j = 0; j < 10; j++) {
-    s[5].JointName.data[j] = varargin_2_f6[j];
-  }
-  for (j = 0; j < 6; j++) {
+  for (j = 0; j < 5; j++) {
     s[j].JointPosition = varargin_4[j];
   }
 }
