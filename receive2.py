@@ -136,6 +136,7 @@ def main():
         x = newx
         y = newy
         z = newz
+        time.sleep(0.1)
 
 if __name__ =='__main__':
     main()
