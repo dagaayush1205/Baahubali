@@ -23,26 +23,20 @@ class Data(ctypes.Structure):
         ("z", ctypes.c_double),
     ]
 
-
-DataStruct = Data()
-
-
+datastruct = Data()
 def initialize():
-    DataStruct.turntableLink = 0.2
-    DataStruct.linkOne = 0.2
-    DataStruct.linkTwo = 0.2
-    DataStruct.pitch = 0.2
-    DataStruct.roll = 0.2
-    DataStruct.x = 0.5
-    DataStruct.y = 0.5
-    DataStruct.z = 0.5
+    datastruct.turntableLink = 0.2
+    datastruct.linkOne = 0.2
+    datastruct.linkTwo = 0.2
+    datastruct.pitch = 0.2
+    datastruct.roll = 0.2
+    datastruct.x = 0.5
+    datastruct.y = 0.5
+    datastruct.z = 0.5
 
-
-<< << << < HEAD
-
-
-== == == =
-
+def home():
+    current = Data()
+    current = read()
 
 def read():
     if ser.in_waiting > 0:
@@ -59,10 +53,9 @@ def read():
 
 def Calculate():
     dv = ctypes.c_double * 5
-    r_dv = dv(DataStruct.turntableLink, DataStruct.linkOne,
-              DataStruct.linkTwo, DataStruct.pitch, DataStruct.roll)
+    r_dv = dv( datastruct.turntableLink , datastruct.linkOne , datastruct.linkTwo , datastruct.pitch , datastruct.roll)
     dv1 = ctypes.c_double * 3
-    r_dv1 = dv1(DataStruct.x, DataStruct.y, DataStruct.z)
+    r_dv1 = dv1(datastruct.x , datastruct.y , datastruct.z)
     vone_size = ctypes.c_double * 2
     r_vone_size = vone_size(0.0, 0.0)
     vone_data = ctypes.c_double * 5
@@ -75,27 +68,18 @@ def Calculate():
 
 
 def send():
-    timeout = 1
-    start_time = time.time()
-    while ser.out_waiting > 0:
-        if time.time() - start_time > timeout:
-            print("Write operation timed out due to full buffer.")
-            return False
-        time.sleep(0.01)
-    encoded_data = cobs.encode(bytearray(DataStruct))
-    encoded_data = encoded_data + bytearray([0])
-    encoded_data = list(encoded_data)
-    for x in encoded_data:
-        ser.write(x)
+    encoded_data = cobs.encode(bytearray(datastruct))
+    print(encoded_data)
+    ser.write(encoded_data)
+    ser.write(bytearray([0]))
     print("Sent")
 
 
 def main():
     initialize()
-
-
-while True:
-    read()
+    home()
+    # while True:
+    # read()
     Calculate()
     send()
     time.sleep(0.001)
