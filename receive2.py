@@ -1,7 +1,6 @@
 import ctypes
 import serial
 import time
-import struct
 from cobs import cobs
 import pygame
 
@@ -29,12 +28,10 @@ def joystickread(joystick):
         print(f"x:{x:.2f} y:{y:.2f} z:{z:.2f} ")
     return x , y , z
 
-ser = serial.Serial('/dev/serial/by-id/usb-ZEPHYR_Team_RUDRA_Tarzan_33395111002A0038-if00', 9600)
-# ser = serial.Serial('/dev/pts/6')
+ser = serial.Serial('/dev/serial/by-id/usb-ZEPHYR_Team_RUDRA_Tarzan_33395111002E004B-if00', 9600)
 lib = ctypes.CDLL("codegen/dll/armvone/armvone.so")
 class Data(ctypes.Structure):
     _fields_ = [
-        ("baseLink", ctypes.c_double),
         ("turntableLink", ctypes.c_double),
         ("linkOne", ctypes.c_double),
         ("linkTwo", ctypes.c_double),
@@ -45,44 +42,39 @@ class Data(ctypes.Structure):
         ("z", ctypes.c_double),
     ]
 
-# datastruct = Data()
-# def initialize():
-#     datastruct.turntableLink = 0.2
-#     datastruct.linkOne = 0.2
-#     datastruct.linkTwo = 0.2
-#     datastruct.pitch = 0.2
-#     datastruct.roll = 0.2
-#     datastruct.x = 0.5
-#     datastruct.y = 0.5
-#     datastruct.z = 0.5
-
-def home():
-    current = read()
-    current.contents.x = 0.5
-    current.contents.y = 0.5
-    current.contents.z = 0.5 
-    output = Calculate(current.contents.x , current.contents.y ,current.contents.z)
-    send(output)
+def home(ikstruct):
+    ikstruct.contents.x = 0.5
+    ikstruct.contents.y = 0.5
+    ikstruct.contents.z = 0.5
+    output = Calculate(ikstruct)
+    return output
 
 def read():
-    if ser.in_waiting > 0:
-        rcd = ser.read(74)
-        if (rcd[-1] != 0):
-            return
+        dataStruct = Data() 
+        rcd = ser.read(66)
+        # while (rcd[-1] != 0)
+        if rcd[-1] != 0:
+            for i, v in enumerate(map(int, rcd)):
+                if v == 0x00:
+                    kcd = ser.read(i+1)
+                    temp = rcd[i+1:]
+                    rcd = temp + kcd
+                    break
+            # time.sleep(0.1)
+            # rcd = ser.read(66)
         decoded = cobs.decode(rcd[:-1])
-        DataStruct = ctypes.cast(decoded, ctypes.POINTER(Data))
-        return DataStruct
-    else:
-        print("Error recieving data")
+        dataStruct = ctypes.cast(decoded, ctypes.POINTER(Data))
+        print("READ:")
+        print(f"{dataStruct.contents.turntableLink:.2f}, "f"{dataStruct.contents.linkOne:.2f}, "f"{dataStruct.contents.linkTwo:.2f}, "f"{dataStruct.contents.pitch:.2f}, "f"{dataStruct.contents.roll:.2f}, "f"{dataStruct.contents.x:.2f}, "f"{dataStruct.contents.y:.2f}, "f"{dataStruct.contents.z:.2f}")
+        return dataStruct
+    # else:
+    #     print("Error recieving data")
+    #     return
+
+
+def Calculate(ikstruct):
+    if ikstruct == None:
         return
-
-
-def Calculate(x , y , z):
-    ikstruct = Data()
-    ikstruct = read()
-    ikstruct.contents.x = x
-    ikstruct.contents.y = y
-    ikstruct.contents.z = z
     dv = ctypes.c_double * 5
     r_dv = dv( ikstruct.contents.turntableLink , ikstruct.contents.linkOne , ikstruct.contents.linkTwo , ikstruct.contents.pitch , ikstruct.contents.roll)
     dv1 = ctypes.c_double * 3
@@ -92,21 +84,45 @@ def Calculate(x , y , z):
     vone_data = ctypes.c_double * 5
     r_vone_data = vone_data(0.0 , 0.0 , 0.0 , 0.0 , 0.0)
     lib.armvone.argtypes = [ctypes.POINTER(ctypes.c_double),ctypes.POINTER(ctypes.c_double),ctypes.POINTER(ctypes.c_double),ctypes.POINTER(ctypes.c_double)]
-    result = lib.armvone(r_dv , r_dv1 , r_vone_data , r_vone_size)
+    lib.armvone(r_dv , r_dv1 , r_vone_data , r_vone_size)
     print("OUTPUT: ",*r_vone_data)
-    return result
+    return r_vone_data
 
 def send(datastruct):
-    encoded_data = cobs.encode(bytearray(datastruct))
-    print(encoded_data)
-    ser.write(encoded_data)
-    ser.write(bytearray([0]))
-    print("Sent")
+    timeout = 1
+    start_time = time.time()
+    if datastruct != None:
+        result = Data(*datastruct)
+        b = bytearray(result)
+        encoded_data = cobs.encode(b)
+        while ser.out_waiting > 0:
+            if time.time() - start_time > timeout:
+                print("Write operation timed out due to full buffer.")
+                return False
+            time.sleep(0.01)
+        encoded_data = encoded_data + bytearray([0])
+        # encoded_data = list(encoded_data)
+        # print(encoded_data, end="\n\n")
+        ser.write(encoded_data)
+        # for x in encoded_data:
+        #     ser.write(x)
+        return True
+    # if datastruct != None:
+    #     encoded_data = cobs.encode(bytearray(datastruct))
+    #     encoded_data = list(encoded_data)
+    #     # print(encoded_data)
+    #     for i in encoded_data:
+    #         ser.write(i)
+    #     ser.write(bytearray([0]))
+    #     print("Sent")
 
 
 def main():
     controller=joystickinit()
-    home()
+    ikstruct = read()
+    if not send(home(ikstruct)):
+        print("Failed home")
+    print("Move to home command")
     x = 0.5
     y = 0.5
     z = 0.5
@@ -115,12 +131,13 @@ def main():
     newy = 0.0
     newz = 0.0
     while running:
+        ikstruct = read()
         dirx , diry , dirz = joystickread(controller)
         if dirx > 0.3:
             newx = x+0.05
         elif dirx < -0.3:
             newx = x-0.05
-        
+
         if diry > 0.3:
             newy = y+0.05
         elif diry < -0.3:
@@ -130,13 +147,16 @@ def main():
             newz = z+0.05
         elif dirz < -0.3:
             newz = z-0.05
+        ikstruct.contents.x = newx
+        ikstruct.contents.y = newy
+        ikstruct.contents.z = newz
 
-        output = Calculate(newx , newy , newz)
+        output = Calculate(ikstruct)
         send(output)
         x = newx
         y = newy
         z = newz
-        time.sleep(0.1)
+        time.sleep(0.11)
 
 if __name__ =='__main__':
     main()
