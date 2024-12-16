@@ -53,13 +53,17 @@ def read():
         dataStruct = Data() 
         rcd = ser.read(66)
         # while (rcd[-1] != 0)
-        if rcd[-1] != 0:
-            for i, v in enumerate(map(int, rcd)):
-                if v == 0x00:
-                    kcd = ser.read(i+1)
-                    temp = rcd[i+1:]
-                    rcd = temp + kcd
-                    break
+        if ser.in_waiting > 0:
+            if rcd[-1] != 0:
+                for i, v in enumerate(map(int, rcd)):
+                    if v == 0x00:
+                        kcd = ser.read(i+1)
+                        temp = rcd[i+1:]
+                        rcd = temp + kcd
+                        break
+        else: 
+            print("Read Failed")
+            return None
             # time.sleep(0.1)
             # rcd = ser.read(66)
         decoded = cobs.decode(rcd[:-1])
@@ -68,13 +72,13 @@ def read():
         print(f"{dataStruct.contents.turntableLink:.2f}, "f"{dataStruct.contents.linkOne:.2f}, "f"{dataStruct.contents.linkTwo:.2f}, "f"{dataStruct.contents.pitch:.2f}, "f"{dataStruct.contents.roll:.2f}, "f"{dataStruct.contents.x:.2f}, "f"{dataStruct.contents.y:.2f}, "f"{dataStruct.contents.z:.2f}")
         return dataStruct
     # else:
-    #     print("Error recieving data")
+    #     print("Error receiving data")
     #     return
 
 
 def Calculate(ikstruct):
     if ikstruct == None:
-        return
+        return None
     dv = ctypes.c_double * 5
     r_dv = dv( ikstruct.contents.turntableLink , ikstruct.contents.linkOne , ikstruct.contents.linkTwo , ikstruct.contents.pitch , ikstruct.contents.roll)
     dv1 = ctypes.c_double * 3
@@ -102,7 +106,7 @@ def send(datastruct):
             time.sleep(0.01)
         encoded_data = encoded_data + bytearray([0])
         # encoded_data = list(encoded_data)
-        # print(encoded_data, end="\n\n")
+        print(encoded_data, end="\n\n")
         ser.write(encoded_data)
         # for x in encoded_data:
         #     ser.write(x)
@@ -122,7 +126,7 @@ def main():
     ikstruct = read()
     if not send(home(ikstruct)):
         print("Failed home")
-    print("Move to home command")
+    print("Moved to home command")
     x = 0.5
     y = 0.5
     z = 0.5
@@ -132,30 +136,34 @@ def main():
     newz = 0.0
     while running:
         ikstruct = read()
-        dirx , diry , dirz = joystickread(controller)
-        if dirx > 0.3:
-            newx = x+0.05
-        elif dirx < -0.3:
-            newx = x-0.05
+        if ikstruct == None:
+            print("Error: while reading, writing last received value")
+            send(ikstruct)
+        else:
+            dirx , diry , dirz = joystickread(controller)
+            if dirx > 0.3:
+                newx = x+0.05
+            elif dirx < -0.3:
+                newx = x-0.05
 
-        if diry > 0.3:
-            newy = y+0.05
-        elif diry < -0.3:
-            newy = y-0.05
+            if diry > 0.3:
+                newy = y+0.05
+            elif diry < -0.3:
+                newy = y-0.05
 
-        if dirz > 0.3:
-            newz = z+0.05
-        elif dirz < -0.3:
-            newz = z-0.05
-        ikstruct.contents.x = newx
-        ikstruct.contents.y = newy
-        ikstruct.contents.z = newz
+            if dirz > 0.3:
+                newz = z+0.05
+            elif dirz < -0.3:
+                newz = z-0.05
+            ikstruct.contents.x = newx
+            ikstruct.contents.y = newy
+            ikstruct.contents.z = newz
 
-        output = Calculate(ikstruct)
-        send(output)
-        x = newx
-        y = newy
-        z = newz
+            output = Calculate(ikstruct)
+            send(output)
+            x = newx
+            y = newy
+            z = newz
         time.sleep(0.11)
 
 if __name__ =='__main__':
