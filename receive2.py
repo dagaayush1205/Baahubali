@@ -51,19 +51,15 @@ def home(ikstruct):
 
 def read():
         dataStruct = Data() 
-        rcd = ser.read(66)
         # while (rcd[-1] != 0)
-        if ser.in_waiting > 0:
-            if rcd[-1] != 0:
-                for i, v in enumerate(map(int, rcd)):
-                    if v == 0x00:
-                        kcd = ser.read(i+1)
-                        temp = rcd[i+1:]
-                        rcd = temp + kcd
-                        break
-        else: 
-            print("Read Failed")
-            return None
+        rcd = ser.read(66)
+        if rcd[-1] != 0:
+            for i, v in enumerate(map(int, rcd)):
+                if v == 0x00:
+                    kcd = ser.read(i+1)
+                    temp = rcd[i+1:]
+                    rcd = temp + kcd
+                    break
             # time.sleep(0.1)
             # rcd = ser.read(66)
         decoded = cobs.decode(rcd[:-1])
@@ -106,7 +102,6 @@ def send(datastruct):
             time.sleep(0.01)
         encoded_data = encoded_data + bytearray([0])
         # encoded_data = list(encoded_data)
-        print(encoded_data, end="\n\n")
         ser.write(encoded_data)
         # for x in encoded_data:
         #     ser.write(x)
@@ -123,7 +118,9 @@ def send(datastruct):
 
 def main():
     controller=joystickinit()
+    ikstruct = Data()
     ikstruct = read()
+
     if not send(home(ikstruct)):
         print("Failed home")
     print("Moved to home command")
