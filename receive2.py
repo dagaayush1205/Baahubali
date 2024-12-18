@@ -1,4 +1,5 @@
 import ctypes
+import math
 import serial
 import time
 from cobs import cobs
