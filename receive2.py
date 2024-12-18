@@ -63,16 +63,11 @@ def read():
                     temp = rcd[i+1:]
                     rcd = temp + kcd
                     break
-            # time.sleep(0.1)
-            # rcd = ser.read(66)
         decoded = cobs.decode(rcd[:-1])
         dataStruct = ctypes.cast(decoded, ctypes.POINTER(Data))
         print("READ:")
         print(f"{dataStruct.contents.turntableLink:.2f}, "f"{dataStruct.contents.linkOne:.2f}, "f"{dataStruct.contents.linkTwo:.2f}, "f"{dataStruct.contents.pitch:.2f}, "f"{dataStruct.contents.roll:.2f}, "f"{dataStruct.contents.x:.2f}, "f"{dataStruct.contents.y:.2f}, "f"{dataStruct.contents.z:.2f}")
         return dataStruct
-    # else:
-    #     print("Error receiving data")
-    #     return
 
 
 def Calculate(ikstruct):
