@@ -27,8 +27,10 @@ pillow==11.0.0
 prompt_toolkit==3.0.48
 ptyprocess==0.7.0
 pure_eval==0.2.3
+pyarrow==18.1.0
 pybullet==3.2.6
 pycollada==0.6
+pygame==2.6.1
 pyglet==1.5.29
 Pygments==2.18.0
 pyngrok==7.2.1
@@ -40,6 +42,7 @@ PyYAML==6.0.2
 pyzmq==26.2.0
 referencing==0.35.1
 requests==2.32.3
+rerun-sdk==0.20.3
 rpds-py==0.22.3
 Rtree==1.3.0
 scipy==1.14.1
@@ -52,6 +55,7 @@ sympy==1.13.3
 tornado==6.4.2
 traitlets==5.14.3
 trimesh==3.21.7
+typing_extensions==4.12.2
 u-msgpack-python==2.8.0
 urdf_parser_py==0.0.4
 urdfpy==0.0.22
