@@ -27,9 +27,11 @@ def joystickread(joystick):
         y = joystick.get_axis(1)
         z = joystick.get_axis(2)
         print(f"x:{x:.2f} y:{y:.2f} z:{z:.2f} ")
-    return x , y , z
+    return 0 , 0 , z
 
-ser = serial.Serial('/dev/serial/by-id/usb-ZEPHYR_Team_RUDRA_Tarzan_33395111002E004B-if00', 9600)
+ser = serial.Serial('/dev/serial/by-id/usb-ZEPHYR_Team_RUDRA_Tarzan_3339511100440022-if00', 9600)
+# ser = serial.Serial('/dev/serial/by-id/usb-FTDI_FT232R_USB_UART_A50285BI-if00-port0', 57600)
+# ser = serial.Serial('/dev/serial/by-id/usb-STMicroelectronics_STLINK-V3_002400433032511537333436-if02',9600)
 lib = ctypes.CDLL("codegen/dll/armvone/armvone.so")
 class Data(ctypes.Structure):
     _fields_ = [
