@@ -97,28 +97,30 @@ def send(datastruct):
             if time.time() - start_time > timeout:
                 print("Write operation timed out due to full buffer.")
                 return False
-            time.sleep(0.01)
+            # time.sleep(0.01)
         encoded_data = encoded_data + bytearray([0])
         # encoded_data = list(encoded_data)
         ser.write(encoded_data)
+        print("sent")
         # for x in encoded_data:
+        
         #     ser.write(x)
+        # print(binascii.hexlify(encoded_data))
         return True
     # if datastruct != None:
     #     encoded_data = cobs.encode(bytearray(datastruct))
     #     encoded_data = list(encoded_data)
-    #     # print(encoded_data)
+        # print(encoded_data)
     #     for i in encoded_data:
     #         ser.write(i)
     #     ser.write(bytearray([0]))
     #     print("Sent")
 
-
 def main():
     controller=joystickinit()
     ikstruct = Data()
     ikstruct = read()
-
+    prev_ikstruct = ikstruct
     if not send(home(ikstruct)):
         print("Failed home")
     print("Moved to home command")
@@ -130,36 +132,34 @@ def main():
     newy = 0.0
     newz = 0.0
     while running:
-        ikstruct = read()
-        if ikstruct == None:
-            print("Error: while reading, writing last received value")
-            send(ikstruct)
-        else:
-            dirx , diry , dirz = joystickread(controller)
-            if dirx > 0.3:
-                newx = x+0.05
-            elif dirx < -0.3:
-                newx = x-0.05
+        while math.sqrt((ikstruct.contents.linkOne - prev_ikstruct.contents.linkOne)**2 + (ikstruct.contents.linkTwo - prev_ikstruct.contents.linkTwo)**2) > 0.1:
+            ikstruct = read()
 
-            if diry > 0.3:
-                newy = y+0.05
-            elif diry < -0.3:
-                newy = y-0.05
+        dirx , diry , dirz = joystickread(controller)
+        if dirx > 0.3:
+            newx = x+0.05
+        elif dirx < -0.3:
+            newx = x-0.05
 
-            if dirz > 0.3:
-                newz = z+0.05
-            elif dirz < -0.3:
-                newz = z-0.05
-            ikstruct.contents.x = newx
-            ikstruct.contents.y = newy
-            ikstruct.contents.z = newz
+        if diry > 0.3:
+            newy = y+0.05
+        elif diry < -0.3:
+            newy = y-0.05
 
-            output = Calculate(ikstruct)
-            send(output)
-            x = newx
-            y = newy
-            z = newz
-        time.sleep(0.11)
+        if dirz > 0.3:
+            newz = z+0.05
+        elif dirz < -0.3:
+            newz = z-0.05
+        ikstruct.contents.x = newx
+        ikstruct.contents.y = newy
+        ikstruct.contents.z = newz
+
+        output = Calculate(ikstruct)
+        send(output)
+        x = newx
+        y = newy
+        z = newz
+    # time.sleep(0.11)
 
 if __name__ =='__main__':
     main()
