@@ -38,8 +38,8 @@
 #include "main.h"
 #include "armvone.h"
 #include "armvone_terminate.h"
-#include <stdio.h>
 #include "rt_nonfinite.h"
+#include <stdio.h>
 
 /* Function Declarations */
 static void argInit_1x3_real_T(double result[3]);
@@ -101,9 +101,6 @@ void main_armvone(void)
   /* Initialize function input argument 'q0'. */
   /* Initialize function input argument 'pos'. */
   /* Call the entry-point 'armvone'. */
-  // argInit_1x5_real_T(dv);
-  // argInit_1x3_real_T(dv1);
-
   for (int i = 0; i < 5; i++) scanf("%lf", dv+i);
   for (int i = 0; i < 3; i++) scanf("%lf", dv1+i);
   armvone(dv, dv1, vone_data, vone_size);
