@@ -159,7 +159,7 @@ def main():
         x = newx
         y = newy
         z = newz
-    # time.sleep(0.11)
+    time.sleep(0.11)
 
 if __name__ =='__main__':
     main()
