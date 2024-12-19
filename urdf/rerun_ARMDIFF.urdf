@@ -26,7 +26,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://meshes/base_link.STL" />
+          filename="~/Vibranium/baahubali/urdf/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
@@ -40,7 +40,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://meshes/base_link.STL" />
+          filename="~/Vibranium/baahubali/urdf/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -66,7 +66,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://meshes/turntable.STL" />
+          filename="~/Vibranium/baahubali/urdf/meshes/turntable.STL" />
       </geometry>
       <material
         name="">
@@ -80,7 +80,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ARMDIFF1/meshes/turntable.STL" />
+          filename="~/Vibranium/baahubali/urdf/ARMDIFF1/meshes/turntable.STL" />
       </geometry>
     </collision>
   </link>
@@ -124,7 +124,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://meshes/linkOne.STL" />
+          filename="~/Vibranium/baahubali/urdf/meshes/linkOne.STL" />
       </geometry>
       <material
         name="">
@@ -138,7 +138,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://meshes/linkOne.STL" />
+          filename="~/Vibranium/baahubali/urdf/meshes/linkOne.STL" />
       </geometry>
     </collision>
   </link>
@@ -182,7 +182,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://meshes/linkTwo.STL" />
+          filename="~/Vibranium/baahubali/urdf/meshes/linkTwo.STL" />
       </geometry>
       <material
         name="">
@@ -196,7 +196,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://meshes/linkTwo.STL" />
+          filename="~/Vibranium/baahubali/urdf/meshes/linkTwo.STL" />
       </geometry>
     </collision>
   </link>
@@ -240,7 +240,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://meshes/pitch.STL" />
+          filename="~/Vibranium/baahubali/urdf/meshes/pitch.STL" />
       </geometry>
       <material
         name="">
@@ -254,7 +254,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://meshes/pitch.STL" />
+          filename="~/Vibranium/baahubali/urdf/meshes/pitch.STL" />
       </geometry>
     </collision>
   </link>
@@ -298,7 +298,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://meshes/roll.STL" />
+          filename="~/Vibranium/baahubali/urdf/meshes/roll.STL" />
       </geometry>
       <material
         name="">
@@ -312,7 +312,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://meshes/roll.STL" />
+          filename="~/Vibranium/baahubali/urdf/meshes/roll.STL" />
       </geometry>
     </collision>
   </link>
