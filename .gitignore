@@ -1,2 +1,4 @@
 .venv/
-codegen/dll/armvone/main
+codegen/dll/armvone/armvone.so*
+archive/codegen/dll/armvone.so*
+archive/codegen/dll/codegen2.0/dll/armvone.so*
