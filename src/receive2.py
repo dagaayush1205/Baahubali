@@ -4,9 +4,16 @@ import serial
 import time
 from cobs import cobs
 import pygame
-
+import threading
+import urdfpy
 pygame.init()
 pygame.joystick.init()
+
+def init_visualization():
+    robot = urdfpy.URDF.load('rerun_ARMDIFF.urdf')
+    print("Available links found:")
+    for link in robot.links:
+        print(link.name)
 
 def joystickinit():
     if pygame.joystick.get_count() == 0:
@@ -22,17 +29,17 @@ def joystickread(joystick):
     x = 0
     y = 0
     z = 0
-    for event in pygame.event.get():
-        x = joystick.get_axis(0)
-        y = joystick.get_axis(1)
-        z = joystick.get_axis(2)
-        print(f"x:{x:.2f} y:{y:.2f} z:{z:.2f} ")
-    return 0 , 0 , z
+    pygame.event.get()
+    x = joystick.get_axis(0)
+    y = joystick.get_axis(1)
+    z = joystick.get_axis(2)
+    # print(f"x:{x:.2f} y:{y:.2f} z:{z:.2f} ")
+    return x , y , z
 
-ser = serial.Serial('/dev/serial/by-id/usb-ZEPHYR_Team_RUDRA_Tarzan_3339511100440022-if00', 9600)
+# ser = serial.Serial('/dev/serial/by-id/usb-ZEPHYR_Team_RUDRA_Tarzan_3339511100440022-if00', 9600)
 # ser = serial.Serial('/dev/serial/by-id/usb-FTDI_FT232R_USB_UART_A50285BI-if00-port0', 57600)
 # ser = serial.Serial('/dev/serial/by-id/usb-STMicroelectronics_STLINK-V3_002400433032511537333436-if02',9600)
-lib = ctypes.CDLL("codegen/dll/armvone/armvone.so")
+lib = ctypes.CDLL("../codegen/dll/armvone/armvone.so")
 class Data(ctypes.Structure):
     _fields_ = [
         ("turntableLink", ctypes.c_double),
@@ -74,9 +81,9 @@ def Calculate(ikstruct):
     if ikstruct == None:
         return None
     dv = ctypes.c_double * 5
-    r_dv = dv( ikstruct.contents.turntableLink , ikstruct.contents.linkOne , ikstruct.contents.linkTwo , ikstruct.contents.pitch , ikstruct.contents.roll)
+    r_dv = dv(ikstruct.turntableLink , ikstruct.linkOne , ikstruct.linkTwo , ikstruct.pitch , ikstruct.roll)
     dv1 = ctypes.c_double * 3
-    r_dv1 = dv1(ikstruct.contents.x , ikstruct.contents.y , ikstruct.contents.z)
+    r_dv1 = dv1(ikstruct.x , ikstruct.y , ikstruct.z)
     vone_size = ctypes.c_double * 2
     r_vone_size = vone_size(0.0, 0.0)
     vone_data = ctypes.c_double * 5
@@ -117,50 +124,50 @@ def send(datastruct):
     #     print("Sent")
 
 def main():
+    init_visualization()
     controller=joystickinit()
     ikstruct = Data()
-    ikstruct = read()
+    # ikstruct = read()
     prev_ikstruct = ikstruct
-    if not send(home(ikstruct)):
-        print("Failed home")
+    # if not send(home(ikstruct)):
+    #     print("Failed home")
     print("Moved to home command")
     x = 0.5
     y = 0.5
-    z = 0.5
+    z = 0.0
     running = True
     newx = 0.0
     newy = 0.0
     newz = 0.0
     while running:
-        while math.sqrt((ikstruct.contents.linkOne - prev_ikstruct.contents.linkOne)**2 + (ikstruct.contents.linkTwo - prev_ikstruct.contents.linkTwo)**2) > 0.1:
-            ikstruct = read()
+        # while math.sqrt((ikstruct.contents.linkOne - prev_ikstruct.contents.linkOne)**2 + (ikstruct.contents.linkTwo - prev_ikstruct.contents.linkTwo)**2) > 0.1:
+           # ikstruct = read()
 
         dirx , diry , dirz = joystickread(controller)
-        if dirx > 0.3:
-            newx = x+0.05
-        elif dirx < -0.3:
-            newx = x-0.05
+        if dirx > 0.5:
+            newx = x + 0.000001
+        elif dirx < -0.5:
+            newx = x - 0.000001
 
-        if diry > 0.3:
-            newy = y+0.05
-        elif diry < -0.3:
-            newy = y-0.05
+        if diry > 0.5:
+            newy = y + 0.000001
+        elif diry < -0.5:
+            newy = y - 0.000001
 
-        if dirz > 0.3:
-            newz = z+0.05
-        elif dirz < -0.3:
-            newz = z-0.05
-        ikstruct.contents.x = newx
-        ikstruct.contents.y = newy
-        ikstruct.contents.z = newz
-
-        output = Calculate(ikstruct)
-        send(output)
+        if dirz > 0.5:
+            newz = z + 0.000001
+        elif dirz < -0.5:
+            newz = z - 0.000001
+        ikstruct.x = newx
+        ikstruct.y = newy
+        ikstruct.z = newz
         x = newx
         y = newy
         z = newz
+        output = Calculate(ikstruct)
+        # send(output)
+        # print(output , newx , newy , newz)
     time.sleep(0.11)
 
 if __name__ =='__main__':
     main()
-    #
