@@ -2,7 +2,7 @@ import ctypes
 import math
 import serial
 import time
-from cobs import cobs
+# from cobs import cobs
 import pygame
 import threading
 import urdfpy
@@ -10,10 +10,15 @@ pygame.init()
 pygame.joystick.init()
 
 def init_visualization():
+    global robot 
     robot = urdfpy.URDF.load('rerun_ARMDIFF.urdf')
     print("Available links found:")
     for link in robot.links:
         print(link.name)
+
+def visualization():
+    while True: 
+        robot.show(cfg={ 'turntable_joint' : ikstruct.turntableLink , 'linkOneJoint' : ikstruct.linkOne , 'linkTwoJoint' : ikstruct.linkTwo , 'pitchJoint' : ikstruct.pitch , 'rollJoint' : ikstruct.roll})
 
 def joystickinit():
     if pygame.joystick.get_count() == 0:
@@ -39,7 +44,7 @@ def joystickread(joystick):
 # ser = serial.Serial('/dev/serial/by-id/usb-ZEPHYR_Team_RUDRA_Tarzan_3339511100440022-if00', 9600)
 # ser = serial.Serial('/dev/serial/by-id/usb-FTDI_FT232R_USB_UART_A50285BI-if00-port0', 57600)
 # ser = serial.Serial('/dev/serial/by-id/usb-STMicroelectronics_STLINK-V3_002400433032511537333436-if02',9600)
-lib = ctypes.CDLL("../codegen/dll/armvone/armvone.so")
+lib = ctypes.CDLL("codegen/dll/armvone/armvone.so")
 class Data(ctypes.Structure):
     _fields_ = [
         ("turntableLink", ctypes.c_double),
@@ -60,21 +65,21 @@ def home(ikstruct):
     return output
 
 def read():
-        dataStruct = Data() 
-        # while (rcd[-1] != 0)
-        rcd = ser.read(66)
-        if rcd[-1] != 0:
-            for i, v in enumerate(map(int, rcd)):
-                if v == 0x00:
-                    kcd = ser.read(i+1)
-                    temp = rcd[i+1:]
-                    rcd = temp + kcd
-                    break
-        decoded = cobs.decode(rcd[:-1])
-        dataStruct = ctypes.cast(decoded, ctypes.POINTER(Data))
-        print("READ:")
-        print(f"{dataStruct.contents.turntableLink:.2f}, "f"{dataStruct.contents.linkOne:.2f}, "f"{dataStruct.contents.linkTwo:.2f}, "f"{dataStruct.contents.pitch:.2f}, "f"{dataStruct.contents.roll:.2f}, "f"{dataStruct.contents.x:.2f}, "f"{dataStruct.contents.y:.2f}, "f"{dataStruct.contents.z:.2f}")
-        return dataStruct
+    dataStruct = Data() 
+    # while (rcd[-1] != 0)
+    rcd = ser.read(66)
+    if rcd[-1] != 0:
+        for i, v in enumerate(map(int, rcd)):
+            if v == 0x00:
+                kcd = ser.read(i+1)
+                temp = rcd[i+1:]
+                rcd = temp + kcd
+                break
+    decoded = cobs.decode(rcd[:-1])
+    dataStruct = ctypes.cast(decoded, ctypes.POINTER(Data))
+    print("READ:")
+    print(f"{dataStruct.contents.turntableLink:.2f}, "f"{dataStruct.contents.linkOne:.2f}, "f"{dataStruct.contents.linkTwo:.2f}, "f"{dataStruct.contents.pitch:.2f}, "f"{dataStruct.contents.roll:.2f}, "f"{dataStruct.contents.x:.2f}, "f"{dataStruct.contents.y:.2f}, "f"{dataStruct.contents.z:.2f}")
+    return dataStruct
 
 
 def Calculate(ikstruct):
@@ -122,42 +127,36 @@ def send(datastruct):
     #         ser.write(i)
     #     ser.write(bytearray([0]))
     #     print("Sent")
-
-def main():
-    init_visualization()
-    controller=joystickinit()
-    ikstruct = Data()
-    # ikstruct = read()
+def inverse():
     prev_ikstruct = ikstruct
     # if not send(home(ikstruct)):
     #     print("Failed home")
-    print("Moved to home command")
-    x = 0.5
-    y = 0.5
+    x = 0.0
+    y = 0.0
     z = 0.0
     running = True
     newx = 0.0
     newy = 0.0
     newz = 0.0
+    controller=joystickinit()
     while running:
         # while math.sqrt((ikstruct.contents.linkOne - prev_ikstruct.contents.linkOne)**2 + (ikstruct.contents.linkTwo - prev_ikstruct.contents.linkTwo)**2) > 0.1:
            # ikstruct = read()
-
         dirx , diry , dirz = joystickread(controller)
         if dirx > 0.5:
-            newx = x + 0.000001
+            newx = x + 0.001
         elif dirx < -0.5:
-            newx = x - 0.000001
+            newx = x - 0.001
 
         if diry > 0.5:
-            newy = y + 0.000001
+            newy = y + 0.001
         elif diry < -0.5:
-            newy = y - 0.000001
+            newy = y - 0.001
 
         if dirz > 0.5:
-            newz = z + 0.000001
+            newz = z + 0.001
         elif dirz < -0.5:
-            newz = z - 0.000001
+            newz = z - 0.001
         ikstruct.x = newx
         ikstruct.y = newy
         ikstruct.z = newz
@@ -165,9 +164,26 @@ def main():
         y = newy
         z = newz
         output = Calculate(ikstruct)
+        # print(output)
+        ikstruct.turntableLink = output[0]
+        ikstruct.linkOne = output[1]
+        ikstruct.linkTwo = output[2]
+        ikstruct.pitch = output[3]
+        ikstruct.roll = output[4]
         # send(output)
-        # print(output , newx , newy , newz)
+        print(output , newx , newy , newz)
     time.sleep(0.11)
+
+def main():
+    init_visualization()
+    global ikstruct 
+    ikstruct = Data()
+    ikstruct.x
+    # ikstruct = read()
+    inverseTask = threading.Thread(target=inverse , name = 'inverseTask')
+    visualizationTask = threading.Thread(target=visualization , name = 'visualizationTask')
+    inverseTask.start()
+    visualizationTask.start()
 
 if __name__ =='__main__':
     main()
