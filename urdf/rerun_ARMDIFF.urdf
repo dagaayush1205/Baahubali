@@ -146,8 +146,8 @@
     name="linkOneJoint"
     type="revolute">
     <origin
-      xyz="0.08505 0 0.13572"
-      rpy="0 2.17 0" />
+      xyz="0 0 0"
+      rpy="0 0 0" />
     <parent
       link="turntable" />
     <child
@@ -204,8 +204,8 @@
     name="linkTwoJoint"
     type="revolute">
     <origin
-      xyz="-0.25101 0.0036996 0.34296"
-      rpy="0 -1.84 0" />
+      xyz="0 0 0"
+      rpy="0 0 0" />
     <parent
       link="linkOne" />
     <child
