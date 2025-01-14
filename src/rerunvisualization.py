@@ -64,13 +64,12 @@ while True:
         print(f"x:{ikstruct.x:.2f} y:{ikstruct.y:.2f} z:{ikstruct.z:.2f} ")
         time.sleep(0.01)
         output = Calculate(ikstruct)
-
         ikstruct.turntableLink = output[0]
         ikstruct.linkOne = output[1]
         ikstruct.linkTwo = output[2]
         ikstruct.pitch = output[3]
         ikstruct.roll = output[4]
-        fk = robot.link_fk(cfg={ 'turntable_joint' : ikstruct.turntableLink , 'linkOneJoint' : ikstruct.linkOne , 'linkTwoJoint' : ikstruct.linkTwo , 'pitchJoint' : ikstruct.pitch , 'rollJoint' : ikstruct.roll})
+        fk = robot.link_fk(cfg={'turntable_joint' : ikstruct.turntableLink , 'linkOneJoint' : ikstruct.linkOne , 'linkTwoJoint' : ikstruct.linkTwo , 'pitchJoint' : ikstruct.pitch , 'rollJoint' : ikstruct.roll})
         i = 0
         entity = [
             'rerun_ARMDIFF.urdf/base_link',
@@ -91,6 +90,7 @@ while True:
             rotation_matrix = transform[:3, :3]
             rotation = R.from_matrix(rotation_matrix)
             quat = rotation.as_quat()
-            rr.log_file_from_path(mesh_location[i])
+            if i == 5:
+                    print(f"End-effector position: x={translation[0]:.3f}, y={translation[1]:.3f}, z={translation[2]:.3f}")
             rr.log(mesh_location[i], rr.Transform3D(translation=translation , quaternion= quat))
             i = i + 1
