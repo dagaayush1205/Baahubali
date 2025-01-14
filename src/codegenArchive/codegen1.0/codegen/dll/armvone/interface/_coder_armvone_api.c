@@ -1,0 +1,206 @@
+/*
+ * Sponsored License - for use in support of a program or activity
+ * sponsored by MathWorks.  Not for government, commercial or other
+ * non-sponsored organizational use.
+ *
+ * _coder_armvone_api.c
+ *
+ * Code generation for function 'armvone'
+ *
+ */
+
+/* Include files */
+#include "_coder_armvone_api.h"
+#include "_coder_armvone_mex.h"
+
+/* Variable Definitions */
+emlrtCTX emlrtRootTLSGlobal = NULL;
+
+emlrtContext emlrtContextGlobal = {
+    true,                                                 /* bFirstTime */
+    false,                                                /* bInitialized */
+    131659U,                                              /* fVersionInfo */
+    NULL,                                                 /* fErrorFunction */
+    "armvone",                                            /* fFunctionName */
+    NULL,                                                 /* fRTCallStack */
+    false,                                                /* bDebugMode */
+    {2045744189U, 2170104910U, 2743257031U, 4284093946U}, /* fSigWrd */
+    NULL                                                  /* fSigMem */
+};
+
+/* Function Declarations */
+static real_T (*b_emlrt_marshallIn(const emlrtStack *sp, const mxArray *u,
+                                   const emlrtMsgIdentifier *parentId))[5];
+
+static real_T (*c_emlrt_marshallIn(const emlrtStack *sp, const mxArray *nullptr,
+                                   const char_T *identifier))[3];
+
+static real_T (*d_emlrt_marshallIn(const emlrtStack *sp, const mxArray *u,
+                                   const emlrtMsgIdentifier *parentId))[3];
+
+static real_T (*e_emlrt_marshallIn(const emlrtStack *sp, const mxArray *src,
+                                   const emlrtMsgIdentifier *msgId))[5];
+
+static void emlrtExitTimeCleanupDtorFcn(const void *r);
+
+static real_T (*emlrt_marshallIn(const emlrtStack *sp, const mxArray *nullptr,
+                                 const char_T *identifier))[5];
+
+static const mxArray *emlrt_marshallOut(real_T u_data[],
+                                        const int32_T u_size[2]);
+
+static real_T (*f_emlrt_marshallIn(const emlrtStack *sp, const mxArray *src,
+                                   const emlrtMsgIdentifier *msgId))[3];
+
+/* Function Definitions */
+static real_T (*b_emlrt_marshallIn(const emlrtStack *sp, const mxArray *u,
+                                   const emlrtMsgIdentifier *parentId))[5]
+{
+  real_T(*y)[5];
+  y = e_emlrt_marshallIn(sp, emlrtAlias(u), parentId);
+  emlrtDestroyArray(&u);
+  return y;
+}
+
+static real_T (*c_emlrt_marshallIn(const emlrtStack *sp, const mxArray *nullptr,
+                                   const char_T *identifier))[3]
+{
+  emlrtMsgIdentifier thisId;
+  real_T(*y)[3];
+  thisId.fIdentifier = (const char_T *)identifier;
+  thisId.fParent = NULL;
+  thisId.bParentIsCell = false;
+  y = d_emlrt_marshallIn(sp, emlrtAlias(nullptr), &thisId);
+  emlrtDestroyArray(&nullptr);
+  return y;
+}
+
+static real_T (*d_emlrt_marshallIn(const emlrtStack *sp, const mxArray *u,
+                                   const emlrtMsgIdentifier *parentId))[3]
+{
+  real_T(*y)[3];
+  y = f_emlrt_marshallIn(sp, emlrtAlias(u), parentId);
+  emlrtDestroyArray(&u);
+  return y;
+}
+
+static real_T (*e_emlrt_marshallIn(const emlrtStack *sp, const mxArray *src,
+                                   const emlrtMsgIdentifier *msgId))[5]
+{
+  static const int32_T dims[2] = {1, 5};
+  real_T(*ret)[5];
+  int32_T iv[2];
+  boolean_T bv[2] = {false, false};
+  emlrtCheckVsBuiltInR2012b((emlrtConstCTX)sp, msgId, src, "double", false, 2U,
+                            (const void *)&dims[0], &bv[0], &iv[0]);
+  ret = (real_T(*)[5])emlrtMxGetData(src);
+  emlrtDestroyArray(&src);
+  return ret;
+}
+
+static void emlrtExitTimeCleanupDtorFcn(const void *r)
+{
+  emlrtExitTimeCleanup(&emlrtContextGlobal);
+}
+
+static real_T (*emlrt_marshallIn(const emlrtStack *sp, const mxArray *nullptr,
+                                 const char_T *identifier))[5]
+{
+  emlrtMsgIdentifier thisId;
+  real_T(*y)[5];
+  thisId.fIdentifier = (const char_T *)identifier;
+  thisId.fParent = NULL;
+  thisId.bParentIsCell = false;
+  y = b_emlrt_marshallIn(sp, emlrtAlias(nullptr), &thisId);
+  emlrtDestroyArray(&nullptr);
+  return y;
+}
+
+static const mxArray *emlrt_marshallOut(real_T u_data[],
+                                        const int32_T u_size[2])
+{
+  static const int32_T iv[2] = {0, 0};
+  const mxArray *m;
+  const mxArray *y;
+  y = NULL;
+  m = emlrtCreateNumericArray(2, (const void *)&iv[0], mxDOUBLE_CLASS, mxREAL);
+  emlrtMxSetData((mxArray *)m, &u_data[0]);
+  emlrtSetDimensions((mxArray *)m, &u_size[0], 2);
+  emlrtAssign(&y, m);
+  return y;
+}
+
+static real_T (*f_emlrt_marshallIn(const emlrtStack *sp, const mxArray *src,
+                                   const emlrtMsgIdentifier *msgId))[3]
+{
+  static const int32_T dims[2] = {1, 3};
+  real_T(*ret)[3];
+  int32_T iv[2];
+  boolean_T bv[2] = {false, false};
+  emlrtCheckVsBuiltInR2012b((emlrtConstCTX)sp, msgId, src, "double", false, 2U,
+                            (const void *)&dims[0], &bv[0], &iv[0]);
+  ret = (real_T(*)[3])emlrtMxGetData(src);
+  emlrtDestroyArray(&src);
+  return ret;
+}
+
+void armvone_api(const mxArray *const prhs[2], const mxArray **plhs)
+{
+  emlrtStack st = {
+      NULL, /* site */
+      NULL, /* tls */
+      NULL  /* prev */
+  };
+  real_T(*q0)[5];
+  real_T(*vone_data)[5];
+  real_T(*pos)[3];
+  int32_T vone_size[2];
+  st.tls = emlrtRootTLSGlobal;
+  vone_data = (real_T(*)[5])mxMalloc(sizeof(real_T[5]));
+  /* Marshall function inputs */
+  q0 = emlrt_marshallIn(&st, emlrtAlias(prhs[0]), "q0");
+  pos = c_emlrt_marshallIn(&st, emlrtAlias(prhs[1]), "pos");
+  /* Invoke the target function */
+  armvone(*q0, *pos, *vone_data, vone_size);
+  /* Marshall function outputs */
+  *plhs = emlrt_marshallOut(*vone_data, vone_size);
+}
+
+void armvone_atexit(void)
+{
+  emlrtStack st = {
+      NULL, /* site */
+      NULL, /* tls */
+      NULL  /* prev */
+  };
+  mexFunctionCreateRootTLS();
+  st.tls = emlrtRootTLSGlobal;
+  emlrtPushHeapReferenceStackR2021a(
+      &st, false, NULL, (void *)&emlrtExitTimeCleanupDtorFcn, NULL, NULL, NULL);
+  emlrtEnterRtStackR2012b(&st);
+  emlrtDestroyRootTLS(&emlrtRootTLSGlobal);
+  armvone_xil_terminate();
+  armvone_xil_shutdown();
+  emlrtExitTimeCleanup(&emlrtContextGlobal);
+}
+
+void armvone_initialize(void)
+{
+  emlrtStack st = {
+      NULL, /* site */
+      NULL, /* tls */
+      NULL  /* prev */
+  };
+  mexFunctionCreateRootTLS();
+  st.tls = emlrtRootTLSGlobal;
+  emlrtClearAllocCountR2012b(&st, false, 0U, NULL);
+  emlrtEnterRtStackR2012b(&st);
+  emlrtFirstTimeR2012b(emlrtRootTLSGlobal);
+}
+
+void armvone_terminate(void)
+{
+  emlrtDestroyRootTLS(&emlrtRootTLSGlobal);
+}
+
+/* End of code generation (_coder_armvone_api.c) */
