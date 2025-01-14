@@ -25,18 +25,18 @@ lib = ctypes.CDLL("codegen/dll/armvone/armvone.so")
 while True:
     global ikstruct
     ikstruct = Data()
-    x = 0.0
+    x = 1.0
     y = 0.0
     z = 0.0
     running = True
-    newx = 0.0
+    newx = 1.0
     newy = 0.0
     newz = 0.0
-    ikstruct.turntableLink = 1
-    ikstruct.linkOne = 1
-    ikstruct.linkTwo = 1
-    ikstruct.pitch = 1
-    ikstruct.roll = 1
+    ikstruct.turntableLink = 0
+    ikstruct.linkOne = 0
+    ikstruct.linkTwo = 0
+    ikstruct.pitch = 0
+    ikstruct.roll = 0
     controller=joystickinit()
     while running:
         diry , dirx , dirz = joystickread(controller)
