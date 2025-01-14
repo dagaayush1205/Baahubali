@@ -4,9 +4,18 @@ import urdfpy
 from receive2 import *
 import pygame
 from scipy.spatial.transform import Rotation as R
-import trimesh
 rr.init('d30b95f5-15b8-4b2e-ac8c-12dc580be9a5', spawn=True)
 rr.log_file_from_path('rerun_ARMDIFF.urdf')
+mesh_location = [
+    'meshes/base_link.STL',
+    'meshes/turntable.STL',
+    'meshes/linkOne.STL',
+    'meshes/linkTwo.STL',
+    'meshes/pitch.STL',
+    'meshes/roll.STL'
+]
+for i in mesh_location:
+    rr.log_file_from_path(i)
 pygame.init()
 pygame.joystick.init()
 joystickinit()
@@ -63,14 +72,6 @@ while True:
         ikstruct.roll = output[4]
         fk = robot.link_fk(cfg={ 'turntable_joint' : ikstruct.turntableLink , 'linkOneJoint' : ikstruct.linkOne , 'linkTwoJoint' : ikstruct.linkTwo , 'pitchJoint' : ikstruct.pitch , 'rollJoint' : ikstruct.roll})
         i = 0
-        mesh_location = [
-            'meshes/base_link.STL',
-            'meshes/turntable.STL',
-            'meshes/linkOne.STL',
-            'meshes/linkTwo.STL',
-            'meshes/pitch.STL',
-            'meshes/roll.STL'
-        ]
         entity = [
             'rerun_ARMDIFF.urdf/base_link',
             'rerun_ARMDIFF.urdf/base_link/turntable',
