@@ -80,15 +80,17 @@ while True:
             'rerun_ARMDIFF.urdf/base_link/turntable/linkOne/linkTwo/pitch',
             'rerun_ARMDIFF.urdf/base_link/turntable/linkOne/linkTwo/pitch/roll'
         ]
-        for i, (link, transform) in enumerate(fk.items()):
+        links = {"base_link": 0, "turntable": 1, "linkOne":2, "linkTwo":3, "pitch":4, "roll":5}
+        I = [[-1,0,0,0],
+             [0,1,0,0],
+             [0,0,-1,0],
+             [0,0,0,1]]
+        for link, transform in fk.items():
+            i = links[link.name]
             translation = transform[:3, 3]
             rotation_matrix = transform[:3, :3]
             rotation = R.from_matrix(rotation_matrix)
-            print(link)
             quat = rotation.as_quat()
             rr.log_file_from_path(mesh_location[i])
             rr.log(mesh_location[i], rr.Transform3D(translation=translation , quaternion= quat))
-
-        time.sleep(0.1)
-0
-
+            i = i + 1
