@@ -39,21 +39,21 @@ while True:
     ikstruct.roll = 0
     controller=joystickinit()
     while running:
-        diry , dirx , dirz = joystickread(controller)
+        dirx , diry , dirz = joystickread(controller)
         if dirx > 0.5:
-            newx = x + 0.01
+            newx = x + 0.001
         elif dirx < -0.5:
-            newx = x - 0.01
+            newx = x - 0.001
 
         if diry > 0.5:
-            newy = y + 0.01
+            newy = y + 0.001
         elif diry < -0.5:
-            newy = y - 0.01
+            newy = y - 0.001
 
         if dirz > 0.5:
-            newz = z + 0.01
+            newz = z + 0.001
         elif dirz < -0.5:
-            newz = z - 0.01
+            newz = z - 0.001
         ikstruct.x = newx
         ikstruct.y = newy
         ikstruct.z = newz
@@ -62,7 +62,7 @@ while True:
         z = newz
         # output = Calculate(ikstruct)
         print(f"x:{ikstruct.x:.2f} y:{ikstruct.y:.2f} z:{ikstruct.z:.2f} ")
-        time.sleep(0.11)
+        time.sleep(0.01)
         output = Calculate(ikstruct)
 
         ikstruct.turntableLink = output[0]
