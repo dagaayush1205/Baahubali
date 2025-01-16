@@ -2,7 +2,7 @@ import ctypes
 import math
 import serial
 import time
-# from cobs import cobs
+from cobs import cobs
 import pygame
 import threading
 import urdfpy
@@ -38,8 +38,9 @@ def joystickread(joystick):
     x = joystick.get_axis(0)
     y = joystick.get_axis(1)
     z = joystick.get_axis(2)
+    roll = joystick.get_axis(3)
     # print(f"x:{x:.2f} y:{y:.2f} z:{z:.2f} ")
-    return x , y , z
+    return x , y , z , roll
 
 # ser = serial.Serial('/dev/serial/by-id/usb-ZEPHYR_Team_RUDRA_Tarzan_3339511100440022-if00', 9600)
 # ser = serial.Serial('/dev/serial/by-id/usb-FTDI_FT232R_USB_UART_A50285BI-if00-port0', 57600)
@@ -47,6 +48,8 @@ def joystickread(joystick):
 lib = ctypes.CDLL("codegen/dll/armvone/armvone.so")
 class Data(ctypes.Structure):
     _fields_ = [
+        ("linearx" , ctypes.c_float),
+        ("lineary" , ctypes.c_float),
         ("turntableLink", ctypes.c_double),
         ("linkOne", ctypes.c_double),
         ("linkTwo", ctypes.c_double),
@@ -64,7 +67,7 @@ def home(ikstruct):
     output = Calculate(ikstruct)
     return output
 
-def read():
+def read(x , y , z):
     dataStruct = Data() 
     # while (rcd[-1] != 0)
     rcd = ser.read(66)
@@ -78,6 +81,9 @@ def read():
     decoded = cobs.decode(rcd[:-1])
     dataStruct = ctypes.cast(decoded, ctypes.POINTER(Data))
     print("READ:")
+    dataStruct.contents.x = x
+    dataStruct.contents.y = y
+    dataStruct.contents.z = z
     print(f"{dataStruct.contents.turntableLink:.2f}, "f"{dataStruct.contents.linkOne:.2f}, "f"{dataStruct.contents.linkTwo:.2f}, "f"{dataStruct.contents.pitch:.2f}, "f"{dataStruct.contents.roll:.2f}, "f"{dataStruct.contents.x:.2f}, "f"{dataStruct.contents.y:.2f}, "f"{dataStruct.contents.z:.2f}")
     return dataStruct
 
