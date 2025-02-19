@@ -2,7 +2,7 @@ import ctypes
 import math
 import serial
 import time
-from cobs import cobs
+# from cobs import cobs
 import pygame
 import threading
 import urdfpy
@@ -38,18 +38,15 @@ def joystickread(joystick):
     x = joystick.get_axis(0)
     y = joystick.get_axis(1)
     z = joystick.get_axis(2)
-    roll = joystick.get_axis(3)
     # print(f"x:{x:.2f} y:{y:.2f} z:{z:.2f} ")
-    return x , y , z , roll
+    return x , y , z
 
-# ser = serial.Serial('/dev/serial/by-id/usb-ZEPHYR_Team_RUDRA_Tarzan_3339511100440022-if00', 9600)
-# ser = serial.Serial('/dev/serial/by-id/usb-FTDI_FT232R_USB_UART_A50285BI-if00-port0', 57600)
-# ser = serial.Serial('/dev/serial/by-id/usb-STMicroelectronics_STLINK-V3_002400433032511537333436-if02',9600)
+ser = serial.Serial('/dev/serial/by-id/usb-ZEPHYR_Team_RUDRA_Tarzan_3339511100350023-if00', baudrate=9600)
 lib = ctypes.CDLL("codegen/dll/armvone/armvone.so")
 class Data(ctypes.Structure):
     _fields_ = [
-        ("linearx" , ctypes.c_float),
-        ("lineary" , ctypes.c_float),
+        ("linearx", ctypes.c_float),
+        ("angularz", ctypes.c_float),
         ("turntableLink", ctypes.c_double),
         ("linkOne", ctypes.c_double),
         ("linkTwo", ctypes.c_double),
@@ -58,6 +55,7 @@ class Data(ctypes.Structure):
         ("x", ctypes.c_double),
         ("y", ctypes.c_double),
         ("z", ctypes.c_double),
+        ("type", ctypes.c_int)
     ]
 
 def home(ikstruct):
@@ -67,10 +65,11 @@ def home(ikstruct):
     output = Calculate(ikstruct)
     return output
 
-def read(x , y , z):
+def read():
+    print("read for data")
     dataStruct = Data() 
     # while (rcd[-1] != 0)
-    rcd = ser.read(66)
+    rcd = ser.read(ctypes.sizeof(dataStruct)+2)
     if rcd[-1] != 0:
         for i, v in enumerate(map(int, rcd)):
             if v == 0x00:
@@ -81,9 +80,6 @@ def read(x , y , z):
     decoded = cobs.decode(rcd[:-1])
     dataStruct = ctypes.cast(decoded, ctypes.POINTER(Data))
     print("READ:")
-    dataStruct.contents.x = x
-    dataStruct.contents.y = y
-    dataStruct.contents.z = z
     print(f"{dataStruct.contents.turntableLink:.2f}, "f"{dataStruct.contents.linkOne:.2f}, "f"{dataStruct.contents.linkTwo:.2f}, "f"{dataStruct.contents.pitch:.2f}, "f"{dataStruct.contents.roll:.2f}, "f"{dataStruct.contents.x:.2f}, "f"{dataStruct.contents.y:.2f}, "f"{dataStruct.contents.z:.2f}")
     return dataStruct
 
@@ -93,6 +89,7 @@ def Calculate(ikstruct):
         return None
     dv = ctypes.c_double * 5
     r_dv = dv(ikstruct.turntableLink , ikstruct.linkOne , ikstruct.linkTwo , ikstruct.pitch , ikstruct.roll)
+    breakpoint()
     dv1 = ctypes.c_double * 3
     r_dv1 = dv1(ikstruct.x , ikstruct.y , ikstruct.z)
     vone_size = ctypes.c_double * 2
@@ -107,6 +104,8 @@ def Calculate(ikstruct):
 def send(datastruct):
     timeout = 1
     start_time = time.time()
+    datastruct.contents.linearx = 0.0
+    datastruct.contents.angularz = 0.0
     if datastruct != None:
         result = Data(*datastruct)
         b = bytearray(result)
@@ -179,6 +178,24 @@ def inverse():
         # send(output)
         print(output , newx , newy , newz)
     time.sleep(0.11)
+
+def joystick_direction(controller, x, y ,z):
+    dirx, diry, dirz = joystickread(controller)
+    if dirx > 0.5:
+        newx = x + 0.001
+    elif dirx < -0.5:
+        newx = x - 0.001
+
+    if diry > 0.5:
+        newy = y + 0.001
+    elif diry < -0.5:
+        newy = y - 0.001
+
+    if dirz > 0.5:
+        newz = z + 0.001
+    elif dirz < -0.5:
+        newz = z - 0.001
+    return newx, newy, newz
 
 def main():
     init_visualization()
