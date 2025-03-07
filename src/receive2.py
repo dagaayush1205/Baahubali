@@ -2,7 +2,7 @@ import ctypes
 import math
 import serial
 import time
-# from cobs import cobs
+from cobs import cobs
 import pygame
 import threading
 import urdfpy
