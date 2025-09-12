@@ -6,6 +6,8 @@ import pygame
 from scipy.spatial.transform import Rotation as R
 rr.init('d30b95f5-15b8-4b2e-ac8c-12dc580be9a5', spawn=True)
 rr.log_file_from_path('rerun_ARMDIFF.urdf')
+
+#keyboard 
 mesh_location = [
     'meshes/base_link.STL',
     'meshes/turntable.STL',
@@ -14,6 +16,30 @@ mesh_location = [
     'meshes/pitch.STL',
     'meshes/roll.STL'
 ]
+keyboard_origin = np.array([1.0, 0.0, 0.5])  # position of bottom-left corner of the keyboard
+key_spacing = 0.025  # spacing between keys
+rows = ["QWERTYUIOP", "ASDFGHJKL", "ZXCVBNM"]
+
+tilt_deg_x = 90
+tilt_deg_z = 90
+rotation = R.from_euler('xz', [tilt_deg_x, tilt_deg_z], degrees=True)
+
+quat = rotation.as_quat()
+
+for row_index, row in enumerate(rows):
+    for col_index, key in enumerate(row):
+        local_pos = np.array([col_index * key_spacing, -row_index * key_spacing, 0])
+        rotated_pos = rotation.apply(local_pos)
+        world_pos = keyboard_origin + rotated_pos
+
+        rr.log(
+            f"keyboard/{key}",
+            rr.Boxes3D(half_sizes=[[0.01, 0.01, 0.005]]),
+            rr.Transform3D(
+                translation=world_pos,
+                quaternion=quat
+            )
+        )
 for i in mesh_location:
     rr.log_file_from_path(i)
 pygame.init()
@@ -76,7 +102,11 @@ while True:
         z = newz
         ikstruct = read()
         # output = Calculate(ikstruct)
-        print(f"x:{ikstruct.contents.x:.2f} y:{ikstruct.contents.y:.2f} z:{ikstruct.contents.z:.2f} ")
+        print(f"x:{ikstruct.x:.2f} y:{ikstruct.y:.2f} z:{ikstruct.z:.2f} ")
+        if round(ikstruct.x, 2) == 0.77 and round(ikstruct.y, 2) == 0.00 and round(ikstruct.z, 2) == 0.42:
+            print("f key pressed")
+            key_pressed = "F"
+            rr.log("keyboard/keypress", rr.TextDocument(f"Key pressed: {key_pressed}"))
         time.sleep(0.01)
         output = Calculate(ikstruct)
         ikstruct.contents.turntableLink = output[0]
@@ -107,6 +137,7 @@ while True:
             quat = rotation.as_quat()
             if i == 5:
                     print(f"End-effector position: x={translation[0]:.3f}, y={translation[1]:.3f}, z={translation[2]:.3f}")
+
             rr.log(mesh_location[i], rr.Transform3D(translation=translation , quaternion= quat))
             i = i + 1
             ikstruct.contents.type = 1.0
